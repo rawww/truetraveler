@@ -1,6 +1,9 @@
 @charset "UTF-8";
-/* Updated - 130319 */
+/* Updated - 180220 */
 /* Small only */
+.button.primary:focus {
+  background-color: #ff5722; }
+
 .animated.fast {
   -webkit-animation-duration: 800ms;
   animation-duration: 800ms; }
@@ -196,6 +199,7 @@ textarea:focus {
   background-color: #fff;
   outline: 0;
   box-shadow: none;
+  -webkit-transition: border-color 0.25s ease-in-out;
   transition: border-color 0.25s ease-in-out; }
 
 @media only screen and (max-width: 39.9375em) {
@@ -223,8 +227,6 @@ div#search-sticky-wrapper {
 .search {
   z-index: 0;
   position: relative;
-  -webkit-box-shadow: 0 10px 39px 0 rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 10px 39px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 10px 39px 0 rgba(0, 0, 0, 0.2); }
   .search ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
@@ -266,6 +268,9 @@ div#search-sticky-wrapper {
     color: #fff !important; }
   .search .already-travelling label.css-label {
     margin-top: 0; }
+  .search .input-group-field:focus {
+    border: 1px solid #cacaca !important;
+    border-right: 0 !important; }
   .search .input-group-label {
     padding: 0 1rem;
     background: #fff;
@@ -323,8 +328,6 @@ label.css-label {
       margin-top: -20px; } }
 
 .hover-shadow:hover {
-  -webkit-box-shadow: 0 20px 49px 0 black;
-  -moz-box-shadow: 0 20px 49px 0 black;
   box-shadow: 0 20px 49px 0 black; }
 
 .close-button {
@@ -407,8 +410,6 @@ div#owl-cover-usp {
   -o-transition: all 0.7s; }
   @media only screen and (min-width: 64em) {
     .product-card:hover {
-      -webkit-box-shadow: 0 10px 39px 0 rgba(0, 0, 0, 0.2);
-      -moz-box-shadow: 0 10px 39px 0 rgba(0, 0, 0, 0.2);
       box-shadow: 0 10px 39px 0 rgba(0, 0, 0, 0.2); } }
   .product-card h3 {
     margin-top: 20px;
@@ -488,8 +489,6 @@ div#owl-cover-usp {
     .image-card .image-card-inner {
       bottom: -100px; }
     .image-card:hover {
-      -webkit-box-shadow: 0 10px 39px 0 rgba(0, 0, 0, 0.2);
-      -moz-box-shadow: 0 10px 39px 0 rgba(0, 0, 0, 0.2);
       box-shadow: 0 10px 39px 0 rgba(0, 0, 0, 0.2); }
       .image-card:hover .image-card-inner {
         background: white;
@@ -530,9 +529,30 @@ div#owl-cover-usp {
   background: url("../img/home/multi-trip.jpg") right bottom no-repeat #a8b9c2;
   background-size: cover; }
 
+.fromFieldTrigger {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 138px; }
+
+.toFieldTrigger {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 138px; }
+
+#ui-datepicker-div {
+  width: 100% !important;
+  left: 0 !important; }
+
+.ui-state-disabled span {
+  opacity: 0.5; }
+
 .date {
   width: 100%;
-  height: 140px; }
+  height: 121px; }
 
 .date-in, .date-out {
   border: 1px solid #cacaca; }
@@ -545,73 +565,98 @@ a.dates-popover-close {
   z-index: 99999;
   color: #37474f; }
 
-.dates-popover-menu {
-  display: none;
-  padding: 2rem 0; }
-  .dates-popover-menu .ui-datepicker-group-first:before {
+.ui-datepicker td {
+  border: 0 !important; }
+
+@media (max-width: 1023px) {
+  div#ui-datepicker-div {
+    width: 100% !important;
+    top: 465px !important; } }
+
+#ui-datepicker-div {
+  border-top: 1px solid #EAEAEA !important;
+  border-bottom: 1px solid #fff !important;
+  border-right: 1px solid #fff !important;
+  border-left: 1px solid #fff !important;
+  background: #fff !important;
+  padding: 2rem 0;
+  border-radius: 0 !important; }
+  #ui-datepicker-div td.day_hi a.ui-state-default {
+    background: #C2F9ED !important; }
+  #ui-datepicker-div td.day_from.ui-state-disabled {
+    opacity: unset;
+    -webkit-filter: none;
+            filter: none; }
+  #ui-datepicker-div td.day_from.ui-state-disabled span {
+    opacity: 1; }
+  #ui-datepicker-div td.day_from span, #ui-datepicker-div td.day_from a.ui-state-default {
+    border-radius: 15px 0 0 15px;
+    background: #00CEA5 !important; }
+  #ui-datepicker-div td.day_to a.ui-state-default {
+    border-radius: 0 15px 15px 0;
+    background: #00CEA5 !important; }
+  #ui-datepicker-div .ui-datepicker-group-first:before {
     padding: 0 0rem 1rem 1rem;
-    content: "Choose your start and end date:";
-    font-weight: 400;
+    font-weight: bold;
     color: #37474f;
     height: 45px; }
-  .dates-popover-menu .ui-datepicker-group-last:before {
+  #ui-datepicker-div .ui-datepicker-group-last:before {
     padding: 0 0rem 1rem 1rem;
-    content: " ";
     font-weight: bold; }
-  .dates-popover-menu a.ui-datepicker-next.ui-corner-all {
+  #ui-datepicker-div a.ui-datepicker-next.ui-corner-all {
     background: transparent; }
-  .dates-popover-menu a.ui-datepicker-prev {
+  #ui-datepicker-div a.ui-datepicker-prev {
     display: inline-block;
     width: 36px;
     background: url(../img/date-prev.png) no-repeat center center transparent !important;
     background-size: contain !important;
     left: 20px; }
-  .dates-popover-menu a.ui-datepicker-next {
+  #ui-datepicker-div a.ui-datepicker-next {
     font-family: "Font Awesome 5 Free";
     display: inline-block;
     width: 36px;
     background: url(../img/date-next.png) no-repeat center center transparent !important;
     background-size: contain !important;
     right: 20px; }
-  .dates-popover-menu .ui-datepicker-group {
+  #ui-datepicker-div .ui-datepicker-group {
     width: 100% !important; }
     @media screen and (min-width: 40em) {
-      .dates-popover-menu .ui-datepicker-group {
+      #ui-datepicker-div .ui-datepicker-group {
         width: 50% !important; } }
-  .dates-popover-menu .ui-datepicker-title {
+  #ui-datepicker-div .ui-datepicker-title {
     margin: 0 1rem;
     border-bottom: 1px solid #f5f5f5; }
-  .dates-popover-menu .ui-widget-header {
+  #ui-datepicker-div .ui-widget-header {
     padding: 1em 0;
     background: transparent !important;
     color: #37474f !important;
     border: 0 !important; }
-  .dates-popover-menu .ui-datepicker td {
+  #ui-datepicker-div .ui-datepicker td {
     border: 0 !important; }
-  .dates-popover-menu td.ui-state-disabled {
+  #ui-datepicker-div td.ui-state-disabled {
     background: transparent !important; }
-  .dates-popover-menu table tbody tr:nth-child(even) {
+  #ui-datepicker-div table tbody tr:nth-child(even) {
     background: transparent !important; }
-  .dates-popover-menu .ui-state-default, .dates-popover-menu .ui-widget-content .ui-state-default {
+  #ui-datepicker-div .ui-state-default, #ui-datepicker-div .ui-widget-content .ui-state-default {
     background: #f5f5f5 !important;
     color: #37474f !important;
     border: 1px solid #fff !important; }
-  .dates-popover-menu table thead {
+  #ui-datepicker-div table thead {
     background: transparent !important;
     color: #37474f !important; }
-  .dates-popover-menu .ui-widget.ui-widget-content {
+  #ui-datepicker-div .ui-widget.ui-widget-content {
     border: 0 !important;
     background: transparent !important; }
-  .dates-popover-menu a.ui-state-default.ui-state-active {
+  #ui-datepicker-div a.ui-state-default.ui-state-active {
     background: #00CEA5 !important;
     color: #fff !important; }
-  .dates-popover-menu .start-range .ui-state-default {
+  #ui-datepicker-div .start-range .ui-state-default {
     background: #00CEA5 !important;
     color: #fff; }
-  .dates-popover-menu .dp-highlight .ui-state-default {
+  #ui-datepicker-div .dp-highlight .ui-state-default {
     background: #C2F9ED !important;
     color: #fff; }
-  .dates-popover-menu .end-range .ui-state-default {
+  #ui-datepicker-div .end-range .ui-state-default {
     background: #00CEA5 !important;
     color: #FFF; }
 
@@ -677,8 +722,6 @@ a.wherecover-popover-close {
     width: 100%;
     background: #fff !important;
     text-align: left !important;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
     border-radius: 0;
     padding: 2rem 1rem !important;
     border: 1px solid #f5f5f5 !important;
@@ -819,8 +862,6 @@ section.sub-intro {
   -o-transition: all 0.7s; }
   @media only screen and (min-width: 64em) {
     .button-card:hover {
-      -webkit-box-shadow: 0 10px 39px 0 rgba(0, 0, 0, 0.2);
-      -moz-box-shadow: 0 10px 39px 0 rgba(0, 0, 0, 0.2);
       box-shadow: 0 10px 39px 0 rgba(0, 0, 0, 0.2); } }
   .button-card h3 {
     margin-top: 20px;
@@ -1262,6 +1303,7 @@ h2.mt.error {
   background-color: rgba(0, 206, 165, 0.12);
   box-shadow: none;
   border-radius: 0;
+  -webkit-transition: box-shadow .5s,border-color .25s ease-in-out;
   transition: box-shadow .5s,border-color .25s ease-in-out;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1311,6 +1353,7 @@ select.validated {
   background-color: rgba(244, 67, 54, 0.12);
   box-shadow: none;
   border-radius: 0;
+  -webkit-transition: box-shadow .5s,border-color .25s ease-in-out;
   transition: box-shadow .5s,border-color .25s ease-in-out;
   -webkit-appearance: none;
   -moz-appearance: none; }
@@ -1345,3 +1388,4 @@ input:checked ~ .switch-paddle {
   background: #079B7D !important;
   color: #fff !important;
   border-color: #079B7D; }
+/*# sourceMappingURL=ux.css.map */

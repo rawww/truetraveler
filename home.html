@@ -55,7 +55,10 @@
 
 	<link href="css/jquery-ui.css" rel="stylesheet">
 
+
 	<script src="js/min/jquery.min.js"></script>
+
+
 	<script type="text/javascript">
 		//<![CDATA[
 		jQuery(window).load(function() { // makes sure the whole site is loaded
@@ -68,6 +71,9 @@
 	<!-- TrustBox script -->
 	<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
 	<!-- End TrustBox script -->
+
+
+
 
 
 </head>
@@ -247,16 +253,16 @@
 
 				<!-- Where do you normally live? -->
 				<div class="large-3 columns">
-					<div class="resident-trigger">
 
 						<label>
 							<span class="break">Where do you normally live? <span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit,"><i class="fas fa-info-circle"></i></span>
 						</label>
-
-						<div class="input-group">
+						<div class="resident-trigger">
+						<div class="input-group input-group-1">
 							<input class="input-group-field nbr" type="text" placeholder="I am a resident of…">
 							<span class="input-group-label"><i class="fa fa-map-marker-alt"></i></span>
 						</div>
+					</div>
 
 						<label><span class="break">Are you already travelling? <span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit,"><i class="fas fa-info-circle"></i></span></label>
 						<input class="css-checkbox" id="checkboxG1" name="checkboxG1" type="checkbox"><label class="css-label" for="checkboxG1">Yes</label>
@@ -264,7 +270,6 @@
 						<input class="css-checkbox" id="checkboxG2" name="checkboxG2" type="checkbox"><label class="css-label" for="checkboxG2">No</label>
 
 
-					</div>
 
 				</div>
 
@@ -279,25 +284,29 @@
 					<div class="row">
 						<!-- <input type="text" id="datepicker"> -->
 						<div class="small-6 calendar-first columns">
-						<div class="arrivalWrapper left">
-						<div id="date_in_div" class="date date-in initial">
-						 <div id="InMonth" class="bookingMask_Month">START DATE</div>
-						<div id="InDate" class="bookingMask_Date"></div>
-						<div id="InYear" class="bookingMask_Year"></div>
-						<input class="hiddenFromField" type="hidden" id="uk-date-in" name="dateIn" value="04/09/2019">
-						</div>
+						<div class="arrivalWrapper left pr">
+							<div id="date_in_div" class="date date-in initial">
+<label id="from_label" for="from"><!-- From --></label>
+									<div id="InMonth" class="bookingMask_Month">START DATE</div>
+									<div id="InDate" class="bookingMask_Date"></div>
+									<div id="InYear" class="bookingMask_Year"></div>
+									<input type="hidden" id="uk-date-in" name="dateIn" value='02/11/2020' />
+							</div>
+<input class="fromFieldTrigger" type="text" id="from" name="from" readonly="readonly">
 						</div>
 						</div>
 
 						<div class="small-6 calendar-last columns pr">
 						<span class="to-spacer">to</span>
-						<div class="departWrapper right">
-						<div id="date_out_div" class="date date-out initial">
-						<div id="OutMonth" class="bookingMask_Month">END DATE</div>
-						<div id="OutDate" class="bookingMask_Date"></div>
-						<div id="OutYear" class="bookingMask_Year"></div>
-						<input class="hiddenToField" type="hidden" id="uk-date-out" name="dateOut" value="04/10/2019">
-						</div>
+						<div class="departWrapper right pr">
+							<div id="date_out_div" class="date date-out initial">
+	<label id="to_label" for="to"><!-- to --></label>
+									<div id="OutMonth" class="bookingMask_Month">END DATE</div>
+									<div id="OutDate" class="bookingMask_Date"></div>
+									<div id="OutYear" class="bookingMask_Year"></div>
+									<input class="hiddenToField" type="hidden" id="uk-date-out" name="dateOut" value='02/12/2020' />
+							</div>
+	<input class="toFieldTrigger" type="text" id="to" name="to" readonly="readonly">
 						</div>
 						</div>
 					</div>
@@ -307,19 +316,19 @@
 
 				<!-- Who is travelling? -->
 				<div class="large-3 columns">
-					<div class="whotravelling-trigger">
 						<label>
 							<span class="break">Who is travelling? <span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit,"><i class="fas fa-info-circle"></i></span>
 						</label>
+						<div class="whotravelling-trigger">
 						<div class="input-group">
 							<input class="input-group-field nbr" type="text" placeholder="Ages of all travellers">
 							<span class="input-group-label"><i class="fas fa-male"></i></span>
 						</div>
 					</div>
-					<div class="wherecover-trigger">
 						<label>
 							<span class="break">Where do you need cover? <span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit,"><i class="fas fa-info-circle"></i></span>
 						</label>
+						<div class="wherecover-trigger">
 						<div class="input-group">
 							<input class="input-group-field nbr" type="text" placeholder="Select area of cover">
 							<span class="input-group-label"><i class="fas fa-map"></i></span>
@@ -417,7 +426,7 @@
 
 	<!-- Choose your dates of cover pop over -->
 
-	<div class="dates-popover-menu">
+	<!-- <div class="dates-popover-menu">
 		<a class="dates-popover-close">&times;</a>
 
 		<div class="row expanded">
@@ -426,7 +435,7 @@
 			</div>
 		</div>
 
-	</div>
+	</div> -->
 
 	<!-- Choose your dates of cover pop over : end -->
 
@@ -541,7 +550,7 @@
 		<div class="row expanded pt20 bg-grey text-right">
 			<div class="small-12 columns">
 				<button class="button button-clear">Clear</button>
-				<button class="button primary">Done</button>
+				<button class="button button-done primary">Done</button>
 			</div>
 		</div>
 
