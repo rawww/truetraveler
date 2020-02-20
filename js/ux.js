@@ -349,7 +349,7 @@ $( function() {
     });
 
 
-
+// Release 1 datepicker code
 // $( document ).ready(function() {
 //   $( "<p>Cover to start on</p>" ).insertBefore( ".ui-datepicker-group-first" );
 // });
