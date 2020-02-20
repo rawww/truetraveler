@@ -1,0 +1,1279 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+	<title>TrueTraveller - New Homepage Layout</title>
+	<link rel="stylesheet" href="css/app.css">
+
+	<!-- New UX changes stylesheet -->
+	<link rel="stylesheet" href="css/ux.css">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+	<!-- Typekit -->
+	<script src="https://use.typekit.net/isb8sii.js"></script>
+	<script>
+		try {
+			Typekit.load({
+				async: true
+			});
+		} catch (e) {}
+	</script>
+
+	<style>
+		.wf-loading p,
+		.wf-loading h1,
+		.wf-loading h2,
+		.wf-loading h3,
+		.wf-loading h4,
+		wf-loading label {
+			visibility: hidden;
+		}
+
+		.wf-active p,
+		.wf-active h1,
+		.wf-active h2,
+		.wf-active h3,
+		.wf-active h4,
+		wf-active label {
+			visibility: visible;
+		}
+
+		.wf-inactive p,
+		.wf-inactive h1,
+		.wf-inactive h2,
+		.wf-inactive h3,
+		.wf-inactive h4,
+		wf-inactive label {
+			visibility: visible;
+		}
+	</style>
+
+	<link href="css/jquery-ui.css" rel="stylesheet">
+
+	<script src="js/min/jquery.min.js"></script>
+	<script type="text/javascript">
+		//<![CDATA[
+		jQuery(window).load(function() { // makes sure the whole site is loaded
+			jQuery("#status").fadeOut(); // will first fade out the loading animation
+			jQuery("#preloader").delay(350).fadeOut("slow"); // will fade out the white DIV that covers the website.
+		})
+		//]]>
+	</script>
+
+	<!-- TrustBox script -->
+	<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+	<!-- End TrustBox script -->
+
+
+</head>
+
+<body>
+
+	<div id="preloader">
+		<div id="status">
+			<img class="loader-compass" src="img/traveller-loader.svg" alt="loader">
+		</div>
+	</div>
+
+
+	<div id="top"></div>
+
+
+
+	<!-- Moblie nav : Start	 -->
+
+	<header class="mobile-nav hide-for-large">
+		<div class="row expanded">
+			<a class="mobile-call-button"><i class="fa fa-phone" aria-hidden="true"></i></a>
+			<a href="#" data-open="exampleModal1" class="hide-for-large mobile-menu hamburger"><i class="fa fa-bars" aria-hidden="true"></i></a>
+
+			<div class="small-8 small-offset-2 medium-4 medium-offset-4 large-3 large-offset-0 columns absolute">
+				<img class="logo" src="img/truetraveller-logo-moblie.svg" height="50" alt="logo">
+			</div>
+
+			<div class="reveal full hamburger-nav-expanded darkgrey-bg mobile-patch animated faster fadeIn" id="exampleModal1" data-reveal>
+
+				<button class="close-button" data-close aria-label="Close modal" type="button">
+					<i class="fa fa-times" aria-hidden="true"></i>
+				</button>
+
+				<ul class="vertical menu hide-for-large" data-accordion-menu>
+					<li>
+						<a href="#">Travel insurance</a>
+						<ul class="menu vertical nested">
+							<li><a href="#">Trekking</a></li>
+							<li><a href="#">IEC for Canada</a></li>
+							<li><a href="#">One-way</a></li>
+							<li><a href="#">Backpacker</a></li>
+							<li><a href="#">GAP Year Travel</a></li>
+							<li><a href="#">Multi-trip</a></li>
+							<li><a href="#">Already Travelling</a></li>
+							<li><a href="#">Winter Sports</a></li>
+							<li><a href="#">Insurance extension</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="#">Who we are</a>
+					</li>
+
+					<li>
+						<a href="#">Need help?</a>
+					</li>
+					<li>
+						<a class="small-nav-link" href="#">Contact us</a>
+					</li>
+					<li>
+						<a class="small-nav-link" href="#">Activity cover</a>
+					</li>
+					<li>
+						<a class="small-nav-link" href="#">Tips for travelling</a>
+					</li>
+				</ul>
+				<a href="#" class="hollow button secondary expanded mt">Make a claim</a>
+				<a href="#" class="button primary expanded">My TT policy</a>
+
+
+			</div>
+		</div>
+	</header>
+
+	<!-- Moblie nav : End	 -->
+
+	<!-- Desktop nav : Start -->
+
+	<header class="header show-for-large" class="fade-all" role="banner" data-sticky-container>
+		<div class="expanded row sticky main-menu" data-sticky data-margin-top="0">
+			<div class="small-8 small-offset-2 medium-4 medium-offset-4 large-3 large-offset-0 columns absolute">
+				<img class="logo" src="img/truetraveller-logo.svg" alt="logo">
+			</div>
+
+			<ul id="mega-menu-container" class="menu" data-dropdown-menu data-click-open="true" data-disable-hover="true">
+				<li class="mega-menu">
+					<a class="" href="#">What we offer</a>
+					<ul class="menu">
+						<li>
+							<div class="medium-3 column">
+								<img src="img/mega01.jpg">
+							</div>
+							<div class="medium-3 column">
+								<a href="#" class="white">Trekking</a><br />
+								<a href="#" class="white">IEC for Canada</a><br />
+								<a href="#" class="white">One-way</a><br />
+							</div>
+							<div class="medium-3 column">
+								<a href="#" class="white">Backpacker</a><br />
+								<a href="#" class="white">GAP Year Travel</a><br />
+								<a href="#" class="white">Multi-trip</a><br />
+							</div>
+							<div class="medium-3 column">
+								<a href="#" class="white">Already Travelling</a><br />
+								<a href="#" class="white">Winter Sports</a><br />
+								<a href="#" class="white">Insurance extension</a><br />
+							</div>
+						</li>
+					</ul>
+				</li>
+
+				<li class="mega-menu">
+					<a class="" href="#">Who we are</a>
+				</li>
+
+				<li class="mega-menu">
+					<a class="" href="#">Need help?</a>
+					<ul class="menu">
+						<li>
+							<div class="medium-3 column">
+								<img src="img/mega02.jpg">
+							</div>
+							<div class="medium-3 column">
+								<a href="#" class="white">Contact us</a><br />
+								<a href="#" class="white">FAQs</a><br />
+								<a href="#" class="white">Make a claim</a><br />
+							</div>
+							<div class="medium-3 column">
+								<a href="#" class="white">Activity cover</a><br />
+								<a href="#" class="white">Tips for travelling</a><br />
+							</div>
+							<div class="medium-3 column">
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+
+			<div class="medium-12 columns text-right header-contact show-for-large large-4 menu-right">
+
+				<div class="row">
+					<div class="medium-8 columns text-right">
+						<span class="strap">Hi Traveller</span>
+						<br><span class="strap"><a class="white" href="#">Contact us</a> 0333 999 3140</span>
+					</div>
+					<div class="medium-4 columns npd">
+						<a class="button signin hollow white expanded" href="">Sign in</a>
+					</div>
+				</div>
+
+
+			</div>
+
+
+		</div>
+
+	</header>
+
+	<!-- Desktop nav : End -->
+
+
+
+	<!-- Quote : Start -->
+
+	<div class="mobile-menu-button" data-responsive-toggle="search" data-hide-for="large">
+		<button class="button search expanded" type="button" data-toggle>Get a quote <i class="fa fa-arrow-right"></i></button>
+	</div>
+
+
+
+	<section class="search fade-all" id="search">
+
+		<form>
+
+			<div class="row expanded row--search fade-all">
+
+				<!-- Where do you normally live? -->
+				<div class="large-3 columns">
+					<div class="resident-trigger">
+
+						<label>
+							<span class="break">Where do you normally live? <span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit,"><i class="fas fa-info-circle"></i></span>
+						</label>
+
+						<div class="input-group">
+							<input class="input-group-field nbr" type="text" placeholder="I am a resident of…">
+							<span class="input-group-label"><i class="fa fa-map-marker-alt"></i></span>
+						</div>
+
+						<label><span class="break">Are you already travelling? <span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit,"><i class="fas fa-info-circle"></i></span></label>
+						<input class="css-checkbox" id="checkboxG1" name="checkboxG1" type="checkbox"><label class="css-label" for="checkboxG1">Yes</label>
+
+						<input class="css-checkbox" id="checkboxG2" name="checkboxG2" type="checkbox"><label class="css-label" for="checkboxG2">No</label>
+
+
+					</div>
+
+				</div>
+
+
+
+				<!-- Choose your dates of cover? -->
+				<div class="large-4 columns">
+					<div class="dates-trigger">
+						<label><span class="break">Choose your dates of cover? <span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit,"><i class="fas fa-info-circle"></i></span></label>
+
+
+					<div class="row">
+						<!-- <input type="text" id="datepicker"> -->
+						<div class="small-6 calendar-first columns">
+						<div class="arrivalWrapper left">
+						<div id="date_in_div" class="date date-in initial">
+						 <div id="InMonth" class="bookingMask_Month">START DATE</div>
+						<div id="InDate" class="bookingMask_Date"></div>
+						<div id="InYear" class="bookingMask_Year"></div>
+						<input class="hiddenFromField" type="hidden" id="uk-date-in" name="dateIn" value="04/09/2019">
+						</div>
+						</div>
+						</div>
+
+						<div class="small-6 calendar-last columns pr">
+						<span class="to-spacer">to</span>
+						<div class="departWrapper right">
+						<div id="date_out_div" class="date date-out initial">
+						<div id="OutMonth" class="bookingMask_Month">END DATE</div>
+						<div id="OutDate" class="bookingMask_Date"></div>
+						<div id="OutYear" class="bookingMask_Year"></div>
+						<input class="hiddenToField" type="hidden" id="uk-date-out" name="dateOut" value="04/10/2019">
+						</div>
+						</div>
+						</div>
+					</div>
+
+					</div>
+				</div>
+
+				<!-- Who is travelling? -->
+				<div class="large-3 columns">
+					<div class="whotravelling-trigger">
+						<label>
+							<span class="break">Who is travelling? <span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit,"><i class="fas fa-info-circle"></i></span>
+						</label>
+						<div class="input-group">
+							<input class="input-group-field nbr" type="text" placeholder="Ages of all travellers">
+							<span class="input-group-label"><i class="fas fa-male"></i></span>
+						</div>
+					</div>
+					<div class="wherecover-trigger">
+						<label>
+							<span class="break">Where do you need cover? <span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit,"><i class="fas fa-info-circle"></i></span>
+						</label>
+						<div class="input-group">
+							<input class="input-group-field nbr" type="text" placeholder="Select area of cover">
+							<span class="input-group-label"><i class="fas fa-map"></i></span>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="large-2 columns">
+
+					<button class="button quote expanded">Get my quote<span><i class="far fa-clock"></i> Takes about 2 mins</span></button>
+
+				</div>
+
+			</div>
+			</div>
+		</form>
+
+	</section>
+
+
+	<!-- Resident popover -->
+	<div class="resident-popover-menu">
+		<a class="resident-popover-close">&times;</a>
+
+		<div class="row expanded">
+			<div class="small-12 columns residents-title-bar">
+				<p class="primary"><i class="fas fa-exclamation-triangle ps primary"></i> We are able to insure permanent residents of the UK and all other Countries in the EEA.</p>
+			</div>
+			<div class="small-12 columns">
+				<p>Please select your country of permanent residence from the following:</p>
+			</div>
+
+
+			<div class="medium-3 columns">
+				<ul class="flags">
+					<li class="country-name"><img class="flag-ico" src="img/flags/United-Kingdom.png"><span>United Kingdom</span></li>
+					<li class="country-name"><img class="flag-ico" src="img/flags/Ireland.png"><span>Ireland</span></li>
+					<li class="country-name"><img class="flag-ico" src="img/flags/Austria.png"><span>Austria</span></li>
+					<li class="country-name"><img class="flag-ico" src="img/flags/Belgium.png"><span>Belgium</span></li>
+					<li class="country-name"><img class="flag-ico" src="img/flags/Bulgaria.png"><span>Bulgaria</span></li>
+					<li class="country-name"><img class="flag-ico" src="img/flags/Croatia.png"><span>Croatia</span></li>
+					<li class="country-name"><img class="flag-ico" src="img/flags/Cyprus.png"><span>Cyprus</span></li>
+					<li class="country-name"><img class="flag-ico" src="img/flags/Czech-Republic.png"><span>Czech Republic</span></li>
+					<li class="country-name"><img class="flag-ico" src="img/flags/Denmark.png"><span>Denmark</span></li>
+				</ul>
+			</div>
+
+			<div class="medium-3 columns">
+				<ul class="flags">
+					<li class="country-name"><img class="flag-ico" src="img/flags/Estonia.png"><span>Estonia</span></li>
+					<li class="country-name"><img class="flag-ico" src="img/flags/Finland.png"><span>Finland</span></li>
+					<li class="country-name"><img class="flag-ico" src="img/flags/France.png"><span>France</span></li>
+					<li class="country-name"><img class="flag-ico" src="img/flags/Germany.png"><span>Germany</span></li>
+					<li class="country-name"><img class="flag-ico" src="img/flags/Gibraltar.png"><span>Gibraltar</span></li>
+					<li class="country-name"><img class="flag-ico" src="img/flags/Greece.png"><span>Greece</span></li>
+					<li class="country-name"><img class="flag-ico" src="img/flags/Guernsey.png"><span>Guernsey</span></li>
+					<li class="country-name"><img class="flag-ico" src="img/flags/Hungary.png"><span>Hungary</span></li>
+					<li class="country-name"><img class="flag-ico" src="img/flags/Iceland.png"><span>Iceland</span></li>
+				</ul>
+			</div>
+
+			<div class="medium-3 columns">
+				<ul class="flags">
+					<li class="country-name"><img class="flag-ico" src="img/flags/Isle-of-Man.png"><span>Isle of Man</span></li>
+					<li class="country-name"><img class="flag-ico" src="img/flags/Italy.png"><span>Italy</span></li>
+					<li class="country-name"><img class="flag-ico" src="img/flags/Jersey.png"><span>Jersey</span></li>
+					<li class="country-name"><img class="flag-ico" src="img/flags/Latvia.png"><span>Latvia</span></li>
+					<li class="country-name"><img class="flag-ico" src="img/flags/Liechtenstein.png"><span>Liechtenstein</span></li>
+					<li class="country-name"><img class="flag-ico" src="img/flags/Lithuania.png"><span>Lithuania</span></li>
+					<li class="country-name"><img class="flag-ico" src="img/flags/Luxembourg.png"><span>Luxembourg</span></li>
+					<li class="country-name"><img class="flag-ico" src="img/flags/Malta.png"><span>Malta</span></li>
+					<li class="country-name"><img class="flag-ico" src="img/flags/Netherlands.png"><span>Netherlands</span></li>
+				</ul>
+			</div>
+
+
+			<div class="medium-3 columns">
+				<ul class="flags">
+					<li class="country-name"><img class="flag-ico" src="img/flags/Norway.png"><span>Norway</span></li>
+					<li class="country-name"><img class="flag-ico" src="img/flags/Poland.png"><span>Poland</span></li>
+					<li class="country-name"><img class="flag-ico" src="img/flags/Portugal.png"><span>Portugal</span></li>
+					<li class="country-name"><img class="flag-ico" src="img/flags/Romania.png"><span>Romania</span></li>
+					<li class="country-name"><img class="flag-ico" src="img/flags/Slovakia.png"><span>Slovak Republic</span></li>
+					<li class="country-name"><img class="flag-ico" src="img/flags/Slovenia.png"><span>Slovenia</span></li>
+					<li class="country-name"><img class="flag-ico" src="img/flags/Spain.png"><span>Spain</span></li>
+					<li class="country-name"><img class="flag-ico" src="img/flags/Sweden.png"><span>Sweden</span></li>
+				</ul>
+			</div>
+
+		</div>
+
+	</div>
+	<!-- Resident pop over : end -->
+
+	<!-- Choose your dates of cover pop over -->
+
+	<div class="dates-popover-menu">
+		<a class="dates-popover-close">&times;</a>
+
+		<div class="row expanded">
+			<div class="small-12 columns">
+				<div class="datepicker"></div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Choose your dates of cover pop over : end -->
+
+
+	<!-- Who is travelling popover -->
+
+	<div class="whotravelling-popover-menu">
+		<a class="whotravelling-popover-close">&times;</a>
+
+		<div class="row expanded">
+			<div class="small-12 columns">
+				<p>Who is travelling?</p>
+			</div>
+		</div>
+
+		<div class="row expanded large-up-7">
+
+			<!-- how many travellers -->
+			<div class="columns">
+				<label>
+					How many travellers
+				</label>
+
+				<div class="input-group">
+					<button class="spinnerdown"><i class="fas fa-minus"></i></button>
+					<input id="spinner" class="howmanytravellers" name="value" placeholder="1">
+					<button class="spinnerup"><i class="fas fa-plus"></i></button>
+					<!-- <span class="input-group-label"><i class="fa fa-map-marker-alt"></i></span> -->
+				</div>
+			</div>
+
+
+			<!-- age of traveller 1 -->
+			<div class="columns traveller-1">
+				<label>
+					Age Traveller 1
+				</label>
+
+				<div class="input-group">
+					<input class="input-group-field" type="text" placeholder="18">
+					<!-- <span class="input-group-label"><i class="fa fa-map-marker-alt"></i></span> -->
+				</div>
+			</div>
+
+
+			<!-- age of traveller 2 -->
+			<div class="columns traveller-2">
+				<label>
+					Age Traveller 2
+				</label>
+
+				<div class="input-group">
+					<input class="input-group-field" type="text" placeholder="18">
+					<!-- <span class="input-group-label"><i class="fa fa-map-marker-alt"></i></span> -->
+				</div>
+			</div>
+
+			<!-- age of traveller 3 -->
+			<div class="columns traveller-3">
+				<label>
+					Age Traveller 3
+				</label>
+
+				<div class="input-group">
+					<input class="input-group-field" type="text" placeholder="18">
+					<!-- <span class="input-group-label"><i class="fa fa-map-marker-alt"></i></span> -->
+				</div>
+			</div>
+
+			<!-- age of traveller 4 -->
+			<div class="columns traveller-4">
+				<label>
+					Age Traveller 4
+				</label>
+
+				<div class="input-group">
+					<input class="input-group-field" type="text" placeholder="18">
+					<!-- <span class="input-group-label"><i class="fa fa-map-marker-alt"></i></span> -->
+				</div>
+			</div>
+
+			<!-- age of traveller 5 -->
+			<div class="columns traveller-5">
+				<label>
+					Age Traveller 5
+				</label>
+
+				<div class="input-group">
+					<input class="input-group-field" type="text" placeholder="18">
+					<!-- <span class="input-group-label"><i class="fa fa-map-marker-alt"></i></span> -->
+				</div>
+			</div>
+
+			<!-- age of traveller 6 -->
+			<div class="columns end traveller-6">
+				<label>
+					Age Traveller 6
+				</label>
+
+				<div class="input-group">
+					<input class="input-group-field" type="text" placeholder="18">
+					<!-- <span class="input-group-label"><i class="fa fa-map-marker-alt"></i></span> -->
+				</div>
+			</div>
+
+
+
+		</div>
+
+
+
+		<div class="row expanded pt20 bg-grey text-right">
+			<div class="small-12 columns">
+				<button class="button button-clear">Clear</button>
+				<button class="button primary">Done</button>
+			</div>
+		</div>
+
+
+	</div>
+	<!-- Who is travelling pop over  : end -->
+
+	<!-- Where do you need cover pop over  -->
+
+	<div class="wherecover-popover-menu">
+		<a class="wherecover-popover-close">&times;</a>
+
+		<div class="row expanded">
+			<div class="small-12 columns">
+				<p>Where do you need cover?</p>
+			</div>
+		</div>
+
+		<div class="row expanded">
+			<fieldset>
+
+				<div class="small-12 large-3 columns">
+					<label for="radio-1" id="europe">
+						<h2>Europe</h2>
+						<p>Europe means the continent of Europe West of the Ural Mountains, and also countries bordering the Mediterranean (including Turkey, Morocco, Egypt and Israel), plus Iceland, Jordan, Madeira, the Canary, Azores and Mediterranean Islands, as
+							well
+							as the Isle of Man and the Channel Islands.</p>
+					</label>
+					<input type="radio" name="radio-wherecover" id="radio-1" checked>
+				</div>
+
+				<div class="small-12 large-3 columns">
+					<label for="radio-2">
+						<h2>Australia & New Zealand</h2>
+						<p>(A) If the period of cover purchased is under 2 months, this can include a 48 hour stop-over in any other country for both outward and return travel.</p>
+
+						<p>(B) If the period of cover purchased is two months or more, a total of 7 days/nights stop-over is allowed in any other country for no additional premium.</p>
+
+						<p>(C) If the period of cover purchased is six months or more, a total of 14 days/nights stop-over is allowed in any other country for no additional premium.</p>
+
+					</label>
+					<input type="radio" name="radio-wherecover" id="radio-2">
+				</div>
+
+				<div class="small-12 large-3 columns">
+					<label for="radio-3">
+
+						<h2>Worldwide <small>exc USA / Canada</small></h2>
+
+						<p>(A) If the period of cover purchased is under 2 months, this can include a 48 hour stop-over in the USA or Canada for both outward and return travel.</p>
+
+						<p>(B) If the period of cover purchased is two months or more, a total of 7 days/nights stop-over is allowed in the USA or Canada for no additional premium.</p>
+
+						<p>(C) If the period of cover purchased is six months or more, a total of 14 days/nights stop-over is allowed in the USA or Canada for no additional premium.</p>
+
+
+					</label>
+					<input type="radio" name="radio-wherecover" id="radio-3">
+
+				</div>
+
+				<div class="small-12 large-3 columns ends">
+					<label for="radio-4">
+						<h2>Worldwide</h2>
+						<p>All countries of the World, including Canada and the USA.</p>
+					</label>
+					<input type="radio" name="radio-wherecover" id="radio-4">
+				</div>
+			</fieldset>
+		</div>
+
+	</div>
+
+	<!-- Where do you need cover pop over : end  -->
+
+
+	<!-- Quote : End -->
+
+
+
+
+	<!-- Feature : Start -->
+
+	<section class="home-intro">
+		<div class="home-intro-inner">
+			<h1>Travel Insurance <span class="lightfont">designed by travellers for Holidaymakers, Adventure Travellers and Backpackers.</span></h1>
+		</div>
+		<span class="background"></span>
+
+
+
+		<div id="owl-cover-usp" class="owl-carousel owl-theme">
+			<div class="item">
+				<img class="owl-usp-icon" src="img/home/icons/usp-1.svg" alt="icon">
+				<h6>Rated 5 Star on TrustPilot</h6>
+			</div>
+			<div class="item">
+				<img class="owl-usp-icon" src="img/home/icons/usp-2.svg" alt="icon">
+				<h6>Designed by True Travellers</h6>
+			</div>
+			<div class="item">
+				<img class="owl-usp-icon" src="img/home/icons/usp-3.svg" alt="icon">
+				<h6>Available if you’re already abroad</h6>
+			</div>
+			<div class="item">
+				<img class="owl-usp-icon" src="img/home/icons/usp-4.svg" alt="icon">
+				<h6>Single and multi-trip cover</h6>
+			</div>
+		</div>
+
+
+	</section>
+
+	<!-- Feature : End -->
+
+	<!-- Intro : Start -->
+	<!-- <section class="grey">
+   <div class="row small-collapse medium-collapse large-uncollapse row--usp" data-equalizer data-equalize-on="small">
+	   <div class="small-6 medium-3 columns text-center" data-equalizer-watch>
+		   <i class="icon-icons_star orange"></i>
+			<p>No.1 for travel insurance<br> on TrustPilot</p>
+	   </div>
+	   <div class="small-6 medium-3 columns text-center" data-equalizer-watch>
+		    <i class="icon-icons_globe orange"></i>
+			<p>Designed by<br> True Travellers</p>
+	   </div>
+	   <div class="small-6 medium-3 columns text-center" data-equalizer-watch>
+		    <i class="icon-icons_abroad orange"></i>
+	   		<p>Available if you’re<br> already abroad</p>
+	   </div>
+	   <div class="small-6 medium-3 columns text-center" data-equalizer-watch>
+		    <i class="icon-icons_multi orange"></i>
+	   		<p>Single and<br> multi-trip cover</p>
+	   </div>
+   </div>
+</section> -->
+
+
+	<!-- Intro : Start -->
+	<section class="pad white-bg small-npdb medium-npdb">
+		<div class="row">
+			<div class="medium-8 medium-offset-2 columns text-center">
+				<h2>A policy that’s designed for you</h2>
+				<p class="lead lead--home">When travelling overseas, the one thing you should never skimp on is your travel insurance cover, as should things go wrong you want the very best cover for you and your possessions. </p>
+
+				<!-- TrustBox widget - Micro Combo -->
+				<div class="trustpilot-widget" data-locale="en-GB" data-template-id="5419b6ffb0d04a076446a9af" data-businessunit-id="4d813ff900006400050f2633" data-style-height="20px" data-style-width="100%" data-theme="light"> <a href="https://uk.trustpilot.com/review/www.truetraveller.com"
+					  target="_blank">Trustpilot</a> </div>
+				<!-- End TrustBox widget -->
+
+			</div>
+		</div>
+	</section>
+	<!-- Intro : End -->
+
+
+	<!-- Products : Start -->
+
+	<section class="pad white-bg">
+
+
+		<!-- Mobile : start -->
+		<div class="row gutter-small hide-for-large">
+
+			<div id="owl-cover-options" class="owl-carousel owl-theme">
+				<div class="item">
+
+					<div class="product-card">
+						<img src="img/home/true-value.jpg" alt="image">
+						<div class="product-card-inner">
+							<h3>True Value</h3>
+							<p>Designed for travellers under 40 years of age, and is designed for last minute travellers and backpackers</p>
+							<a class="button primary scrolly" href="#top">Get a quote</a>
+							<p><a class="button button-clear" href="#">Find out more</a></p>
+						</div>
+					</div>
+
+				</div>
+				<div class="item">
+
+					<div class="product-card">
+						<img src="img/home/true-traveller.jpg" alt="image">
+						<div class="product-card-inner">
+							<h3>The Traveller</h3>
+							<p>Our most popular, is designed for holiday makers and adventurous travellers alike</p>
+							<a class="button primary scrolly" href="#top">Get a quote</a>
+							<p><a class="button button-clear" href="#">Find out more</a></p>
+						</div>
+					</div>
+
+				</div>
+				<div class="item">
+
+					<div class="product-card">
+						<img src="img/home/traveller-plus.jpg" alt="image">
+						<div class="product-card-inner">
+							<h3>Traveller Plus</h3>
+							<p>Designed for travellers who are looking for enhanced medical and cancellation cover in their policy</p>
+							<a class="button primary scrolly" href="#top">Get a quote</a>
+							<p><a class="button button-clear" href="#">Find out more</a></p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+		</div>
+		<!-- Mobile : end -->
+
+
+
+		<!-- Destop : start -->
+		<div class="row gutter-small show-for-large" data-equalizer data-equalize-on="medium">
+			<div class="medium-4 columns text-center">
+				<div class="product-card hover-push" data-equalizer-watch>
+					<img src="img/home/true-value.jpg" alt="image">
+					<div class="product-card-inner">
+						<h3>True Value</h3>
+						<p>Designed for travellers under 40 years of age, and is designed for last minute travellers and backpackers</p>
+						<a class="button primary scrolly" href="#top">Get a quote</a>
+						<p><a class="button button-clear" href="#">Find out more</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="medium-4 columns text-center">
+				<div class="product-card hover-push" data-equalizer-watch>
+					<img src="img/home/true-traveller.jpg" alt="image">
+					<div class="product-card-inner">
+						<h3>The Traveller</h3>
+						<p>Our most popular, is designed for holiday makers and adventurous travellers alike</p>
+						<a class="button primary scrolly" href="#top">Get a quote</a>
+						<p><a class="button button-clear" href="#">Find out more</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="medium-4 columns text-center">
+				<div class="product-card hover-push" data-equalizer-watch>
+					<img src="img/home/traveller-plus.jpg" alt="image">
+					<div class="product-card-inner">
+						<h3>Traveller Plus</h3>
+						<p>Designed for travellers who are looking for enhanced medical and cancellation cover in their policy</p>
+						<a class="button primary scrolly" href="#top">Get a quote</a>
+						<p><a class="button button-clear" href="#">Find out more</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row gutter-small show-for-large">
+			<div class="medium-12 columns">
+				<div class="product-card product-card-large">
+					<div class="row">
+						<div class="medium-6 columns">
+							<img src="img/home/annual-multi-trip.jpg" alt="image">
+						</div>
+						<div class="medium-6 columns">
+							<div class="product-card-large-inner">
+								<h3>Annual Multi Trip Policies</h3>
+								<p>We offer the True Value and Traveller policy valid for unlimited trips throughout the year for durations up to 30 days, and the Traveller Plus policy which offers enhanced cover for unlimited trips lasting up to 70 days.</p>
+								<a class="button primary scrolly" href="#top">Get a quote</a><a class="button button-clear" href="#">Find out more</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Destop : end -->
+
+
+	</section>
+
+	<!-- Products : End -->
+
+
+	<!-- Large image panel : Start -->
+
+	<section class="full-image-panel full-image-panel--activity">
+		<div class="row">
+			<div class="medium-8 medium-offset-2 columns text-center">
+				<h2>One policy to cover all your activities. Phew.</h2>
+				<p>Text to include the levels of cover TT can offer (92 activities as standard) and cheaper policies do not always offer this level of cover…. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer facilisis turpis metus, eget finibus
+					purus
+					varius interdum. Donec gravida condimentum gravida.</p>
+				<a class="button primary scrolly" href="#top">Get a quote</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Large image panel : End -->
+
+
+	<!-- Insurance types : Start -->
+	<section class="pad white-bg small-npdb medium-npdb">
+		<div class="row">
+			<div class="medium-8 medium-offset-2 columns text-center">
+				<h2 class="mb">Types of insurance we can offer you</h2>
+			</div>
+		</div>
+
+
+		<!-- Mobile : start -->
+		<div class="row gutter-small hide-for-large">
+			<div id="owl-type-insurance" class="owl-carousel owl-theme">
+
+				<div class="item">
+					<div class="image-card image-card--trekking">
+						<div class="image-card-inner">
+							<a href="#">
+								<h5>Trekking</h5>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="image-card image-card--one-way">
+						<div class="image-card-inner">
+							<a href="#">
+								<h5>One-way</h5>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="image-card image-card--back-packer">
+						<div class="image-card-inner">
+							<a href="#">
+								<h5>Backpacker</h5>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="image-card image-card--gap-year">
+						<div class="image-card-inner">
+							<a href="#">
+								<h5>Gap Year Travel</h5>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="image-card image-card--ice-canada">
+						<div class="image-card-inner">
+							<a href="#">
+								<h5>ICE for Canada</h5>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="image-card image-card--winter-sports">
+						<div class="image-card-inner">
+							<a href="#">
+								<h5>Winter Sports</h5>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="image-card image-card--already-travelling">
+						<div class="image-card-inner">
+							<a href="#">
+								<h5>Already Travelling</h5>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="image-card image-card--multi-trip">
+						<div class="image-card-inner">
+							<a href="#">
+								<h5>Multi-trip</h5>
+							</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Mobile : end -->
+
+
+
+		<!-- Desktop : start -->
+
+		<div class="row show-for-large">
+
+			<div class="medium-3 columns text-center">
+				<div class="image-card image-card--trekking hover-push">
+					<div class="image-card-inner">
+						<h5>Trekking</h5>
+						<a class="button primary" href="#">Learn more</a>
+					</div>
+				</div>
+			</div>
+			<div class="medium-3 columns text-center">
+				<div class="image-card image-card--one-way hover-push">
+					<div class="image-card-inner">
+						<h5>One-way</h5>
+						<a class="button primary" href="#">Learn more</a>
+					</div>
+				</div>
+			</div>
+			<div class="medium-3 columns text-center">
+				<div class="image-card image-card--back-packer hover-push">
+					<div class="image-card-inner">
+						<h5>Backpacker</h5>
+						<a class="button primary" href="#">Learn more</a>
+					</div>
+				</div>
+			</div>
+			<div class="medium-3 columns text-center hover-push">
+				<div class="image-card image-card--gap-year">
+					<div class="image-card-inner">
+						<h5>Gap Year Travel</h5>
+						<a class="button primary" href="#">Learn more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row show-for-large">
+			<div class="medium-3 columns text-center hover-push">
+				<div class="image-card image-card--ice-canada">
+					<div class="image-card-inner">
+						<h5>ICE for Canada</h5>
+						<a class="button primary" href="#">Learn more</a>
+					</div>
+				</div>
+			</div>
+			<div class="medium-3 columns text-center hover-push">
+				<div class="image-card image-card--winter-sports">
+					<div class="image-card-inner">
+						<h5>Winter Sports</h5>
+						<a class="button primary" href="#">Learn more</a>
+					</div>
+				</div>
+			</div>
+			<div class="medium-3 columns text-center hover-push">
+				<div class="image-card image-card--already-travelling">
+					<div class="image-card-inner">
+						<h5>Already Travelling</h5>
+						<a class="button primary" href="#">Learn more</a>
+					</div>
+				</div>
+			</div>
+			<div class="medium-3 columns text-center hover-push">
+				<div class="image-card image-card--multi-trip">
+					<div class="image-card-inner">
+						<h5>Multi-trip</h5>
+						<a class="button primary" href="#">Learn more</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- Desktop : end -->
+
+	</section>
+	<!-- Insurance types : End -->
+
+
+
+	<!-- Large image panel : Start -->
+
+	<section class="full-image-panel full-image-panel--why">
+		<div class="row">
+			<div class="medium-8 columns">
+				<h2>Why buy from True Traveller</h2>
+				<p>The True Traveller was originally a travel company, not an insurance company, and although we believe we’ve designed the best value insurance we possibly can, we understand that the price of insurance does put people off taking it out to
+					start with.
+					Our maxim is, if you can’t afford travel insurance, you can’t afford to travel.</p>
+				<a class="button primary" href="#">Learn more</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Large image panel : End -->
+
+
+	<!-- Why choose : Start -->
+	<section class="pad white-bg small-npdb medium-npdb large-npdb">
+		<div class="row">
+			<div class="medium-8 medium-offset-2 columns text-center">
+				<h2 class="mb">Why choose True Traveller?</h2>
+			</div>
+		</div>
+
+
+		<!-- Mobile : start -->
+		<div class="row gutter-small hide-for-large">
+			<div id="owl-why-choose" class="owl-carousel owl-theme">
+
+				<div class="item">
+					<div class="icon-card" data-equalizer-watch>
+						<img class="owl-why-choose-icon" src="img/home/icons/AGA-logo.jpg" alt="image">
+						<h5>Insured by Allianz Global Assistance</h5>
+					</div>
+				</div>
+				<div class="item">
+					<div class="icon-card" data-equalizer-watch>
+						<img class="owl-why-choose-icon" src="img/home/icons/icon-2.svg" alt="image">
+						<h5>Available if you're already travelling!</h5>
+					</div>
+				</div>
+				<div class="item">
+					<div class="icon-card" data-equalizer-watch>
+						<img class="owl-why-choose-icon" src="img/home/icons/icon-3.svg" alt="image">
+						<h5>92 activities included as standard</h5>
+					</div>
+				</div>
+				<div class="item">
+					<div class="icon-card" data-equalizer-watch>
+						<img class="owl-why-choose-icon" src="img/home/icons/icon-4.svg" alt="image">
+						<h5>24/7 emergency medical assistance service</h5>
+					</div>
+				</div>
+				<div class="item">
+					<div class="icon-card" data-equalizer-watch>
+						<img class="owl-why-choose-icon" src="img/home/icons/icon-5.svg" alt="image">
+						<h5>Optional baggage cover</h5>
+					</div>
+				</div>
+				<div class="item">
+					<div class="icon-card" data-equalizer-watch>
+						<img class="owl-why-choose-icon" src="img/home/icons/icon-6.svg" alt="image">
+						<h5>One-way travel insurance</h5>
+					</div>
+				</div>
+				<div class="item">
+					<div class="icon-card" data-equalizer-watch>
+						<img class="owl-why-choose-icon" src="img/home/icons/icon-7.svg" alt="image">
+						<h5>Road and gadget cover</h5>
+					</div>
+				</div>
+				<div class="item">
+					<div class="icon-card" data-equalizer-watch>
+						<img class="owl-why-choose-icon" src="img/home/icons/icon-8.svg" alt="image">
+						<h5>Activity and high risk cover</h5>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Mobile : end -->
+
+
+		<!-- Desktop : start -->
+		<div class="row show-for-large" data-equalizer data-equalize-on="medium">
+			<div class="medium-3 columns text-center">
+				<div class="icon-card" data-equalizer-watch>
+					<img src="img/home/icons/AGA-logo.jpg" alt="image">
+					<h5>Insured by Allianz Global Assistance</h5>
+				</div>
+			</div>
+			<div class="medium-3 columns end text-center">
+				<div class="icon-card" data-equalizer-watch>
+					<img src="img/home/icons/icon-2.svg" alt="image">
+					<h5>Available if you're already travelling!</h5>
+				</div>
+			</div>
+			<div class="medium-3 columns end text-center">
+				<div class="icon-card" data-equalizer-watch>
+					<img src="img/home/icons/icon-3.svg" alt="image">
+					<h5>92 activities included as standard</h5>
+				</div>
+			</div>
+			<div class="medium-3 columns end text-center">
+				<div class="icon-card" data-equalizer-watch>
+					<img src="img/home/icons/icon-4.svg" alt="image">
+					<h5>24/7 emergency medical assistance service</h5>
+				</div>
+			</div>
+			<div class="medium-3 columns text-center">
+				<div class="icon-card" data-equalizer-watch>
+					<img src="img/home/icons/icon-5.svg" alt="image">
+					<h5>Optional baggage cover</h5>
+				</div>
+			</div>
+			<div class="medium-3 columns end text-center">
+				<div class="icon-card" data-equalizer-watch>
+					<img src="img/home/icons/icon-6.svg" alt="image">
+					<h5>One-way travel insurance</h5>
+				</div>
+			</div>
+			<div class="medium-3 columns end text-center">
+				<div class="icon-card" data-equalizer-watch>
+					<img src="img/home/icons/icon-7.svg" alt="image">
+					<h5>Road and gadget cover</h5>
+				</div>
+			</div>
+			<div class="medium-3 columns end text-center">
+				<div class="icon-card" data-equalizer-watch>
+					<img src="img/home/icons/icon-8.svg" alt="image">
+					<h5>Activity and high risk cover</h5>
+				</div>
+			</div>
+		</div>
+		<!-- Desktop : end -->
+
+	</section>
+	<!-- Why choose : End -->
+
+
+
+	<!-- Trust pilot : Start -->
+
+	<section class="pad white-bg">
+
+		<div class="row">
+			<div class="small-8 small-offset-2 columns text-center">
+				<h2>Trusting your insurer</h2>
+				<p>For us, giving great service is first, last and everything. We're chuffed to be rated 5/5 with over 1,000 reviews on Trustpilot.</p>
+			</div>
+		</div>
+		<div class="row pt">
+			<div class="medium-12 columns text-center">
+
+				<!-- TrustBox widget - Carousel -->
+				<div class="trustpilot-widget" data-locale="en-GB" data-template-id="53aa8912dec7e10d38f59f36" data-businessunit-id="4d813ff900006400050f2633" data-style-height="130px" data-style-width="100%" data-theme="light" data-stars="5"> <a href="https://uk.trustpilot.com/review/www.truetraveller.com"
+					  target="_blank">Trustpilot</a> </div>
+				<!-- End TrustBox widget -->
+
+			</div>
+		</div>
+
+	</section>
+
+	<!-- Trust pilot : End -->
+
+	<!-- CTA : Start -->
+
+	<section class="cta">
+
+		<div class="row collapse">
+			<div class="medium-6 columns">
+				<a class=" cta left-cta scrolly" href="#top">Get a quote today</a>
+			</div>
+			<div class="medium-6 columns">
+				<a class="cta right-cta" href="">My TT policy</a>
+			</div>
+		</div>
+
+	</section>
+
+	<!-- CTA : End -->
+
+	<!-- Footer : Start -->
+
+	<footer>
+		<div class="row">
+			<div class="medium-5 columns">
+				<h4>Travel insurance</h4>
+				<div class="row">
+					<div class="medium-6 columns">
+						<ul class="menu vertical footer">
+							<li><a href="/trekking-insurance.aspx">Trekking</a></li>
+							<li><a href="/one-way-travel-insurance.aspx">One-way</a></li>
+							<li><a href="/backpackers-insurance.aspx">Backpacker</a></li>
+							<li><a href="/gap-year-travel-insurance.aspx" style="white-space: nowrap;">GAP Year Travel</a></li>
+							<li><a href="/iec-travel-insurance.aspx" style="white-space: nowrap;">IEC for Canada</a></li>
+						</ul>
+					</div>
+					<div class="medium-6 columns">
+						<ul class="menu vertical footer">
+							<li><a href="/ski-insurance.aspx" style="white-space: nowrap;">Winter Sports</a></li>
+							<li><a href="/travel-insurance-after-leaving.aspx" style="white-space: nowrap;">Already Travelling</a></li>
+							<li><a href="/annual-travel-insurance.aspx">Multi-trip</a></li>
+							<li><a href="/scuba-diving-insurance.aspx">Scuba Diving</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="medium-2 columns">
+				<h4>Support</h4>
+				<ul class="menu vertical footer">
+					<li><a href="/mytraveller/mytraveller.aspx" style="white-space: nowrap;">My TT Policy</a></li>
+					<li><a href="/faq.aspx" style="white-space: nowrap;">Need Help?</a></li>
+					<li><a href="/backpacker-tips.aspx" style="white-space: nowrap;">Traveller advice</a></li>
+					<li><a href="/activities.aspx" style="white-space: nowrap;">Activity packs</a></li>
+					<li><a href="/claims.aspx" style="white-space: nowrap;">Make a claim</a></li>
+				</ul>
+			</div>
+			<div class="medium-2 columns">
+				<h4 style="white-space: nowrap;">Other info</h4>
+				<ul class="menu vertical footer">
+					<li><a href="/aboutus.aspx" style="white-space: nowrap;">About Us</a></li>
+					<li><a data-open="PolicyDocsPopUp" style="white-space: nowrap;">Policy download</a></li>
+					<li><a href="/privacy.aspx" style="white-space: nowrap;">Privacy Policy</a></li>
+					<li><a href="/copyright.aspx" style="white-space: nowrap;">Copyright Notice</a></li>
+				</ul>
+			</div>
+			<div class="medium-4 columns text-right social">
+				<a href="https://www.facebook.com/truetraveller/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://www.twitter.com/true_traveller" target="_blank"><i class="fab fa-twitter"></i></a>
+				<a href="https://www.instagram.com/truetravellerinsurance" target="_blank"><i class="fab fa-instagram"></i></a>
+			</div>
+		</div>
+		<div class="row bottom">
+			<div class="medium-6 columns copyright">
+				<p>© The True Traveller Limited 2010-2019. All rights reserved</p>
+				<p>Authorised and Regulated by the Financial Conduct Authority (<a href="https://register.fca.org.uk/ShPo_FirmDetailsPage?id=001b000003U0NfyAAF" target="_blank" class="FCAlink" style="cursor:pointer;">FRN 756107</a>).</p>
+			</div>
+			<div class="medium-6 columns text-right">
+				<div class="row">
+					<div class="small-6 columns">
+						<a href="https://www.gov.uk/travelaware" style="text-decoration: none;" target="_blank">
+							<img src="img/FCO_Banner_Bottom.png" alt="FCOBanner" /></a>
+					</div>
+					<div class="small-6 columns">
+						<a href="/Testimonials.aspx" style="text-decoration: none;">
+							<img src="img/trustpilot_footer_logo.png" alt="TrustPilotFooter" /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- Footer : End -->
+
+	<!-- JS : Start -->
+
+	<script src="js/min/app-min.js"></script>
+
+	<!-- New UX JS -->
+	<script src="js/min/ux-min.js"></script>
+
+	<!-- JS : End -->
+
+</body>
+
+</html>

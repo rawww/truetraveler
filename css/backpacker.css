@@ -1,0 +1,110 @@
+body {
+  overflow-x: hidden; }
+
+.nb {
+  border: none; }
+
+.product-card {
+  background: #fff; }
+  .product-card h4 {
+    color: #ff5722; }
+
+@media screen and (min-width: 64em) {
+  .backpacker-intro {
+    padding: 10px 200px; } }
+
+.backpacker-container {
+  background: #37474f; }
+
+.backpacker-static-cover {
+  background: url("../img/backpacker/static-cover.jpg") center bottom no-repeat;
+  background-size: cover;
+  padding: 20% 5%; }
+  .backpacker-static-cover h1 {
+    color: #fff;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 2.6rem; }
+  .backpacker-static-cover .small {
+    font-size: 1rem;
+    color: #fff; }
+  .backpacker-static-cover .backpacker-intro {
+    color: #fff; }
+
+@media screen and (min-width: 64em) {
+  section.skyline {
+    background: url("../img/backpacker/background.png") center bottom no-repeat;
+    background-size: cover;
+    padding: 10% 5%; }
+    section.skyline h1 {
+      color: #fff;
+      font-weight: 900;
+      font-size: 8rem;
+      text-transform: uppercase; } }
+    @media screen and (min-width: 64em) and (min-width: 84em) {
+      section.skyline h1 {
+        font-size: 10rem; } }
+
+@media screen and (min-width: 64em) {
+    section.skyline .small {
+      font-size: 2rem;
+      color: #fff; } }
+
+@media screen and (min-width: 64em) {
+  section.midground-mountain {
+    padding: 17%;
+    background: url("../img/backpacker/midground.png") center top no-repeat;
+    background-size: cover;
+    margin-top: -13%;
+    z-index: 99;
+    position: relative; } }
+
+@media screen and (min-width: 64em) {
+  section.foreground-mountain {
+    background: url("../img/backpacker/foreground.png") center top no-repeat;
+    color: #fff;
+    background: cover;
+    padding: 15%;
+    position: relative; } }
+
+section.content-container {
+  background: #37474f;
+  background: #37474f url("../img/backpacker/content.png") center top no-repeat;
+  padding-bottom: 60px; }
+  @media screen and (min-width: 64em) {
+    section.content-container {
+      margin-top: -179px;
+      z-index: 9999999;
+      position: relative; } }
+
+@media screen and (min-width: 64em) {
+  .content-parallax {
+    margin-top: -13%;
+    z-index: 999;
+    position: relative;
+    margin-bottom: 40px; } }
+
+.cloud1 {
+  background: url("../img/backpacker/cloud.png") center top no-repeat;
+  position: absolute;
+  background-size: cover;
+  width: 400px;
+  height: 300px;
+  top: 300px;
+  left: 0px; }
+
+.cloud2 {
+  background: url("../img/backpacker/cloud-right.png") center top no-repeat;
+  position: absolute;
+  background-size: cover;
+  width: 400px;
+  height: 300px;
+  top: 300px;
+  right: 0px;
+  z-index: 999; }
+
+@media screen and (min-width: 64em) {
+  .backpacker-single-content p {
+    padding: 10px 100px; }
+  .backpacker-single-content img {
+    padding: 60px 0px; } }

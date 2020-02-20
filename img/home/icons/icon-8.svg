@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="79px" height="71px" viewBox="0 0 79 71" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-8</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0.1 78.683 0.1 78.683 71 0 71"></polygon>
+    </defs>
+    <g id="Home-&amp;-Quote" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="TT-Home-01" transform="translate(-1129.000000, -5254.000000)">
+            <g id="icon-8" transform="translate(1129.000000, 5253.000000)">
+                <g id="Group-3" transform="translate(0.000000, 0.900300)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M39.3412,7.3613 C39.0122,7.3613 38.7052,7.5393 38.5422,7.8253 L7.3782,62.3623 C7.2172,62.6453 7.2182,62.9983 7.3822,63.2803 C7.5462,63.5623 7.8512,63.7383 8.1772,63.7383 L70.5052,63.7383 C70.8322,63.7383 71.1362,63.5623 71.3002,63.2803 C71.4642,62.9983 71.4662,62.6453 71.3052,62.3623 L40.1412,7.8243 C39.9782,7.5393 39.6712,7.3613 39.3412,7.3613 M70.5052,71.0003 L8.1772,71.0003 C5.2722,71.0003 2.5612,69.4383 1.1022,66.9243 C-0.3578,64.4103 -0.3678,61.2813 1.0732,58.7593 L32.2372,4.2213 C33.6912,1.6793 36.4132,0.0993 39.3412,0.0993 C42.2702,0.0993 44.9922,1.6793 46.4452,4.2203 L77.6112,58.7603 C79.0512,61.2843 79.0402,64.4133 77.5812,66.9243 C76.1242,69.4383 73.4122,71.0003 70.5052,71.0003" id="Fill-1" fill="#FF5722" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,177 @@
+$darkgrey: #37474f;
+$orange: #ff5722;
+$grey: #a8b9c2;
+$lightgrey: #f5f5f5;
+$darkorange: #962608;
+$green: #00CEA5;
+
+
+// @media screen and (max-width: 39.9375em) {}
+//
+// / Medium and up /
+// @media screen and (min-width: 40em) {}
+//
+// / Medium only /
+// @media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+//
+// / Large and up /
+// @media screen and (min-width: 64em) {}
+//
+// / Large only /
+// @media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+
+body {overflow-x: hidden;}
+
+.nb {
+	border: none;
+}
+
+.product-card {
+	background: #fff;
+	h4 {
+		color: $orange;
+	}
+}
+
+
+.backpacker-intro {
+
+	@media screen and (min-width: 64em) {
+		padding: 10px 200px;
+	}
+}
+
+.backpacker-container {
+	background: #37474f;
+}
+
+.backpacker-static-cover {
+	background: url("../img/backpacker/static-cover.jpg") center bottom no-repeat;
+	background-size: cover;
+	padding: 20% 5%;
+
+	h1 {
+		color: #fff;
+		font-weight: 900;
+		text-transform: uppercase;
+		font-size: 2.6rem;
+	}
+
+	.small {
+		font-size: 1rem;
+		color: #fff;
+	}
+
+	.backpacker-intro {
+		color: #fff;
+	}
+
+
+}
+
+section.skyline {
+
+	@media screen and (min-width: 64em) {
+		background: url("../img/backpacker/background.png") center bottom no-repeat;
+		background-size: cover;
+		padding: 10% 5%;
+
+		h1 {
+			color: #fff;
+			font-weight: 900;
+			font-size: 8rem;
+			text-transform: uppercase;
+			@media screen and (min-width: 84em) {
+				font-size: 10rem;
+			}
+		}
+		.small {
+			font-size: 2rem;
+			color: #fff;
+		}
+}
+
+}
+
+
+section.midground-mountain {
+
+	@media screen and (min-width: 64em) {
+	   padding: 17%;
+	   background: url("../img/backpacker/midground.png") center top no-repeat;
+		 background-size: cover;
+	    margin-top: -13%;
+			z-index: 99;
+			position: relative;
+
+		}
+}
+
+section.foreground-mountain {
+
+	@media screen and (min-width: 64em) {
+
+   background: url("../img/backpacker/foreground.png") center top no-repeat;
+    color: #fff;
+		background: cover;
+    padding: 15%;
+    position: relative;
+
+	}
+}
+
+section.content-container {
+	background: #37474f;
+  background: #37474f url("../img/backpacker/content.png") center top no-repeat;
+	padding-bottom: 60px;
+
+	@media screen and (min-width: 64em) {
+	margin-top: -179px;
+	z-index: 9999999;
+	position: relative;
+	}
+}
+
+	@media screen and (min-width: 64em) {
+	.content-parallax {
+		margin-top: -13%;
+		z-index: 999;
+		position: relative;
+		margin-bottom: 40px;
+	}
+}
+
+.cloud1 {
+	  background: url("../img/backpacker/cloud.png") center top no-repeat;
+    position: absolute;
+		background-size: cover;
+    width: 400px;
+    height: 300px;
+    top: 300px;
+    left: 0px;
+}
+
+.cloud2 {
+	  background: url("../img/backpacker/cloud-right.png") center top no-repeat;
+    position: absolute;
+		background-size: cover;
+    width: 400px;
+    height: 300px;
+    top: 300px;
+    right: 0px;
+		z-index: 999;
+}
+
+.backpacker-single-content {
+
+	@media screen and (min-width: 64em) {
+		p {
+			padding: 10px 100px;
+		}
+
+		img {
+			padding: 60px 0px;
+		}
+	}
+
+}
