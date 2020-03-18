@@ -584,6 +584,10 @@ a.dates-popover-close {
   div#ui-datepicker-div {
     width: 100% !important; } }
 
+@media (min-width: 1126px) {
+  div#ui-datepicker-div {
+    top: 253.526px !important; } }
+
 #ui-datepicker-div {
   border-top: 1px solid #EAEAEA !important;
   border-bottom: 1px solid #fff !important;

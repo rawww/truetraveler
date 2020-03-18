@@ -24,6 +24,10 @@ $error: #F44336;
 // /* Large only */
 // @media screen and (min-width: 64em) and (max-width: 74.9375em) {}
 
+//4k fix
+
+
+
 
 @mixin fade-all() {
 	transition: all 0.7s;
@@ -832,6 +836,13 @@ a.dates-popover-close {
 	    width: 100%!important;
 	}
 }
+//datepicker dropdown 4k screen fix
+@media (min-width: 1126px) {
+	div#ui-datepicker-div {
+	    top:253.526px !important
+	}
+}
+
 
 
 #ui-datepicker-div {
