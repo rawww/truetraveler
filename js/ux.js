@@ -143,12 +143,6 @@ $(".input-group-field").click(function(){
   $(this).css( "border-bottom-style", "solid" );
 });
 
-// $(".resident-popover-close, .country-name, .dates-trigger, ").click(function(){
-//   $(".input-group-field").css( "border-bottom-color", "#cacaca" );
-//   $(".input-group-field").css( "border-bottom-width", "1px" );
-//   $(".input-group-field").css( "border-bottom-style", "solid" );
-// });
-
 
 
 $(document).mouseup(function(e)
@@ -194,12 +188,17 @@ $(".resident-popover-close").click(function(){
 });
 
 
+
+
+
+
 // choose your dates of cover
 
 $(".dates-trigger").click(function(){
 
-  window.scrollTo(0, 0);
-  document.body.scrollTop = 0;
+
+  // var y = $(window).scrollTop(); //your current y position on the page
+  // $("html, body").animate({ scrollTop: y + 45 }, 600); // scroll a down a little smoothly to propmt date input
 
   $(".dates-popover-menu").toggleClass("showMenu");
 
@@ -232,54 +231,84 @@ $(".toFieldTrigger").click(function(){
 
 // marcus' datepicker code
 
-$( function() {
+$(function() {
+  var maxDaysDuration = 731;  // Maximum number of days allowed to be selected (731)
+  var maxDaysAheadStart = 731;  // Maximum number of days ahead of today that the start date can be
+  var modalBreakPoint = 1023;  // Width of window (in pixels) below which the mobile version is displayed
 
-  maxDaysDuration = 731;  // Maximium number of days allowed to be selected (731)
+  var chosenStartDate = "";
+  var chosenEndDate = "";
+  var maxDurationDate = "";  // Last selectable date after chosen start date
+  var hover_style = "";
+  var narrowDisplay = false;
+  var calMonthsToDisplay = 2;
+  $(document).foundation();
+
+  if ($(document).width() < modalBreakPoint) {
+    narrowDisplay = true;
+    calMonthsToDisplay = 1;
+  }
 
   var dateFormat = "mm/dd/yy",
 
 
     from = $("#from")
       .datepicker({
-        defaultDate: "+1d",
-        numberOfMonths: 2,
+        //defaultDate: "+1d",
+        // changeMonth: true,
+        // changeYear: true,
+        numberOfMonths: calMonthsToDisplay,
         altField: "#uk-date-in",
         altFormat: "dd/mm/yy",
         minDate:  "0d",
-        beforeShowDay: runthroughDays
+        maxDate:  maxDaysAheadStart+"d",
+        beforeShowDay: runthroughDays,
       })
-      .on( "change", function() {
+      .on("change", function() {
+
         $(".date-out").css( "border-bottom-color", "#ff5722" );
         $(".date-out").css( "border-bottom-width", "2px" );
         $(".date-in").css( "border-color", "#cacaca" );
         $(".date-in").css( "border-bottom-width", "1px" );
 
-        to.datepicker( "option", "minDate", getDate( this ) );
-        chosenMinDate = getDate( this );
-        allowedMaxDate = getDate( this );
-        allowedMaxDate.setDate(allowedMaxDate.getDate() + maxDaysDuration -1);
+        to.datepicker("option", "minDate", getDate(this));
+        chosenStartDate = getDate(this);
+        maxDurationDate = getDate(this);
+        maxDurationDate.setDate(maxDurationDate.getDate() + maxDaysDuration -1);
+        hover_style = 'day_rw_to_hover';
+        // $('#pop_Modal label#pop_from_label div').css('color','#999');
+        // $('#pop_Modal label#pop_to_label div').css('color','#0a0a0a');
 
 
-        if ((document.getElementById('to').value) && ( Date.parse(getDate(document.getElementById('to'))) - Date.parse(getDate(this)) ) > (maxDaysDuration -1) * 86400000 ) {
-          from.datepicker( "option", "maxDate", null );
+// check revised start date
+        if ((document.getElementById('to').value) && ((Date.parse(getDate(document.getElementById('to'))) - Date.parse(getDate(this)) ) > (maxDaysDuration -1) * 86400000) || (Date.parse(getDate(document.getElementById('to'))) <= Date.parse(getDate(this))) ) {
+          chosenEndDate = "";
           $('#OutMonth').text(OutMonthText);
           $('#OutDate').text('');
           $('#OutYear').text('');
+          $('#pop_OutDateMonth').text('-');
+          $('#pop_OutYear').text('');
           $("#to").datepicker("setDate", null);
         }
 
-        to.datepicker( "option", "maxDate", allowedMaxDate );
-        $('#InMonth').text($.datepicker.formatDate("MM",getDate(this)) ) ;
-        $('#InDate').text($.datepicker.formatDate("d",getDate(this)) ) ;
-        $('#InYear').text($.datepicker.formatDate("DD",getDate(this)) + ", " + $.datepicker.formatDate("yy",getDate(this))) ;
-
+// display the end datepicker
+        to.datepicker("option", "maxDate", maxDurationDate);
+        $('#InMonth').text($.datepicker.formatDate("MM",getDate(this))) ;
+        $('#InDate').text($.datepicker.formatDate("d",getDate(this))) ;
+        $('#InYear').text($.datepicker.formatDate("DD, yy",getDate(this))) ;
+        $('#pop_InMonth').text($.datepicker.formatDate("MM",getDate(this))) ;
+        $('#pop_InDateMonth').text($.datepicker.formatDate("d",getDate(this))) ;
+        $('#pop_InYear').text($.datepicker.formatDate("DD, yy",getDate(this)) ) ;
         timeoutID = window.setTimeout(function() {to.datepicker("show");}, 300);
       }),
 
-    to = $( "#to" )
+
+    to = $("#to")
       .datepicker({
         defaultDate: "+1d",
-        numberOfMonths: 2,
+        // changeMonth: true,
+        // changeYear: true,
+        numberOfMonths: calMonthsToDisplay,
         altField: "#uk-date-out",
         altFormat: "dd/mm/yy",
         beforeShowDay: runthroughDays,
@@ -290,51 +319,55 @@ $( function() {
           $(".date-in").css( "border-bottom-width", "1px" );
         }
       })
-      .on( "change", function() {
-
-        from.datepicker( "option", "maxDate", getDate( this ) );
-        $('#OutMonth').text($.datepicker.formatDate("MM",getDate(this)) ) ;
-        $('#OutDate').text($.datepicker.formatDate("d",getDate(this)) ) ;
-        $('#OutYear').text($.datepicker.formatDate("DD",getDate(this)) + ", " + $.datepicker.formatDate("yy",getDate(this))) ;
+      .on("change", function() {
+        chosenEndDate = getDate(this);
+        $('#OutMonth').text($.datepicker.formatDate("MM",getDate(this))) ;
+        $('#OutDate').text($.datepicker.formatDate("d",getDate(this))) ;
+        $('#OutYear').text($.datepicker.formatDate("DD, yy",getDate(this))) ;
+        $('#pop_OutMonth').text($.datepicker.formatDate("MM",getDate(this))) ;
+        $('#pop_OutDateMonth').text($.datepicker.formatDate("d",getDate(this))) ;
+        $('#pop_OutYear').text($.datepicker.formatDate("DD, yy",getDate(this))) ;
+        if (narrowDisplay) {
+          timeoutID = window.setTimeout(function() {to.datepicker("show");}, 300);
+        }
       });
 
 
       function runthroughDays(date) {
 
-        var fromDatems = Date.parse(to.datepicker( "option", "minDate"));
-        var toDatems = Date.parse(from.datepicker( "option", "maxDate"));
-        var datems = Date.parse(date);
+        var runningDatems = Date.parse(date);
+        var chosenStartDatems = Date.parse(chosenStartDate);
+        var chosenEndDatems = Date.parse(chosenEndDate);
 
-        if (to.datepicker( "option", "minDate") && from.datepicker("option", "maxDate")) {
-
-          if (datems >= fromDatems && datems <= toDatems) {
-            if (datems == fromDatems) {
-              return [false, 'day_from', ''];
-            } else if (datems == toDatems) {
-              return [true, 'day_to', ''];
+        if ((chosenStartDate != "") && (chosenEndDate != "")) {
+          if ((runningDatems >= chosenStartDatems) && (runningDatems <= chosenEndDatems)) {
+            if (runningDatems == chosenStartDatems) {
+              return [false, 'day_rw_from', ''];
+            } else if (runningDatems == chosenEndDatems) {
+              return [true, 'day_rw_to', ''];
             } else {
-              return [true, 'day_hi', ''];
+              return [true, 'day_rw_hi', ''];
             }
           } else {
-            return [true, 'day_selectable', ''];
+            return [true, 'day_rw_selectable', ''];
           }
-        } else if (to.datepicker( "option", "minDate") && to.datepicker("option", "maxDate") ) {
-          if (datems == fromDatems) {
-            return [false, 'day_from', ''];
+        } else if ((chosenStartDate != "")) {  // if only start date has been chosen
+          if (runningDatems == chosenStartDatems) {
+            return [false, 'day_rw_from', ''];
           } else {
-            return [true, 'day_selectable', ''];
+            return [true, 'day_rw_selectable', ''];
           }
         } else {
-          return [true, 'day_selectable', ''];
+          return [true, 'day_rw_selectable', ''];
         }
       }
 
 
-      function getDate( element ) {
+      function getDate(element) {
         var date;
         try {
-          date = $.datepicker.parseDate( dateFormat, element.value );
-        } catch( error ) {
+          date = $.datepicker.parseDate(dateFormat, element.value);
+        } catch(error) {
           date = null;
         }
         return date;
@@ -346,82 +379,73 @@ $( function() {
 
       var OutMonthText = $('#OutMonth').text();
 
+
+      $('#from').on("click", function() {
+        hover_style = 'day_rw_from_hover';
+        if ($(document).width() < modalBreakPoint) {
+          // $('#pop_Modal label#pop_from_label div').css('color','#0a0a0a');
+          // $('#pop_Modal label#pop_to_label div').css('color','#999');
+          $('#pop_Modal').append($('#ui-datepicker-div'));
+          $('#pop_Modal').foundation('open');
+        } else {
+          $('body').append($('#ui-datepicker-div'));
+        }
+      });
+
+      $('#to').on("click", function() {
+        if (document.getElementById('from').value == "") {
+          $('#ui-datepicker-div').css("display","none");
+          // $('#pop_Modal label#pop_to_label div').css('color','#999');
+        } else {
+          hover_style = 'day_rw_to_hover';
+          if ($(document).width() < modalBreakPoint) {
+            // $('#pop_Modal label#pop_from_label div').css('color','#999');
+            // $('#pop_Modal label#pop_to_label div').css('color','#0a0a0a');
+            $('#pop_Modal').append($('#ui-datepicker-div'));
+            $('#pop_Modal').foundation('open');
+          } else {
+            $('body').append($('#ui-datepicker-div'));
+          }
+        }
+      });
+
+
+      $(document).on("mouseenter", "td a", function() {
+        $(this).addClass(hover_style);
+        if (!narrowDisplay) {
+          if (hover_style == 'day_rw_to_hover') {
+            daysRw = $(this).closest('#ui-datepicker-div').find("td[class*='day_rw_']");
+            for (a=0; a<daysRw.length; a++) {
+              daysRw.eq(a).children('a').eq(0).addClass(hover_style);
+              if (daysRw.eq(a).children('a').eq(0).hasClass('ui-state-hover')) {
+                break;
+              }
+            }
+          }
+        }
+      }).on("mouseleave", "td a", function() {
+        daysRw = $(this).closest('#ui-datepicker-div').find("td[class*='day_rw_']");
+        daysRw.children('a').removeClass(hover_style);
+      });
+
+
+      $(window).resize(function() {
+        $('#pop_Modal').foundation('close');
+        $('#ui-datepicker-div').css("display","none");
+        timeoutID = window.setTimeout(function() {$('#ui-datepicker-div').css("display","none");}, 300);
+        if ($(document).width() < modalBreakPoint) {
+          narrowDisplay = true;
+          from.datepicker("option", "numberOfMonths", 1);
+          to.datepicker("option", "numberOfMonths", 1);
+        } else {
+          narrowDisplay = false;
+          from.datepicker("option", "numberOfMonths", 2);
+          to.datepicker("option", "numberOfMonths", 2);
+        }
+      });
+
     });
 
-
-// Release 1 datepicker code
-// $( document ).ready(function() {
-//   $( "<p>Cover to start on</p>" ).insertBefore( ".ui-datepicker-group-first" );
-// });
-//
-// $( document ).ready(function() {
-//   $( "<p>Cover to end on</p>" ).insertBefore( ".ui-datepicker-group-last" );
-// });
-
-// var startDate="";
-// var endDate="";
-//
-//
-// $(".datepicker").datepicker({
-//     minDate: 0,
-//     numberOfMonths: 2,
-//
-//     onChangeMonthYear: function(year, month, datepicker) {
-//       console.log("month changed");
-//       $("<p>Cover to start on</p>").insertBefore(".ui-datepicker-group-first");
-//     },
-//
-//     beforeShowDay: function(date) {
-//          var date1 = $.datepicker.parseDate($.datepicker._defaults.dateFormat, startDate);
-//          var date2 = $.datepicker.parseDate($.datepicker._defaults.dateFormat, endDate);
-//          var isHightlight =
-//             date1 && ((date.getTime() == date1.getTime()) || (date2 && date >= date1 && date <= date2));
-//         if(isHightlight && date1.getTime()==date.getTime()){
-//                return [true, "start-range"]
-//         }
-//         else if(isHightlight && date2.getTime()==date.getTime()){
-//                return [true, "end-range"]
-//         }
-//         return [true, isHightlight ? "dp-highlight" : ""];
-//     },
-//     onSelect: function(dateText, inst) {
-//
-//           //var startEnd = startDate + endDate;
-//
-//
-//
-//         var date1 = $.datepicker.parseDate($.datepicker._defaults.dateFormat, startDate);
-//         var date2 = $.datepicker.parseDate($.datepicker._defaults.dateFormat, endDate);
-//         var selectedDate = $.datepicker.parseDate($.datepicker._defaults.dateFormat, dateText);
-//
-//         if (!date1 || date2) {
-//             startDate=dateText;
-//             endDate="";
-//             FillTextBoxes();
-//         } else if (selectedDate < date1) {
-//            endDate=startDate;
-//            startDate=dateText;
-//  						FillTextBoxes();
-//         } else {
-//              endDate=dateText;
-//               $("#enddate").val(endDate);
-//               $(".dates-popover-menu").removeClass("showMenu");
-//
-//         }
-//
-//         $(this).datepicker();
-//             $("#date").val("Date(s) set");
-//     }
-// });
-// function FillTextBoxes(){
-//             $("#startdate").val(startDate);
-//             $("#enddate").val(endDate);
-//
-// }
-//
-// $("#startdate").datepicker().datepicker("setDate", new Date());
-//
-// $("#enddate").datepicker().datepicker("setDate", new Date());
 
 
 
@@ -545,12 +569,12 @@ $(".wherecover-popover-close").click(function(){
 
 
 // Calendar
-$( function() {
-  $( "#datepicker" ).datepicker({
-    numberOfMonths: 2,
-    showButtonPanel: true
-  });
-} );
+// $( function() {
+//   $( "#datepicker" ).datepicker({
+//     numberOfMonths: 2,
+//     showButtonPanel: true
+//   });
+// } );
 
 // Activity selection
 

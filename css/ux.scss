@@ -754,6 +754,16 @@ div#owl-cover-usp {
 
 // choose your dates of cover
 
+.reveal-dates {
+	padding-top:60px;
+
+.close-button {
+	font-size:50px !important;
+	top:4px !important;
+}
+
+}
+
 .fromFieldTrigger {
 	opacity:0;
 	position:absolute;
@@ -780,6 +790,14 @@ div#owl-cover-usp {
 
 
 //date states
+
+.bookingMask_Month {
+	font-weight:600;
+}
+
+.bookingMask_Date {
+	font-weight:500;
+}
 
 //disabled
 .ui-state-disabled span {
@@ -811,12 +829,13 @@ a.dates-popover-close {
 
 @media (max-width: 1023px) {
 	div#ui-datepicker-div {
-	    width: 100% !important;
-			top: 465px !important;
+	    width: 100%!important;
 	}
 }
 
+
 #ui-datepicker-div {
+
 	border-top: 1px solid #EAEAEA !important;
 	border-bottom: 1px solid #fff !important;
   border-right: 1px solid #fff !important;
@@ -825,11 +844,25 @@ a.dates-popover-close {
 	padding:2rem 0;
 	border-radius:0 !important;
 
-	td.day_hi a.ui-state-default {background: #C2F9ED !important; }
-	td.day_from.ui-state-disabled {opacity: unset; filter: none;}
-	td.day_from.ui-state-disabled span {opacity:1;}
-	td.day_from span, td.day_from a.ui-state-default   {border-radius: 15px 0 0 15px; background: $green !important; }
-	td.day_to a.ui-state-default {border-radius: 0 15px 15px 0; background: $green !important; }
+
+
+
+	#date_out_div, #date_in_div {position: relative; margin: 10px; border: 1px #999 solid; height: 150px; width: 170px; background: #FFFFFF; z-index: 20}
+	#date_out_div div, #date_in_div div {height: 30px; }
+	#from_label, #to_label {position: absolute;  height: 150px; width: 170px;}
+	td.day_rw_hi a.ui-state-default {background: #C2F9ED !important; }
+
+	td.day_rw_from.ui-state-disabled {opacity: unset; filter: none;}
+	td.day_rw_from .ui-state-default {color:#fff !important; border-radius: 15px 0 0 15px; background: #00CEA5 !important; }
+
+	td.day_rw_to .ui-state-default { color:#fff !important; border: 1px solid #c5c5c5; border-radius: 0 15px 15px 0; background: #00CEA5 !important;; }
+
+	td.day_rw_hi a.day_rw_from_hover, td.day_rw_to a.ui-state-default.day_rw_from_hover, td a.day_rw_from_hover {border-radius: 15px 0 0 15px; background: #C2F9ED !important; }
+
+	td a.day_rw_to_hover {border-radius: 0; background: #00CEA5 !important; }
+	td.day_rw_to a.day_rw_to_hover {border: 1px solid #00CEA5; border-radius: 0;}
+	td a.day_rw_to_hover.ui-state-hover {border-radius: 0 15px 15px 0; background: #00CEA5 !important; }
+
 
 
 	.ui-datepicker-group-first {
@@ -923,39 +956,73 @@ a.ui-datepicker-next.ui-corner-all {
 
 
 
-	//current day
-
-	a.ui-state-default.ui-state-active {
-    background: $green !important;
-		color: #fff !important;
-	}
-
-	//start day
-
-	.start-range .ui-state-default {
-	 background: $green !important;
-	 color: #fff;
- }
-
-	//range highlight
-
-	.dp-highlight .ui-state-default {
-		 background: $greenlight !important;
-		 color: #fff;
- }
-
-	//end day
-
- .end-range .ui-state-default{
-	background:  $green !important;
-	color: #FFF;
- }
-
-
 }
 
 .ui-datepicker-inline.ui-widget-content {
 	width:100%;
+}
+
+
+//datepicker modal
+
+
+#pop_Modal {
+
+	height:100vh !important;
+  top: 0 !important;
+	.to-spacer {display: block; float: left; padding: 0 20px; }
+
+	.ui-datepicker table {
+		@media (max-height:560px) {
+			font-size:10px;
+		}
+	}
+
+	#ui-datepicker-div .ui-widget-header {
+    padding: 0;
+	}
+
+	#ui-datepicker-div .ui-datepicker-title {
+		padding-bottom:10px;
+	}
+
+	.bookingMask_Year {
+    font-size: 12px;
+    font-weight: 300;
+	}
+
+	.close-button {
+	    right: 14px;
+	    top: 0px;
+	    font-size: 35px;
+			color: $darkgrey;
+		}
+
+		.ok-button {
+			padding: 1.2em 1.8em;
+			background:$orange;
+			color:#fff;
+			font-size:.9rem;
+			font-weight:500;
+			position:fixed;
+			bottom:0;
+			left:0;
+			width:100%;
+		}
+
+		.arrivalWrapper.left {
+			padding-right:10px;
+		}
+
+		.arrivalWrapper.right {
+			padding-left:10px;
+		}
+
+		#ui-datepicker-div {
+			//stop mobile datepicker appearing below date fields under modal
+			 top: 190px !important;
+		}
+
 }
 
 

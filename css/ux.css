@@ -529,6 +529,12 @@ div#owl-cover-usp {
   background: url("../img/home/multi-trip.jpg") right bottom no-repeat #a8b9c2;
   background-size: cover; }
 
+.reveal-dates {
+  padding-top: 60px; }
+  .reveal-dates .close-button {
+    font-size: 50px !important;
+    top: 4px !important; }
+
 .fromFieldTrigger {
   opacity: 0;
   position: absolute;
@@ -546,6 +552,12 @@ div#owl-cover-usp {
 #ui-datepicker-div {
   width: 100% !important;
   left: 0 !important; }
+
+.bookingMask_Month {
+  font-weight: 600; }
+
+.bookingMask_Date {
+  font-weight: 500; }
 
 .ui-state-disabled span {
   opacity: 0.5; }
@@ -570,8 +582,7 @@ a.dates-popover-close {
 
 @media (max-width: 1023px) {
   div#ui-datepicker-div {
-    width: 100% !important;
-    top: 465px !important; } }
+    width: 100% !important; } }
 
 #ui-datepicker-div {
   border-top: 1px solid #EAEAEA !important;
@@ -581,18 +592,45 @@ a.dates-popover-close {
   background: #fff !important;
   padding: 2rem 0;
   border-radius: 0 !important; }
-  #ui-datepicker-div td.day_hi a.ui-state-default {
+  #ui-datepicker-div #date_out_div, #ui-datepicker-div #date_in_div {
+    position: relative;
+    margin: 10px;
+    border: 1px #999 solid;
+    height: 150px;
+    width: 170px;
+    background: #FFFFFF;
+    z-index: 20; }
+  #ui-datepicker-div #date_out_div div, #ui-datepicker-div #date_in_div div {
+    height: 30px; }
+  #ui-datepicker-div #from_label, #ui-datepicker-div #to_label {
+    position: absolute;
+    height: 150px;
+    width: 170px; }
+  #ui-datepicker-div td.day_rw_hi a.ui-state-default {
     background: #C2F9ED !important; }
-  #ui-datepicker-div td.day_from.ui-state-disabled {
+  #ui-datepicker-div td.day_rw_from.ui-state-disabled {
     opacity: unset;
     -webkit-filter: none;
             filter: none; }
-  #ui-datepicker-div td.day_from.ui-state-disabled span {
-    opacity: 1; }
-  #ui-datepicker-div td.day_from span, #ui-datepicker-div td.day_from a.ui-state-default {
+  #ui-datepicker-div td.day_rw_from .ui-state-default {
+    color: #fff !important;
     border-radius: 15px 0 0 15px;
     background: #00CEA5 !important; }
-  #ui-datepicker-div td.day_to a.ui-state-default {
+  #ui-datepicker-div td.day_rw_to .ui-state-default {
+    color: #fff !important;
+    border: 1px solid #c5c5c5;
+    border-radius: 0 15px 15px 0;
+    background: #00CEA5 !important; }
+  #ui-datepicker-div td.day_rw_hi a.day_rw_from_hover, #ui-datepicker-div td.day_rw_to a.ui-state-default.day_rw_from_hover, #ui-datepicker-div td a.day_rw_from_hover {
+    border-radius: 15px 0 0 15px;
+    background: #C2F9ED !important; }
+  #ui-datepicker-div td a.day_rw_to_hover {
+    border-radius: 0;
+    background: #00CEA5 !important; }
+  #ui-datepicker-div td.day_rw_to a.day_rw_to_hover {
+    border: 1px solid #00CEA5;
+    border-radius: 0; }
+  #ui-datepicker-div td a.day_rw_to_hover.ui-state-hover {
     border-radius: 0 15px 15px 0;
     background: #00CEA5 !important; }
   #ui-datepicker-div .ui-datepicker-group-first:before {
@@ -647,21 +685,48 @@ a.dates-popover-close {
   #ui-datepicker-div .ui-widget.ui-widget-content {
     border: 0 !important;
     background: transparent !important; }
-  #ui-datepicker-div a.ui-state-default.ui-state-active {
-    background: #00CEA5 !important;
-    color: #fff !important; }
-  #ui-datepicker-div .start-range .ui-state-default {
-    background: #00CEA5 !important;
-    color: #fff; }
-  #ui-datepicker-div .dp-highlight .ui-state-default {
-    background: #C2F9ED !important;
-    color: #fff; }
-  #ui-datepicker-div .end-range .ui-state-default {
-    background: #00CEA5 !important;
-    color: #FFF; }
 
 .ui-datepicker-inline.ui-widget-content {
   width: 100%; }
+
+#pop_Modal {
+  height: 100vh !important;
+  top: 0 !important; }
+  #pop_Modal .to-spacer {
+    display: block;
+    float: left;
+    padding: 0 20px; }
+  @media (max-height: 560px) {
+    #pop_Modal .ui-datepicker table {
+      font-size: 10px; } }
+  #pop_Modal #ui-datepicker-div .ui-widget-header {
+    padding: 0; }
+  #pop_Modal #ui-datepicker-div .ui-datepicker-title {
+    padding-bottom: 10px; }
+  #pop_Modal .bookingMask_Year {
+    font-size: 12px;
+    font-weight: 300; }
+  #pop_Modal .close-button {
+    right: 14px;
+    top: 0px;
+    font-size: 35px;
+    color: #37474f; }
+  #pop_Modal .ok-button {
+    padding: 1.2em 1.8em;
+    background: #ff5722;
+    color: #fff;
+    font-size: .9rem;
+    font-weight: 500;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; }
+  #pop_Modal .arrivalWrapper.left {
+    padding-right: 10px; }
+  #pop_Modal .arrivalWrapper.right {
+    padding-left: 10px; }
+  #pop_Modal #ui-datepicker-div {
+    top: 190px !important; }
 
 a.whotravelling-popover-close {
   font-size: 35px;
