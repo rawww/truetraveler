@@ -1,0 +1,864 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+  <title>TrueTraveller - New Search Results Components</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/ux.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <!-- Typekit -->
+  <script src="https://use.typekit.net/isb8sii.js"></script>
+  <script>
+    try {
+      Typekit.load({
+        async: true
+      });
+    } catch (e) {}
+  </script>
+
+  <link href="css/jquery-ui.css" rel="stylesheet">
+
+  <script src="js/min/jquery.min.js"></script>
+  <script type="text/javascript">
+    //<![CDATA[
+    jQuery(window).load(function() { // makes sure the whole site is loaded
+      jQuery("#status").fadeOut(); // will first fade out the loading animation
+      jQuery("#preloader").delay(350).fadeOut("slow"); // will fade out the white DIV that covers the website.
+    })
+    //]]>
+  </script>
+
+</head>
+
+<body id="results">
+
+  <div id="preloader">
+    <div id="status">
+      <img class="loader-compass" src="img/traveller-loader.svg" alt="loader">
+    </div>
+  </div>
+
+
+
+  <!-- White Nav : Start -->
+
+  <header>
+    <div class="row expanded">
+      <div class="small-6 small-offset-3 medium-4 medium-offset-4 large-3 large-offset-0 columns">
+        <img class="logo" src="img/truetraveller-logo.svg" alt="logo">
+      </div>
+      <div class="medium-4 columns text-right header-contact show-for-large large-3"><span class="header-tel"></i> 0333 999 3140</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- White Nav : End -->
+
+
+  <!-- Results bar : Start -->
+
+  <section class="results-bar" data-sticky-container>
+    <div class="sticky" data-sticky data-top-anchor="70" data-margin-top="0" data-sticky-on="large">
+      <div class="row expanded row--results">
+        <div class="small-10 medium-4 large-3 columns">
+          <p>Where you do need cover? <span class="tu-mob">Europe</span></p>
+          <p>Already travelling? <span class="tu-mob">Yes</span></p>
+        </div>
+        <div class="small-10 medium-4 large-3 columns">
+          <p>When for? <span class="tu-mob">25th Jan 19 - 3rd Feb 19</span></p>
+          <p>Travellers ages? <span class="tu-mob">32</span></p>
+        </div>
+        <div class="small-2 hide-for-medium medium-3 large-3 columns">
+          <a class="primary tu-mob">Edit</a>
+        </div>
+        <div class="medium-4 large-3 columns">
+          <p>Where do you live? <span class="tu-mob">United Kingdom</span></p>
+          <p class="show-for-medium">Traveller premium <span class="orange premium">£28.14</span></p>
+        </div>
+        <div class="large-3 columns mobilepremium">
+          <div class="row">
+            <div class="small-6 columns hide-for-medium">
+              <p>Traveller premium <span class="orange premium">£28.14</span> </p>
+            </div>
+            <div class="small-6 columns show-for-medium"><button class="button button-clear expanded edit">Edit</button></div>
+            <div class="small-6 columns"><button class="button primary expanded save">Save</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results bar : End -->
+
+
+  <div class="row">
+    <div class="medium-12 columns">
+      <div class="callout warning">
+        <h5 class="mt">Trust Pilot & Tabs</h5>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="row">
+    <div class="medium-12 columns" data-equalizer data-equalize-on="small">
+      <div class="medium-12 columns text-center">
+        <!-- TrustBox widget - Micro Combo -->
+        <div class="trustpilot-widget" data-locale="en-GB" data-template-id="5419b6ffb0d04a076446a9af" data-businessunit-id="4d813ff900006400050f2633" data-style-height="20px" data-style-width="100%" data-theme="light"> <a href="https://uk.trustpilot.com/review/www.truetraveller.com"
+            target="_blank">Trustpilot</a> </div>
+        <!-- End TrustBox widget -->
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Policy selection tabs : Start -->
+
+  <div class="row mt">
+    <div class="medium-12 columns" data-equalizer data-equalize-on="small">
+      <ul class="tabs policy-tabs" data-tabs id="example-tabs">
+        <li class="tabs-title is-active"><a href="#single" aria-selected="true" data-equalizer-watch>Single Trip Policies</a></li>
+        <li class="tabs-title"><a href="#multi" data-equalizer-watch>Annual Multi-Trip Policies</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <hr>
+
+
+
+  <section class="pad white-bg">
+
+
+
+
+    <!-- Policy selection tabs : End -->
+
+    <div class="tabs-content" data-tabs-content="example-tabs">
+      <div class="tabs-panel is-active" id="single">
+
+        <!-- Single policy tab -->
+
+
+
+        <div class="row">
+          <div class="medium-12 columns">
+            <div class="callout warning">
+              <h5 class="mt">Title states</h5>
+            </div>
+          </div>
+        </div>
+        <!-- Policy Selection open -->
+
+        <div class="row">
+          <div class="medium-12 columns">
+            <h2 class="mt in-complete"><i class="fas fa-check-circle"></i> Title / Incompleted</h2>
+            <h2 class="mt validated"><i class="fas fa-check-circle"></i> Title / Validated state</h2>
+            <h2 class="mt error"><i class="fas fa-times-circle"></i> Title / Error state</h2>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="medium-12 columns">
+            <div class="callout warning">
+              <h5 class="mt">Policy selection</h5>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <!-- Policy box -->
+          <div class="large-4 columns">
+            <div class="cover-box">
+
+              <div class="cover-box-pad">
+                <h4>True Value</h4>
+                <p class="cover-price orange">£23.14</p>
+
+
+                <div class="excess-switch-wrap">
+                  <input class="switch-input" id="price1" type="checkbox" name="exampleSwitch">
+
+                  <label class="switch-paddle excess-tooltip" for="price1">
+                    <span class="excess-label">Excess</span>
+                    <span class="show-for-sr"></span>
+                    <span class="switch-active" aria-hidden="true" data-toggle="extra1">£0.00</span>
+                    <span class="switch-inactive" aria-hidden="true">£125</span>
+                  </label>
+
+                  <i class="fas fa-info-circle excess-info" aria-hidden="true"></i>
+                </div>
+
+
+
+                <button class="button expanded select-insurance is-selected">Selected</button>
+                <button class="button expanded secondary hide-for-large" data-open="policy-details-mobile-1">What does the policy cover?</button>
+
+
+              </div>
+
+              <ul class="list-tick show-for-large">
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+              </ul>
+
+              <ul class="list-tick more-cover-features show-for-large" id="more-cover-features">
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+              </ul>
+
+
+              <div class="reveal animated faster fadeIn" id="policy-details-mobile-1" data-reveal>
+                <button class="close-button" data-close aria-label="Close modal" type="button">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+                <h3>What the policy covers</h3>
+                <ul class="list-tick">
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                </ul>
+              </div>
+
+
+            </div>
+          </div>
+          <!-- Policy box end -->
+          <!-- Policy box -->
+          <div class="large-4 columns">
+            <div class="cover-box">
+
+              <div class="cover-box-pad">
+                <h4>Traveller</h4>
+                <p class="cover-price orange">£28.14</p>
+
+                <div class="excess-switch-wrap">
+                  <input class="switch-input" id="price2" type="checkbox" name="exampleSwitch">
+
+                  <label class="switch-paddle excess-tooltip" for="price2">
+                    <span class="excess-label">Excess</span>
+                    <span class="show-for-sr"></span>
+                    <span class="switch-active" aria-hidden="true" data-toggle="extra1">£0.00</span>
+                    <span class="switch-inactive" aria-hidden="true">£125</span>
+                  </label>
+
+                  <i class="fas fa-info-circle excess-info" aria-hidden="true"></i>
+                </div>
+
+                <button class="button expanded select-insurance is-selected">Selected</button>
+                <button class="button expanded secondary hide-for-large" data-open="policy-details-mobile-2">What does the policy cover?</button>
+
+
+              </div>
+
+              <ul class="list-tick show-for-large">
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+              </ul>
+
+              <ul class="list-tick more-cover-features show-for-large" id="more-cover-features">
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+              </ul>
+
+              <div class="reveal animated faster fadeIn" id="policy-details-mobile-2" data-reveal>
+                <button class="close-button" data-close aria-label="Close modal" type="button">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+                <h3>What the policy covers</h3>
+                <ul class="list-tick">
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                </ul>
+              </div>
+
+
+            </div>
+          </div>
+          <!-- Policy box end -->
+          <!-- Policy box -->
+          <div class="large-4 columns">
+            <div class="cover-box">
+
+              <div class="cover-box-pad">
+                <h4>Traveller Plus</h4>
+                <p class="cover-price orange">£34.14</p>
+
+                <div class="excess-switch-wrap">
+                  <input class="switch-input" id="price3" type="checkbox" name="exampleSwitch">
+
+                  <label class="switch-paddle excess-tooltip" for="price3">
+                    <span class="excess-label">Excess</span>
+                    <span class="show-for-sr"></span>
+                    <span class="switch-active" aria-hidden="true" data-toggle="extra1">£0.00</span>
+                    <span class="switch-inactive" aria-hidden="true">£125</span>
+                  </label>
+
+                  <i class="fas fa-info-circle excess-info" aria-hidden="true"></i>
+                </div>
+
+                <button class="button expanded select-insurance is-selected">Selected</button>
+                <button class="button expanded secondary hide-for-large" data-open="policy-details-mobile-3">What does the policy cover?</button>
+
+
+              </div>
+
+              <ul class="list-tick show-for-large">
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+              </ul>
+
+              <ul class="list-tick more-cover-features show-for-large" id="more-cover-features">
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+              </ul>
+
+              <div class="reveal animated faster fadeIn" id="policy-details-mobile-3" data-reveal>
+                <button class="close-button" data-close aria-label="Close modal" type="button">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+                <h3>What the policy covers</h3>
+                <ul class="list-tick">
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                  <li><i class="fas fa-info-circle orange"></i> List item <span>£2,500,000</span></li>
+                </ul>
+              </div>
+
+
+            </div>
+          </div>
+          <!-- Policy box end -->
+
+
+
+
+        </div>
+        <!-- Policy Selection Close -->
+
+
+
+
+
+
+
+
+
+
+        <div class="row show-for-large">
+          <div class="medium-12 columns">
+            <a class="button large button-more expanded">Show full policy cover</a>
+          </div>
+        </div>
+
+        <div class="reveal large" id="exampleModal2" data-reveal>
+          <h1>Compare your cover</h1>
+          <p class="lead">Your couch. It is mine.</p>
+          <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+          <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <!-- Card -->
+
+        <div class="row">
+          <div class="medium-12 columns">
+            <div class="callout warning">
+              <h5 class="mt">Selection card</h5>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row" data-equalizer="packs">
+
+          <!-- Item -->
+          <!-- Remove 'end' class in production -->
+          <div class="large-3 medium-4 small-6 columns end">
+            <div class="extra-option-box text-center" data-equalizer-watch="packs">
+              <a class="question" href=""><i class="fas fa-info-circle" aria-hidden="true"></i></a>
+              <i class="icon-traveller-pack-ico" aria-hidden="true"></i>
+              <h4>The Traveller Pack</h4>
+              <div class="switch large">
+                <input class="switch-input" id="yes-no1" type="checkbox" name="exampleSwitch">
+                <label class="switch-paddle" for="yes-no1">
+                  <span class="show-for-sr"></span>
+                  <span class="switch-active" aria-hidden="true" data-toggle="extra1">Yes</span>
+                  <span class="switch-inactive" aria-hidden="true">No</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- Item close -->
+
+
+        </div>
+
+
+        <div class="row">
+          <div class="medium-12 columns">
+            <div class="callout warning">
+              <h5 class="mt">Activity Picker</h5>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="row">
+
+          <div class="medium-12 columns">
+            <div class="callout primary" data-closable>
+              <h5 class="mt">Orienteering</h5>
+              <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+                <span aria-hidden="true">Remove</span>
+              </button>
+            </div>
+          </div>
+          <div class="medium-6 columns">
+            <input type="text" placeholder="Start typing an activity..." aria-describedby="">
+          </div>
+          <div class="medium-12 columns">
+            <a class="add-activity" href=""><i class="fas fa-plus-circle"></i> Add another activity</a>
+          </div>
+
+        </div>
+
+
+
+
+
+        <!-- Form -->
+
+        <div class="row">
+          <div class="medium-12 columns">
+            <div class="callout warning">
+              <h5 class="mt">Form</h5>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+
+          <div class="medium-12 columns">
+            <ul class="accordion" data-accordion>
+              <li class="accordion-item is-active" data-accordion-item>
+                <a href="#" class="accordion-title"> Lead traveller | 40 years old</a>
+                <div class="accordion-content" data-tab-content>
+
+                  <!-- Form section break -->
+                  <div class="form-break">
+                    <div class="row">
+                      <div class="small-5 columns">
+                        <label class="pr">Title
+                          <select class="validated">
+                            <option value="showboat">Title *</option>
+                            <option value="redwing">Mr</option>
+                            <option value="narcho">Miss</option>
+                            <option value="hardball">Mrs</option>
+                          </select>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="small-12 columns">
+                        <label class="pr">Your first name
+                          <input class="validated" type="text" placeholder="First name *" aria-describedby="">
+                          <i class="fas fa-check-circle validatedicon"></i>
+                        </label>
+                      </div>
+                      <div class="small-12 columns end">
+                        <label class="pr">Your surname
+                          <input class="validated" type="text" placeholder="Last name *" aria-describedby="">
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Form section break -->
+
+                  <!-- Form section break -->
+                  <div class="form-break">
+                    <div class="row">
+                      <div class="small-12 columns">
+                        <label class="pr">Date of birth <i class="fas fa-times-circle invalidatedicon"></i>
+                        </label>
+                      </div>
+
+                      <div class="small-3 medium-1 columns">
+                        <select class="error">
+                          <option value="showboat">Day *</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="3">4</option>
+                          <option value="3">5</option>
+                          <option value="3">6</option>
+                          <option value="3">7</option>
+                          <option value="3">8</option>
+                          <option value="3">9</option>
+                          <option value="3">10</option>
+                          <option value="3">11</option>
+                          <option value="3">12</option>
+                          <option value="3">13</option>
+                          <option value="3">14</option>
+                          <option value="3">15</option>
+                          <option value="3">16</option>
+                          <option value="3">17</option>
+                        </select>
+                      </div>
+                      <div class="small-3 medium-2 end columns">
+                        <select class="error">
+                          <option value="showboat">Month *</option>
+                          <option value="January">January</option>
+                          <option value="February">February</option>
+                          <option value="March">March</option>
+                          <option value="April">April</option>
+                          <option value="May">May</option>
+                          <option value="June">June</option>
+                          <option value="July">July</option>
+                          <option value="August">August</option>
+                          <option value="September ">September </option>
+                          <option value="October">October</option>
+                          <option value="November">November</option>
+                          <option value="December">December</option>
+                        </select>
+                      </div>
+                      <div class="small-3 medium-2 columns end">
+                        <select class="error">
+                          <option value="showboat">Year *</option>
+                          <option value="redwing">1985</option>
+                          <option value="redwing">1985</option>
+                          <option value="redwing">1985</option>
+                          <option value="redwing">1985</option>
+                          <option value="redwing">1985</option>
+                          <option value="redwing">1985</option>
+                          <option value="redwing">1985</option>
+                        </select>
+
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Form section break -->
+
+                  <!-- Form section break -->
+                  <div class="form-break">
+                    <div class="row">
+                      <div class="small-10 medium-5 columns">
+                        <label class="pr">Your email
+                          <input type="text" placeholder="Email address *" aria-describedby="">
+                        </label>
+                        <label class="pr">Your contact number
+                          <input type="text" placeholder="Contact number *" aria-describedby="">
+                        </label>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- End Form section break -->
+
+
+                  <!-- Form section break -->
+                  <div class="form-break">
+                    <div class="row">
+                      <div class="medium-6 columns">
+                        <label class="pr">Your home address
+                          <input type="text" placeholder="Start typing your postcode or address *" aria-describedby="">
+                        </label>
+                        <a>Enter my address manually</a>
+                      </div>
+
+                    </div>
+                  </div>
+                  <!-- End Form section break -->
+
+
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+
+        <div class="row">
+          <div class="medium-12 columns">
+            <div class="callout warning">
+              <h5 class="mt">Search more styles</h5>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Medical -->
+
+        <div class="row">
+          <div class="medium-12 columns">
+            <h2 class="mt orange">Your medical information</h2>
+            <p>On True Value policies, we do not cover pre-existing medical conditions, including medical conditions of any person upon whom travel depends such a relative. You can still take out a True Value policy with a pre-existing medical
+              condition,
+              but we don't cover any claim made as a result of this condition.</p>
+
+
+            <p>We do however have a number of automatically accepted pre-existing medical conditions, which you do not need to tell us about. To check please <a href="#">click here</a>.</p>
+
+
+            <p>Please check this box to confirm that you have read and understood the above </p>
+
+            <div class="mb">
+              <a href="#" class="button secondary selected">Yes</a> <a href="#" class="button secondary">No</a>
+            </div>
+
+            <p><a href="#"><i class="fa fa-file-text" aria-hidden="true"></i> View Policy Wording</a></p>
+            <p><a href="#"><i class="fa fa-file-text" aria-hidden="true"></i> View Key Facts</a></p>
+
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="medium-12 columns">
+            <div class="callout warning">
+              <h5 class="mt">Updated button</h5>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="large-6 large-offset-6 columns">
+            <a class="button primary expanded large">Buy now <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="tabs-panel" id="multi">
+
+        <div class="row">
+          <div class="medium-4 small-centered text-center">
+            <div class="pr">
+
+
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 250 250" style="enable-background:new 0 0 250 250;" xml:space="preserve">
+                <style type="text/css">
+                  .st0 {
+                    fill: none;
+                    stroke: #37474F;
+                    stroke-width: 19.5362;
+                    stroke-miterlimit: 10;
+                  }
+
+                  .st1 {
+                    fill: #FF5722;
+                  }
+
+                  .st2 {
+                    fill: #FFFFFF;
+                  }
+                </style>
+                <circle class="st0" cx="125.7" cy="125.3" r="95.2" />
+                <g>
+                  <img src="img/pinv2.png" class="pin-loader" width="75">
+
+                  <animateTransform attributeName="transform" dur="2s" type="rotate" from="0 100 100" to="360 100 100" repeatCount="indefinite" />
+
+
+                </g>
+              </svg>
+
+
+
+            </div>
+            <h2 class="text-center">We won’t be long</h2>
+            <p class="text-center">We’re just sorting your insurance documents. <br /> Please don’t press back or exit this page until your documents are ready.</p>
+          </div>
+        </div>
+
+        <!-- Multi policy tab -->
+
+
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <!-- Footer -->
+  <!--
+  <footer>
+
+    <div class="row">
+      <div class="medium-6 columns text-right">
+        <div class="row">
+          <div class="small-6 columns">
+            <img src="img/footer-logo01.jpg">
+          </div>
+          <div class="small-6 columns">
+            <img src="img/world-pay.png">
+          </div>
+        </div>
+
+      </div>
+      <div class="small-6 medium-3 float-right">
+        <img src="img/footer-logo02.jpg">
+      </div>
+
+    </div>
+
+
+    <div class="row">
+      <div class="medium-6 columns copyright">
+        <p>© The True Traveller Limited 2010-2016</p>
+      </div>
+    </div>
+
+  </footer> -->
+
+
+  <!-- Loading modal  -->
+
+  <div class="reveal text-center animated fadeIn" id="exampleModal1" data-reveal>
+    <svg class="loading" version="1.1" id="L4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
+      <circle fill="#ff5722" stroke="none" cx="6" cy="50" r="6">
+        <animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.1" />
+      </circle>
+      <circle fill="#ff5722" stroke="none" cx="26" cy="50" r="6">
+        <animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.2" />
+      </circle>
+      <circle fill="#ff5722" stroke="none" cx="46" cy="50" r="6">
+        <animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.3" />
+      </circle>
+    </svg>
+  </div>
+
+  <!--  -->
+
+  <div class="reveal" id="included" data-reveal>
+    <h2>What is included in this cost?</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+      irure
+      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+
+
+  </div>
+
+
+  <!-- JS -->
+
+
+  <script src="js/min/app-min.js"></script>
+  <script src="js/min/ux-min.js"></script>
+
+
+</body>
+
+</html>
