@@ -6,12 +6,9 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
 	<title>TrueTraveller - New Homepage Layout</title>
-	<link rel="stylesheet" href="css/app.css">
 
-	<!-- New UX changes stylesheet -->
-	<link rel="stylesheet" href="css/ux.css">
 
-	<link rel="stylesheet" href="font/all.css">
+	<link rel="stylesheet" href="css/all.css">
 
 
 	<!-- Typekit -->
@@ -53,7 +50,6 @@
 		}
 	</style>
 
-	<link href="css/jquery-ui.css" rel="stylesheet">
 
 
 	<script src="js/min/jquery.min.js"></script>
@@ -71,6 +67,7 @@
 	<!-- TrustBox script -->
 	<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
 	<!-- End TrustBox script -->
+
 
 
 
@@ -272,7 +269,7 @@
 
 
 				</div>
-
+ 
 
 
 				<!-- Choose your dates of cover? -->
@@ -280,19 +277,36 @@
 					<div class="dates-trigger">
 						<label><span class="break">Choose your dates of cover? <span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="2" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit,"><i class="fas fa-info-circle"></i></span></label>
 
+						<!-- 20200828 - iPhone edit start -->
+						<style type="text/css">
+							@media screen and (max-width: 1023px) {
+								#from {z-index:-10;}
+							}
+						</style>
+						<!-- 20200828 - iPhone edit end -->
+
 
 					<div class="row">
 						<!-- <input type="text" id="datepicker"> -->
 						<div class="small-6 calendar-first columns">
 						<div class="arrivalWrapper left pr">
+							<!-- 20200828 - iPhone edit start -->
+							<label id="from_label" for="from">
+							<!-- 20200828 - iPhone edit end -->
+
 							<div id="date_in_div" class="date date-in initial">
-<label id="from_label" for="from"><!-- From --></label>
 									<div id="InMonth" class="bookingMask_Month">START DATE</div>
 									<div id="InDate" class="bookingMask_Date"></div>
 									<div id="InYear" class="bookingMask_Year"></div>
-									<input type="hidden" id="uk-date-in" name="dateIn" value='02/11/2020' />
+									<input type="hidden" id="uk-date-in" name="dateIn" value='02/11/2020'  />
 							</div>
-<input class="fromFieldTrigger" type="text" id="from" name="from" readonly="readonly">
+
+							<!-- 20200828 - iPhone edit start -->
+							</label>
+							<!-- 20200828 - iPhone edit end -->
+
+
+							<input class="fromFieldTrigger" type="text" id="from" name="from" readonly="readonly">
 						</div>
 						</div>
 
@@ -300,7 +314,6 @@
 						<span class="to-spacer">to</span>
 						<div class="departWrapper right pr">
 							<div id="date_out_div" class="date date-out initial">
-	<label id="to_label" for="to"><!-- to --></label>
 									<div id="OutMonth" class="bookingMask_Month">END DATE</div>
 									<div id="OutDate" class="bookingMask_Date"></div>
 									<div id="OutYear" class="bookingMask_Year"></div>
@@ -571,7 +584,6 @@
 
 		<div class="row expanded">
 			<fieldset>
-
 				<div class="small-12 large-3 columns">
 					<label for="radio-1" id="europe">
 						<h2>Europe</h2>
@@ -1037,18 +1049,23 @@
 		<div class="row">
 			<div class="medium-8 medium-offset-2 columns text-center">
 				<h2 class="mb">Why choose True Traveller?</h2>
+				<a data-open="InsurerPopUp" aria-controls="InsurerPopUp" aria-haspopup="true">
+					<h5>Reveal outside of owl</h5>
+				</a>
 			</div>
 		</div>
 
 
 		<!-- Mobile : start -->
-		<div class="row gutter-small hide-for-large">
+		<div class="row gutter-small hide-for-large" data-equalizer>
 			<div id="owl-why-choose" class="owl-carousel owl-theme">
 
 				<div class="item">
 					<div class="icon-card" data-equalizer-watch>
-						<img class="owl-why-choose-icon" src="img/home/icons/AGA-logo.jpg" alt="image">
-						<h5>Insured by Allianz Global Assistance</h5>
+						<a data-open="InsurerPopUp" aria-controls="InsurerPopUp" aria-haspopup="true">
+							<img class="owl-why-choose-icon" src="img/home/icons/AGA-logo.jpg" alt="image">
+							<h5>Insured by Allianz Global Assistance</h5>
+						</a>
 					</div>
 				</div>
 				<div class="item">
@@ -1102,12 +1119,14 @@
 
 		<!-- Desktop : start -->
 		<div class="row show-for-large" data-equalizer data-equalize-on="medium">
+			<a data-open="InsurerPopUp" aria-controls="InsurerPopUp" aria-haspopup="true" tabindex="0">
 			<div class="medium-3 columns text-center">
 				<div class="icon-card" data-equalizer-watch>
 					<img src="img/home/icons/AGA-logo.jpg" alt="image">
 					<h5>Insured by Allianz Global Assistance</h5>
 				</div>
 			</div>
+		</a>
 			<div class="medium-3 columns end text-center">
 				<div class="icon-card" data-equalizer-watch>
 					<img src="img/home/icons/icon-2.svg" alt="image">
@@ -1314,6 +1333,25 @@
 
 	<!-- datepicker reveal : End -->
 
+  <!-- test reveal -->
+	<div class="reveal large modalBC" id="InsurerPopUp" data-reveal>
+			<div>
+					<h2 class="popuptitle">v1</h2>
+			</div>
+			<div class="popupdiv">
+					<p>Your True Traveller Policy is insured by AWP P&C S.A., trading as Allianz Global Assistance, part of the Allianz Group, one of the world’s largest insurance companies.</p>
+
+					<br />
+					<p>According to Forbes Magazine, Allianz is even bigger than Alphabet, the company which owns Google and YouTube, so you’ll be in good hands!</p>
+					<br />
+					<div style="text-align: center">
+							<button type="button" class="buttonClose large expanded" data-close aria-label="Close modal">Close</button>
+					</div>
+					<button class="close-button" data-close aria-label="Close modal" type="button">
+							<span aria-hidden="true" style="color: #FF5722;">&times;</span>
+					</button>
+			</div>
+	</div>
 
 
 	<!-- Footer : End -->
@@ -1326,6 +1364,7 @@
 	<script src="js/min/ux-min.js"></script>
 
 	<!-- JS : End -->
+
 
 </body>
 

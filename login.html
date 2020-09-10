@@ -1,0 +1,456 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>TrueTraveller - Login</title>
+
+
+	<link rel="stylesheet" href="css/all.css">
+
+
+	<!-- Typekit -->
+	<script src="https://use.typekit.net/isb8sii.js"></script>
+	<script>
+		try {
+			Typekit.load({
+				async: true
+			});
+		} catch (e) {}
+	</script>
+
+	<style>
+		.wf-loading p,
+		.wf-loading h1,
+		.wf-loading h2,
+		.wf-loading h3,
+		.wf-loading h4,
+		wf-loading label {
+			visibility: hidden;
+		}
+
+		.wf-active p,
+		.wf-active h1,
+		.wf-active h2,
+		.wf-active h3,
+		.wf-active h4,
+		wf-active label {
+			visibility: visible;
+		}
+
+		.wf-inactive p,
+		.wf-inactive h1,
+		.wf-inactive h2,
+		.wf-inactive h3,
+		.wf-inactive h4,
+		wf-inactive label {
+			visibility: visible;
+		}
+	</style>
+
+
+
+	<script src="js/min/jquery.min.js"></script>
+
+
+	<script type="text/javascript">
+		//<![CDATA[
+		jQuery(window).load(function() { // makes sure the whole site is loaded
+			jQuery("#status").fadeOut(); // will first fade out the loading animation
+			jQuery("#preloader").delay(350).fadeOut("slow"); // will fade out the white DIV that covers the website.
+		})
+		//]]>
+	</script>
+
+	<!-- TrustBox script -->
+	<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+	<!-- End TrustBox script -->
+
+
+
+
+
+
+</head>
+
+<body>
+
+	<div id="preloader">
+		<div id="status">
+			<img class="loader-compass" src="img/traveller-loader.svg" alt="loader">
+		</div>
+	</div>
+
+
+	<div id="top"></div>
+
+
+
+	<!-- Moblie nav : Start	 -->
+
+	<header class="mobile-nav hide-for-large">
+		<div class="row expanded">
+			<a class="mobile-call-button"><i class="fa fa-phone" aria-hidden="true"></i></a>
+			<a href="#" data-open="exampleModal1" class="hide-for-large mobile-menu hamburger"><i class="fa fa-bars" aria-hidden="true"></i></a>
+
+			<div class="small-8 small-offset-2 medium-4 medium-offset-4 large-3 large-offset-0 columns absolute">
+				<img class="logo" src="img/truetraveller-logo-moblie.svg" height="50" alt="logo">
+			</div>
+
+			<div class="reveal full hamburger-nav-expanded darkgrey-bg mobile-patch animated faster fadeIn" id="exampleModal1" data-reveal>
+
+				<button class="close-button" data-close aria-label="Close modal" type="button">
+					<i class="fa fa-times" aria-hidden="true"></i>
+				</button>
+
+				<ul class="vertical menu hide-for-large" data-accordion-menu>
+					<li>
+						<a href="#">Travel insurance</a>
+						<ul class="menu vertical nested">
+							<li><a href="#">Trekking</a></li>
+							<li><a href="#">IEC for Canada</a></li>
+							<li><a href="#">One-way</a></li>
+							<li><a href="#">Backpacker</a></li>
+							<li><a href="#">GAP Year Travel</a></li>
+							<li><a href="#">Multi-trip</a></li>
+							<li><a href="#">Already Travelling</a></li>
+							<li><a href="#">Winter Sports</a></li>
+							<li><a href="#">Insurance extension</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="#">Who we are</a>
+					</li>
+
+					<li>
+						<a href="#">Need help?</a>
+					</li>
+					<li>
+						<a class="small-nav-link" href="#">Contact us</a>
+					</li>
+					<li>
+						<a class="small-nav-link" href="#">Activity cover</a>
+					</li>
+					<li>
+						<a class="small-nav-link" href="#">Tips for travelling</a>
+					</li>
+				</ul>
+				<a href="#" class="hollow button secondary expanded mt">Make a claim</a>
+				<a href="#" class="button primary expanded">My TT policy</a>
+
+
+			</div>
+		</div>
+	</header>
+
+	<!-- Moblie nav : End	 -->
+
+	<!-- Desktop nav : Start -->
+
+	<header class="header show-for-large" class="fade-all" role="banner" data-sticky-container>
+		<div class="expanded row sticky main-menu" data-sticky data-margin-top="0">
+			<div class="small-8 small-offset-2 medium-4 medium-offset-4 large-3 large-offset-0 columns absolute">
+				<img class="logo" src="img/truetraveller-logo.svg" alt="logo">
+			</div>
+
+			<ul id="mega-menu-container" class="menu" data-dropdown-menu data-click-open="true" data-disable-hover="true">
+				<li class="mega-menu">
+					<a class="" href="#">What we offer</a>
+					<ul class="menu">
+						<li>
+							<div class="medium-3 column">
+								<img src="img/mega01.jpg">
+							</div>
+							<div class="medium-3 column">
+								<a href="#" class="white">Trekking</a><br />
+								<a href="#" class="white">IEC for Canada</a><br />
+								<a href="#" class="white">One-way</a><br />
+							</div>
+							<div class="medium-3 column">
+								<a href="#" class="white">Backpacker</a><br />
+								<a href="#" class="white">GAP Year Travel</a><br />
+								<a href="#" class="white">Multi-trip</a><br />
+							</div>
+							<div class="medium-3 column">
+								<a href="#" class="white">Already Travelling</a><br />
+								<a href="#" class="white">Winter Sports</a><br />
+								<a href="#" class="white">Insurance extension</a><br />
+							</div>
+						</li>
+					</ul>
+				</li>
+
+				<li class="mega-menu">
+					<a class="" href="#">Who we are</a>
+				</li>
+
+				<li class="mega-menu">
+					<a class="" href="#">Need help?</a>
+					<ul class="menu">
+						<li>
+							<div class="medium-3 column">
+								<img src="img/mega02.jpg">
+							</div>
+							<div class="medium-3 column">
+								<a href="#" class="white">Contact us</a><br />
+								<a href="#" class="white">FAQs</a><br />
+								<a href="#" class="white">Make a claim</a><br />
+							</div>
+							<div class="medium-3 column">
+								<a href="#" class="white">Activity cover</a><br />
+								<a href="#" class="white">Tips for travelling</a><br />
+							</div>
+							<div class="medium-3 column">
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+
+			<div class="medium-12 columns text-right header-contact show-for-large large-4 menu-right">
+
+				<div class="row">
+					<div class="medium-8 columns text-right">
+						<span class="strap">Hi Traveller</span>
+						<br><span class="strap"><a class="white" href="#">Contact us</a> 0333 999 3140</span>
+					</div>
+					<div class="medium-4 columns npd">
+						<a class="button signin hollow white expanded" href="">Sign in</a>
+					</div>
+				</div>
+
+
+			</div>
+
+
+		</div>
+
+	</header>
+
+	<!-- Desktop nav : End -->
+
+	<!-- Login: Start -->
+	<div class="login-container">
+			<div class="row">
+				<div class="small-12 columns login-intro">
+					<h1>My TT Policy</h1>
+					<h4>Everything you need to check and extend your current insurance with us</h4>
+				</div>
+			</div>
+			<div class="row align-center">
+				<div class="small-12 medium-10 medium-offset-1 large-8 large-offset-2 columns login-form">
+					<div class="login-inner">
+					<p class="ct">Please enter the fields below to retrieve details of any insurance you hold with True Traveller. Note the name, email address and date of birth must be that of the lead person on your insurance documents.</p>
+					<form class="form-login">
+						<label>Surname</label>
+						<input type="text" />
+						<label>Date of Birth</label>
+						<div class="small-12 medium-4 columns dobday">
+							<select name="login-dob-day" id="login-dob-day">
+								<option value="">Day</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+								<option value="16">16</option>
+								<option value="17">17</option>
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+								<option value="21">21</option>
+								<option value="22">22</option>
+								<option value="23">23</option>
+								<option value="24">24</option>
+								<option value="25">25</option>
+								<option value="26">26</option>
+								<option value="27">27</option>
+								<option value="28">28</option>
+								<option value="29">29</option>
+								<option value="30">30</option>
+								<option value="31">31</option>
+						</select>
+						</div>
+						<div class="small-12 medium-4 columns dobmonth">
+							<select name="login-dob-month" id="login-dob-month">
+								<option value="">Month</option>
+								<option value="1">January</option>
+								<option value="2">February</option>
+								<option value="3">March</option>
+								<option value="4">April</option>
+								<option value="5">May</option>
+								<option value="6">June</option>
+								<option value="7">July</option>
+								<option value="8">August</option>
+								<option value="9">September</option>
+								<option value="10">October</option>
+								<option value="11">November</option>
+								<option value="12">December</option>
+						</select>
+						</div>
+						<div class="small-12 medium-4 columns dobyear">
+							<select name="login-dob-year" id="login-dob-year">
+								<option value="">Year</option>
+								<option value="1947">1947</option>
+								<option value="1948">1948</option>
+								<option value="1949">1949</option>
+								<option value="1950">1950</option>
+								<option value="1951">1951</option>
+								<option value="1952">1952</option>
+								<option value="1953">1953</option>
+								<option value="1954">1954</option>
+								<option value="1955">1955</option>
+								<option value="1956">1956</option>
+								<option value="1957">1957</option>
+								<option value="1958">1958</option>
+								<option value="1959">1959</option>
+								<option value="1960">1960</option>
+								<option value="1961">1961</option>
+								<option value="1962">1962</option>
+								<option value="1963">1963</option>
+								<option value="1964">1964</option>
+								<option value="1965">1965</option>
+								<option value="1966">1966</option>
+								<option value="1967">1967</option>
+								<option value="1968">1968</option>
+								<option value="1969">1969</option>
+								<option value="1970">1970</option>
+								<option value="1971">1971</option>
+								<option value="1972">1972</option>
+								<option value="1973">1973</option>
+								<option value="1974">1974</option>
+								<option value="1975">1975</option>
+								<option value="1976">1976</option>
+								<option value="1977">1977</option>
+								<option value="1978">1978</option>
+								<option value="1979">1979</option>
+								<option value="1980">1980</option>
+								<option value="1981">1981</option>
+								<option value="1982">1982</option>
+								<option value="1983">1983</option>
+								<option value="1984">1984</option>
+								<option value="1985">1985</option>
+								<option value="1986">1986</option>
+								<option value="1987">1987</option>
+								<option value="1988">1988</option>
+								<option value="1989">1989</option>
+								<option value="1990">1990</option>
+								<option value="1991">1991</option>
+								<option value="1992">1992</option>
+								<option value="1993">1993</option>
+							</select>
+						</div>
+						<label>Email Address</label>
+						<input type="text" />
+						<div class="ct">
+							<button class="button button-login primary">Log in</button>
+						</div>
+					<form>
+				</div>
+			</div>
+			</div>
+	</div>
+	<!-- Login: End -->
+
+	<!-- Footer : Start -->
+
+	<footer>
+		<div class="row">
+			<div class="medium-5 columns">
+				<h4>Travel insurance</h4>
+				<div class="row">
+					<div class="medium-6 columns">
+						<ul class="menu vertical footer">
+							<li><a href="/trekking-insurance.aspx">Trekking</a></li>
+							<li><a href="/one-way-travel-insurance.aspx">One-way</a></li>
+							<li><a href="/backpackers-insurance.aspx">Backpacker</a></li>
+							<li><a href="/gap-year-travel-insurance.aspx" style="white-space: nowrap;">GAP Year Travel</a></li>
+							<li><a href="/iec-travel-insurance.aspx" style="white-space: nowrap;">IEC for Canada</a></li>
+						</ul>
+					</div>
+					<div class="medium-6 columns">
+						<ul class="menu vertical footer">
+							<li><a href="/ski-insurance.aspx" style="white-space: nowrap;">Winter Sports</a></li>
+							<li><a href="/travel-insurance-after-leaving.aspx" style="white-space: nowrap;">Already Travelling</a></li>
+							<li><a href="/annual-travel-insurance.aspx">Multi-trip</a></li>
+							<li><a href="/scuba-diving-insurance.aspx">Scuba Diving</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="medium-2 columns">
+				<h4>Support</h4>
+				<ul class="menu vertical footer">
+					<li><a href="/mytraveller/mytraveller.aspx" style="white-space: nowrap;">My TT Policy</a></li>
+					<li><a href="/faq.aspx" style="white-space: nowrap;">Need Help?</a></li>
+					<li><a href="/backpacker-tips.aspx" style="white-space: nowrap;">Traveller advice</a></li>
+					<li><a href="/activities.aspx" style="white-space: nowrap;">Activity packs</a></li>
+					<li><a href="/claims.aspx" style="white-space: nowrap;">Make a claim</a></li>
+				</ul>
+			</div>
+			<div class="medium-2 columns">
+				<h4 style="white-space: nowrap;">Other info</h4>
+				<ul class="menu vertical footer">
+					<li><a href="/aboutus.aspx" style="white-space: nowrap;">About Us</a></li>
+					<li><a data-open="PolicyDocsPopUp" style="white-space: nowrap;">Policy download</a></li>
+					<li><a href="/privacy.aspx" style="white-space: nowrap;">Privacy Policy</a></li>
+					<li><a href="/copyright.aspx" style="white-space: nowrap;">Copyright Notice</a></li>
+				</ul>
+			</div>
+			<div class="medium-4 columns text-right social">
+				<a href="https://www.facebook.com/truetraveller/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://www.twitter.com/true_traveller" target="_blank"><i class="fab fa-twitter"></i></a>
+				<a href="https://www.instagram.com/truetravellerinsurance" target="_blank"><i class="fab fa-instagram"></i></a>
+			</div>
+		</div>
+		<div class="row bottom">
+			<div class="medium-6 columns copyright">
+				<p>© The True Traveller Limited 2010-2019. All rights reserved</p>
+				<p>Authorised and Regulated by the Financial Conduct Authority (<a href="https://register.fca.org.uk/ShPo_FirmDetailsPage?id=001b000003U0NfyAAF" target="_blank" class="FCAlink" style="cursor:pointer;">FRN 756107</a>).</p>
+			</div>
+			<div class="medium-6 columns text-right">
+				<div class="row">
+					<div class="small-6 columns">
+						<a href="https://www.gov.uk/travelaware" style="text-decoration: none;" target="_blank">
+							<img src="img/FCO_Banner_Bottom.png" alt="FCOBanner" /></a>
+					</div>
+					<div class="small-6 columns">
+						<a href="/Testimonials.aspx" style="text-decoration: none;">
+							<img src="img/trustpilot_footer_logo.png" alt="TrustPilotFooter" /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+	<!-- Footer : End -->
+
+	<!-- JS : Start -->
+
+	<script src="js/min/app-min.js"></script>
+
+	<!-- New UX JS -->
+	<script src="js/min/ux-min.js"></script>
+
+	<!-- JS : End -->
+
+
+</body>
+
+</html>

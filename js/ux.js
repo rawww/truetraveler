@@ -1,3 +1,30 @@
+// Fixing bug in reveal on mobile devices
+var scrollPosition = 0;
+var modalOpen = false;
+var $reveal = jQuery('.reveal');
+$reveal.on('closeme.zf.reveal', function() {
+  if(!modalOpen) scrollPosition = jQuery(document).scrollTop();
+});
+$reveal.on('open.zf.reveal', function() {
+  modalOpen = true;
+});
+$reveal.on('closed.zf.reveal', function() {
+  jQuery(document).scrollTop(scrollPosition);
+  modalOpen = false;
+});;
+
+// fixed mobile policy details button toggler
+
+jQuery(function(){
+   jQuery(".view-current-details").click(function () {
+      jQuery(this).text(function(i, text){
+          return text === "View Current Details" ? "Hide Current Details" : "View Current Details";
+      })
+   });
+})
+
+//made faster on 0 breakpoint (mobile)
+
 // Carousels
 $("#owl-cover-usp").owlCarousel({
     nav: false,
@@ -11,7 +38,8 @@ $("#owl-cover-usp").owlCarousel({
             loop:true,
             margin:10,
             autoplay:true,
-            autoplayTimeout:4000,
+            //set ms here
+            autoplayTimeout:500,
             autoplayHoverPause:true
         },
         600:{
@@ -385,8 +413,8 @@ $(function() {
         if ($(document).width() < modalBreakPoint) {
           // $('#pop_Modal label#pop_from_label div').css('color','#0a0a0a');
           // $('#pop_Modal label#pop_to_label div').css('color','#999');
-          $('#pop_Modal').append($('#ui-datepicker-div'));
           $('#pop_Modal').foundation('open');
+          $('#pop_Modal').append($('#ui-datepicker-div'));
         } else {
           $('body').append($('#ui-datepicker-div'));
         }
@@ -430,7 +458,7 @@ $(function() {
 
 
       $(window).resize(function() {
-        $('#pop_Modal').foundation('close');
+        //$('#pop_Modal').foundation('close');
         $('#ui-datepicker-div').css("display","none");
         timeoutID = window.setTimeout(function() {$('#ui-datepicker-div').css("display","none");}, 300);
         if ($(document).width() < modalBreakPoint) {
