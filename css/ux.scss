@@ -28,6 +28,16 @@ $error: #F44336;
 
 //ux.scss starts here. more imports below
 
+/* cls adjustments */
+
+.image-card .image-card-inner {
+    background: white;
+    position: absolute;
+    width: 100% !important;
+    bottom: -20px !important;
+    padding: 30px !important;
+}
+
 .ct {
 	text-align:center;
 }
@@ -1488,7 +1498,7 @@ a.wherecover-popover-close {
 		@media screen and (min-width: 64em) {
 			//raise min-height value if more text content is added to 'where do you need cover' columns
 			min-height: 500px;
-		} 
+		}
 
 		h2 {
 			font-size: 18px;

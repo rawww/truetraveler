@@ -1,3 +1,6 @@
+
+
+
 ﻿.btn, .input-group-label, .label, .progress-meter-text {
     white-space: nowrap
 }
@@ -4136,31 +4139,31 @@ table.hover tr:nth-of-type(even):hover {
 @media screen and (max-width:0em),screen and (min-width:40em) {
     .show-for-small-only {
         display: none !important
-    }    
+    }
 }
 
 @media screen and (max-width:39.9375em) {
     .hide-for-small-only, .show-for-medium {
         display: none !important
-    }    
+    }
 }
 
 @media screen and (min-width:40em) and (max-width:63.9375em) {
     .hide-for-medium-only {
         display: none !important
-    }   
+    }
 }
 
 @media screen and (max-width:39.9375em),screen and (min-width:64em) {
     .show-for-medium-only {
         display: none !important
-    }    
+    }
 }
 
 @media screen and (min-width:64em) {
     .hide-for-large {
         display: none !important
-    }    
+    }
 }
 
 @media screen and (max-width:63.9375em) {
@@ -11782,7 +11785,7 @@ div.cookie_container {
     width: 40%;
     opacity: 0;
     z-index: 9999;
-    background-color: white;   
+    background-color: white;
     height: 100%
 }
 
@@ -12193,7 +12196,7 @@ label.css-label {
 
 label.css-label-new {
     margin-left: 0;
-    margin-top: 5px;    
+    margin-top: 5px;
     -khtml-user-select: none;
     user-select: none
 }
@@ -13744,7 +13747,7 @@ h2.black_14 {
         background-color: #fff
     }
 
-.modalBC {    
+.modalBC {
     color: #000;
 }
 
