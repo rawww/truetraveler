@@ -9,6 +9,64 @@ $darkgreen: #079B7D;
 $greenlight: #C2F9ED;
 $error: #F44336;
 
+.image-card {
+    height: 360px !important;
+}
+
+.no-webp {
+  .home-intro .background {
+    background-image: url("../img/home/home-cover.jpg");
+  }
+}
+
+// .webp {
+  .home-intro .background {
+    background-image: url("../img/home/home-cover.webp") !important;
+  }
+
+  .full-image-panel--activity {
+    background-image: url("../img/home/large-panel-activities.webp") !important;
+  }
+
+  .image-card--trekking {
+    background-image: url("../img/home/trekking.webp") !important;
+  }
+
+  .image-card--one-way {
+    background-image: url("../img/home/one-way.webp") !important;
+  }
+
+  .image-card--back-packer{
+    background-image: url("../img/home/back-packer.webp") !important;
+  }
+
+  .image-card--gap-year {
+    background-image: url("../img/home/gap-year.webp") !important;
+  }
+
+  .image-card--ice-canada {
+    background-image: url("../img/home/ice-canada.webp") !important;
+  }
+
+  .image-card--winter-sports {
+    background-image: url("../img/home/winter-sports.webp") !important;
+  }
+
+  .image-card--already-travelling {
+    background-image: url("../img/home/already-travelling.webp") !important;
+  }
+
+  .image-card--multi-trip {
+    background-image: url("../img/home/multi-trip.webp") !important;
+  }
+
+  .full-image-panel--why {
+    background-image: url("../img/home/large-panel-why-buy.webp") !important;
+
+  }
+// }
+
+
 /* Small only */
 // @media screen and (max-width: 39.9375em) {}
 //

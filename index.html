@@ -11,11 +11,10 @@
 	<meta name="robots" content="index,follow" />
 
 	<link rel="stylesheet" href="css/all.css">
-	<link rel="preload" href="https://phpstack-169062-1434604.cloudwaysapps.com/webfonts/fa-regular-400.woff2">
-	<link rel="preload" href="https://phpstack-169062-1434604.cloudwaysapps.com/font/truetraveller.woff?38429907">
-	<link rel="preload" href="https://phpstack-169062-1434604.cloudwaysapps.com/webfonts/fa-brands-400.woff2">
-	<link rel="preload" href="https://phpstack-169062-1434604.cloudwaysapps.com/webfonts/fa-solid-900.woff2">
-
+	<link rel="preload" href="https://phpstack-169062-1434604.cloudwaysapps.com/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="https://phpstack-169062-1434604.cloudwaysapps.com/font/truetraveller.woff?38429907" as="font" type="font/woff" crossorigin>
+	<link rel="preload" href="https://phpstack-169062-1434604.cloudwaysapps.com/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="https://phpstack-169062-1434604.cloudwaysapps.com/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
 
 
 	<!-- Typekit -->
@@ -167,7 +166,11 @@
 					<ul class="menu">
 						<li>
 							<div class="medium-3 column">
-								<img src="img/mega01.jpg">
+								<picture>
+									<source srcset="img/mega01.webp" type="image/webp">
+									<source srcset="img/mega01.jpg" type="image/jpeg">
+									<img src="img/mega01.jpg" alt="True Traveller">
+								</picture>
 							</div>
 							<div class="medium-3 column">
 								<a href="#" rel="noopener" class="white">Trekking</a><br />
@@ -197,7 +200,11 @@
 					<ul class="menu">
 						<li>
 							<div class="medium-3 column">
-								<img src="img/mega02.jpg">
+								<picture>
+									<source srcset="img/mega02.webp" type="image/webp">
+									<source srcset="img/mega02.jpg" type="image/jpeg">
+									<img src="img/mega02.jpg" alt="True Traveller">
+								</picture>
 							</div>
 							<div class="medium-3 column">
 								<a href="#" rel="noopener" class="white">Contact us</a><br />
@@ -736,7 +743,11 @@
 				<div class="item">
 
 					<div class="product-card">
-						<img src="img/home/true-value.jpg" alt="image">
+						<picture>
+							<source srcset="img/home/true-value.webp" type="image/webp">
+							<source srcset="img/home/true-value.jpg" type="image/jpeg">
+							<img src="img/home/true-value.jpg" alt="True Traveller">
+						</picture>
 						<div class="product-card-inner">
 							<h3>True Value</h3>
 							<p>Designed for travellers under 40 years of age, and is designed for last minute travellers and backpackers</p>
@@ -749,7 +760,11 @@
 				<div class="item">
 
 					<div class="product-card">
-						<img src="img/home/true-traveller.jpg" alt="image">
+						<picture>
+							<source srcset="img/home/true-traveller.webp" type="image/webp">
+							<source srcset="img/home/true-traveller.jpg" type="image/jpeg">
+							<img src="img/home/true-traveller.jpg" alt="True Traveller">
+						</picture>
 						<div class="product-card-inner">
 							<h3>The Traveller</h3>
 							<p>Our most popular, is designed for holiday makers and adventurous travellers alike</p>
@@ -762,7 +777,11 @@
 				<div class="item">
 
 					<div class="product-card">
-						<img src="img/home/traveller-plus.jpg" alt="image">
+						<picture>
+							<source srcset="img/home/traveller-plus.webp" type="image/webp">
+							<source srcset="img/home/traveller-plus.jpg" type="image/jpeg">
+							<img src="img/home/traveller-plus.jpg" alt="True Traveller">
+						</picture>
 						<div class="product-card-inner">
 							<h3>Traveller Plus</h3>
 							<p>Designed for travellers who are looking for enhanced medical and cancellation cover in their policy</p>
@@ -785,7 +804,11 @@
 		<div class="row gutter-small show-for-large" data-equalizer data-equalize-on="medium">
 			<div class="medium-4 columns text-center">
 				<div class="product-card hover-push" data-equalizer-watch>
-					<img src="img/home/true-value.jpg" alt="image">
+					<picture>
+						<source srcset="img/home/true-value.webp" type="image/webp">
+						<source srcset="img/home/true-value.jpg" type="image/jpeg">
+						<img src="img/home/true-value.jpg" alt="True Traveller">
+					</picture>
 					<div class="product-card-inner">
 						<h3>True Value</h3>
 						<p>Designed for travellers under 40 years of age, and is designed for last minute travellers and backpackers</p>
@@ -796,7 +819,12 @@
 			</div>
 			<div class="medium-4 columns text-center">
 				<div class="product-card hover-push" data-equalizer-watch>
-					<img src="img/home/true-traveller.jpg" alt="image">
+
+					<picture>
+						<source srcset="img/home/true-traveller.webp" type="image/webp">
+						<source srcset="img/home/true-traveller.jpg" type="image/jpeg">
+						<img src="img/home/true-traveller.jpg" alt="True Traveller">
+					</picture>
 					<div class="product-card-inner">
 						<h3>The Traveller</h3>
 						<p>Our most popular, is designed for holiday makers and adventurous travellers alike</p>
@@ -807,7 +835,12 @@
 			</div>
 			<div class="medium-4 columns text-center">
 				<div class="product-card hover-push" data-equalizer-watch>
-					<img src="img/home/traveller-plus.jpg" alt="image">
+
+					<picture>
+						<source srcset="img/home/traveller-plus.webp" type="image/webp">
+						<source srcset="img/home/traveller-plus.jpg" type="image/jpeg">
+						<img src="img/home/traveller-plus.jpg" alt="True Traveller">
+					</picture>
 					<div class="product-card-inner">
 						<h3>Traveller Plus</h3>
 						<p>Designed for travellers who are looking for enhanced medical and cancellation cover in their policy</p>
@@ -822,7 +855,11 @@
 				<div class="product-card product-card-large">
 					<div class="row">
 						<div class="medium-6 columns">
-							<img src="img/home/annual-multi-trip.jpg" alt="image">
+							<picture>
+								<source srcset="img/home/annual-multi-trip.webp" type="image/webp">
+								<source srcset="img/home/annual-multi-trip.jpg" type="image/jpeg">
+								<img src="img/home/annual-multi-trip.jpg" alt="True Traveller">
+							</picture>
 						</div>
 						<div class="medium-6 columns">
 							<div class="product-card-large-inner">
@@ -1068,6 +1105,11 @@
 				<div class="item">
 					<div class="icon-card" data-equalizer-watch>
 						<a data-open="InsurerPopUp" aria-controls="InsurerPopUp" aria-haspopup="true">
+							<picture>
+								<source srcset="img/home/icons/AGA-logo.webp" type="image/webp">
+								<source srcset="img/home/icons/AGA-logo.jpg" type="image/jpeg">
+								<img src="img/home/icons/AGA-logo.jpg" alt="True Traveller">
+							</picture>
 							<img class="owl-why-choose-icon" src="img/home/icons/AGA-logo.jpg" alt="image">
 							<h5>Insured by Allianz Global Assistance</h5>
 						</a>
@@ -1127,7 +1169,11 @@
 			<a data-open="InsurerPopUp" aria-controls="InsurerPopUp" aria-haspopup="true" tabindex="0">
 			<div class="medium-3 columns text-center">
 				<div class="icon-card" data-equalizer-watch>
-					<img src="img/home/icons/AGA-logo.jpg" alt="image">
+					<picture>
+					  <source srcset="img/home/icons/AGA-logo.webp" type="image/webp">
+					  <source srcset="img/home/icons/AGA-logo.jpg" type="image/jpeg">
+					  <img src="img/home/icons/AGA-logo.jpg" alt="Allianz Global Assistance">
+					</picture>
 					<h5>Insured by Allianz Global Assistance</h5>
 				</div>
 			</div>
@@ -1196,7 +1242,7 @@
 			<div class="medium-12 columns text-center">
 
 				<!-- TrustBox widget - Carousel -->
-				<div class="trustpilot-widget" data-locale="en-GB" data-template-id="53aa8912dec7e10d38f59f36" data-businessunit-id="4d813ff900006400050f2633" data-style-height="130px" data-style-width="100%" data-theme="light" data-stars="5"> <a href="https://uk.trustpilot.com/review/www.truetraveller.com"
+				<div class="trustpilot-widget" data-locale="en-GB" data-template-id="53aa8912dec7e10d38f59f36" data-businessunit-id="4d813ff900006400050f2633" data-style-height="130px" data-style-width="100%" data-theme="light" data-stars="5"> <a rel="noopener" href="https://uk.trustpilot.com/review/www.truetraveller.com"
 					  target="_blank">Trustpilot</a> </div>
 				<!-- End TrustBox widget -->
 
@@ -1278,7 +1324,7 @@
 		<div class="row bottom">
 			<div class="medium-6 columns copyright">
 				<p>© The True Traveller Limited 2010-2019. All rights reserved</p>
-				<p>Authorised and Regulated by the Financial Conduct Authority (<a href="https://register.fca.org.uk/ShPo_FirmDetailsPage?id=001b000003U0NfyAAF" target="_blank" class="FCAlink" style="cursor:pointer;">FRN 756107</a>).</p>
+				<p>Authorised and Regulated by the Financial Conduct Authority (<a rel="noopener" href="https://register.fca.org.uk/ShPo_FirmDetailsPage?id=001b000003U0NfyAAF" target="_blank" class="FCAlink" style="cursor:pointer;">FRN 756107</a>).</p>
 			</div>
 			<div class="medium-6 columns text-right">
 				<div class="row">
