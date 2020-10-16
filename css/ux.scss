@@ -9,6 +9,10 @@ $darkgreen: #079B7D;
 $greenlight: #C2F9ED;
 $error: #F44336;
 
+img {
+    aspect-ratio: attr(width) / attr(height);
+}
+
 .image-card {
     height: 360px !important;
 }
