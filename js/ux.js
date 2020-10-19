@@ -51,7 +51,7 @@ $("#owl-cover-usp").owlCarousel({
             autoplayTimeout:4000,
             autoplayHoverPause:true
         },
-        1000:{
+        1024:{
             items:4,
             loop:false
         }
@@ -84,7 +84,7 @@ $("#owl-cover-options").owlCarousel({
             autoplayTimeout:4000,
             autoplayHoverPause:true
         },
-        1000:{
+        1024:{
             items:4,
             loop:false
         }
@@ -117,7 +117,7 @@ $("#owl-type-insurance").owlCarousel({
             autoplayTimeout:4000,
             autoplayHoverPause:true
         },
-        1000:{
+        1024:{
             items:4,
             loop:false
         }
@@ -151,7 +151,7 @@ $("#owl-why-choose").owlCarousel({
             autoplayTimeout:4000,
             autoplayHoverPause:true
         },
-        1000:{
+        1024:{
             items:4,
             loop:false
         }
