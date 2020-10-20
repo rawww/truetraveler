@@ -10,26 +10,28 @@
 	<meta name="description" content="Adventure Travel Insurance to cover single trip, annual multi trip and low cost backpacker cover designed for adventure travellers by The True Traveller." />
 	<meta name="robots" content="index,follow" />
 
-
 	<style>
-	.showMenu {
-		opacity:0;
+	.no-js .showMenu {
+		opacity:0 !important;
 	}
 
-	#search {
-		display:none;
+  .no-js #search {
+		display:none !important;
 	}
 
-	.is-dropdown-submenu {
-	  display:none;
+	.no-js #mega-menu-container {
+	  display:none !important;
   }
 
-	.owl-carousel {
-		display:none;
+	.no-js .owl-carousel {
+		display:none !important;
 	}
 
-	.hide-while-load {
-		opacity:0 !important;
+	.no-js .button.quote {
+		display:none !important;
+	}
+
+	.no-js .mobile-menu-button {
 		display:none !important;
 	}
 	</style>
@@ -42,7 +44,7 @@
 
 
 	<!-- Typekit -->
-	<script src="https://use.typekit.net/isb8sii.js"></script>
+	<script rel="preload" src="https://use.typekit.net/isb8sii.js" as="style"></script>
 	<script>
 		try {
 			Typekit.load({
@@ -84,7 +86,14 @@
 
 	<script src="js/min/jquery.min.js"></script>
 
-
+	<script type="text/javascript">
+	//<![CDATA[
+	// jQuery(window).load(function() { // makes sure the whole site is loaded
+	// 	jQuery("#status").fadeOut(); // will first fade out the loading animation
+	// 	jQuery("#preloader").delay(350).fadeOut("slow"); // will fade out the white DIV that covers the website.
+	// })
+	//]]>
+	</script>
 
 </head>
 
@@ -173,7 +182,7 @@
 				<li class="mega-menu is-dropdown-submenu-parent">
 					<a class="" href="#" rel="noopener">What we offer</a>
 					<ul class="menu">
-						<li class="is-dropdown-submenu-parent">
+						<li>
 							<div class="medium-3 column">
 									<source srcset="img/mega01.webp" type="image/webp">
 									<source srcset="img/mega01.jpg" type="image/jpeg">
@@ -202,10 +211,10 @@
 					<a class="" href="#" rel="noopener">Who we are</a>
 				</li>
 
-				<li class="mega-menu is-dropdown-submenu-parent">
+				<li class="mega-menu">
 					<a class="" href="#" rel="noopener">Need help?</a>
 					<ul class="menu">
-						<li class="is-dropdown-submenu-parent">
+						<li>
 							<div class="medium-3 column">
 									<source srcset="img/mega02.webp" type="image/webp">
 									<source srcset="img/mega02.jpg" type="image/jpeg">
