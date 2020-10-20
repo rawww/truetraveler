@@ -10,6 +10,7 @@
 	<meta name="description" content="Adventure Travel Insurance to cover single trip, annual multi trip and low cost backpacker cover designed for adventure travellers by The True Traveller." />
 	<meta name="robots" content="index,follow" />
 
+
 	<style>
 	.showMenu {
 		opacity:0;
@@ -25,6 +26,11 @@
 
 	.owl-carousel {
 		display:none;
+	}
+
+	.hide-while-load {
+		opacity:0 !important;
+		display:none !important;
 	}
 	</style>
 
@@ -77,21 +83,6 @@
 
 
 	<script src="js/min/jquery.min.js"></script>
-
-
-	<script type="text/javascript">
-		//<![CDATA[
-		jQuery(window).load(function() { // makes sure the whole site is loaded
-			jQuery("#status").fadeOut(); // will first fade out the loading animation
-			jQuery("#preloader").delay(350).fadeOut("slow"); // will fade out the white DIV that covers the website.
-		})
-		//]]>
-	</script>
-
-
-
-
-
 
 
 
@@ -179,16 +170,14 @@
 			</div>
 
 			<ul id="mega-menu-container" class="menu" data-dropdown-menu data-click-open="true" data-disable-hover="true">
-				<li class="mega-menu">
+				<li class="mega-menu is-dropdown-submenu-parent">
 					<a class="" href="#" rel="noopener">What we offer</a>
 					<ul class="menu">
-						<li>
+						<li class="is-dropdown-submenu-parent">
 							<div class="medium-3 column">
-								<picture>
 									<source srcset="img/mega01.webp" type="image/webp">
 									<source srcset="img/mega01.jpg" type="image/jpeg">
 									<img src="img/mega01.jpg" alt="True Traveller">
-								</picture>
 							</div>
 							<div class="medium-3 column">
 								<a href="#" rel="noopener" class="white">Trekking</a><br />
@@ -209,20 +198,18 @@
 					</ul>
 				</li>
 
-				<li class="mega-menu">
+				<li class="mega-menu is-dropdown-submenu-parent">
 					<a class="" href="#" rel="noopener">Who we are</a>
 				</li>
 
-				<li class="mega-menu">
+				<li class="mega-menu is-dropdown-submenu-parent">
 					<a class="" href="#" rel="noopener">Need help?</a>
 					<ul class="menu">
-						<li>
+						<li class="is-dropdown-submenu-parent">
 							<div class="medium-3 column">
-								<picture>
 									<source srcset="img/mega02.webp" type="image/webp">
 									<source srcset="img/mega02.jpg" type="image/jpeg">
 									<img src="img/mega02.jpg" alt="True Traveller">
-								</picture>
 							</div>
 							<div class="medium-3 column">
 								<a href="#" rel="noopener" class="white">Contact us</a><br />
@@ -763,25 +750,13 @@
 					<div class="product-card">
 
 
-						<picture>
-						  <source
-							sizes="(max-width: 740px) 100vw, 740px"
+						  <img width="740" height="382"
 							srcset="
 							img/home/true-value_je1k5b_c_scale,w_480.jpg 480w,
 							img/home/true-value_je1k5b_c_scale,w_689.jpg 689w,
 							img/home/true-value_je1k5b_c_scale,w_740.jpg 740w"
 							src="true-value_je1k5b_c_scale,w_740.jpg"
-							type="image/jpeg">
-
-							<source
-							sizes="(max-width: 740px) 100vw, 740px"
-							srcset="
-							img/home/true-value_tovb2o_c_scale,w_480.webp 480w,
-							img/home/true-value_tovb2o_c_scale,w_740.webp 740w"
-							src="img/home/true-value_tovb2o_c_scale,w_740.webp" type="image/webp">
-
-							<img src="img/home/true-value.jpg" alt="True Traveller">
-						</picture>
+							type="image/jpeg" alt="True Traveller">
 
 
 						<div class="product-card-inner">
@@ -796,25 +771,14 @@
 				<div class="item">
 
 					<div class="product-card">
-						<picture>
-						  <source
-							sizes="(max-width: 740px) 100vw, 740px"
-							srcset="
-							img/home/true-value_je1k5b_c_scale,w_480.jpg 480w,
-							img/home/true-value_je1k5b_c_scale,w_689.jpg 689w,
-							img/home/true-value_je1k5b_c_scale,w_740.jpg 740w"
-							src="true-value_je1k5b_c_scale,w_740.jpg"
-							type="image/jpeg">
+								<img width="740" height="382"
+								srcset="
+								img/home/true-value_je1k5b_c_scale,w_480.jpg 480w,
+								img/home/true-value_je1k5b_c_scale,w_689.jpg 689w,
+								img/home/true-value_je1k5b_c_scale,w_740.jpg 740w"
+								src="true-value_je1k5b_c_scale,w_740.jpg"
+								type="image/jpeg" alt="True Traveller">
 
-							<source
-							sizes="(max-width: 740px) 100vw, 740px"
-							srcset="
-							img/home/true-value_tovb2o_c_scale,w_480.webp 480w,
-							img/home/true-value_tovb2o_c_scale,w_740.webp 740w"
-							src="img/home/true-value_tovb2o_c_scale,w_740.webp" type="image/webp">
-
-							<img src="img/home/true-value.jpg" alt="True Traveller">
-						</picture>
 						<div class="product-card-inner">
 							<h3>The Traveller</h3>
 							<p>Our most popular, is designed for holiday makers and adventurous travellers alike</p>
@@ -827,25 +791,14 @@
 				<div class="item">
 
 					<div class="product-card">
-						<picture>
-						  <source
-							sizes="(max-width: 740px) 100vw, 740px"
-							srcset="
-							img/home/true-value_je1k5b_c_scale,w_480.jpg 480w,
-							img/home/true-value_je1k5b_c_scale,w_689.jpg 689w,
-							img/home/true-value_je1k5b_c_scale,w_740.jpg 740w"
-							src="true-value_je1k5b_c_scale,w_740.jpg"
-							type="image/jpeg">
+						<img width="740" height="382"
+						srcset="
+						img/home/true-value_je1k5b_c_scale,w_480.jpg 480w,
+						img/home/true-value_je1k5b_c_scale,w_689.jpg 689w,
+						img/home/true-value_je1k5b_c_scale,w_740.jpg 740w"
+						src="true-value_je1k5b_c_scale,w_740.jpg"
+						type="image/jpeg" alt="True Traveller">
 
-							<source
-							sizes="(max-width: 740px) 100vw, 740px"
-							srcset="
-							img/home/true-value_tovb2o_c_scale,w_480.webp 480w,
-							img/home/true-value_tovb2o_c_scale,w_740.webp 740w"
-							src="img/home/true-value_tovb2o_c_scale,w_740.webp" type="image/webp">
-
-							<img src="img/home/true-value.jpg" alt="True Traveller">
-						</picture>
 						<div class="product-card-inner">
 							<h3>Traveller Plus</h3>
 							<p>Designed for travellers who are looking for enhanced medical and cancellation cover in their policy</p>
@@ -868,25 +821,13 @@
 		<div class="row gutter-small show-for-large" data-equalizer data-equalize-on="medium">
 			<div class="medium-4 columns text-center">
 				<div class="product-card hover-push" data-equalizer-watch>
-					<picture>
-					  <source
-						sizes="(max-width: 740px) 100vw, 740px"
-						srcset="
-						img/home/true-value_je1k5b_c_scale,w_480.jpg 480w,
-						img/home/true-value_je1k5b_c_scale,w_689.jpg 689w,
-						img/home/true-value_je1k5b_c_scale,w_740.jpg 740w"
-						src="true-value_je1k5b_c_scale,w_740.jpg"
-						type="image/jpeg">
-
-						<source
-						sizes="(max-width: 740px) 100vw, 740px"
-						srcset="
-						img/home/true-value_tovb2o_c_scale,w_480.webp 480w,
-						img/home/true-value_tovb2o_c_scale,w_740.webp 740w"
-						src="true-value_tovb2o_c_scale,w_740.webp" type="image/webp">
-
-						<img src="img/home/true-value.jpg" alt="True Traveller">
-					</picture>
+					<img width="740" height="382"
+					srcset="
+					img/home/true-value_je1k5b_c_scale,w_480.jpg 480w,
+					img/home/true-value_je1k5b_c_scale,w_689.jpg 689w,
+					img/home/true-value_je1k5b_c_scale,w_740.jpg 740w"
+					src="true-value_je1k5b_c_scale,w_740.jpg"
+					type="image/jpeg" alt="True Traveller">
 
 					<div class="product-card-inner">
 						<h3>True Value</h3>
@@ -899,25 +840,14 @@
 			<div class="medium-4 columns text-center">
 				<div class="product-card hover-push" data-equalizer-watch>
 
-					<picture>
-					  <source
-						sizes="(max-width: 740px) 100vw, 740px"
-						srcset="
-						img/home/true-value_je1k5b_c_scale,w_480.jpg 480w,
-						img/home/true-value_je1k5b_c_scale,w_689.jpg 689w,
-						img/home/true-value_je1k5b_c_scale,w_740.jpg 740w"
-						src="true-value_je1k5b_c_scale,w_740.jpg"
-						type="image/jpeg">
+					<img width="740" height="382"
+					srcset="
+					img/home/true-value_je1k5b_c_scale,w_480.jpg 480w,
+					img/home/true-value_je1k5b_c_scale,w_689.jpg 689w,
+					img/home/true-value_je1k5b_c_scale,w_740.jpg 740w"
+					src="true-value_je1k5b_c_scale,w_740.jpg"
+					type="image/jpeg" alt="True Traveller">
 
-						<source
-						sizes="(max-width: 740px) 100vw, 740px"
-						srcset="
-						img/home/true-value_tovb2o_c_scale,w_480.webp 480w,
-						img/home/true-value_tovb2o_c_scale,w_740.webp 740w"
-						src="img/home/true-value_tovb2o_c_scale,w_740.webp" type="image/webp">
-
-						<img src="img/home/true-value.jpg" alt="True Traveller">
-					</picture>
 					<div class="product-card-inner">
 						<h3>The Traveller</h3>
 						<p>Our most popular, is designed for holiday makers and adventurous travellers alike</p>
@@ -929,25 +859,14 @@
 			<div class="medium-4 columns text-center">
 				<div class="product-card hover-push" data-equalizer-watch>
 
-					<picture>
-					  <source
-						sizes="(max-width: 740px) 100vw, 740px"
-						srcset="
-						img/home/true-value_je1k5b_c_scale,w_480.jpg 480w,
-						img/home/true-value_je1k5b_c_scale,w_689.jpg 689w,
-						img/home/true-value_je1k5b_c_scale,w_740.jpg 740w"
-						src="true-value_je1k5b_c_scale,w_740.jpg"
-						type="image/jpeg">
+					<img width="740" height="382"
+					srcset="
+					img/home/true-value_je1k5b_c_scale,w_480.jpg 480w,
+					img/home/true-value_je1k5b_c_scale,w_689.jpg 689w,
+					img/home/true-value_je1k5b_c_scale,w_740.jpg 740w"
+					src="true-value_je1k5b_c_scale,w_740.jpg"
+					type="image/jpeg" alt="True Traveller">
 
-						<source
-						sizes="(max-width: 740px) 100vw, 740px"
-						srcset="
-						img/home/true-value_tovb2o_c_scale,w_480.webp 480w,
-						img/home/true-value_tovb2o_c_scale,w_740.webp 740w"
-						src="img/home/true-value_tovb2o_c_scale,w_740.webp" type="image/webp">
-
-						<img src="img/home/true-value.jpg" alt="True Traveller">
-					</picture>
 					<div class="product-card-inner">
 						<h3>Traveller Plus</h3>
 						<p>Designed for travellers who are looking for enhanced medical and cancellation cover in their policy</p>
@@ -962,25 +881,14 @@
 				<div class="product-card product-card-large">
 					<div class="row">
 						<div class="medium-6 columns">
-							<picture>
-							  <source
-								sizes="(max-width: 740px) 100vw, 740px"
-								srcset="
-								img/home/true-value_je1k5b_c_scale,w_480.jpg 480w,
-								img/home/true-value_je1k5b_c_scale,w_689.jpg 689w,
-								img/home/true-value_je1k5b_c_scale,w_740.jpg 740w"
-								src="true-value_je1k5b_c_scale,w_740.jpg"
-								type="image/jpeg">
+							<img width="740" height="382"
+							srcset="
+							img/home/true-value_je1k5b_c_scale,w_480.jpg 480w,
+							img/home/true-value_je1k5b_c_scale,w_689.jpg 689w,
+							img/home/true-value_je1k5b_c_scale,w_740.jpg 740w"
+							src="true-value_je1k5b_c_scale,w_740.jpg"
+							type="image/jpeg" alt="True Traveller">
 
-								<source
-								sizes="(max-width: 740px) 100vw, 740px"
-								srcset="
-								img/home/true-value_tovb2o_c_scale,w_480.webp 480w,
-								img/home/true-value_tovb2o_c_scale,w_740.webp 740w"
-								src="img/home/true-value_tovb2o_c_scale,w_740.webp" type="image/webp">
-
-								<img src="img/home/true-value.jpg" alt="True Traveller">
-							</picture>
 						</div>
 						<div class="medium-6 columns">
 							<div class="product-card-large-inner">
@@ -1225,11 +1133,9 @@
 				<div class="item">
 					<div class="icon-card" data-equalizer-watch>
 						<a data-open="InsurerPopUp" aria-controls="InsurerPopUp" aria-haspopup="true">
-							<picture>
 								<source srcset="img/home/icons/AGA-logo.webp" type="image/webp">
 								<source srcset="img/home/icons/AGA-logo.jpg" type="image/jpeg">
 								<img src="img/home/icons/AGA-logo.jpg" alt="True Traveller">
-							</picture>
 							<img class="owl-why-choose-icon" src="img/home/icons/AGA-logo.jpg" alt="image">
 							<h5>Insured by Allianz Global Assistance</h5>
 						</a>
@@ -1289,11 +1195,9 @@
 			<a data-open="InsurerPopUp" aria-controls="InsurerPopUp" aria-haspopup="true" tabindex="0">
 			<div class="medium-3 columns text-center">
 				<div class="icon-card" data-equalizer-watch>
-					<picture>
 					  <source srcset="img/home/icons/AGA-logo.webp" type="image/webp">
 					  <source srcset="img/home/icons/AGA-logo.jpg" type="image/jpeg">
 					  <img src="img/home/icons/AGA-logo.jpg" alt="Allianz Global Assistance">
-					</picture>
 					<h5>Insured by Allianz Global Assistance</h5>
 				</div>
 			</div>
