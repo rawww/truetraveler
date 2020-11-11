@@ -270,7 +270,7 @@ $(function() {
   var hover_style = "";
   var narrowDisplay = false;
   var calMonthsToDisplay = 2;
-  $(document).foundation();
+  //$(document).foundation();
 
   if ($(document).width() < modalBreakPoint) {
     narrowDisplay = true;
