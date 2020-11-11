@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js no-js-v2" lang="en">
 
 <head>
 	<meta charset="utf-8">
@@ -8,36 +8,36 @@
 	<title>TrueTraveller - New Homepage Layout</title>
 
 	<meta name="description" content="Adventure Travel Insurance to cover single trip, annual multi trip and low cost backpacker cover designed for adventure travellers by The True Traveller." />
-	<meta name="robots" content="index,follow" />
+	<!-- <meta name="robots" content="index,follow" /> -->
 
 	<style>
-	.no-js .showMenu {
+	.no-js-v2 .showMenu {
 		opacity:0 !important;
 	}
 
-	.no-js #mega-menu-container {
+	.no-js-v2 #mega-menu-container {
 	  display:none !important;
   }
 
-	.no-js .owl-carousel {
+	.no-js-v2 .owl-carousel {
 		display:none !important;
 	}
 
-	.no-js .button.quote {
+	.no-js-v2 .button.quote {
 		display:none !important;
 	}
 
-	.no-js .mobile-menu-button {
+	.no-js-v2 .mobile-menu-button {
 		display:none !important;
 	}
 
-	.no-js .row.row--search {
+	.no-js-v2 .row.row--search {
     background: #fff;
     min-height: 181px;
 	}
 
 	@media (max-width:1023px) {
-		.no-js .row.row--search {
+		.no-js-v2 .row.row--search {
 				display:none;
 		}
 	}
@@ -1451,8 +1451,14 @@
 
 	<script src="js/min/app-min.js"></script>
 
+	<script>
+		(function(H){H.className=H.className.replace(/\bno-js-v2\b/,'js-v2')})(document.documentElement)
+	</script>
+
 	<!-- New UX JS -->
 	<script src="js/min/ux-min.js"></script>
+
+
 
 	<!-- JS : End -->
 
