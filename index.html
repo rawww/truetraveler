@@ -19,9 +19,6 @@
 	  display:none !important;
   }
 
-	.no-js-v2 .owl-carousel {
-		display:none !important;
-	}
 
 	.no-js-v2 .button.quote {
 		display:none !important;
@@ -39,6 +36,40 @@
 	@media (max-width:1023px) {
 		.no-js-v2 .row.row--search {
 				display:none;
+		}
+	}
+
+	@media (max-width: 39.9375em) {
+
+		.reveal-overlay {
+				background:#fff !important;
+		}
+
+		.reveal {
+			outline:0 !important;
+			top:0 !important;
+		}
+
+		.reveal.reveal--fixed-close {
+			padding-bottom:145px !important;
+		}
+
+		.reveal--fixed-close .popupdiv {
+			position:relative;
+		}
+
+		.reveal--fixed-close .buttonwrapper {
+			z-index: 999999999;
+			background:#fff;
+			position:fixed;
+			bottom:0;
+			left:0;
+			right:0;
+			padding:20px 20px 0 20px;
+			width:100%;
+			-webkit-box-shadow: 0 20px 49px 0 rgba(0,0,0,1);
+			-moz-box-shadow: 0 20px 49px 0 rgba(0,0,0,1);
+			box-shadow: 0 20px 49px 0 rgba(0,0,0,1);
 		}
 	}
 	</style>
@@ -738,13 +769,11 @@
 	<section class="pad white-bg small-npdb medium-npdb">
 		<div class="row">
 			<div class="medium-8 medium-offset-2 columns text-center">
-				<h2>A policy that’s designed for you</h2>
-				<p class="lead lead--home">When travelling overseas, the one thing you should never skimp on is your travel insurance cover, as should things go wrong you want the very best cover for you and your possessions. </p>
 
-				<!-- TrustBox widget - Micro Combo -->
-				<div class="trustpilot-widget" data-locale="en-GB" data-template-id="5419b6ffb0d04a076446a9af" data-businessunit-id="4d813ff900006400050f2633" data-style-height="20px" data-style-width="100%" data-theme="light"> <a rel="noopener" href="https://uk.trustpilot.com/review/www.truetraveller.com"
-					  target="_blank">Trustpilot</a> </div>
-				<!-- End TrustBox widget -->
+
+				<h2>Revised pop up</h2>
+
+				<p><a data-open="InsurerPopUp">Click here for a revised pop up</a></p>
 
 			</div>
 		</div>
@@ -1425,22 +1454,43 @@
 	<!-- datepicker reveal : End -->
 
   <!-- test reveal -->
-	<div class="reveal large modalBC" id="InsurerPopUp" data-reveal>
+	<div class="reveal reveal--fixed-close large modalBC" id="InsurerPopUp" data-reveal>
+		<button class="close-button" data-close aria-label="Close modal" type="button">
+				<span aria-hidden="true" style="color: #FF5722;">&times;</span>
+		</button>
 			<div>
-					<h2 class="popuptitle">v1</h2>
+					<h2 class="popuptitle">Fixed close button on mobile scroll</h2>
 			</div>
 			<div class="popupdiv">
+
 					<p>Your True Traveller Policy is insured by AWP P&C S.A., trading as Allianz Global Assistance, part of the Allianz Group, one of the world’s largest insurance companies.</p>
 
-					<br />
 					<p>According to Forbes Magazine, Allianz is even bigger than Alphabet, the company which owns Google and YouTube, so you’ll be in good hands!</p>
-					<br />
-					<div style="text-align: center">
+
+					<p>Your True Traveller Policy is insured by AWP P&C S.A., trading as Allianz Global Assistance, part of the Allianz Group, one of the world’s largest insurance companies.</p>
+
+					<p>According to Forbes Magazine, Allianz is even bigger than Alphabet, the company which owns Google and YouTube, so you’ll be in good hands!</p>
+
+					<p>Your True Traveller Policy is insured by AWP P&C S.A., trading as Allianz Global Assistance, part of the Allianz Group, one of the world’s largest insurance companies.</p>
+
+					<p>According to Forbes Magazine, Allianz is even bigger than Alphabet, the company which owns Google and YouTube, so you’ll be in good hands!</p>
+
+					<p>Your True Traveller Policy is insured by AWP P&C S.A., trading as Allianz Global Assistance, part of the Allianz Group, one of the world’s largest insurance companies.</p>
+
+					<p>According to Forbes Magazine, Allianz is even bigger than Alphabet, the company which owns Google and YouTube, so you’ll be in good hands!</p>
+
+					<p>Your True Traveller Policy is insured by AWP P&C S.A., trading as Allianz Global Assistance, part of the Allianz Group, one of the world’s largest insurance companies.</p>
+
+					<p>According to Forbes Magazine, Allianz is even bigger than Alphabet, the company which owns Google and YouTube, so you’ll be in good hands!</p>
+
+					<p>Your True Traveller Policy is insured by AWP P&C S.A., trading as Allianz Global Assistance, part of the Allianz Group, one of the world’s largest insurance companies.</p>
+
+					<p>According to Forbes Magazine, Allianz is even bigger than Alphabet, the company which owns Google and YouTube, so you’ll be in good hands!</p>
+
+					<div class="buttonwrapper">
 							<button type="button" class="buttonClose large expanded" data-close aria-label="Close modal">Close</button>
 					</div>
-					<button class="close-button" data-close aria-label="Close modal" type="button">
-							<span aria-hidden="true" style="color: #FF5722;">&times;</span>
-					</button>
+
 			</div>
 	</div>
 
