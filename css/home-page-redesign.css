@@ -6,6 +6,16 @@
   background: #F4F5F6;
 }
 
+.video-tint {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
 .iframe-video {
   width: 100vw;
   height: 56.25vw;
@@ -14,7 +24,7 @@
   min-width: 177.77vh;
   /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
   position: absolute;
-  top: 50%;
+  top: 47%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
