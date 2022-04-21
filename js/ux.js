@@ -39,7 +39,7 @@ $("#owl-cover-usp").owlCarousel({
             margin:10,
             autoplay:true,
             //set ms here
-            autoplayTimeout:500,
+            autoplayTimeout:2000,
             autoplayHoverPause:true
         },
         600:{
