@@ -28,6 +28,10 @@
   z-index:1;
 }
 
+.home-intro {
+  background:rgba(0,0,0,0.8);
+}
+
 .home-intro-inner {
     z-index: 2;
 }
@@ -39,7 +43,7 @@ div#owl-cover-usp {
   padding:30px 0;
   bottom:0;
   left:0;
-  h6 {
+  h6, i {
     color:#36474F;
   }
 }
