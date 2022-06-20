@@ -1,3 +1,9 @@
+/*added to pad bottom of sub pages with the old non video covers*/
+
+section.sub-intro {
+    padding: 120px 10px 270px 10px!important;
+}
+
 /*added to make consistent to production, not sure why it's there*/
 
 .home-intro-inner {
