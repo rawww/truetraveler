@@ -1,0 +1,520 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>TrueTraveller - Affiliate Dashboard</title>
+
+	<link rel="preload" href="https://www.truetraveller.com/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="https://www.truetraveller.com/font/truetraveller.woff?38429907" as="font" type="font/woff" crossorigin /><link rel="preload" href="https://www.truetraveller.com/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin /><link rel="preload" href="https://www.truetraveller.com/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin />
+	<link rel="stylesheet" href="https://www.truetraveller.com/css/all.css?v=33">
+	<link rel="stylesheet" href="https://www.truetraveller.com/css/home-page-redesign.css?v=3">
+
+	<!-- Dashboard and icon stylesheets -->
+	<link rel="stylesheet" href="css/dashboard.css">
+	<link rel="stylesheet" href="icons/dash-icons.css">
+
+
+
+
+	<!-- Typekit -->
+	<script src="https://use.typekit.net/isb8sii.js"></script>
+	<script>
+		try {
+			Typekit.load({
+				async: true
+			});
+		} catch (e) {}
+	</script>
+
+	<style>
+		.wf-loading p,
+		.wf-loading h1,
+		.wf-loading h2,
+		.wf-loading h3,
+		.wf-loading h4,
+		wf-loading label {
+			visibility: hidden;
+		}
+
+		.wf-active p,
+		.wf-active h1,
+		.wf-active h2,
+		.wf-active h3,
+		.wf-active h4,
+		wf-active label {
+			visibility: visible;
+		}
+
+		.wf-inactive p,
+		.wf-inactive h1,
+		.wf-inactive h2,
+		.wf-inactive h3,
+		.wf-inactive h4,
+		wf-inactive label {
+			visibility: visible;
+		}
+	</style>
+
+
+
+	<script src="https://www.truetraveller.com/js/header/header-all-min-dist.js"></script>
+
+
+	<!-- TrustBox script -->
+	<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+	<!-- End TrustBox script -->
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+	<div id="top"></div>
+
+
+	<!-- Desktop nav : Start -->
+
+	<header class="header header-dashboard" class="fade-all" role="banner">
+		<div class="expanded row main-menu">
+			<div class="small-6 columns">
+				<img class="logo logo-dashboard" src="img/truetraveller-logo.svg" alt="logo">
+			</div>
+
+		
+
+			<div class="small-6 columns text-right">
+
+
+						<a class="button signin hollow white" href="">Log out</a>
+
+
+
+			</div>
+
+
+		</div>
+
+	</header>
+
+	<!-- Desktop nav : End -->
+
+	<!-- Login: Start -->
+	<div class="affiliate-dashboard">
+
+
+			<div class="row">
+				<div class="medium-12 columns">
+					<div class="dashboard-card box-shadow">
+						<div class="row">
+
+							<div class="medium-2 columns">
+								<div class="dashboard-card-padding">
+									<div class="row">
+										<div class="small-12 medium-12 columns">
+											<h6>Account number</h6>
+											<h4>0124</h4>
+										</div>
+									</div>
+								</div>
+	
+							</div>
+							<div class="medium-6 columns">
+								<div class="dashboard-card-padding">
+									<h6>This quarter</h6>
+									<h4>1st January to 5th April 2024</h4>
+								</div>
+							</div>
+							<div class="small-12 medium-4 columns text-right">
+								<div class="dashboard-card-padding">
+									<a href="#" id="previous_quarter" class="button orange previous expanded hollow">Previous quarter</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				
+				<div class="medium-12 columns">
+					<div class="dashboard-card box-shadow">
+						<div class="row">
+
+							<div class="medium-12 columns">
+								<div class="dashboard-card-padding dashboard-card-half">
+
+									<h4>Number of Visits</h4>
+									
+									<div style="position: relative; width: 100%; height: 300px;">
+										<canvas id="affiliateChart"></canvas>
+									</div>
+									  
+									  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+									  
+									  <script>
+										const ctx = document.getElementById('affiliateChart');
+									
+										// Function to generate dates between two dates
+										function getDates(startDate, endDate) {
+											const dates = [];
+											let currentDate = new Date(startDate);
+											const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
+									
+											while (currentDate <= endDate) {
+												dates.push(new Date(currentDate));
+												currentDate = new Date(currentDate.getTime() + oneDay);
+											}
+									
+											return dates;
+										}
+									
+										// Generate dates from January 1st to April 5th
+										const startDate = new Date('2024-01-01');
+										const endDate = new Date('2024-04-05');
+										const dates = getDates(startDate, endDate);
+									
+										// Format dates as 'MMM DD' for labels
+										const labels = dates.map(date => {
+											const month = date.toLocaleString('default', { month: 'short' });
+											const day = date.getDate();
+											return `${month} ${day}`;
+										});
+									
+										// Dummy data for demonstration
+										const data = Array.from({ length: dates.length }, () => Math.floor(Math.random() * 20));
+									
+										new Chart(ctx, {
+											type: 'line',
+											data: {
+												labels: labels,
+												datasets: [{
+													borderColor: '#ff5722',
+													backgroundColor: '#ff5722',
+													label: '# visits',
+													data: data,
+													borderWidth: 1
+												}]
+											},
+											options: {
+												plugins: {
+													legend: {
+														display: false
+													}
+												},
+												scales: {
+													y: {
+														beginAtZero: true
+													}
+												},
+												maintainAspectRatio: false,
+												responsive: true
+											}
+										});
+									</script>
+
+								</div>
+	
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="medium-12 columns">
+					<div class="dashboard-card box-shadow">
+						<div class="row">
+
+							<div class="medium-12 columns">
+								<div class="dashboard-card-padding dashboard-card-half">
+
+									<h4>Commission Earnings</h4>
+
+									<link rel="stylesheet" href="https://cdn.datatables.net/2.0.3/css/dataTables.dataTables.css" />
+									<script src="https://cdn.datatables.net/2.0.3/js/dataTables.js"></script>
+	
+
+<script>
+$(document).ready(function() {
+    $('#affiliateTable').DataTable({
+        searching: false, // Remove the search input and functionality
+        pageLength: 8, // Set the default number of entries per page to 6
+        lengthChange: false, // Remove the option to change the number of entries per page
+    });
+});
+</script>
+
+
+
+<!-- start responsive table -->
+
+									<table id="affiliateTable" class="display" style="width:100%">
+										<thead>
+											<tr>
+												<th>Date</th>
+												<th>Ref No.</th>
+												<th>Commission</th>
+												<th>Country</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>12/03/2024</td>
+												<td>123456</td>
+												<td class="bold">£22.50 <a href="#" target="_blank"><i class="icon-link_icon"></i></a></td>
+												<td>GB</td>
+											</tr>
+											<tr>
+												<td>12/03/2024</td>
+												<td>123456</td>
+												<td class="bold">£22.50 <a href="#" target="_blank"><i class="icon-link_icon"></i></a></td>
+												<td>GB</td>
+											</tr>
+											<tr>
+												<td>12/03/2024</td>
+												<td>123456</td>
+												<td class="bold">£22.50 <a href="#" target="_blank"><i class="icon-link_icon"></i></a></td>
+												<td>GB</td>
+											</tr>
+											<tr>
+												<td>12/03/2024</td>
+												<td>123456</td>
+												<td class="bold">£22.50 <a href="#" target="_blank"><i class="icon-link_icon"></i></a></td>
+												<td>GB</td>
+											</tr>
+											<tr>
+												<td>12/03/2024</td>
+												<td>123456</td>
+												<td class="bold">£22.50 <a href="#" target="_blank"><i class="icon-link_icon"></i></a></td>
+												<td>GB</td>
+											</tr>
+											<tr>
+												<td>12/03/2024</td>
+												<td>123456</td>
+												<td class="bold">£22.50 <a href="#" target="_blank"><i class="icon-link_icon"></i></a></td>
+												<td>GB</td>
+											</tr>
+											<tr>
+												<td>12/03/2024</td>
+												<td>123456</td>
+												<td class="bold">£22.50 <a href="#" target="_blank"><i class="icon-link_icon"></i></a></td>
+												<td>GB</td>
+											</tr>
+											<tr>
+												<td>12/03/2024</td>
+												<td>123456</td>
+												<td class="bold">£22.50 <a href="#" target="_blank"><i class="icon-link_icon"></i></a></td>
+												<td>GB</td>
+											</tr>
+											<tr>
+												<td>12/03/2024</td>
+												<td>123456</td>
+												<td class="bold">£22.50 <a href="#" target="_blank"><i class="icon-link_icon"></i></a></td>
+												<td>GB</td>
+											</tr>
+											<tr>
+												<td>12/03/2024</td>
+												<td>123456</td>
+												<td class="bold">£22.50 <a href="#" target="_blank"><i class="icon-link_icon"></i></a></td>
+												<td>GB</td>
+											</tr>
+											<tr>
+												<td>30/03/2024</td>
+												<td>12</td>
+												<td class="bold">£22.50 <a href="#" target="_blank"><i class="icon-link_icon"></i></a></td>
+												<td>DE</td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- end responsive table -->
+
+								</div>
+	
+							</div>
+							
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+
+
+	</div>
+	<!-- Login: End -->
+
+	<!-- Footer : Start -->
+
+
+
+	<footer>
+		<div class="row">
+		<div class="medium-5 columns">
+		<h4>Travel insurance</h4>
+		<div class="row">
+		<div class="medium-6 columns">
+		<ul class="menu vertical footer">
+		<li><a href="/trekking-insurance">Trekking</a></li>
+		<li><a href="/one-way-travel-insurance">One-way</a></li>
+		<li><a href="/backpackers-insurance">Backpacker</a></li>
+		<li><a href="/gap-year-travel-insurance" style="white-space: nowrap;">GAP Year Travel</a></li>
+		<li><a href="/iec-travel-insurance" style="white-space: nowrap;">IEC for Canada</a></li>
+		</ul>
+		</div>
+		<div class="medium-6 columns">
+		<ul class="menu vertical footer">
+		<li><a href="/ski-insurance" style="white-space: nowrap;">Winter Sports</a></li>
+		<li><a href="/travel-insurance-after-leaving" style="white-space: nowrap;">Already Travelling</a></li>
+		<li><a href="/annual-travel-insurance">Multi-trip</a></li>
+		<li><a href="/scuba-diving-insurance">Scuba Diving</a></li>
+		</ul>
+		</div>
+		</div>
+		</div>
+		<div class="medium-2 columns">
+		<h4>Support</h4>
+		<ul class="menu vertical footer">
+		<li><a href="/mytraveller/mytraveller" style="white-space: nowrap;">My TT Policy</a></li>
+		<li><a href="/faq" style="white-space: nowrap;">Need Help?</a></li>
+		<li><a href="/backpacker-tips" style="white-space: nowrap;">Traveller advice</a></li>
+		<li><a href="/activities" style="white-space: nowrap;">Activity packs</a></li>
+		<li><a href="/claims" style="white-space: nowrap;">Make a claim</a></li>
+		</ul>
+		</div>
+		<div class="medium-2 columns">
+		<h4 style="white-space: nowrap;">Other info</h4>
+		<ul class="menu vertical footer">
+		<li><a href="/aboutus" style="white-space: nowrap;">About Us</a></li>
+		<li><a href="/policy-download" style="white-space: nowrap;">Policy download</a></li>
+		<li><a href="/privacy" style="white-space: nowrap;">Privacy Policy</a></li>
+		<li><a href="/cookie-policy" style="white-space: nowrap;">Cookie Policy</a></li>
+		<li><a href="/copyright" style="white-space: nowrap;">Copyright Notice</a></li>
+		</ul>
+		</div>
+		<div class="medium-4 columns text-right social">
+		<a href="https://www.facebook.com/truetraveller/" target="_blank" rel="noopener" title="Check Out Our Facebook Page"><i class="fab fa-facebook-f" style="font-size: 48px"></i></a>
+		<a href="https://www.twitter.com/true_traveller" target="_blank" rel="noopener" title="Check Out Our Twitter Page"><i class="icon-x_twitter_icon" style="font-size: 48px"></i></a>
+		<a href="https://www.instagram.com/truetravellerinsurance" target="_blank" rel="noopener" title="Check Out Our Instagram Page"><i class="fab fa-instagram" style="font-size: 48px"></i></a>
+		</div>
+		</div>
+		<div class="row bottom">
+		<div class="medium-6 columns copyright">
+		<p>© The True Traveller Limited 2010-2024. All rights reserved</p>
+		<p>Authorised and Regulated by the Financial Conduct Authority (<a href="https://register.fca.org.uk/s/firm?id=001b000003U0NfyAAF" target="_blank" rel="noopener" class="FCAlink" style="cursor: pointer;">FRN 756107</a>).</p>
+		</div>
+		<div class="medium-6 columns text-right">
+		<div class="row">
+		<div class="small-6 columns">
+		<a href="https://www.gov.uk/travelaware" style="text-decoration: none;" target="_blank" rel="noopener">
+		<img src="https://www.truetraveller.com/img/FCO_Banner_Bottom.png" alt="FCOBanner" loading="lazy" /></a>
+		</div>
+		<div class="small-6 columns">
+		<a href="/Testimonials" style="text-decoration: none;" rel="noopener">
+		<img src="https://www.truetraveller.com/img/reviewsiostars.png" alt="ReviewioFooter" loading="lazy" /></a>
+		</div>
+		</div>
+		</div>
+		</div>
+		</footer>
+
+	<!-- <footer>
+
+	
+
+		<div class="row">
+			<div class="medium-5 columns">
+				<h4>Travel insurance</h4>
+				<div class="row">
+					<div class="medium-6 columns">
+						<ul class="menu vertical footer">
+							<li><a href="/trekking-insurance.aspx">Trekking</a></li>
+							<li><a href="/one-way-travel-insurance.aspx">One-way</a></li>
+							<li><a href="/backpackers-insurance.aspx">Backpacker</a></li>
+							<li><a href="/gap-year-travel-insurance.aspx" style="white-space: nowrap;">GAP Year Travel</a></li>
+							<li><a href="/iec-travel-insurance.aspx" style="white-space: nowrap;">IEC for Canada</a></li>
+						</ul>
+					</div>
+					<div class="medium-6 columns">
+						<ul class="menu vertical footer">
+							<li><a href="/ski-insurance.aspx" style="white-space: nowrap;">Winter Sports</a></li>
+							<li><a href="/travel-insurance-after-leaving.aspx" style="white-space: nowrap;">Already Travelling</a></li>
+							<li><a href="/annual-travel-insurance.aspx">Multi-trip</a></li>
+							<li><a href="/scuba-diving-insurance.aspx">Scuba Diving</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="medium-2 columns">
+				<h4>Support</h4>
+				<ul class="menu vertical footer">
+					<li><a href="/mytraveller/mytraveller.aspx" style="white-space: nowrap;">My TT Policy</a></li>
+					<li><a href="/faq.aspx" style="white-space: nowrap;">Need Help?</a></li>
+					<li><a href="/backpacker-tips.aspx" style="white-space: nowrap;">Traveller advice</a></li>
+					<li><a href="/activities.aspx" style="white-space: nowrap;">Activity packs</a></li>
+					<li><a href="/claims.aspx" style="white-space: nowrap;">Make a claim</a></li>
+				</ul>
+			</div>
+			<div class="medium-2 columns">
+				<h4 style="white-space: nowrap;">Other info</h4>
+				<ul class="menu vertical footer">
+					<li><a href="/aboutus.aspx" style="white-space: nowrap;">About Us</a></li>
+					<li><a data-open="PolicyDocsPopUp" style="white-space: nowrap;">Policy download</a></li>
+					<li><a href="/privacy.aspx" style="white-space: nowrap;">Privacy Policy</a></li>
+					<li><a href="/copyright.aspx" style="white-space: nowrap;">Copyright Notice</a></li>
+				</ul>
+			</div>
+			<div class="medium-4 columns text-right social">
+				<a href="https://www.facebook.com/truetraveller/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://www.twitter.com/true_traveller" target="_blank"><i class="fab fa-twitter"></i></a>
+				<a href="https://www.instagram.com/truetravellerinsurance" target="_blank"><i class="fab fa-instagram"></i></a>
+			</div>
+		</div>
+		<div class="row bottom">
+			<div class="medium-6 columns copyright">
+				<p>© The True Traveller Limited 2010-2019. All rights reserved</p>
+				<p>Authorised and Regulated by the Financial Conduct Authority (<a href="https://register.fca.org.uk/ShPo_FirmDetailsPage?id=001b000003U0NfyAAF" target="_blank" class="FCAlink" style="cursor:pointer;">FRN 756107</a>).</p>
+			</div>
+			<div class="medium-6 columns text-right">
+				<div class="row">
+					<div class="small-6 columns">
+						<a href="https://www.gov.uk/travelaware" style="text-decoration: none;" target="_blank">
+							<img src="img/FCO_Banner_Bottom.png" alt="FCOBanner" /></a>
+					</div>
+					<div class="small-6 columns">
+						<a href="/Testimonials.aspx" style="text-decoration: none;">
+							<img src="img/trustpilot_footer_logo.png" alt="TrustPilotFooter" /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer> -->
+
+
+
+
+	<!-- Footer : End -->
+
+	<!-- JS : Start -->
+
+	<script src="https://www.truetraveller.com/js/footer/footer-all-min-dist.js"></script>
+
+	<!-- New UX JS -->
+	<script src="js/min/ux-min.js"></script>
+
+	<!-- JS : End -->
+
+	<script>jQuery(window).on("load", function () {
+		(function (H) { H.className = H.className.replace(/\bno-js-v2\b/, 'js-v2') })(document.documentElement)
+	}) </script>
+
+</body>
+
+</html>

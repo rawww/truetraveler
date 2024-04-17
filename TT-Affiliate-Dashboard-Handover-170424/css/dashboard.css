@@ -1,0 +1,126 @@
+.header-dashboard {
+  padding: 10px;
+  width: 100%;
+}
+
+.header-dashboard .button {
+  margin-bottom: 0px;
+}
+
+.header-dashboard .logo {
+  padding-top: 0px;
+}
+
+.header-dashboard .main-menu {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+}
+
+.affiliate-dashboard .bold {
+  font-weight: 700;
+}
+
+.affiliate-dashboard .icon-link_icon {
+  font-size: 16px; margin-left: 25px;
+}
+
+.affiliate-dashboard .logo-dashboard {
+  margin-top: 10px;
+}
+
+.affiliate-dashboard .button.hollow {
+  border: 1px solid #ff5722;
+  color: #ff5722;
+  transition: all .7s;
+    -moz-transition: all .7s;
+    -webkit-transition: all .7s;
+    -o-transition: all .7s;
+}
+
+.affiliate-dashboard .button.hollow:hover {
+  border: 1px solid #37474f;
+  color: #37474f;
+}
+
+.affiliate-dashboard h6 {
+  opacity: 0.5;
+}
+
+.affiliate-dashboard .box-shadow {
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
+-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
+box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
+transition: all .7s;
+    -moz-transition: all .7s;
+    -webkit-transition: all .7s;
+    -o-transition: all .7s;
+}
+
+.affiliate-dashboard .dashboard-card {
+  margin-top: 20px;
+}
+
+.affiliate-dashboard .dashboard-card-padding.dashboard-card-half {
+  min-height: 415px;
+}
+
+.affiliate-dashboard .dashboard-card-padding {
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#affiliateChart {
+  margin-top: 25px;
+}
+
+/* Datatable styles */
+
+#affiliateTable thead th {
+  font-size: 10px; /* Adjust the font size as needed */
+}
+
+#affiliateTable tbody td {
+  font-size: 12px; /* Adjust the font size as needed */
+}
+
+div#affiliateTable_info {
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.affiliate-dashboard div.dt-container .dt-paging .dt-paging-button {
+  transition: all .7s;
+  -moz-transition: all .7s;
+  -webkit-transition: all .7s;
+  -o-transition: all .7s;
+}
+
+.affiliate-dashboard div.dt-container .dt-paging .dt-paging-button.current, div.dt-container .dt-paging .dt-paging-button.current:hover {
+  color: #ff5722 !important;
+  border: 1px solid #ff5722 !important;
+  background-color: transparent !important;
+  background: none !important;
+}
+
+.affiliate-dashboard div.dt-container .dt-paging .dt-paging-button:hover {
+  color: #ff5722 !important;
+  border: 1px solid #ff5722 !important;
+  background-color: transparent !important;
+  background: none !important;
+}
+
+.affiliate-dashboard div.dt-container .dt-paging .dt-paging-button:active {
+  box-shadow: none !important;
+}
+
+@media screen and (min-width: 64em) {
+  .box-shadow:hover {
+    box-shadow: 0 10px 39px 0 rgba(0,0,0,.2);
+}
+
+.affiliate-dashboard .previous {
+  margin-top: 10px;;
+}
+}

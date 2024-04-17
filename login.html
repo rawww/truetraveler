@@ -55,15 +55,6 @@
 	<script src="js/min/jquery.min.js"></script>
 
 
-	<script type="text/javascript">
-		//<![CDATA[
-		jQuery(window).load(function() { // makes sure the whole site is loaded
-			jQuery("#status").fadeOut(); // will first fade out the loading animation
-			jQuery("#preloader").delay(350).fadeOut("slow"); // will fade out the white DIV that covers the website.
-		})
-		//]]>
-	</script>
-
 	<!-- TrustBox script -->
 	<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
 	<!-- End TrustBox script -->
@@ -77,76 +68,10 @@
 
 <body>
 
-	<div id="preloader">
-		<div id="status">
-			<img class="loader-compass" src="img/traveller-loader.svg" alt="loader">
-		</div>
-	</div>
-
 
 	<div id="top"></div>
 
 
-
-	<!-- Moblie nav : Start	 -->
-
-	<header class="mobile-nav hide-for-large">
-		<div class="row expanded">
-			<a class="mobile-call-button"><i class="fa fa-phone" aria-hidden="true"></i></a>
-			<a href="#" data-open="exampleModal1" class="hide-for-large mobile-menu hamburger"><i class="fa fa-bars" aria-hidden="true"></i></a>
-
-			<div class="small-8 small-offset-2 medium-4 medium-offset-4 large-3 large-offset-0 columns absolute">
-				<img class="logo" src="img/truetraveller-logo-moblie.svg" height="50" alt="logo">
-			</div>
-
-			<div class="reveal full hamburger-nav-expanded darkgrey-bg mobile-patch animated faster fadeIn" id="exampleModal1" data-reveal>
-
-				<button class="close-button" data-close aria-label="Close modal" type="button">
-					<i class="fa fa-times" aria-hidden="true"></i>
-				</button>
-
-				<ul class="vertical menu hide-for-large" data-accordion-menu>
-					<li>
-						<a href="#">Travel insurance</a>
-						<ul class="menu vertical nested">
-							<li><a href="#">Trekking</a></li>
-							<li><a href="#">IEC for Canada</a></li>
-							<li><a href="#">One-way</a></li>
-							<li><a href="#">Backpacker</a></li>
-							<li><a href="#">GAP Year Travel</a></li>
-							<li><a href="#">Multi-trip</a></li>
-							<li><a href="#">Already Travelling</a></li>
-							<li><a href="#">Winter Sports</a></li>
-							<li><a href="#">Insurance extension</a></li>
-						</ul>
-					</li>
-
-					<li>
-						<a href="#">Who we are</a>
-					</li>
-
-					<li>
-						<a href="#">Need help?</a>
-					</li>
-					<li>
-						<a class="small-nav-link" href="#">Contact us</a>
-					</li>
-					<li>
-						<a class="small-nav-link" href="#">Activity cover</a>
-					</li>
-					<li>
-						<a class="small-nav-link" href="#">Tips for travelling</a>
-					</li>
-				</ul>
-				<a href="#" class="hollow button secondary expanded mt">Make a claim</a>
-				<a href="#" class="button primary expanded">My TT policy</a>
-
-
-			</div>
-		</div>
-	</header>
-
-	<!-- Moblie nav : End	 -->
 
 	<!-- Desktop nav : Start -->
 
@@ -156,59 +81,7 @@
 				<img class="logo" src="img/truetraveller-logo.svg" alt="logo">
 			</div>
 
-			<ul id="mega-menu-container" class="menu" data-dropdown-menu data-click-open="true" data-disable-hover="true">
-				<li class="mega-menu">
-					<a class="" href="#">What we offer</a>
-					<ul class="menu">
-						<li>
-							<div class="medium-3 column">
-								<img src="img/mega01.jpg">
-							</div>
-							<div class="medium-3 column">
-								<a href="#" class="white">Trekking</a><br />
-								<a href="#" class="white">IEC for Canada</a><br />
-								<a href="#" class="white">One-way</a><br />
-							</div>
-							<div class="medium-3 column">
-								<a href="#" class="white">Backpacker</a><br />
-								<a href="#" class="white">GAP Year Travel</a><br />
-								<a href="#" class="white">Multi-trip</a><br />
-							</div>
-							<div class="medium-3 column">
-								<a href="#" class="white">Already Travelling</a><br />
-								<a href="#" class="white">Winter Sports</a><br />
-								<a href="#" class="white">Insurance extension</a><br />
-							</div>
-						</li>
-					</ul>
-				</li>
-
-				<li class="mega-menu">
-					<a class="" href="#">Who we are</a>
-				</li>
-
-				<li class="mega-menu">
-					<a class="" href="#">Need help?</a>
-					<ul class="menu">
-						<li>
-							<div class="medium-3 column">
-								<img src="img/mega02.jpg">
-							</div>
-							<div class="medium-3 column">
-								<a href="#" class="white">Contact us</a><br />
-								<a href="#" class="white">FAQs</a><br />
-								<a href="#" class="white">Make a claim</a><br />
-							</div>
-							<div class="medium-3 column">
-								<a href="#" class="white">Activity cover</a><br />
-								<a href="#" class="white">Tips for travelling</a><br />
-							</div>
-							<div class="medium-3 column">
-							</div>
-						</li>
-					</ul>
-				</li>
-			</ul>
+		
 
 			<div class="medium-12 columns text-right header-contact show-for-large large-4 menu-right">
 
