@@ -140,8 +140,13 @@ div#affiliateTable_info {
 
 /*2025 update styles start here*/
 
+.dropdown.menu>li.opens-right>.is-dropdown-submenu {
+    top: 160%;
+}
+
 .logo-dashboard-logged-in {
   max-width: 240px;
+  width:100%;
   margin-bottom:10px;
 }
 
@@ -189,6 +194,17 @@ div#affiliateTable_info {
       font-size:18px;
   }
 }
+
+.avatar {
+  max-width:58px;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .avatar {
+    max-width:42px;
+  }
+}
+
 
 .white-80 {
   color:rgba(255,255,255,0.8);
@@ -242,6 +258,10 @@ div#affiliateTable_info {
 
 .mb-20 {
   margin-bottom:20px !important;
+}
+
+.pr0 {
+  padding-right:0 !important;
 }
 
 .no-pad {
