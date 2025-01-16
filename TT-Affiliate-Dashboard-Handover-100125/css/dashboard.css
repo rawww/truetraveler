@@ -145,9 +145,9 @@ div#affiliateTable_info {
 }
 
 .logo-dashboard-logged-in {
-  max-width: 240px;
+  max-width: 210px;
   width:100%;
-  margin-bottom:10px;
+  margin:0 0 10px 0;
 }
 
 .dropdown.menu.profile-menu a:hover {
