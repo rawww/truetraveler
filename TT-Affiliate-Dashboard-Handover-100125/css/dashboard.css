@@ -140,14 +140,104 @@ div#affiliateTable_info {
 
 /*2025 update styles start here*/
 
-.dropdown.menu>li.opens-right>.is-dropdown-submenu {
-    top: 160%;
+/* Small only */
+@media screen and (max-width: 39.9375em) {}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
+/* Large and up */
+@media screen and (min-width: 64em) {}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+
+
+.header-dashboard-loggedin .dropdown.menu>li.opens-right>.is-dropdown-submenu {
+    top: 115%;
+}
+
+.header-dashboard-loggedin .hamburger {
+  font-size:25px;
+}
+
+.header-dashboard-loggedin a {
+  opacity:0.8 !important;
+}
+
+.header-dashboard-loggedin a:hover {
+  opacity:1 !important;
+  color:#fff !important;
+}
+
+.header-dashboard-loggedin .dropdown.menu>li.is-dropdown-submenu-parent>a:after {
+  display:none;
 }
 
 .logo-dashboard-logged-in {
   max-width: 210px;
   width:100%;
-  margin:0 0 10px 0;
+  margin: 10px 0 0px 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .logo-dashboard-logged-in {
+    margin: 7% 0 0px 0;
+  }
+}
+
+
+.header-dashboard-loggedin .top-level {
+  padding:0 !important;
+}
+
+.header-dashboard-loggedin .chevron-down {
+  max-width:22px;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .header-dashboard-loggedin .chevron-down {
+    max-width:14px;
+  }
+}
+
+
+.header-dashboard-loggedin .hamburger {
+  padding-right:0 !important;
+}
+
+.reveal-ah-mob-menu {
+  top:120px !important;
+}
+
+
+.reveal-ah-mob-menu a {
+  padding: 1.2rem 0.5rem;
+  font-size: 24px;
+}
+
+@media screen and (min-width: 40em) {
+  .header-dashboard-loggedin .chevron-down {
+    padding-right:10px !important;
+  }
+}
+
+.dropdown.menu.profile-menu {
+  padding-top:8px;
+}
+
+.dropdown.menu.profile-menu .user-name {
+  padding-right:10px;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .dropdown.menu.profile-menu {
+    padding-top:12px;
+  }
 }
 
 .dropdown.menu.profile-menu a:hover {
@@ -169,21 +259,6 @@ div#affiliateTable_info {
 .dropdown.menu>li.is-dropdown-submenu-parent>a:after {
   border-color:#fff transparent transparent;
 }
-
-/* Small only */
-@media screen and (max-width: 39.9375em) {}
-
-/* Medium and up */
-@media screen and (min-width: 40em) {}
-
-/* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
-
-/* Large and up */
-@media screen and (min-width: 64em) {}
-
-/* Large only */
-@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
 
 .ah-body h1, .ah-body h2, .ah-body h3, .ah-body h4, .ah-body h5 {
   line-height:1.2;
