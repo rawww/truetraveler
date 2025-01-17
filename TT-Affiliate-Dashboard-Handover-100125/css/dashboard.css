@@ -184,7 +184,7 @@ div#affiliateTable_info {
   padding: 0;
 }
 
-@media screen and (max-width: 39.9375em) {
+@media screen and (max-width: 480px) {
   .logo-dashboard-logged-in {
     margin: 7% 0 0px 0;
   }
@@ -828,6 +828,14 @@ box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
 
 .pagination-next a:after, .pagination-next.disabled:after {
   display:none;
+}
+
+.pagination-previous a:before, .pagination-previous.disabled:before {
+  display:none;
+}
+
+.pagination-next a:hover, .pagination-previous a:hover {
+  background:transparent !important;
 }
 
 .row-toolkit .inner {
