@@ -1,0 +1,335 @@
+<!doctype html>
+<html class="no-js" lang="en">
+   <head>
+      <!-- Loaded from live only for purpose of testing : Start -->
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+      <title>TrueTraveller - Affiliate Dashboard</title>
+      <!-- Stylesheets loaded from live -->
+      <link rel="preload" href="https://www.truetraveller.com/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin />
+      <link rel="preload" href="https://www.truetraveller.com/font/truetraveller.woff?38429907" as="font" type="font/woff" crossorigin />
+      <link rel="preload" href="https://www.truetraveller.com/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin />
+      <link rel="preload" href="https://www.truetraveller.com/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin />
+      <link rel="stylesheet" href="https://www.truetraveller.com/css/all.css?v=33">
+      <link rel="stylesheet" href="https://www.truetraveller.com/css/home-page-redesign.css?v=3">
+      <!-- Typekit -->
+      <script src="https://use.typekit.net/isb8sii.js"></script>
+      <script>
+         try {
+         	Typekit.load({
+         		async: true
+         	});
+         } catch (e) {}
+      </script>
+      <style>
+         .wf-loading p,
+         .wf-loading h1,
+         .wf-loading h2,
+         .wf-loading h3,
+         .wf-loading h4,
+         wf-loading label {
+         visibility: hidden;
+         }
+         .wf-active p,
+         .wf-active h1,
+         .wf-active h2,
+         .wf-active h3,
+         .wf-active h4,
+         wf-active label {
+         visibility: visible;
+         }
+         .wf-inactive p,
+         .wf-inactive h1,
+         .wf-inactive h2,
+         .wf-inactive h3,
+         .wf-inactive h4,
+         wf-inactive label {
+         visibility: visible;
+         }
+      </style>
+      <script src="https://www.truetraveller.com/js/header/header-all-min-dist.js"></script>
+      <!-- Loaded from live only for purpose of testing : End -->
+      <!-- New Dashboard and icon stylesheets to be added to live template header file -->
+      <link rel="stylesheet" href="css/dashboard.css">
+      <link rel="stylesheet" href="icons/dash-icons.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+   </head>
+   <body class="ah-body">
+      <div id="top"></div>
+
+
+      <!-- Logged in Dashboard nav : Start -->
+      <div class="callout callout-notification closable text-center" data-closable>
+      <p>NOTIFICATION BAR MESSAGE</p>
+      <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+
+      <header class="header header-dashboard-loggedin" class="fade-all" role="banner">
+         <div class="expanded row main-menu align-middle">
+
+            <div class="small-6 medium-6 large-3 align-center columns">
+               <img class="logo logo-dashboard-logged-in" src="img/2025/tt-ah-logo.svg" alt="logo">
+            </div>
+
+            <div class="medium-2 large-6 text-center hide-for-small show-for-large columns">
+              <ul class="menu show-for-large pr0">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Download</a></li>
+                <li><a href="#">Marketing</a></li>
+              </ul>
+            </div>
+
+            <div class="small-6 medium-6 large-3 columns text-right">
+              <ul class="dropdown menu profile-menu pr0" data-dropdown-menu>
+                <li>
+                  <a href="#" class="top-level"><span class="show-for-large user-name">Lewis Holloway</span><img alt="open" class="chevron-down" src="img/2025/down.png"/>  <img alt="Profile" class="avatar" src="img/2025/avatar.png"/></a>
+                  <ul class="menu">
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                  </ul>
+                </li>
+
+                <li class="hide-for-large">
+                  <a href="#" data-open="ah-menu-mob" aria-label="Menu bar" class="hide-for-large hamburger" aria-controls="mobileViewModal" aria-haspopup="true" tabindex="0"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                </li>
+              </ul>
+              </div>
+
+            </div>
+      </header>
+
+                <div class="reveal reveal-ah-mob-menu full hamburger-nav-expanded darkgrey-bg mobile-patch animated faster fadeIn without-overlay" id="ah-menu-mob" data-reveal>
+
+                    <button class="close-button" data-close="" aria-label="Close modal" type="button">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </button>
+
+                    <ul class="no-list">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Download</a></li>
+                      <li><a href="#">Marketing</a></li>
+                    </ul>
+                </div>
+
+                <!-- Logged in Dashboard nav : End -->
+
+                <!-- Intro: Start-->
+
+                <div class="row row-pad">
+                   <div class="small-12 large-10 columns">
+                     <h1 class="color-navy">Marketing Toolkit</h1>
+                     <p class="color-navy max-width-780">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipiscin.</p>
+                   </div>
+                   <div class="small-12 large-2 columns">
+                     <select id="inspiration-filter">
+                       <option>Filter by</option>
+                       <option>Filter 1</option>
+                       <option>Filter 2</option>
+                       <option>Filter 3</option>
+                     </select>
+                   </div>
+                 </div>
+
+                <!-- Intro: End-->
+
+                <!-- Inspo grid: Start-->
+
+                <div class="row row-toolkit" data-equalizer>
+
+                  <div class="small-12 large-4 columns col-toolkit" data-equalizer-watch>
+                      <div class="inner shadow-b20">
+                        <div class="row">
+                            <div class="small-9 columns">
+                              <p>Category Name</p>
+                            </div>
+                            <div class="small-3 columns text-center">
+                              <img class="icon" alt="file type" src="img/2025/ico-pdf.png"/>
+                            </div>
+                            <div class="small-12 columns">
+                              <h3 class="mt-40">True Traveller Cheatsheet</h3>
+                              <a class="button primary width-100-pc" href="#">Download PDF</a>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="small-12 large-4 columns col-toolkit" data-equalizer-watch>
+                      <div class="inner shadow-b20">
+                        <div class="row">
+                            <div class="small-9 columns">
+                              <p>Category Name</p>
+                            </div>
+                            <div class="small-3 columns text-center">
+                              <img class="icon" alt="file type" src="img/2025/ico-zip.png"/>
+                            </div>
+                            <div class="small-12 columns">
+                              <h3 class="mt-40">True Traveller advertising banners</h3>
+                              <a class="button primary width-100-pc" href="#">Download ZIP</a>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="small-12 large-4 columns col-toolkit" data-equalizer-watch>
+                      <div class="inner shadow-b20">
+                        <div class="row">
+                            <div class="small-9 columns">
+                              <p>Explainer video to go here</p>
+                            </div>
+                            <div class="small-3 columns text-center">
+                              <img class="icon" alt="file type" src="img/2025/ico-mp4.png"/>
+                            </div>
+                            <div class="small-12 columns">
+                              <h3 class="mt-40">True Traveller Cheatsheet</h3>
+                              <a class="button primary width-100-pc" href="#">Watch and Download</a>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+
+
+
+                </div>
+
+                <!-- Inspo grid: End-->
+
+                <!-- Pagination: Start-->
+
+                <div class="row">
+
+                    <div class="small-12 columns text-center">
+
+                      <ul class="pagination" role="navigation" aria-label="Pagination">
+                        <li class="pagination-previous disabled">Previous</li>
+                        <li><a href="#" aria-label="Page 1">1</a></li>
+                        <li class="current">2</li>
+                        <li><a href="#" aria-label="Page 3">3</a></li>
+                        <li><a href="#" aria-label="Page 4">4</a></li>
+                        <li><a href="#" aria-label="Page 5">5</a></li>
+                        <li class="pagination-next"><a href="#" aria-label="Next page">Next</a></li>
+                      </ul>
+
+                </div>
+
+            </div>
+
+
+                <!-- Pagination: End-->
+
+                <!-- Testimonials: Start-->
+                <div class="row expanded ah-testimonials ">
+                   <div class="small-12 columns text-center">
+                      <h3 class="mb">What our travellers say</h3>
+                   </div>
+                   <div class="small-12 columns no-pad">
+                      <div class="owl-carousel owl-carousel-ah-testimonials">
+                         <div class="item">
+                            <p class="name color-navy">1 Name to go here</p>
+                            <p>X months ago</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                            <img class="rating" src="img/2025/star-rating.svg"/>
+                         </div>
+                         <div class="item">
+                            <p class="name color-navy">2 Name to go here</p>
+                            <p>X months ago</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                            <img class="rating" src="img/2025/star-rating.svg"/>
+                         </div>
+                         <div class="item">
+                            <p class="name color-navy">3 Name to go here</p>
+                            <p>X months ago</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                            <img class="rating" src="img/2025/star-rating.svg"/>
+                         </div>
+                         <div class="item">
+                            <p class="name color-navy">4 Name to go here</p>
+                            <p>X months ago</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                            <img class="rating" src="img/2025/star-rating.svg"/>
+                         </div>
+                         <div class="item">
+                            <p class="name color-navy">5 Name to go here</p>
+                            <p>X months ago</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                            <img class="rating" src="img/2025/star-rating.svg"/>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <!-- Testimonials: End-->
+
+
+                                      <script>
+                                         $(document).ready(function(){
+                                             $(".owl-carousel-ah-testimonials").owlCarousel({
+                                                 loop: true,
+                                                 margin: 25,
+                                                 nav: false,
+                                				         autoplay: true,             // Enable autoplay
+                                				          autoplayTimeout: 5000,      // 5 seconds (5000ms)
+                                				          autoplayHoverPause: true,   // Pause on hover
+                                                 responsive: {
+                                                     0: {
+                                                         items: 1,
+                                                         stagePadding: 0 // No offset for mobile
+                                                     },
+                                                     768: {
+                                                         items: 1,
+                                                         stagePadding: 130 // Slight offset for tablet
+                                                     },
+                                                     1024: {
+                                                         items: 2,
+                                                         stagePadding: 280 // Offset into edges for desktop
+                                                     }
+                                                 }
+                                             });
+                                         });
+                                      </script>
+
+      <!-- AH footer: Start-->
+      <div class="row ah-footer">
+         <div class="small-12 medium-6 columns col-nav">
+            <ul class="no-list">
+               <li><a class="color-navy" href="#">Contact us</a></li>
+               <li><a class="color-navy" href="#">FAQs</a></li>
+            </ul>
+         </div>
+         <div class="small-12 medium-6 columns col-awards">
+            <img alt="Travel Aware" src="img/2025/travel-aware.jpg"/>
+            <img alt="reviews" src="img/2025/reviews.jpg"/>
+         </div>
+         <div class="small-12 columns col-socials">
+            <a href="https://www.facebook.com/truetraveller/" target="_blank" rel="noopener" title="Check Out Our Facebook Page"><img src="img/2025/icon-fb.svg"/></a>
+            <a href="https://www.instagram.com/truetravellerinsurance" target="_blank" rel="noopener" title="Check Out Our Instagram Page"><img src="img/2025/icon-ig.svg"/></a>
+            <a href="https://www.twitter.com/true_traveller" target="_blank" rel="noopener" title="Check Out Our Twitter Page"><img src="img/2025/icon-x.svg"/></a>
+            <a href="https://www.tiktok.com" target="_blank" rel="noopener" title="Check Out Our TikTok Page"><img src="img/2025/icon-tik-tok.svg"/></a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener" title="Check Out Our YouTube Page"><img style="max-height:20px;" src="img/2025/icon-youtube.svg"/></a>
+         </div>
+         <div class="small-12 medium-6 columns">
+            <small class="mb20 db">
+            © The True Traveller Limited 2010-2025. All rights reserved<br/>
+            Authorised and Regulated by the Financial Conduct Authority (FRN 756107).
+            </small>
+         </div>
+         <div class="small-12 medium-6 columns col-legals">
+            <small><a href="#">Terms and Conditions</a> <a href="#">Privacy Policy</a> <a href="#">Cookie Policy</a></small>
+         </div>
+      </div>
+
+      <!-- AH footer: End-->
+
+      <!-- Footer consistent to TrueTraveller - Deepak to use existing code -->
+      <!-- Loaded from live only for purpose of testing : Start -->
+      <script src="https://www.truetraveller.com/js/footer/footer-all-min-dist.js"></script>
+      <!-- Loaded from live only for purpose of testing : End -->
+   </body>
+</html>
