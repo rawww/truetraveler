@@ -71,6 +71,10 @@ transition: all .7s;
   padding-bottom: 10px;
 }
 
+.affiliate-dashboard .dashboard-card-padding--more {
+  padding: 30px;
+}
+
 #affiliateChart {
   margin-top: 25px;
 }
@@ -292,6 +296,10 @@ div#affiliateTable_info {
 
 .color-navy {
   color:#37474F;
+}
+
+.opacity-80 {
+  opacity:0.8;
 }
 
 .bg-light-grey {
@@ -616,6 +624,10 @@ box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
     padding-left:60px;
     padding-right:60px;
   }
+  .button-pad {
+    padding-left:60px;
+    padding-right:60px;
+  }
 }
 
 .button-apply:hover {
@@ -856,6 +868,46 @@ box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
 .row-toolkit .button {
   margin-top:5px;
   margin-bottom:0 !important;
+}
+
+
+
+.dashboard-card-stat {
+  padding:55px 20px 38px 20px !important
+}
+
+.row-insight-posts .post-entries li {
+  border-bottom: 1px solid #eaeaea;
+  padding:10px 0;
+}
+
+.post-entries li:last-child {
+  border-bottom: none;
+}
+.row-insight-posts .post-entries p {
+  margin-bottom:0;
+  color:#37474F;
+  opacity:0.8;
+  font-size:14px;
+}
+
+.row-insight-posts .post-entries h5 a {
+  max-width:300px;
+  display: inline-block;
+  color:#000;
+}
+
+.row-insight-posts .post-entries h5 a:hover {
+  color:#ff5722;
+}
+
+.row-links a {
+  color:#000;
+  text-decoration:underline;
+}
+
+.row-links a:hover {
+  color:#ff5722;
 }
 
 /*footer*/

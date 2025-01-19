@@ -125,16 +125,78 @@
 						</div>
 
 						<!-- Logged in Dashboard nav : End -->
+
+<div class="affiliate-dashboard">
+
+	<!-- Intro: Start-->
+
+	<div class="row row-pad">
+		 <div class="small-12  columns">
+			 <h1 class="color-navy">Morning Lewis 👋</h1>
+		 </div>
+		 <div class="small-12 medium-9 columns">
+			 <h4>Your monthly performance</h4>
+		 </div>
+		 <div class="small-12 medium-3 columns text-right">
+			 <button class="button primary button-pad">Dashboard</button>
+		 </div>
+	 </div>
+
+	<!-- Intro: End-->
+
+	<!-- stats and card: Start-->
+
 			<div class="row">
 
+				<div class="small-12 large-4 columns no-pad">
+
+
 				<!-- Chart-card: Start -->
-				<div class="medium-12 columns">
+				<div class="small-12 columns">
+					<div class="dashboard-card dashboard-card-stat dashboard-card-padding box-shadow">
+
+						<div class="row">
+							<div class="small-12 medium-2 large-4 columns col-icon">
+								<img class="mb-20" alt="Wallet" src="img/2025/icon-wallet.svg"/>
+							</div>
+							<div class="small-12 medium-10 large-8 columns">
+								<p class="color-navy mb-0">Earnings in August</p>
+								<h1 class="color-navy">£XX.XX</h1>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<!-- Chart-card: End -->
+
+				<!-- Chart-card: Start -->
+				<div class="small-12 columns">
+					<div class="dashboard-card dashboard-card-stat dashboard-card-padding--more box-shadow">
+
+						<div class="row">
+							<div class="small-12 medium-2 large-4 columns col-icon">
+								<img class="mb-20" alt="Wallet" src="img/2025/icon-stats.svg"/>
+							</div>
+							<div class="small-12 medium-10 large-8 columns">
+								<p class="color-navy mb-0">Visits in August</p>
+								<h1 class="color-navy">XXXXX</h1>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<!-- Chart-card: End -->
+
+			</div>
+
+				<!-- Chart-card: Start -->
+				<div class="small-12 large-8 columns">
 					<div class="dashboard-card box-shadow">
 						<div class="row">
 							<div class="medium-12 columns">
-								<div class="dashboard-card-padding dashboard-card-half">
+								<div class="dashboard-card-padding--more">
 
-									<h4>Number of Visits</h4>
+									<h4>Daily visits</h4>
 
 									  <!-- Draw-chart: Start -->
 									  <div style="position: relative; width: 100%; height: 300px;">
@@ -214,124 +276,205 @@
 					</div>
 				</div>
 				<!-- Chart-card: End -->
-				<!-- Table-card: Start -->
-				<div class="medium-12 columns">
-					<div class="dashboard-card box-shadow">
-						<div class="row">
 
-							<div class="medium-12 columns">
-								<div class="dashboard-card-padding dashboard-card-half">
+			</div>
+			<!-- stats and card: End-->
 
-									<h4>Commission Earnings</h4>
 
-									<!-- Table-framework: Start -->
-									<link rel="stylesheet" href="css/dataTables.dataTables.css" />
-									<script src="js/dataTables.js"></script>
-									<!-- Table-framework: End -->
+			<!-- Insights posts : Start-->
 
-									<!-- Table-JS: Start -->
-									<script>
-									$(document).ready(function() {
-										$('#affiliateTable').DataTable({
-											searching: false, // Remove the search input and functionality
-											pageLength: 8, // Set the default number of entries per page to 6
-											lengthChange: false, // Remove the option to change the number of entries per page
-										});
-									});
-									</script>
-									<!-- Table-JS: End -->
+					<div class="row row-insight-posts mt-60" data-equalizer>
 
-									<!-- Table: Start -->
-									<table id="affiliateTable" class="display" style="width:100%">
-										<thead>
-											<tr>
-												<th>Date</th>
-												<th>Ref No.</th>
-												<th>Commission</th>
-												<th>Country</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>12/03/2024</td>
-												<td>123456</td>
-												<td class="bold">£22.50 <a href="#" target="_blank"><i class="icon-link_icon"></i></a></td>
-												<td>GB</td>
-											</tr>
-											<tr>
-												<td>12/03/2024</td>
-												<td>123456</td>
-												<td class="bold">£22.50 <a href="#" target="_blank"><i class="icon-link_icon"></i></a></td>
-												<td>GB</td>
-											</tr>
-											<tr>
-												<td>12/03/2024</td>
-												<td>123456</td>
-												<td class="bold">£22.50 <a href="#" target="_blank"><i class="icon-link_icon"></i></a></td>
-												<td>GB</td>
-											</tr>
-											<tr>
-												<td>12/03/2024</td>
-												<td>123456</td>
-												<td class="bold">£22.50 <a href="#" target="_blank"><i class="icon-link_icon"></i></a></td>
-												<td>GB</td>
-											</tr>
-											<tr>
-												<td>12/03/2024</td>
-												<td>123456</td>
-												<td class="bold">£22.50 <a href="#" target="_blank"><i class="icon-link_icon"></i></a></td>
-												<td>GB</td>
-											</tr>
-											<tr>
-												<td>12/03/2024</td>
-												<td>123456</td>
-												<td class="bold">£22.50 <a href="#" target="_blank"><i class="icon-link_icon"></i></a></td>
-												<td>GB</td>
-											</tr>
-											<tr>
-												<td>12/03/2024</td>
-												<td>123456</td>
-												<td class="bold">£22.50 <a href="#" target="_blank"><i class="icon-link_icon"></i></a></td>
-												<td>GB</td>
-											</tr>
-											<tr>
-												<td>12/03/2024</td>
-												<td>123456</td>
-												<td class="bold">£22.50 <a href="#" target="_blank"><i class="icon-link_icon"></i></a></td>
-												<td>GB</td>
-											</tr>
-											<tr>
-												<td>12/03/2024</td>
-												<td>123456</td>
-												<td class="bold">£22.50 <a href="#" target="_blank"><i class="icon-link_icon"></i></a></td>
-												<td>GB</td>
-											</tr>
-											<tr>
-												<td>12/03/2024</td>
-												<td>123456</td>
-												<td class="bold">£22.50 <a href="#" target="_blank"><i class="icon-link_icon"></i></a></td>
-												<td>GB</td>
-											</tr>
-											<tr>
-												<td>30/03/2024</td>
-												<td>12</td>
-												<td class="bold">£22.50 <a href="#" target="_blank"><i class="icon-link_icon"></i></a></td>
-												<td>DE</td>
-											</tr>
-										</tbody>
-									</table>
-									<!-- Table: End -->
-								</div>
+						<div class="small-12 large-6 columns">
+							<h4>Latest insights and tools</h4>
+							<div class="dashboard-card dashboard-card-padding--more box-shadow mb-40"  data-equalizer-watch>
+								<ul class="no-list post-entries">
+									<li>
+										<p class="color-navy opacity-80">Category name</p>
+										<h5><a href="#">Quick selling points</a></h5>
+									</li>
+									<li>
+										<p class="color-navy opacity-80">Category name</p>
+										<h5><a href="#">True Traveller
+advertising banners</a></h5>
+									</li>
+									<li>
+										<p class="color-navy opacity-80">Category name</p>
+										<h5><a href="#">Explainer video
+to go here</a></h5>
+									</li>
+
+								</ul>
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Table-card: End -->
 
+						<div class="small-12 large-6 columns">
+							<h4>Latest inspiration</h4>
+							<div class="dashboard-card dashboard-card-padding--more box-shadow"  data-equalizer-watch>
+								<ul class="no-list post-entries">
+									<li>
+										<p class="color-navy opacity-80">Category name</p>
+										<h5><a href="#">Headline to go in here</a></h5>
+									</li>
+									<li>
+										<p class="color-navy opacity-80">Category name</p>
+										<h5><a href="#">Headline to go in here
+on 2 lines</a></h5>
+									</li>
+									<li>
+										<p class="color-navy opacity-80">Category name</p>
+										<h5><a href="#">Headline to go in here
+on 2 lines</a></h5>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- Insights posts : End-->
+
+					<!-- Quick Links : Start-->
+
+					<div class="row row-links align-middle">
+					  <div class="small-12 columns">
+					    <div class="dashboard-card box-shadow">
+					      <div class="row align-middle">
+					        <div class="small-12 large-4 columns col-img">
+					          <img alt="Quick links" src="img/2025/left-img.jpg" />
+					        </div>
+					        <div class="small-12 large-8 columns dashboard-card-padding--more">
+					          <h4>Quick links</h4>
+					          <div class="row">
+					            <div class="small-12 large-6 columns">
+					              <ul class="no-list">
+					                <li><a href="#">Explainer video</a></li>
+					                <li><a href="#">FAQs</a></li>
+					                <li><a href="#">View your agreement</a></li>
+					              </ul>
+					            </div>
+					            <div class="small-12 large-6 columns">
+					              <ul class="no-list">
+					                <li><a href="#">Links go here</a></li>
+					                <li><a href="#">Links go here</a></li>
+					                <li><a href="#">Links go here</a></li>
+					              </ul>
+					            </div>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+
+
+						<!-- Quick Links : End-->
+
+
+						                      <!-- Testimonials: Start-->
+						                      <div class="row expanded ah-testimonials ">
+						                         <div class="small-12 columns text-center">
+						                            <h3 class="mb">What our travellers say</h3>
+						                         </div>
+						                         <div class="small-12 columns no-pad">
+						                            <div class="owl-carousel owl-carousel-ah-testimonials">
+						                               <div class="item">
+						                                  <p class="name color-navy">1 Name to go here</p>
+						                                  <p>X months ago</p>
+						                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+						                                  <img class="rating" src="img/2025/star-rating.svg"/>
+						                               </div>
+						                               <div class="item">
+						                                  <p class="name color-navy">2 Name to go here</p>
+						                                  <p>X months ago</p>
+						                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+						                                  <img class="rating" src="img/2025/star-rating.svg"/>
+						                               </div>
+						                               <div class="item">
+						                                  <p class="name color-navy">3 Name to go here</p>
+						                                  <p>X months ago</p>
+						                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+						                                  <img class="rating" src="img/2025/star-rating.svg"/>
+						                               </div>
+						                               <div class="item">
+						                                  <p class="name color-navy">4 Name to go here</p>
+						                                  <p>X months ago</p>
+						                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+						                                  <img class="rating" src="img/2025/star-rating.svg"/>
+						                               </div>
+						                               <div class="item">
+						                                  <p class="name color-navy">5 Name to go here</p>
+						                                  <p>X months ago</p>
+						                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+						                                  <img class="rating" src="img/2025/star-rating.svg"/>
+						                               </div>
+						                            </div>
+						                         </div>
+						                      </div>
+						                      <!-- Testimonials: End-->
+
+						                      <script>
+						                         $(document).ready(function(){
+						                             $(".owl-carousel-ah-testimonials").owlCarousel({
+						                                 loop: true,
+						                                 margin: 25,
+						                                 nav: false,
+						                				         autoplay: true,             // Enable autoplay
+						                				          autoplayTimeout: 5000,      // 5 seconds (5000ms)
+						                				          autoplayHoverPause: true,   // Pause on hover
+						                                 responsive: {
+						                                     0: {
+						                                         items: 1,
+						                                         stagePadding: 0 // No offset for mobile
+						                                     },
+						                                     768: {
+						                                         items: 1,
+						                                         stagePadding: 130 // Slight offset for tablet
+						                                     },
+						                                     1024: {
+						                                         items: 2,
+						                                         stagePadding: 280 // Offset into edges for desktop
+						                                     }
+						                                 }
+						                             });
+						                         });
+						                      </script>
 
 	</div>
 	<!-- Dashboard: End -->
+
+	<!-- AH footer: Start-->
+	<div class="row ah-footer">
+		 <div class="small-12 medium-6 columns col-nav">
+				<ul class="no-list">
+					 <li><a class="color-navy" href="#">Contact us</a></li>
+					 <li><a class="color-navy" href="#">FAQs</a></li>
+				</ul>
+		 </div>
+		 <div class="small-12 medium-6 columns col-awards">
+				<img alt="Travel Aware" src="img/2025/travel-aware.jpg"/>
+				<img alt="reviews" src="img/2025/reviews.jpg"/>
+		 </div>
+		 <div class="small-12 columns col-socials">
+				<a href="https://www.facebook.com/truetraveller/" target="_blank" rel="noopener" title="Check Out Our Facebook Page"><img src="img/2025/icon-fb.svg"/></a>
+				<a href="https://www.instagram.com/truetravellerinsurance" target="_blank" rel="noopener" title="Check Out Our Instagram Page"><img src="img/2025/icon-ig.svg"/></a>
+				<a href="https://www.twitter.com/true_traveller" target="_blank" rel="noopener" title="Check Out Our Twitter Page"><img src="img/2025/icon-x.svg"/></a>
+				<a href="https://www.tiktok.com" target="_blank" rel="noopener" title="Check Out Our TikTok Page"><img src="img/2025/icon-tik-tok.svg"/></a>
+				<a href="https://www.youtube.com" target="_blank" rel="noopener" title="Check Out Our YouTube Page"><img style="max-height:20px;" src="img/2025/icon-youtube.svg"/></a>
+		 </div>
+		 <div class="small-12 medium-6 columns">
+				<small class="mb20 db">
+				© The True Traveller Limited 2010-2025. All rights reserved<br/>
+				Authorised and Regulated by the Financial Conduct Authority (FRN 756107).
+				</small>
+		 </div>
+		 <div class="small-12 medium-6 columns col-legals">
+				<small><a href="#">Terms and Conditions</a> <a href="#">Privacy Policy</a> <a href="#">Cookie Policy</a></small>
+		 </div>
+	</div>
+
+	<!-- AH footer: End-->
 
 	<!-- Footer consistent to TrueTraveller - Deepak to use existing code -->
 
