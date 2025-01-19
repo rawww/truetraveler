@@ -355,12 +355,16 @@ div#affiliateTable_info {
   float:left !important;
 }
 
+.hover-pointer:hover {
+  cursor:pointer;
+}
+
 .text-left {
   text-align: left !important;
 }
 
 .max-width-980 {
-  max-width:980px;
+  max-width:980px !important;
 }
 
 .max-width-780 {
@@ -801,6 +805,16 @@ box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
 
 .row-inspo .col-inspo, .row-toolkit, .col-toolkit {
   margin-bottom:30px;
+}
+
+.row-inspo .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.row-inspo .inner .button {
+  margin-bottom:0;
 }
 
 .row-inspo .type-article .inner {
