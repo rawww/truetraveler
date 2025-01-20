@@ -739,8 +739,8 @@ box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
 
 .header-icon {
   max-width: 24px;
-  margin-top: -5px;
-  margin-left:10px;
+  margin-top: -16px;
+  margin-left: 5px;
 }
 
 .header-icon:hover {
@@ -756,7 +756,8 @@ box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
 }
 
 .partner-form label {
-  font-size:1.2rem;
+  font-size:1.09rem;
+  opacity: 0.8;
 }
 
 .change-profile {
@@ -775,7 +776,7 @@ box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
 }
 
 .tabs-profile a {
-  opacity:0.6;
+  opacity:1;
   display:block;
   padding:10px 0;
   color:#0A0A0A;
@@ -784,6 +785,7 @@ box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
 
 .tabs-profile a:hover {
   opacity:1;
+  color: #FF5722;
 }
 
 .article img {
