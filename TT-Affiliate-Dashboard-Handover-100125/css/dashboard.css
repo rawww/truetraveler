@@ -27,6 +27,11 @@
 
 .affiliate-dashboard .logo-dashboard {
   margin-top: 10px;
+  max-width: 215px;
+}
+
+.logo-dashboard {
+  max-width: 215px;
 }
 
 .affiliate-dashboard .button.hollow {
@@ -441,6 +446,21 @@ div#affiliateTable_info {
   background-size:cover !important;
 }
 
+@media screen and (max-width: 39.9375em) {
+  .login-container-affiliate.splash-3 {
+    background: #000 url(../img/2025/splash-03-mob.jpg) no-repeat center center !important;
+    background-size:cover !important;
+
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .row-ah-login {
+    margin-top:240px;
+  }
+}
+
+
 .login-container-affiliate.splash-3 h1 {
   font-weight:300;
   color:#fff;
@@ -458,6 +478,10 @@ div#affiliateTable_info {
 
 .splash-3 .login-form .login-inner {
   padding: 40px 40px;
+}
+
+.splash-3 .login-form  {
+  margin-top:0 !important;
 }
 
 @media screen and (min-width: 64em) {
