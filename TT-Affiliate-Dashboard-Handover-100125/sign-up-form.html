@@ -1,272 +1,289 @@
 <!doctype html>
 <html class="no-js" lang="en">
-   <head>
-      <!-- Loaded from live only for purpose of testing : Start -->
-      <meta charset="utf-8">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-      <title>True Traveller - Affiliate Dashboard</title>
-      <!-- Stylesheets loaded from live -->
-      <link rel="preload" href="https://www.truetraveller.com/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin />
-      <link rel="preload" href="https://www.truetraveller.com/font/truetraveller.woff?38429907" as="font" type="font/woff" crossorigin />
-      <link rel="preload" href="https://www.truetraveller.com/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin />
-      <link rel="preload" href="https://www.truetraveller.com/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin />
-      <link rel="stylesheet" href="https://www.truetraveller.com/css/all.css?v=33">
-      <link rel="stylesheet" href="https://www.truetraveller.com/css/home-page-redesign.css?v=3">
-      <!-- Typekit -->
-      <script src="https://use.typekit.net/isb8sii.js"></script>
-      <script>
-         try {
-         	Typekit.load({
-         		async: true
-         	});
-         } catch (e) {}
-      </script>
-      <style>
-         .wf-loading p,
-         .wf-loading h1,
-         .wf-loading h2,
-         .wf-loading h3,
-         .wf-loading h4,
-         wf-loading label {
-         visibility: hidden;
-         }
-         .wf-active p,
-         .wf-active h1,
-         .wf-active h2,
-         .wf-active h3,
-         .wf-active h4,
-         wf-active label {
-         visibility: visible;
-         }
-         .wf-inactive p,
-         .wf-inactive h1,
-         .wf-inactive h2,
-         .wf-inactive h3,
-         .wf-inactive h4,
-         wf-inactive label {
-         visibility: visible;
-         }
-      </style>
-      <script src="https://www.truetraveller.com/js/header/header-all-min-dist.js"></script>
-      <!-- Loaded from live only for purpose of testing : End -->
-      <!-- New Dashboard and icon stylesheets to be added to live template header file -->
-      <link rel="stylesheet" href="css/dashboard.css">
-      <link rel="stylesheet" href="icons/dash-icons.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-   </head>
-   <body class="ah-body">
-      <div id="top"></div>
-      <!-- Dashboard nav : Start -->
-      <header class="header header-dashboard" class="fade-all" role="banner">
-         <div class="expanded row main-menu">
-            <div class="small-6 columns">
-              <img class="logo logo-dashboard" src="img/2025/tt-ah-logo.svg" alt="logo">
-            </div>
-            <div class="small-6 columns text-right">
-               <a class="button signin hollow white" href="">Log out</a>
-            </div>
-         </div>
-      </header>
-      <!-- Dashboard nav : End -->
 
-      <!-- Short cover: Start-->
-      <section class="short-cover align-vertical-center" style="background-image:url(img/2025/bg-sign-up-cover.jpg);">
-            <div class="inner max-width-980">
-                <h1>Become a partner</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-            </div>
-      </section>
-      <!-- Short cover: End-->
+<head>
+  <!-- Loaded from live only for purpose of testing : Start -->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>True Traveller - Affiliate Dashboard</title>
+  <!-- Stylesheets loaded from live -->
+  <link rel="preload" href="https://www.truetraveller.com/webfonts/fa-regular-400.woff2" as="font" type="font/woff2"
+    crossorigin />
+  <link rel="preload" href="https://www.truetraveller.com/font/truetraveller.woff?38429907" as="font" type="font/woff"
+    crossorigin />
+  <link rel="preload" href="https://www.truetraveller.com/webfonts/fa-brands-400.woff2" as="font" type="font/woff2"
+    crossorigin />
+  <link rel="preload" href="https://www.truetraveller.com/webfonts/fa-solid-900.woff2" as="font" type="font/woff2"
+    crossorigin />
+  <link rel="stylesheet" href="https://www.truetraveller.com/css/all.css?v=33">
+  <link rel="stylesheet" href="https://www.truetraveller.com/css/home-page-redesign.css?v=3">
+  <!-- Typekit -->
+  <script src="https://use.typekit.net/isb8sii.js"></script>
+  <script>
+    try {
+      Typekit.load({
+        async: true
+      });
+    } catch (e) { }
+  </script>
+  <style>
+    .wf-loading p,
+    .wf-loading h1,
+    .wf-loading h2,
+    .wf-loading h3,
+    .wf-loading h4,
+    wf-loading label {
+      visibility: hidden;
+    }
 
+    .wf-active p,
+    .wf-active h1,
+    .wf-active h2,
+    .wf-active h3,
+    .wf-active h4,
+    wf-active label {
+      visibility: visible;
+    }
 
-      <!-- Partner Process: Start-->
-      <div class="row partner-process">
-         <div class="small-12 medium-4 columns text-center">
-           <img alt="Apply below" src="img/2025/1.svg"/>
-           <h4>Apply below</h4>
-           <p>Apply to become a Partner. We’ll review your application within 5 days and send you a partnership agreement to sign.</p>
-         </div>
-         <div class="small-12 medium-4 columns text-center">
-           <img alt="Share" src="img/2025/2.svg"/>
-            <h4>Share</h4>
-            <p>Once you accept the partnership agreement, we’ll send you your unique link that you can share.</p>
-         </div>
-         <div class="small-12 medium-4 columns text-center">
-           <img alt="Earn" src="img/2025/3.svg"/>
-            <h4>Earn</h4>
-            <p>Each time someone purchases  insurance after using your link, you’ll receive an ongoing commission.</p>
-         </div>
-       </div>
-      <!-- Partner Process: End-->
+    .wf-inactive p,
+    .wf-inactive h1,
+    .wf-inactive h2,
+    .wf-inactive h3,
+    .wf-inactive h4,
+    wf-inactive label {
+      visibility: visible;
+    }
+  </style>
+  <script src="https://www.truetraveller.com/js/header/header-all-min-dist.js"></script>
+  <!-- Loaded from live only for purpose of testing : End -->
+  <!-- New Dashboard and icon stylesheets to be added to live template header file -->
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="icons/dash-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
 
-      <!-- Form: Start-->
-      <div class="row partner-form">
-         <div class="small-12 columns form-wrapper">
-           <div class="row">
-             <div class="small-12 columns">
-               <h2>Apply to become a partner</h2>
-             </div>
-           </div>
-           <div class="row">
+<body class="ah-body">
+  <div id="top"></div>
+  <!-- Dashboard nav : Start -->
+  <header class="header header-dashboard" class="fade-all" role="banner">
+    <div class="expanded row main-menu">
+      <div class="small-6 columns">
+        <img class="logo logo-dashboard" src="img/2025/tt-ah-logo.svg" alt="logo">
+      </div>
+      <div class="small-6 columns text-right">
+        <a class="button signin hollow white" href="">Log out</a>
+      </div>
+    </div>
+  </header>
+  <!-- Dashboard nav : End -->
 
-             <div class="small-12 large-6 columns">
-               <label for="middle-label" class="text-left middle mb-0">Contact name*</label>
-               <input type="text" id="middle-label" placeholder="Contact name">
-             </div>
-             <div class="small-12 large-6 columns">
-               <label for="middle-label" class="text-left middle mb-0">Last name*</label>
-               <input type="text" id="middle-label" placeholder="Last name">
-             </div>
-
-             <div class="small-12 large-6 columns">
-               <label for="middle-label" class="text-left middle mb-0">Email address*</label>
-               <input type="text" id="middle-label" placeholder="Email address">
-             </div>
-             <div class="small-12 large-6 columns">
-               <label for="middle-label" class="text-left middle mb-0">Contact number*</label>
-               <input type="text" id="middle-label" placeholder="Phone number">
-             </div>
-
-             <div class="small-12 large-6 columns">
-               <label for="middle-label" class="text-left middle mb-0">Social media user name*</label>
-               <input type="text" id="middle-label" placeholder="@Username">
-             </div>
-             <div class="small-12 large-6 columns">
-               <label for="middle-label" class="text-left middle mb-0">Website URL*</label>
-               <input type="text" id="middle-label" placeholder="Website address">
-             </div>
-
-             <div class="small-12 large-6 columns mb20">
-               <label for="middle-label" class="text-left middle mb-0">Country of residence*</label>
-               <input type="text" id="middle-label" placeholder="Country">
-             </div>
-             <div class="small-12 large-6 columns">
-
-             </div>
-
-             <div class="small-12 columns">
-               <h5 class="mt-20">Which social platforms do you use?</h5>
-             </div>
-
-             <div class="small-12 medium-2 columns">
-               <label for="middle-label" class="text-left middle mb-0">Facebook</label>
-               <input class="checkbox-large" type="checkbox" id="middle-label">
-             </div>
-             <div class="small-4 columns">
-               <label for="middle-label" class="text-left middle mb-0">No. of followers</label>
-               <input type="text" id="middle-label">
-             </div>
-             <div class="small-6 columns">
-               <label for="middle-label" class="text-left middle mb-0">URL or handle</label>
-               <input type="text" id="middle-label">
-             </div>
-
-             <div class="small-12 medium-2 columns">
-               <label for="middle-label" class="text-left middle mb-0">X</label>
-               <input class="checkbox-large" type="checkbox" id="middle-label">
-             </div>
-             <div class="small-4 columns">
-               <label for="middle-label" class="text-left middle mb-0">No. of followers</label>
-               <input type="text" id="middle-label">
-             </div>
-             <div class="small-6 columns">
-               <label for="middle-label" class="text-left middle mb-0">URL or handle</label>
-               <input type="text" id="middle-label">
-             </div>
+  <!-- Short cover: Start-->
+  <section class="short-cover align-vertical-center" style="background-image:url(img/2025/bg-sign-up-cover.jpg);">
+    <div class="inner max-width-980">
+      <h1>Become a partner</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+      </p>
+    </div>
+  </section>
+  <!-- Short cover: End-->
 
 
-             <div class="small-12 medium-2 columns">
-               <label for="middle-label" class="text-left middle mb-0">TikTok</label>
-               <input class="checkbox-large" type="checkbox" id="middle-label">
-             </div>
-             <div class="small-4 columns">
-               <label for="middle-label" class="text-left middle mb-0">No. of followers</label>
-               <input type="text" id="middle-label">
-             </div>
-             <div class="small-6 columns">
-               <label for="middle-label" class="text-left middle mb-0">URL or handle</label>
-               <input type="text" id="middle-label">
-             </div>
+  <!-- Partner Process: Start-->
+  <div class="row partner-process">
+    <div class="small-12 medium-4 columns text-center">
+      <img alt="Apply below" src="img/2025/1.svg" />
+      <h4>Apply below</h4>
+      <p>Apply to become a Partner. We’ll review your application within 5 days and send you a partnership agreement to
+        sign.</p>
+    </div>
+    <div class="small-12 medium-4 columns text-center">
+      <img alt="Share" src="img/2025/2.svg" />
+      <h4>Share</h4>
+      <p>Once you accept the partnership agreement, we’ll send you your unique link that you can share.</p>
+    </div>
+    <div class="small-12 medium-4 columns text-center">
+      <img alt="Earn" src="img/2025/3.svg" />
+      <h4>Earn</h4>
+      <p>Each time someone purchases insurance after using your link, you’ll receive an ongoing commission.</p>
+    </div>
+  </div>
+  <!-- Partner Process: End-->
 
-             <div class="small-12 medium-2 columns">
-               <label for="middle-label" class="text-left middle mb-0">Instagram</label>
-               <input class="checkbox-large" type="checkbox" id="middle-label">
-             </div>
-             <div class="small-4 columns">
-               <label for="middle-label" class="text-left middle mb-0">No. of followers</label>
-               <input type="text" id="middle-label">
-             </div>
-             <div class="small-6 columns">
-               <label for="middle-label" class="text-left middle mb-0">URL or handle</label>
-               <input type="text" id="middle-label">
-             </div>
+  <!-- Form: Start-->
+  <div class="row partner-form">
+    <div class="small-12 columns form-wrapper">
+      <div class="row">
+        <div class="small-12 columns">
+          <h2>Apply to become a partner</h2>
+        </div>
+      </div>
+      <div class="row">
 
-             <div class="small-12 medium-2 columns">
-               <label for="middle-label" class="text-left middle mb-0">YouTube</label>
-               <input class="checkbox-large" type="checkbox" id="middle-label">
-             </div>
-             <div class="small-4 columns">
-               <label for="middle-label" class="text-left middle mb-0">No. of followers</label>
-               <input type="text" id="middle-label">
-             </div>
-             <div class="small-6 columns">
-               <label for="middle-label" class="text-left middle mb-0">URL or handle</label>
-               <input type="text" id="middle-label">
-             </div>
+        <div class="small-12 large-6 columns">
+          <label for="middle-label" class="text-left middle mb-0">Contact name*</label>
+          <input type="text" id="middle-label" placeholder="Contact name">
+        </div>
+        <div class="small-12 large-6 columns">
+          <label for="middle-label" class="text-left middle mb-0">Last name*</label>
+          <input type="text" id="middle-label" placeholder="Last name">
+        </div>
 
-               <div class="small-12 medium-9 columns text-right mt">
-                <small class="db" style="padding-top:15px;">If accepted, we will send you an agreement.</small>
-              </div>
-               <div class="small-12 medium-3 columns text-right mt">
-                <button class="button button-apply expanded">Apply now</button>
-                <small>GDPR message to go here</small>
-              </div>
-             </div>
+        <div class="small-12 large-6 columns">
+          <label for="middle-label" class="text-left middle mb-0">Email address*</label>
+          <input type="text" id="middle-label" placeholder="Email address">
+        </div>
+        <div class="small-12 large-6 columns">
+          <label for="middle-label" class="text-left middle mb-0">Contact number*</label>
+          <input type="text" id="middle-label" placeholder="Phone number">
+        </div>
+
+        <div class="small-12 large-6 columns">
+          <label for="middle-label" class="text-left middle mb-0">Social media user name*</label>
+          <input type="text" id="middle-label" placeholder="@Username">
+        </div>
+        <div class="small-12 large-6 columns">
+          <label for="middle-label" class="text-left middle mb-0">Website URL*</label>
+          <input type="text" id="middle-label" placeholder="Website address">
+        </div>
+
+        <div class="small-12 large-6 columns mb20">
+          <label for="middle-label" class="text-left middle mb-0">Country of residence*</label>
+          <input type="text" id="middle-label" placeholder="Country">
+        </div>
+        <div class="small-12 large-6 columns">
+
+        </div>
+
+        <div class="small-12 columns">
+          <h5 class="mt-20">Which social platforms do you use?</h5>
+        </div>
+
+        <div class="small-12 medium-2 columns">
+          <label for="middle-label" class="text-left middle mb-0">Facebook</label>
+          <input class="checkbox-large" type="checkbox" id="middle-label">
+        </div>
+        <div class="small-4 columns">
+          <label for="middle-label" class="text-left middle mb-0">No. of followers</label>
+          <input type="text" id="middle-label">
+        </div>
+        <div class="small-6 columns">
+          <label for="middle-label" class="text-left middle mb-0">URL or handle</label>
+          <input type="text" id="middle-label">
+        </div>
+
+        <div class="small-12 medium-2 columns">
+          <label for="middle-label" class="text-left middle mb-0">X</label>
+          <input class="checkbox-large" type="checkbox" id="middle-label">
+        </div>
+        <div class="small-4 columns">
+          <label for="middle-label" class="text-left middle mb-0">No. of followers</label>
+          <input type="text" id="middle-label">
+        </div>
+        <div class="small-6 columns">
+          <label for="middle-label" class="text-left middle mb-0">URL or handle</label>
+          <input type="text" id="middle-label">
+        </div>
 
 
-           </div>
-         </div>
-       </div>
-      <!-- Form: End-->
+        <div class="small-12 medium-2 columns">
+          <label for="middle-label" class="text-left middle mb-0">TikTok</label>
+          <input class="checkbox-large" type="checkbox" id="middle-label">
+        </div>
+        <div class="small-4 columns">
+          <label for="middle-label" class="text-left middle mb-0">No. of followers</label>
+          <input type="text" id="middle-label">
+        </div>
+        <div class="small-6 columns">
+          <label for="middle-label" class="text-left middle mb-0">URL or handle</label>
+          <input type="text" id="middle-label">
+        </div>
 
+        <div class="small-12 medium-2 columns">
+          <label for="middle-label" class="text-left middle mb-0">Instagram</label>
+          <input class="checkbox-large" type="checkbox" id="middle-label">
+        </div>
+        <div class="small-4 columns">
+          <label for="middle-label" class="text-left middle mb-0">No. of followers</label>
+          <input type="text" id="middle-label">
+        </div>
+        <div class="small-6 columns">
+          <label for="middle-label" class="text-left middle mb-0">URL or handle</label>
+          <input type="text" id="middle-label">
+        </div>
 
-      <!-- AH footer: Start-->
-      <div class="row ah-footer">
-         <div class="small-12 medium-6 columns col-nav">
-            <ul class="no-list">
-               <li><a class="color-navy" href="#">Contact us</a></li>
-               <li><a class="color-navy" href="#">FAQs</a></li>
-            </ul>
-         </div>
-         <div class="small-12 medium-6 columns col-awards">
-            <img alt="Travel Aware" src="img/2025/travel-aware.jpg"/>
-            <img alt="reviews" src="img/2025/reviews.jpg"/>
-         </div>
-         <div class="small-12 columns col-socials">
-            <a href="https://www.facebook.com/truetraveller/" target="_blank" rel="noopener" title="Check Out Our Facebook Page"><img src="img/2025/icon-fb.svg"/></a>
-            <a href="https://www.instagram.com/truetravellerinsurance" target="_blank" rel="noopener" title="Check Out Our Instagram Page"><img src="img/2025/icon-ig.svg"/></a>
-            <a href="https://www.twitter.com/true_traveller" target="_blank" rel="noopener" title="Check Out Our Twitter Page"><img src="img/2025/icon-x.svg"/></a>
-            <a href="https://www.tiktok.com" target="_blank" rel="noopener" title="Check Out Our TikTok Page"><img src="img/2025/icon-tik-tok.svg"/></a>
-            <a href="https://www.youtube.com" target="_blank" rel="noopener" title="Check Out Our YouTube Page"><img style="max-height:20px;" src="img/2025/icon-youtube.svg"/></a>
-         </div>
-         <div class="small-12 medium-6 columns">
-            <small class="mb20 db">
-            © The True Traveller Limited 2010-2025. All rights reserved<br/>
-            Authorised and Regulated by the Financial Conduct Authority (FRN 756107).
-            </small>
-         </div>
-         <div class="small-12 medium-6 columns col-legals">
-            <small><a href="#">Terms and Conditions</a> <a href="#">Privacy Policy</a> <a href="#">Cookie Policy</a></small>
-         </div>
+        <div class="small-12 medium-2 columns">
+          <label for="middle-label" class="text-left middle mb-0">YouTube</label>
+          <input class="checkbox-large" type="checkbox" id="middle-label">
+        </div>
+        <div class="small-4 columns">
+          <label for="middle-label" class="text-left middle mb-0">No. of followers</label>
+          <input type="text" id="middle-label">
+        </div>
+        <div class="small-6 columns">
+          <label for="middle-label" class="text-left middle mb-0">URL or handle</label>
+          <input type="text" id="middle-label">
+        </div>
+
+        <div class="small-12 medium-9 columns text-right mt">
+          <small class="db" style="padding-top:15px;">If accepted, we will send you an agreement.</small>
+        </div>
+        <div class="small-12 medium-3 columns text-right mt">
+          <button class="button button-apply expanded">Apply now</button>
+          <small>GDPR message to go here</small>
+        </div>
       </div>
 
-      <!-- AH footer: End-->
 
-      <!-- Footer consistent to TrueTraveller - Deepak to use existing code -->
-      <!-- Loaded from live only for purpose of testing : Start -->
-      <script src="https://www.truetraveller.com/js/footer/footer-all-min-dist.js"></script>
-      <!-- Loaded from live only for purpose of testing : End -->
-   </body>
+    </div>
+  </div>
+  </div>
+  <!-- Form: End-->
+
+
+  <!-- AH footer: Start-->
+  <div class="row ah-footer">
+    <div class="small-12 medium-6 columns col-nav">
+      <ul class="no-list">
+        <li><a class="color-navy" href="#">Contact us</a></li>
+        <li><a class="color-navy" href="#">FAQs</a></li>
+      </ul>
+    </div>
+    <div class="small-12 medium-6 columns col-awards">
+      <img alt="Travel Aware" src="img/2025/travel-aware.jpg" />
+      <img alt="reviews" src="img/2025/reviews.jpg" />
+    </div>
+    <div class="small-12 columns col-socials">
+      <a href="https://www.facebook.com/truetraveller/" target="_blank" rel="noopener"
+        title="Check Out Our Facebook Page"><img src="img/2025/icon-fb.svg" /></a>
+      <a href="https://www.instagram.com/truetravellerinsurance" target="_blank" rel="noopener"
+        title="Check Out Our Instagram Page"><img src="img/2025/icon-ig.svg" /></a>
+      <a href="https://www.twitter.com/true_traveller" target="_blank" rel="noopener"
+        title="Check Out Our Twitter Page"><img src="img/2025/icon-x.svg" /></a>
+      <a href="https://www.tiktok.com" target="_blank" rel="noopener" title="Check Out Our TikTok Page"><img
+          src="img/2025/icon-tik-tok.svg" /></a>
+      <a href="https://www.youtube.com" target="_blank" rel="noopener" title="Check Out Our YouTube Page"><img
+          style="max-height:20px;" src="img/2025/icon-youtube.svg" /></a>
+    </div>
+    <div class="small-12 medium-6 columns">
+      <small class="mb20 db">
+        © The True Traveller Limited 2010-2025. All rights reserved<br />
+        Authorised and Regulated by the Financial Conduct Authority (FRN 756107).
+      </small>
+    </div>
+    <div class="small-12 medium-6 columns col-legals">
+      <small><a href="#">Terms and Conditions</a> <a href="#">Privacy Policy</a> <a href="#">Cookie Policy</a></small>
+    </div>
+  </div>
+
+  <!-- AH footer: End-->
+
+  <!-- Footer consistent to TrueTraveller - Deepak to use existing code -->
+  <!-- Loaded from live only for purpose of testing : Start -->
+  <script src="https://www.truetraveller.com/js/footer/footer-all-min-dist.js"></script>
+  <!-- Loaded from live only for purpose of testing : End -->
+</body>
+
 </html>

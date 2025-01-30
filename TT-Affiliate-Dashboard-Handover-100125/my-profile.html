@@ -1,422 +1,444 @@
 <!doctype html>
 <html class="no-js" lang="en">
-   <head>
-      <!-- Loaded from live only for purpose of testing : Start -->
-      <meta charset="utf-8">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-      <title>True Traveller - Affiliate Dashboard</title>
-      <!-- Stylesheets loaded from live -->
-      <link rel="preload" href="https://www.truetraveller.com/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin />
-      <link rel="preload" href="https://www.truetraveller.com/font/truetraveller.woff?38429907" as="font" type="font/woff" crossorigin />
-      <link rel="preload" href="https://www.truetraveller.com/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin />
-      <link rel="preload" href="https://www.truetraveller.com/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin />
-      <link rel="stylesheet" href="https://www.truetraveller.com/css/all.css?v=33">
-      <link rel="stylesheet" href="https://www.truetraveller.com/css/home-page-redesign.css?v=3">
-      <!-- Typekit -->
-      <script src="https://use.typekit.net/isb8sii.js"></script>
-      <script>
-         try {
-         	Typekit.load({
-         		async: true
-         	});
-         } catch (e) {}
-      </script>
-      <style>
-         .wf-loading p,
-         .wf-loading h1,
-         .wf-loading h2,
-         .wf-loading h3,
-         .wf-loading h4,
-         wf-loading label {
-         visibility: hidden;
-         }
-         .wf-active p,
-         .wf-active h1,
-         .wf-active h2,
-         .wf-active h3,
-         .wf-active h4,
-         wf-active label {
-         visibility: visible;
-         }
-         .wf-inactive p,
-         .wf-inactive h1,
-         .wf-inactive h2,
-         .wf-inactive h3,
-         .wf-inactive h4,
-         wf-inactive label {
-         visibility: visible;
-         }
-      </style>
-      <script src="https://www.truetraveller.com/js/header/header-all-min-dist.js"></script>
-      <!-- Loaded from live only for purpose of testing : End -->
-      <!-- New Dashboard and icon stylesheets to be added to live template header file -->
-      <link rel="stylesheet" href="css/dashboard.css">
-      <link rel="stylesheet" href="icons/dash-icons.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-   </head>
-   <body class="ah-body">
-      <div id="top"></div>
 
-
-      <!-- Logged in Dashboard nav : Start -->
-      <div class="callout callout-notification closable text-center" data-closable>
-      <p>NOTIFICATION BAR MESSAGE</p>
-      <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-
-
-      <header class="header header-dashboard-loggedin" class="fade-all" role="banner">
-         <div class="expanded row main-menu align-middle">
-
-            <div class="small-6 medium-6 large-3 align-center columns">
-               <img class="logo logo-dashboard-logged-in" src="img/2025/tt-ah-logo.svg" alt="logo">
-            </div>
-
-            <div class="medium-2 large-6 text-center hide-for-small show-for-large columns">
-              <ul class="menu show-for-large pr0">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Download</a></li>
-                <li><a href="#">Marketing</a></li>
-              </ul>
-            </div>
-
-            <div class="small-6 medium-6 large-3 columns text-right">
-              <ul class="dropdown menu profile-menu pr0" data-dropdown-menu>
-                <li>
-                  <a href="#" class="top-level"><span class="show-for-large user-name">Lewis Holloway</span><img alt="open" class="chevron-down" src="img/2025/down.png"/>  <img alt="Profile" class="avatar" src="img/2025/avatar.png"/></a>
-                  <ul class="menu">
-                    <li><a href="#">Item 1</a></li>
-                    <li><a href="#">Item 2</a></li>
-                    <li><a href="#">Item 3</a></li>
-                  </ul>
-                </li>
-
-                <li class="hide-for-large">
-                  <a href="#" data-open="ah-menu-mob" aria-label="Menu bar" class="hide-for-large hamburger" aria-controls="mobileViewModal" aria-haspopup="true" tabindex="0"><i class="fa fa-bars" aria-hidden="true"></i></a>
-                </li>
-              </ul>
-              </div>
-
-            </div>
-      </header>
-
-                <div class="reveal reveal-ah-mob-menu full hamburger-nav-expanded darkgrey-bg mobile-patch animated faster fadeIn without-overlay" id="ah-menu-mob" data-reveal>
-
-                    <button class="close-button" data-close="" aria-label="Close modal" type="button">
-                        <i class="fa fa-times" aria-hidden="true"></i>
-                    </button>
-
-                    <ul class="no-list">
-                      <li><a href="#">Home</a></li>
-                      <li><a href="#">Download</a></li>
-                      <li><a href="#">Marketing</a></li>
-                    </ul>
-                </div>
-
-                <!-- Logged in Dashboard nav : End -->
-
-                <!-- Intro: Start-->
-
-                <div class="row row-pad">
-                   <div class="small-12 columns">
-                     <h1 class="color-navy">My profile</h1>
-                     <p class="color-navy max-width-980">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipiscin.</p>
-                   </div>
-                 </div>
-
-                <!-- Intro: End-->
-
-                <!-- Profile: Start-->
-
-                <div class="row">
-                   <div class="small-12 large-3 columns">
-                    <img alt="Profile" class="avatar-profile hover-pointer" src="img/2025/avatar.png"/>
-                    <p class="change-profile  hover-pointer">Change photo or logo</p>
-                    <ul class="no-list tabs-profile">
-                      <li><a href="#1">Personal details</a></li>
-                      <li><a href="#2">Account details</a></li>
-                      <li><a href="#3">Payment details</a></li>
-                      <li><a href="#4">Social links</a></li>
-                      <li><a href="#">Log out</a></li>
-                    </ul>
-                   </div>
-                   <div class="small-12 large-8 columns">
-
-                     <!-- Form: Start-->
-                     <div class="row partner-form">
-                        <div class="small-12 columns form-wrapper">
-                          <div class="row">
-                            <div class="small-12 columns">
-                              <h2 id="1">Details <img class="header-icon" src="img/2025/icon-pencil.svg" alt="pencil"></h2>
-                            </div>
-                          </div>
-
-                          <div class="row">
-                            <div class="small-12 columns">
-                              <label for="middle-label" class="text-left middle mb-0">Email address*</label>
-                              <input type="text" id="middle-label" placeholder="Email address">
-                            </div>
-
-                            <div class="small-12 large-6 columns">
-                              <label for="middle-label" class="text-left middle mb-0">Contact name*</label>
-                              <input type="text" id="middle-label" placeholder="Contact name">
-                            </div>
-                            <div class="small-12 large-6 columns">
-                              <label for="middle-label" class="text-left middle mb-0">Last name*</label>
-                              <input type="text" id="middle-label" placeholder="Last name">
-                            </div>
-
-                            <div class="small-12 large-6 columns fl">
-                              <label for="middle-label" class="text-left middle mb-0">Company or Social media user name *</label>
-                              <input type="text" id="middle-label" placeholder="Company or Social media user name">
-                            </div>
-                          </div>
-
-
-                          <div class="row">
-                            <div class="small-12 large-6 columns">
-                              <label for="middle-label" class="text-left middle mb-0">Address line 1*</label>
-                              <input type="text" id="middle-label" placeholder="Address line 1*">
-                            </div>
-
-                            <div class="small-12 large-6 columns">
-                              <label for="middle-label" class="text-left middle mb-0">Address line 2*</label>
-                              <input type="text" id="middle-label" placeholder="Address line 2*">
-                            </div>
-
-                            <div class="small-12 large-6 columns">
-                              <label for="middle-label" class="text-left middle mb-0">City*</label>
-                              <input type="text" id="middle-label" placeholder="City*">
-                            </div>
-
-                            <div class="small-12 large-6 columns">
-                              <label for="middle-label" class="text-left middle mb-0">State / Province*</label>
-                              <input type="text" id="middle-label" placeholder="State / Province*">
-                            </div>
-
-                            <div class="small-12 large-6 columns">
-                              <label for="middle-label" class="text-left middle mb-0">Country*</label>
-                              <input type="text" id="middle-label" placeholder="Country*">
-                            </div>
-
-                            <div class="small-12 large-6 columns">
-                              <label for="middle-label" class="text-left middle mb-0">Postal code*</label>
-                              <input type="text" id="middle-label" placeholder="Postal code*">
-                            </div>
-
-                          </div>
-
-                          <div class="row mt-20">
-                            <div class="small-12 columns">
-                             <button class="button button-apply">Save changes</button>
-                           </div>
-                          </div>
-
-                        </div>
-                      </div>
-                     <!-- Form: End-->
-
-                     <!-- Form: Start-->
-                     <div class="row partner-form mt-40">
-                        <div class="small-12 columns form-wrapper">
-                          <div class="row">
-                            <div class="small-12 columns">
-                              <h2 id="2">Account details <img class="header-icon" src="img/2025/icon-pencil.svg" alt="pencil"></h2>
-                            </div>
-                          </div>
-
-                          <div class="row">
-                            <div class="small-12 columns">
-                              <label for="middle-label" class="text-left middle mb-0">Website address*</label>
-                              <input disabled type="text" id="middle-label" value="Website address" placeholder="Website address">
-                            </div>
-
-                            <div class="small-12 columns">
-                              <label for="middle-label" class="text-left middle mb-0">Affiliate code*</label>
-                              <input disabled type="text" id="middle-label" value="Affiliate code*" placeholder="Affiliate code*">
-                            </div>
-
-                          </div>
-
-
-                        </div>
-                      </div>
-                     <!-- Form: End-->
-
-                     <!-- Form: Start-->
-                     <div class="row partner-form mt-40">
-                        <div class="small-12 columns form-wrapper">
-                          <div class="row">
-                            <div class="small-12 columns">
-                              <h2 id="3">Payment details <img class="header-icon" src="img/2025/icon-pencil.svg" alt="pencil"></h2>
-                            </div>
-                          </div>
-
-                          <div class="row">
-                            <div class="small-12 columns">
-                              <label for="middle-label" class="text-left middle mb-0">Bank name*</label>
-                              <input type="text" id="middle-label" placeholder="Bank name*">
-                            </div>
-
-                            <div class="small-12 large-6 columns">
-                              <label for="middle-label" class="text-left middle mb-0">Account number*</label>
-                              <input type="text" id="middle-label" placeholder="Account number*">
-                            </div>
-
-                            <div class="small-12 large-6 columns">
-                              <label for="middle-label" class="text-left middle mb-0">Routing number*</label>
-                              <input type="text" id="middle-label" placeholder="Routing number*">
-                            </div>
-
-                            <div class="small-12 large-6 columns">
-                              <label for="middle-label" class="text-left middle mb-0">Account type*</label>
-                              <input type="text" id="middle-label" placeholder="Account type*">
-                            </div>
-
-                            <div class="small-12 large-6 columns">
-                              <label for="middle-label" class="text-left middle mb-0">Bank phone number*</label>
-                              <input type="text" id="middle-label" placeholder="Bank phone number*">
-                            </div>
-
-                            <div class="small-12 columns">
-                              <label for="middle-label" class="text-left middle mb-0">Bank address line 1*</label>
-                              <input type="text" id="middle-label" placeholder="Bank address line 1*">
-                            </div>
-
-                            <div class="small-12 columns">
-                              <label for="middle-label" class="text-left middle mb-0">Bank address line 2*</label>
-                              <input type="text" id="middle-label" placeholder="Bank address line 2*">
-                            </div>
-
-                          </div>
-
-
-
-
-                          <div class="row mt-20">
-                            <div class="small-12 columns">
-                             <button class="button button-apply">Request change</button>
-                           </div>
-                          </div>
-
-                        </div>
-                      </div>
-                     <!-- Form: End-->
-
-
-                     <!-- Form: Start-->
-                     <div class="row partner-form mt-40">
-                        <div class="small-12 columns form-wrapper">
-                          <div class="row">
-                            <div class="small-12 columns">
-                              <h2 id="4">Social links <img class="header-icon" src="img/2025/icon-pencil.svg" alt="pencil"></h2>
-                            </div>
-                          </div>
-
-                          <div class="row">
-
-                            <div class="small-12 medium-6 columns fl">
-                              <label for="middle-label" class="text-left middle mb-0">Instagram</label>
-                              <input type="text" id="middle-label" placeholder="Instagram">
-                            </div>
-
-                          </div>
-
-                          <div class="row">
-
-                            <div class="small-12 medium-6 columns fl">
-                              <label for="middle-label" class="text-left middle mb-0">YouTube</label>
-                              <input type="text" id="middle-label" placeholder="YouTube">
-                            </div>
-
-                          </div>
-
-                          <div class="row">
-
-                            <div class="small-12 medium-6 columns fl">
-                              <label for="middle-label" class="text-left middle mb-0">Facebook</label>
-                              <input type="text" id="middle-label" placeholder="Facebook">
-                            </div>
-
-                          </div>
-
-                          <div class="row">
-
-
-                            <div class="small-12 medium-6 columns fl">
-                              <label for="middle-label" class="text-left middle mb-0">TikTok</label>
-                              <input type="text" id="middle-label" placeholder="TikTok">
-                            </div>
-
-                            </div>
-
-                            <div class="row">
-
-                            <div class="small-12 medium-6 columns fl">
-                              <label for="middle-label" class="text-left middle mb-0">Other</label>
-                              <input type="text" id="middle-label" placeholder="Other">
-                            </div>
-
-                            </div>
-
-                            <div class="row mt-20">
-                              <div class="small-12 columns">
-                               <button class="button button-apply">Save changes</button>
-                             </div>
-                            </div>
-
-                          </div>
-
-
-                        </div>
-                      </div>
-                     <!-- Form: End-->
-
-                 </div>
-               </div>
-
-                <!-- Profile: End-->
-
-
-      <!-- AH footer: Start-->
-      <div class="row ah-footer">
-         <div class="small-12 medium-6 columns col-nav">
-            <ul class="no-list">
-               <li><a class="color-navy" href="#">Contact us</a></li>
-               <li><a class="color-navy" href="#">FAQs</a></li>
-            </ul>
-         </div>
-         <div class="small-12 medium-6 columns col-awards">
-            <img alt="Travel Aware" src="img/2025/travel-aware.jpg"/>
-            <img alt="reviews" src="img/2025/reviews.jpg"/>
-         </div>
-         <div class="small-12 columns col-socials">
-            <a href="https://www.facebook.com/truetraveller/" target="_blank" rel="noopener" title="Check Out Our Facebook Page"><img src="img/2025/icon-fb.svg"/></a>
-            <a href="https://www.instagram.com/truetravellerinsurance" target="_blank" rel="noopener" title="Check Out Our Instagram Page"><img src="img/2025/icon-ig.svg"/></a>
-            <a href="https://www.twitter.com/true_traveller" target="_blank" rel="noopener" title="Check Out Our Twitter Page"><img src="img/2025/icon-x.svg"/></a>
-            <a href="https://www.tiktok.com" target="_blank" rel="noopener" title="Check Out Our TikTok Page"><img src="img/2025/icon-tik-tok.svg"/></a>
-            <a href="https://www.youtube.com" target="_blank" rel="noopener" title="Check Out Our YouTube Page"><img style="max-height:20px;" src="img/2025/icon-youtube.svg"/></a>
-         </div>
-         <div class="small-12 medium-6 columns">
-            <small class="mb20 db">
-            © The True Traveller Limited 2010-2025. All rights reserved<br/>
-            Authorised and Regulated by the Financial Conduct Authority (FRN 756107).
-            </small>
-         </div>
-         <div class="small-12 medium-6 columns col-legals">
-            <small><a href="#">Terms and Conditions</a> <a href="#">Privacy Policy</a> <a href="#">Cookie Policy</a></small>
-         </div>
+<head>
+  <!-- Loaded from live only for purpose of testing : Start -->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>True Traveller - Affiliate Dashboard</title>
+  <!-- Stylesheets loaded from live -->
+  <link rel="preload" href="https://www.truetraveller.com/webfonts/fa-regular-400.woff2" as="font" type="font/woff2"
+    crossorigin />
+  <link rel="preload" href="https://www.truetraveller.com/font/truetraveller.woff?38429907" as="font" type="font/woff"
+    crossorigin />
+  <link rel="preload" href="https://www.truetraveller.com/webfonts/fa-brands-400.woff2" as="font" type="font/woff2"
+    crossorigin />
+  <link rel="preload" href="https://www.truetraveller.com/webfonts/fa-solid-900.woff2" as="font" type="font/woff2"
+    crossorigin />
+  <link rel="stylesheet" href="https://www.truetraveller.com/css/all.css?v=33">
+  <link rel="stylesheet" href="https://www.truetraveller.com/css/home-page-redesign.css?v=3">
+  <!-- Typekit -->
+  <script src="https://use.typekit.net/isb8sii.js"></script>
+  <script>
+    try {
+      Typekit.load({
+        async: true
+      });
+    } catch (e) { }
+  </script>
+  <style>
+    .wf-loading p,
+    .wf-loading h1,
+    .wf-loading h2,
+    .wf-loading h3,
+    .wf-loading h4,
+    wf-loading label {
+      visibility: hidden;
+    }
+
+    .wf-active p,
+    .wf-active h1,
+    .wf-active h2,
+    .wf-active h3,
+    .wf-active h4,
+    wf-active label {
+      visibility: visible;
+    }
+
+    .wf-inactive p,
+    .wf-inactive h1,
+    .wf-inactive h2,
+    .wf-inactive h3,
+    .wf-inactive h4,
+    wf-inactive label {
+      visibility: visible;
+    }
+  </style>
+  <script src="https://www.truetraveller.com/js/header/header-all-min-dist.js"></script>
+  <!-- Loaded from live only for purpose of testing : End -->
+  <!-- New Dashboard and icon stylesheets to be added to live template header file -->
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="icons/dash-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+
+<body class="ah-body">
+  <div id="top"></div>
+
+
+  <!-- Logged in Dashboard nav : Start -->
+  <div class="callout callout-notification closable text-center" data-closable>
+    <p>NOTIFICATION BAR MESSAGE</p>
+    <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+
+  <header class="header header-dashboard-loggedin" class="fade-all" role="banner">
+    <div class="expanded row main-menu align-middle">
+
+      <div class="small-6 medium-6 large-3 align-center columns">
+        <img class="logo logo-dashboard-logged-in" src="img/2025/tt-ah-logo.svg" alt="logo">
       </div>
 
-      <!-- AH footer: End-->
+      <div class="medium-2 large-6 text-center hide-for-small show-for-large columns">
+        <ul class="menu show-for-large pr0">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Download</a></li>
+          <li><a href="#">Marketing</a></li>
+        </ul>
+      </div>
 
-      <!-- Footer consistent to TrueTraveller - Deepak to use existing code -->
-      <!-- Loaded from live only for purpose of testing : Start -->
-      <script src="https://www.truetraveller.com/js/footer/footer-all-min-dist.js"></script>
-      <!-- Loaded from live only for purpose of testing : End -->
-   </body>
+      <div class="small-6 medium-6 large-3 columns text-right">
+        <ul class="dropdown menu profile-menu pr0" data-dropdown-menu>
+          <li>
+            <a href="#" class="top-level"><span class="show-for-large user-name">Lewis Holloway</span><img alt="open"
+                class="chevron-down" src="img/2025/down.png" /> <img alt="Profile" class="avatar"
+                src="img/2025/avatar.png" /></a>
+            <ul class="menu">
+              <li><a href="#">Item 1</a></li>
+              <li><a href="#">Item 2</a></li>
+              <li><a href="#">Item 3</a></li>
+            </ul>
+          </li>
+
+          <li class="hide-for-large">
+            <a href="#" data-open="ah-menu-mob" aria-label="Menu bar" class="hide-for-large hamburger"
+              aria-controls="mobileViewModal" aria-haspopup="true" tabindex="0"><i class="fa fa-bars"
+                aria-hidden="true"></i></a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </header>
+
+  <div
+    class="reveal reveal-ah-mob-menu full hamburger-nav-expanded darkgrey-bg mobile-patch animated faster fadeIn without-overlay"
+    id="ah-menu-mob" data-reveal>
+
+    <button class="close-button" data-close="" aria-label="Close modal" type="button">
+      <i class="fa fa-times" aria-hidden="true"></i>
+    </button>
+
+    <ul class="no-list">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Download</a></li>
+      <li><a href="#">Marketing</a></li>
+    </ul>
+  </div>
+
+  <!-- Logged in Dashboard nav : End -->
+
+  <!-- Intro: Start-->
+
+  <div class="row row-pad">
+    <div class="small-12 columns">
+      <h1 class="color-navy">My profile</h1>
+      <p class="color-navy max-width-980">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipiscin.</p>
+    </div>
+  </div>
+
+  <!-- Intro: End-->
+
+  <!-- Profile: Start-->
+
+  <div class="row">
+    <div class="small-12 large-3 columns">
+      <img alt="Profile" class="avatar-profile hover-pointer" src="img/2025/avatar.png" />
+      <p class="change-profile  hover-pointer">Change photo or logo</p>
+      <ul class="no-list tabs-profile">
+        <li><a href="#1">Personal details</a></li>
+        <li><a href="#2">Account details</a></li>
+        <li><a href="#3">Payment details</a></li>
+        <li><a href="#4">Social links</a></li>
+        <li><a href="#">Log out</a></li>
+      </ul>
+    </div>
+    <div class="small-12 large-8 columns">
+
+      <!-- Form: Start-->
+      <div class="row partner-form">
+        <div class="small-12 columns form-wrapper">
+          <div class="row">
+            <div class="small-12 columns">
+              <h2 id="1">Details <img class="header-icon" src="img/2025/icon-pencil.svg" alt="pencil"></h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="small-12 columns">
+              <label for="middle-label" class="text-left middle mb-0">Email address*</label>
+              <input type="text" id="middle-label" placeholder="Email address">
+            </div>
+
+            <div class="small-12 large-6 columns">
+              <label for="middle-label" class="text-left middle mb-0">Contact name*</label>
+              <input type="text" id="middle-label" placeholder="Contact name">
+            </div>
+            <div class="small-12 large-6 columns">
+              <label for="middle-label" class="text-left middle mb-0">Last name*</label>
+              <input type="text" id="middle-label" placeholder="Last name">
+            </div>
+
+            <div class="small-12 large-6 columns fl">
+              <label for="middle-label" class="text-left middle mb-0">Company or Social media user name *</label>
+              <input type="text" id="middle-label" placeholder="Company or Social media user name">
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="small-12 large-6 columns">
+              <label for="middle-label" class="text-left middle mb-0">Address line 1*</label>
+              <input type="text" id="middle-label" placeholder="Address line 1*">
+            </div>
+
+            <div class="small-12 large-6 columns">
+              <label for="middle-label" class="text-left middle mb-0">Address line 2*</label>
+              <input type="text" id="middle-label" placeholder="Address line 2*">
+            </div>
+
+            <div class="small-12 large-6 columns">
+              <label for="middle-label" class="text-left middle mb-0">City*</label>
+              <input type="text" id="middle-label" placeholder="City*">
+            </div>
+
+            <div class="small-12 large-6 columns">
+              <label for="middle-label" class="text-left middle mb-0">State / Province*</label>
+              <input type="text" id="middle-label" placeholder="State / Province*">
+            </div>
+
+            <div class="small-12 large-6 columns">
+              <label for="middle-label" class="text-left middle mb-0">Country*</label>
+              <input type="text" id="middle-label" placeholder="Country*">
+            </div>
+
+            <div class="small-12 large-6 columns">
+              <label for="middle-label" class="text-left middle mb-0">Postal code*</label>
+              <input type="text" id="middle-label" placeholder="Postal code*">
+            </div>
+
+          </div>
+
+          <div class="row mt-20">
+            <div class="small-12 columns">
+              <button class="button button-apply">Save changes</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- Form: End-->
+
+      <!-- Form: Start-->
+      <div class="row partner-form mt-40">
+        <div class="small-12 columns form-wrapper">
+          <div class="row">
+            <div class="small-12 columns">
+              <h2 id="2">Account details <img class="header-icon" src="img/2025/icon-pencil.svg" alt="pencil"></h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="small-12 columns">
+              <label for="middle-label" class="text-left middle mb-0">Website address*</label>
+              <input disabled type="text" id="middle-label" value="Website address" placeholder="Website address">
+            </div>
+
+            <div class="small-12 columns">
+              <label for="middle-label" class="text-left middle mb-0">Affiliate code*</label>
+              <input disabled type="text" id="middle-label" value="Affiliate code*" placeholder="Affiliate code*">
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+      <!-- Form: End-->
+
+      <!-- Form: Start-->
+      <div class="row partner-form mt-40">
+        <div class="small-12 columns form-wrapper">
+          <div class="row">
+            <div class="small-12 columns">
+              <h2 id="3">Payment details <img class="header-icon" src="img/2025/icon-pencil.svg" alt="pencil"></h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="small-12 columns">
+              <label for="middle-label" class="text-left middle mb-0">Bank name*</label>
+              <input type="text" id="middle-label" placeholder="Bank name*">
+            </div>
+
+            <div class="small-12 large-6 columns">
+              <label for="middle-label" class="text-left middle mb-0">Account number*</label>
+              <input type="text" id="middle-label" placeholder="Account number*">
+            </div>
+
+            <div class="small-12 large-6 columns">
+              <label for="middle-label" class="text-left middle mb-0">Routing number*</label>
+              <input type="text" id="middle-label" placeholder="Routing number*">
+            </div>
+
+            <div class="small-12 large-6 columns">
+              <label for="middle-label" class="text-left middle mb-0">Account type*</label>
+              <input type="text" id="middle-label" placeholder="Account type*">
+            </div>
+
+            <div class="small-12 large-6 columns">
+              <label for="middle-label" class="text-left middle mb-0">Bank phone number*</label>
+              <input type="text" id="middle-label" placeholder="Bank phone number*">
+            </div>
+
+            <div class="small-12 columns">
+              <label for="middle-label" class="text-left middle mb-0">Bank address line 1*</label>
+              <input type="text" id="middle-label" placeholder="Bank address line 1*">
+            </div>
+
+            <div class="small-12 columns">
+              <label for="middle-label" class="text-left middle mb-0">Bank address line 2*</label>
+              <input type="text" id="middle-label" placeholder="Bank address line 2*">
+            </div>
+
+          </div>
+
+
+
+
+          <div class="row mt-20">
+            <div class="small-12 columns">
+              <button class="button button-apply">Request change</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- Form: End-->
+
+
+      <!-- Form: Start-->
+      <div class="row partner-form mt-40">
+        <div class="small-12 columns form-wrapper">
+          <div class="row">
+            <div class="small-12 columns">
+              <h2 id="4">Social links <img class="header-icon" src="img/2025/icon-pencil.svg" alt="pencil"></h2>
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="small-12 medium-6 columns fl">
+              <label for="middle-label" class="text-left middle mb-0">Instagram</label>
+              <input type="text" id="middle-label" placeholder="Instagram">
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="small-12 medium-6 columns fl">
+              <label for="middle-label" class="text-left middle mb-0">YouTube</label>
+              <input type="text" id="middle-label" placeholder="YouTube">
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="small-12 medium-6 columns fl">
+              <label for="middle-label" class="text-left middle mb-0">Facebook</label>
+              <input type="text" id="middle-label" placeholder="Facebook">
+            </div>
+
+          </div>
+
+          <div class="row">
+
+
+            <div class="small-12 medium-6 columns fl">
+              <label for="middle-label" class="text-left middle mb-0">TikTok</label>
+              <input type="text" id="middle-label" placeholder="TikTok">
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="small-12 medium-6 columns fl">
+              <label for="middle-label" class="text-left middle mb-0">Other</label>
+              <input type="text" id="middle-label" placeholder="Other">
+            </div>
+
+          </div>
+
+          <div class="row mt-20">
+            <div class="small-12 columns">
+              <button class="button button-apply">Save changes</button>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+    <!-- Form: End-->
+
+  </div>
+  </div>
+
+  <!-- Profile: End-->
+
+
+  <!-- AH footer: Start-->
+  <div class="row ah-footer">
+    <div class="small-12 medium-6 columns col-nav">
+      <ul class="no-list">
+        <li><a class="color-navy" href="#">Contact us</a></li>
+        <li><a class="color-navy" href="#">FAQs</a></li>
+      </ul>
+    </div>
+    <div class="small-12 medium-6 columns col-awards">
+      <img alt="Travel Aware" src="img/2025/travel-aware.jpg" />
+      <img alt="reviews" src="img/2025/reviews.jpg" />
+    </div>
+    <div class="small-12 columns col-socials">
+      <a href="https://www.facebook.com/truetraveller/" target="_blank" rel="noopener"
+        title="Check Out Our Facebook Page"><img src="img/2025/icon-fb.svg" /></a>
+      <a href="https://www.instagram.com/truetravellerinsurance" target="_blank" rel="noopener"
+        title="Check Out Our Instagram Page"><img src="img/2025/icon-ig.svg" /></a>
+      <a href="https://www.twitter.com/true_traveller" target="_blank" rel="noopener"
+        title="Check Out Our Twitter Page"><img src="img/2025/icon-x.svg" /></a>
+      <a href="https://www.tiktok.com" target="_blank" rel="noopener" title="Check Out Our TikTok Page"><img
+          src="img/2025/icon-tik-tok.svg" /></a>
+      <a href="https://www.youtube.com" target="_blank" rel="noopener" title="Check Out Our YouTube Page"><img
+          style="max-height:20px;" src="img/2025/icon-youtube.svg" /></a>
+    </div>
+    <div class="small-12 medium-6 columns">
+      <small class="mb20 db">
+        © The True Traveller Limited 2010-2025. All rights reserved<br />
+        Authorised and Regulated by the Financial Conduct Authority (FRN 756107).
+      </small>
+    </div>
+    <div class="small-12 medium-6 columns col-legals">
+      <small><a href="#">Terms and Conditions</a> <a href="#">Privacy Policy</a> <a href="#">Cookie Policy</a></small>
+    </div>
+  </div>
+
+  <!-- AH footer: End-->
+
+  <!-- Footer consistent to TrueTraveller - Deepak to use existing code -->
+  <!-- Loaded from live only for purpose of testing : Start -->
+  <script src="https://www.truetraveller.com/js/footer/footer-all-min-dist.js"></script>
+  <!-- Loaded from live only for purpose of testing : End -->
+</body>
+
 </html>
