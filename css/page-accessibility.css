@@ -1,0 +1,80 @@
+.mb50 {
+  margin-bottom: 50px;
+}
+
+.bg-light-grey {
+  background: #F4F5F6;
+}
+
+.accessibility-pb {
+  padding-bottom: 25px;
+}
+
+.cover-accessibility {
+  display: flex;
+  justify-content: center; /* Horizontal center */
+  align-items: center;     /* Vertical center */
+  height: 480px;
+  background: #000 url('../img/accessibility/TT-accessibility-cover.jpg') center/cover no-repeat;
+}
+
+.cover-accessibility h1 {
+  color: white;
+  font-size: 3rem;
+  margin: 0;
+  text-align: center;
+  padding: 40px;
+  width: 40%;
+}
+
+.browser-ico {
+  max-width: 80px;
+  margin-bottom: 10px;
+}
+
+.accessibility-illustration {
+  padding: 0px 40px;
+}
+
+.accessibility-box-border {
+    border: #E6E6E6 1px solid;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 1080px) {
+.cover-accessibility h1 {
+    width: 70%;
+}
+}
+
+@media (max-width: 639px) {
+.cover-accessibility {
+  height: 280px;
+}
+
+.cover-accessibility h1 {
+    font-size: 1.5rem;
+    width: 70%;
+}
+
+    .browser-ico {
+  max-width: 40px;
+  margin-bottom: 10px;
+}
+
+.accessibility-document-icon {
+  width: 50%;
+}
+
+.accessibility-illustration {
+    width: 70%;
+    margin-top: 30px;
+}
+
+.browser-logo-wrapper a {
+  font-size: 12px;
+}
+
+}
