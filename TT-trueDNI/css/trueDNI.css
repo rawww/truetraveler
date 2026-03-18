@@ -19,11 +19,18 @@
     font-family:'poppins' !important;
 }
 
+.truedni p {
+    font-family: 'lola' !important;
+    color:#37464F;
+    font-size:18px;
+}
+
 .truedni h1, h2, h3, h4, h5 {
     font-family:'poppins' !important;
     text-transform: uppercase;
     font-weight:600;
     line-height: 1;
+    color:#37464F;
 }
 
 /*helpers*/
@@ -64,12 +71,52 @@
     list-style:none;
 }
 
+.fw-500 {
+    font-weight:500;
+}
+
+.br40 {
+    border-radius: 40px;
+}
+
+.lc {
+    text-transform: none !important;
+}
+
+.block-pad-tb {
+    padding-top:60px;
+    padding-bottom:60px;
+}
+
+.block-pad-t {
+    padding-top:60px;
+}
+
+.block-pad-b {
+    padding-bottom:60px;
+}
+
+@media screen and (min-width: 64em) {
+    .block-pad-lr-large {
+        padding-left:80px;
+        padding-right:80px;
+    }
+}
+
 .pr0 {
     padding-right:0;
 }
 
 .mb0 {
     margin-bottom:0;
+}
+
+.mb20 {
+    margin-bottom:20px;
+}
+
+.mb40 {
+    margin-bottom:40px;
 }
 
 @media screen and (max-width: 39.9375em) {
@@ -90,14 +137,18 @@
 .button-tdni-white-outline {
     background:transparent;
     border-radius:30px;
-    border:1px solid #fff;
     color:#fff;
 }
 
 .button-tdni-orange {
     background:#FF835C;
     border-radius:30px;
-    border:1px solid #FF835C;
+    color:#fff;
+}
+
+.button-tdni-grey {
+    background:#37464F;
+    border-radius:30px;
     color:#fff;
 }
 
@@ -256,6 +307,51 @@
     min-height:600px;
     color:#37464F;
     padding-top:120px;
+}
+
+/*contentblocks*/
+
+.wc-list li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size:21px;
+    font-family: 'Lola';
+    color:#37464F;
+    border-top:3px solid #eee;
+}
+
+.inner-text {
+    padding:20px 30px;
+}
+
+.two-col-illustrations img {
+    max-height:215px;
+}
+
+.two-col-illustrations {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.two-col-illustrations .columns {
+  display: flex;
+}
+
+.two-col-illustrations .inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.two-col-illustrations .inner-text {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.two-col-illustrations .inner-text .button {
+  margin-top: auto;
 }
 
 /*footer*/
