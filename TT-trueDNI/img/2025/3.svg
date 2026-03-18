@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110" height="71" viewBox="0 0 110 71">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_402" data-name="Rectangle 402" width="110" height="71" transform="translate(0 0.182)" fill="none" stroke="#ff5722" stroke-width="4"/>
+    </clipPath>
+  </defs>
+  <g id="Group_2619" data-name="Group 2619" transform="translate(0 -0.182)">
+    <g id="Group_2618" data-name="Group 2618" clip-path="url(#clip-path)">
+      <path id="Path_58" data-name="Path 58" d="M0,16H6.889s5.166,6.889,11.481,6.889h9.185" transform="translate(0 20.739)" fill="none" stroke="#ff5722" stroke-miterlimit="10" stroke-width="4"/>
+      <path id="Path_59" data-name="Path 59" d="M55.109,17.073,45.924,5.592C42.946,2.348,41.249,1,36.739,1H0" transform="translate(0 1.296)" fill="none" stroke="#ff5722" stroke-miterlimit="10" stroke-width="4"/>
+      <path id="Path_60" data-name="Path 60" d="M22.073,5l18.37,18.37c4.23,4.227-6.3,10.806-12.606,5.763L22.073,23.37H15.185c-9,0-9.185-7.835-9.185-9.185" transform="translate(7.777 6.481)" fill="none" stroke="#ff5722" stroke-miterlimit="10" stroke-width="4"/>
+      <path id="Path_61" data-name="Path 61" d="M21.185,8H92.367V58.516H12V19.481" transform="translate(15.554 10.37)" fill="none" stroke="#ff5722" stroke-miterlimit="10" stroke-width="4"/>
+      <path id="Path_62" data-name="Path 62" d="M16,25.777V37.258a6.888,6.888,0,0,1,6.889,6.889h48.22A6.888,6.888,0,0,1,78,37.258V18.889A6.888,6.888,0,0,1,71.109,12H32.073" transform="translate(20.739 15.554)" fill="none" stroke="#ff5722" stroke-miterlimit="10" stroke-width="4"/>
+      <line id="Line_154" data-name="Line 154" x2="5" transform="translate(48 43.182)" fill="none" stroke="#ff5722" stroke-miterlimit="10" stroke-width="4"/>
+      <line id="Line_155" data-name="Line 155" x2="5" transform="translate(85 43.182)" fill="none" stroke="#ff5722" stroke-miterlimit="10" stroke-width="4"/>
+      <ellipse id="Ellipse_13" data-name="Ellipse 13" cx="9" cy="9.5" rx="9" ry="9.5" transform="translate(60 34.182)" fill="none" stroke="#ff5722" stroke-miterlimit="10" stroke-width="4"/>
+    </g>
+  </g>
+</svg>

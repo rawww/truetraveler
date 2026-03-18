@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2024 by original authors @ fontello.com</metadata>
+<defs>
+<font id="dash-icons" horiz-adv-x="1000" >
+<font-face font-family="dash-icons" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="x_twitter_icon" unicode="&#xe800;" d="M582 427l0 0 364 423h-86l-316-367-253 367h-291l382-556-382-444h86l334 389 267-389h291l-396 577z m-118-138l0 0-39 56-308 440h133l248-355 39-56 323-462h-133l-263 377z" horiz-adv-x="978" />
+
+<glyph glyph-name="link_icon" unicode="&#xe801;" d="M750 100h-187c0 0-249 0-250 250 0 22 3 43 8 63h134c-11-19-17-40-17-63 0-125 125-125 125-125h187c0 0 125 0 125 125s-125 125-125 125 0 63-62 125h62c0 0 250 0 250-250s-250-250-250-250z m-71 188h-134c11 18 18 39 18 62 0 125-125 125-125 125h-188c0 0-125 0-125-125s125-125 125-125-4-63 64-125h-64c0 0-250 0-250 250s250 250 250 250h188c0 0 250 0 250-250 0-22-4-42-9-62z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>
