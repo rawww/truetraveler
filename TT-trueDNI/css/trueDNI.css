@@ -1,0 +1,348 @@
+/* Small only */
+@media screen and (max-width: 39.9375em) {}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
+/* Large and up */
+@media screen and (min-width: 64em) {}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+
+/*body class*/
+
+.truedni {
+    font-family:'poppins' !important;
+}
+
+.truedni h1, h2, h3, h4, h5 {
+    font-family:'poppins' !important;
+    text-transform: uppercase;
+    font-weight:600;
+    line-height: 1;
+}
+
+/*helpers*/
+
+.font-poppins {
+    font-family:'poppins' !important;
+}
+
+.font-lola {
+    font-family: 'lola' !important;
+}
+
+.vert-center {
+  display: flex;
+  flex-wrap: wrap;     /* preserve wrapping like Foundation */
+  align-items: center; /* vertical centering */
+}
+
+.bg-nmd {
+  background:#FF835C;
+}
+
+.bg-nmd-pro {
+  background:#B8CFDB;
+}
+
+.bg-light-pink {
+  background:#FFE6DE;
+}
+
+.col-pad {
+    padding:0 60px;
+}
+
+.no-list {
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+
+.pr0 {
+    padding-right:0;
+}
+
+.mb0 {
+    margin-bottom:0;
+}
+
+@media screen and (max-width: 39.9375em) {
+    .col-pad {
+        padding:20px;
+    }
+}
+
+.cover-radius {
+    -webkit-border-bottom-right-radius: 40px;
+    -webkit-border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+/*new buttons*/
+
+.button-tdni-white-outline {
+    background:transparent;
+    border-radius:30px;
+    border:1px solid #fff;
+    color:#fff;
+}
+
+.button-tdni-orange {
+    background:#FF835C;
+    border-radius:30px;
+    border:1px solid #FF835C;
+    color:#fff;
+}
+
+/*custom css*/
+
+/* Disable any animation/delay for the currency dropdown menu */
+.dropdown-pane-currency .menu {
+  transition: none !important;      /* disable transitions */
+  animation: none !important;       /* disable animations */
+  opacity: 1 !important;            /* ensure visible by default */
+}
+
+.header-tdni .row {
+    border-radius: 40px;
+    padding:0 20px;
+    max-width:1200px;
+    min-height:56px;
+    z-index: 999;
+    position: relative;
+    margin: 40px auto 0 auto;
+    background:#37474f;
+}
+
+@media screen and (max-width: 39.9375em) {
+
+    .header-tdni .row {
+        margin: 20px auto 0 auto;
+        padding:0 10px;
+    }
+}
+
+.hamburger-tdni, .x-tdni {
+    max-width:24px;
+}
+
+
+.header-tdni {
+    padding:0 20px;
+}
+
+
+.x-tdni {
+    display: none;
+}
+
+.mobile-nav {
+    width:100%;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    min-height: 62vh;
+    background:#37474f;
+    -webkit-border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    padding:20px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: max-height 0.4s ease, opacity 0.3s ease, transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mobile-nav .button {
+    width:100%;
+}
+
+.mobile-nav.is-open {
+  max-height: 500px; /* adjust as needed */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.header-tdni .row.is-open {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.header-tdni .logo-tdni {
+    max-width:124px;
+}
+
+.header-tdni .mobile-nav a {
+    color:#fff;
+}
+
+.big-menu-item a {
+    text-transform:uppercase;
+    font-weight:600;
+    font-size:24px;
+}
+
+.button-currency {
+    padding: 5px 5px 4px 5px;
+    border-radius: 15px;
+    margin: 0;
+    background: #eeeeee;
+    color: #37474f;
+}
+
+.button-currency:hover, .button-currency:active, .button-currency:focus {
+    background: #eeeeee;
+    color: #37474f;
+} 
+
+.dropdown-pane-currency {
+    margin-top:-1px;
+    padding:10px !important;
+    background: #eeeeee;
+    color: #37474f;
+    width:auto !important;
+    border:0 !important;
+}
+
+.button-currency.hover {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.dropdown-pane-currency ul {
+    padding:0;
+}
+.dropdown-pane-currency ul a {
+    color:#37474f !important;
+    padding:3px 0 !important;
+    font-size:14.4px !important;
+}
+
+
+.header-tdni .menu>li>a {
+    font-family:'poppins' !important;
+    text-transform: uppercase;
+    font-weight:500;
+    color:#fff;
+    padding:22px 25px 18px 25px;
+}
+
+.col-ui img {
+    margin:0 0 0 5px;
+}
+
+/*covers*/
+
+.cover-tdni-container {
+    /* position:absolute;
+    top:0;
+    width:100%; */
+    z-index:1;
+    margin-top: -120px;
+}
+
+.cover-tdni {
+    min-height:600px;
+    color:#37464F;
+    padding-top:120px;
+}
+
+/*footer*/
+
+.footer-tdni {
+    -webkit-border-top-right-radius: 40px;
+    -webkit-border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    background:#37474f;
+    padding-bottom: 40px;
+}
+
+.footer-tdni li a {
+    font-size:18px;
+    font-family:'Lora';
+    color:#fff;
+}
+
+
+.footer-tdni li a:hover {
+    color:#fff;
+    border-bottom:1px solid;
+}
+
+.logo-tdni--footer {
+    margin-bottom:60px;
+}
+
+.row-legals {
+    margin-top:60px;
+}
+
+.col-legals small {
+    font-family:'lola';
+    font-size:14px;
+    color:#fff;
+}
+
+.col-legals a {
+    font-size:14px;
+    color:#fff;
+}
+
+.col-legals a:hover {
+    font-size:14px;
+    color:#fff;
+    border-bottom:1px solid;
+}
+
+.btn-green {
+    font-family:'poppins';
+    font-weight:600;
+    padding:10px 40px;
+    border-radius:40px;
+    background:#00F3B5;
+    color:#37464F;
+}
+
+.btn-green:hover {
+    background:#02cb98;
+}
+
+.btn-green--lc {
+    font-size:18px;
+}
+
+.lc {
+    max-height:51px;
+}
+
+@media screen and (max-width: 39.9375em) {
+    .footer-tdni {
+        padding-bottom:120px;
+    }
+    .col-quote {
+        text-align:center !important;
+        padding:20px;
+        position:fixed;
+        bottom:0;
+        left:0;
+        width:100%;
+        border-top-right-radius: 40px;
+        border-top-left-radius: 40px;
+        background:#37464F;
+        box-shadow: 0px -1px 35px 0px rgba(0,0,0,0.39);
+        -webkit-box-shadow: 0px -1px 35px 0px rgba(0,0,0,0.39);
+        -moz-box-shadow: 0px -1px 35px 0px rgba(0,0,0,0.39);
+    }
+}
