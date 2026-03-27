@@ -160,7 +160,7 @@ h5 {
 }
 
 .button-tdni-orange {
-    background: #ff9574;
+    background: #FF5722;
     border-radius: 30px;
     color: #fff;
 }
@@ -226,7 +226,7 @@ h5 {
     background: #37474f;
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
-    padding: 20px;
+    padding: 35px 20px 20px 20px;
     max-height: 0;
     overflow: hidden;
     opacity: 0;
@@ -271,7 +271,7 @@ h5 {
 .big-menu-item a {
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 29px;
 }
 
 .button-currency {
