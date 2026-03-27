@@ -124,12 +124,28 @@ h5 {
     margin-bottom: 0;
 }
 
+.mb10 {
+    margin-bottom: 10px;
+}
+
 .mb20 {
     margin-bottom: 20px;
 }
 
 .mb40 {
     margin-bottom: 40px;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mt40 {
+    margin-top: 40px;
 }
 
 .large-p {
@@ -167,6 +183,18 @@ h5 {
 
 .button-tdni-grey {
     background: #37464F;
+    border-radius: 30px;
+    color: #fff;
+}
+
+.button-tdni-white {
+    background:#fff;
+    border-radius: 30px;
+    color: #37464F;
+}
+
+.button-tdni-white:hover {
+    background:#37464F;
     border-radius: 30px;
     color: #fff;
 }
@@ -354,6 +382,10 @@ h5 {
     color: #37464F;
     padding-top: 120px;
     margin-bottom:60px;
+}
+
+.cover-tdni img {
+    width:100%;
 }
 
 /*contentblocks*/
