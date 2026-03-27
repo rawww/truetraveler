@@ -358,6 +358,10 @@ h5 {
 
 /*contentblocks*/
 
+.intro-tdni h2 {
+    line-height:1.2;
+}
+
 .wc-list li {
     display: flex;
     flex-direction: row;
