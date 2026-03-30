@@ -97,16 +97,16 @@ h5 {
 }
 
 .block-pad-tb {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .block-pad-t {
-    padding-top: 60px;
+    padding-top: 80px;
 }
 
 .block-pad-b {
-    padding-bottom: 60px;
+    padding-bottom: 80px;
 }
 
 @media screen and (min-width: 64em) {
@@ -164,6 +164,11 @@ h5 {
     -webkit-border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
     border-bottom-left-radius: 40px;
+}
+
+.links-navy-underline a {
+    color: #37464F;
+    border-bottom:1px solid #37464F;
 }
 
 /*new buttons*/
