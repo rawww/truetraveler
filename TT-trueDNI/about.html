@@ -1,0 +1,417 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<!-- Loaded from live only for purpose of testing : Start -->
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>TrueDNI</title>
+
+	<!-- Stylesheets loaded from live -->
+	<link rel="preload" href="https://www.truetraveller.com/webfonts/fa-regular-400.woff2" as="font" type="font/woff2"
+		crossorigin />
+	<link rel="preload" href="https://www.truetraveller.com/font/truetraveller.woff?38429907" as="font" type="font/woff"
+		crossorigin />
+	<link rel="preload" href="https://www.truetraveller.com/webfonts/fa-brands-400.woff2" as="font" type="font/woff2"
+		crossorigin />
+	<link rel="preload" href="https://www.truetraveller.com/webfonts/fa-solid-900.woff2" as="font" type="font/woff2"
+		crossorigin />
+	<link rel="stylesheet" href="https://www.truetraveller.com/css/all.css?v=33">
+	<link rel="stylesheet" href="https://www.truetraveller.com/css/home-page-redesign.css?v=3">
+
+	<!-- Typekit -->
+	<script src="https://use.typekit.net/isb8sii.js"></script>
+	<script>
+		try {
+			Typekit.load({
+				async: true
+			});
+		} catch (e) { }
+	</script>
+
+	<style>
+		.wf-loading p,
+		.wf-loading h1,
+		.wf-loading h2,
+		.wf-loading h3,
+		.wf-loading h4,
+		wf-loading label {
+			visibility: hidden;
+		}
+
+		.wf-active p,
+		.wf-active h1,
+		.wf-active h2,
+		.wf-active h3,
+		.wf-active h4,
+		wf-active label {
+			visibility: visible;
+		}
+
+		.wf-inactive p,
+		.wf-inactive h1,
+		.wf-inactive h2,
+		.wf-inactive h3,
+		.wf-inactive h4,
+		wf-inactive label {
+			visibility: visible;
+		}
+	</style>
+
+
+	<script src="https://www.truetraveller.com/js/header/header-all-min-dist.js"></script>
+	<!-- Loaded from live only for purpose of testing : End -->
+
+
+	<!-- New True-DNI stylesheets to be added to live template header file -->
+	<link rel="stylesheet" href="css/trueDNI.css">
+
+	<!-- New True-DNI webfonts, Poppins and Lora-->
+	<link rel="stylesheet" href="https://use.typekit.net/ihi5pfa.css">
+
+</head>
+
+<body class="truedni">
+
+	<div id="top"></div>
+
+	<!-- TDNI nav : Start -->
+
+
+	<header class="header header-tdni" class="fade-all" role="banner">
+		<div class="row vert-center">
+
+			<div class="small-6 large-3 align-center columns">
+				<a href="#homeurl"><img class="logo-tdni" src="img/2026-tdni/logo-tdni.svg" alt="TrueDNI"></a>
+			</div>
+
+			<div class="large-6 show-for-large text-center columns">
+				<ul class="menu">
+					<li><a href="#">Nomad</a></li>
+					<li><a href="#">Nomad Pro</a></li>
+					<li><a href="#">About us</a></li>
+				</ul>
+			</div>
+
+			<div class="small-6 large-3 columns col-ui text-right pr0">
+				<!-- Dropdown trigger -->
+				<button class="button button-currency" type="button" data-toggle="currencyDropdown" aria-haspopup="true"
+					aria-expanded="false">
+					<!-- initial currency here-->
+					£ GBP
+				</button>
+
+				<!-- Dropdown menu -->
+				<div class="dropdown-pane dropdown-pane-currency" id="currencyDropdown" data-offset="0 -1"
+					data-dropdown>
+					<ul class="menu vertical">
+						<li><a class="tdni-currency-choice-gbp" href="#" data-currency="GBP">£ GBP</a></li>
+						<li><a class="tdni-currency-choice-eur" href="#" data-currency="EUR">€ EUR</a></li>
+						<li><a class="tdni-currency-choice-usd" href="#" data-currency="USD">$ USD</a></li>
+					</ul>
+				</div>
+				<img src="icons-tdni/ico-profile.svg" alt="Profile" />
+				<img class="show-for-small hide-for-large hamburger-tdni" src="icons-tdni/ico-hamburger.svg"
+					alt="Menu" />
+				<img class="show-for-small hide-for-large x-tdni" src="icons-tdni/ico-x.svg" alt="Close" />
+
+			</div>
+			<div class="mobile-nav hide-for-large">
+				<ul class="no-list">
+					<li class="big-menu-item"><a href="#">Nomad</a></li>
+					<li class="big-menu-item mb20"><a href="#">Nomad Pro</a></li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">FAQs</a></li>
+					<li><a href="#">Contact us</a></li>
+				</ul>
+				<div class="mob-nav-buttons">
+					<a class="button button-tdni-white-outline">Make a claim</a>
+					<a class="button button-tdni-orange mb0">My TrueDNI</a>
+				</div>
+			</div>
+		</div>
+
+
+	</header>
+
+	<!-- TDNI nav : End -->
+
+	<!-- TDNI cover: Start-->
+	<div class="bg-light-pink cover-radius cover-tdni-container">
+		<div class="row cover-tdni vert-center">
+			<div class="columns small-12 medium-6">
+				<div class="col-pad">
+					<h1>About TrueDNI</h1>
+					<p>Insurance for life on the move</p>
+				</div>
+			</div>
+			<div class="columns small-12 medium-6 text-center">
+				<div class="col-pad">
+					<img style="max-width:320px;" alt="About TrueDNI" src="img/2026-tdni/ill-7.svg" />
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- TDNI cover: End-->
+
+
+	<!-- TDNI intro: Start-->
+	<div class="row intro-tdni block-pad-b block-pad-lr-large">
+		<div class="columns small-12 text-center">
+			<p>TrueDNI is insurance designed for digital nomads, remote workers and long-stay travellers who live and
+				work abroad.</p>
+			<p>Unlike standard travel insurance, TrueDNI is built for ongoing travel, with flexible monthly cover that
+				moves with you<br />as your plans change.</p>
+			</p>
+		</div>
+		<!-- TDNI intro: End-->
+	</div>
+
+	<!-- centered header: Start-->
+	<div class="row">
+		<div class="columns small-12 text-center">
+			<h2 class="mb20">How it Works</h2>
+		</div>
+	</div>
+	<!-- centered header: End-->
+
+	<!-- 4col icons: Start-->
+	<div class="row four-col-icons block-pad-lr-large" data-equalizer>
+
+		<div class="columns small-6 medium-3 text-center" data-equalizer-watch>
+			<div class="inner bg-light-pink br20">
+				<img src="icons-tdni/ico-send.svg" class="mb20">
+				<div class="inner-text">
+					<p class="font-lola large-p mb0">Choose the cover that fits how you travel</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="columns small-6 medium-3 text-center" data-equalizer-watch>
+			<div class="inner bg-light-pink br20">
+				<img src="icons-tdni/ico-pay.svg" class="mb20">
+				<div class="inner-text">
+					<p class="font-lola large-p mb0">Pay monthly, with no long-term commitment</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="columns small-6 medium-3 text-center" data-equalizer-watch>
+			<div class="inner bg-light-pink br20">
+				<img src="icons-tdni/ico-cancel.svg" class="mb20">
+				<div class="inner-text">
+					<p class="font-lola large-p mb0">Cancel anytime if your plans change</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="columns small-6 medium-3 text-center" data-equalizer-watch>
+			<div class="inner bg-light-pink br20">
+				<img src="icons-tdni/ico-phone.svg" class="mb20">
+				<div class="inner-text">
+					<p class="font-lola large-p mb0">Manage your policy online</hp>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- 4col icons: End-->
+
+	<!-- centered text: Start-->
+	<div class="row mt20 mb20">
+		<div class="columns small-12 text-center">
+			<p>Everything is designed to be simple, clear and easy to manage while you’re abroad.</p>
+		</div>
+	</div>
+	<!-- centered text: End-->
+
+	<!-- 2col illustrations: Start-->
+	<div class="row two-col-illustrations block-pad-b block-pad-lr-large">
+		<div class="columns small-12 medium-6">
+			<div class="inner bg-nmd br40">
+				<div class="inner-text">
+					<h3>Nomad</h3>
+					<p>For everyday nomad life</p>
+					<ul class="lt">
+						<li>Everyday activities included</li>
+						<li>Monthly rolling cover</li>
+						<li>AXA-backed insurance</li>
+					</ul>
+					<a class="button button-tdni-white">92 activities covered</a>
+					<p class="font-poppins mt10 mb10">From <span class="large-price">£XX</span> per month</p>
+					<a class="button button-tdni-grey mb0">Find out more</a>
+
+				</div>
+			</div>
+		</div>
+		<div class="columns small-12 medium-6">
+			<div class="inner bg-nmd-pro br40">
+				<div class="inner-text">
+					<h3>Nomad Pro</h3>
+					<p>For more adventurous travel</p>
+					<ul class="lt">
+						<li>Higher-risk activities included</li>
+						<li>Increased cover limits</li>
+					</ul>
+					<a class="button button-tdni-white">Pro Activities Covered</a>
+					<p class="font-poppins mt10 mb10">From <span class="large-price">£XX</span> per month</p>
+					<a class="button button-tdni-grey mb0">Find out more</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- 2col illustrations: End-->
+
+	<!-- centered header and text: Start-->
+	<div class="row block-pad-b">
+		<div class="columns small-12 text-center">
+			<img style="max-width:200px" class="mb30" alt="AXA" src="icons-tdni/logo-axa.png" />
+			<h2 class="mb20">Who we work with</h2>
+			<p>TrueDNI insurance is underwritten by AXA, one of the world’s leading insurance providers, and arranged by
+				True Traveller, specialists in travel insurance for over 30 years.</p>
+			<p>This means your cover is backed by global insurance expertise, with experienced support behind the
+				scenes.</p>
+		</div>
+	</div>
+	<!-- centered header and text: End-->
+
+	<!-- centered header: Start-->
+	<div class="row">
+		<div class="columns small-12 text-center">
+			<h2 class="mb20">Why Choose TrueDNI</h2>
+		</div>
+	</div>
+	<!-- centered header: End-->
+
+	<!-- 4col icons: Start-->
+	<div class="row four-col-icons block-pad-lr-large mb20" data-equalizer>
+
+		<div class="columns small-6 medium-3 text-center" data-equalizer-watch>
+			<div class="inner bg-light-pink br20">
+				<img src="icons-tdni/ico-globe.svg" class="mb20">
+				<div class="inner-text">
+					<p class="font-lola large-p mb0">Designed for long-stay travel</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="columns small-6 medium-3 text-center" data-equalizer-watch>
+			<div class="inner bg-light-pink br20">
+				<img src="icons-tdni/ico-smile.svg" class="mb20">
+				<div class="inner-text">
+					<p class="font-lola large-p mb0">Monthly cover, no long contracts</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="columns small-6 medium-3 text-center" data-equalizer-watch>
+			<div class="inner bg-light-pink br20">
+				<img src="icons-tdni/ico-bag.svg" class="mb20">
+				<div class="inner-text">
+					<p class="font-lola large-p mb0">Specialist travel insurance expertise</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="columns small-6 medium-3 text-center" data-equalizer-watch>
+			<div class="inner bg-light-pink br20">
+				<img src="icons-tdni/ico-star.svg" class="mb20">
+				<div class="inner-text">
+					<p class="font-lola large-p mb0">AXA-backed insurance</hp>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- 4col icons: End-->
+
+
+
+
+	<!-- TDNI footer: Start-->
+	<footer class="footer-tdni">
+		<div class="row">
+			<div class="small-12 columns">
+				<a href="#homeurl"><img class="logo-tdni logo-tdni--footer" src="img/2026-tdni/logo-tdni.svg"
+						alt="TrueDNI"></a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="small-4 medium-2 columns">
+				<ul class="no-list">
+					<li><a href="#">Nomad</a></li>
+					<li><a href="#">Nomad Pro</a></li>
+				</ul>
+			</div>
+			<div class="small-4 medium-2 columns">
+				<ul class="no-list">
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Our insurers</a></li>
+					<li><a href="#">Reviews</a></li>
+					<li><a href="#">FAQs</a></li>
+				</ul>
+			</div>
+			<div class="small-4 medium-2 columns">
+				<ul class="no-list">
+					<li><a href="#">My TrueDNI</a></li>
+					<li><a href="#">Make a claim</a></li>
+					<li><a href="#">Affiliates</a></li>
+					<li><a href="#">Contact us</a></li>
+				</ul>
+			</div>
+			<div class="small-12 medium-2 columns">
+			</div>
+			<div class="small-12 medium-2 columns">
+			</div>
+			<div class="small-12 medium-2 columns">
+			</div>
+			<div class="small-12 medium-2 columns">
+			</div>
+		</div>
+
+		<div class="row row-legals">
+			<div class="small-12 medium-6 columns col-legals">
+				<small>©2026 TrueDNI Ltd | <a href="#">Privacy</a> | <a href="#">Cookies</a></small>
+			</div>
+			<div class="small-12 medium-6 columns text-right col-quote">
+				<a href="#quote" class="btn-green btn-green--lc">Get a quote</a>
+				<img class="lc" src="icons-tdni/lc.png" />
+				<!-- Start of LiveChat (www.livechatinc.com) code -->
+				<!-- <script type="text/javascript">
+								window.__lc = window.__lc || {};
+								window.__lc.license = 14356251;
+								(function () {
+									var lc = document.createElement('script'); lc.type = 'text/plain'; lc.async = true; lc.setAttribute('data-cookieconsent', "preferences");
+									lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+									var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+								})();
+
+								var LC_API = LC_API || {};
+
+							</script>
+							<noscript>
+								<a href="https://www.livechatinc.com/chat-with/14356251/" rel="nofollow">Chat with us</a>, 
+								powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
+							</noscript> -->
+				<!-- End of LiveChat code -->
+			</div>
+		</div>
+	</footer>
+
+	<!-- TDNI footer:  End-->
+
+	<!-- Footer consistent to TrueTraveller - Deepak to use existing code -->
+
+	<!-- Loaded from live only for purpose of testing : Start -->
+	<script src="https://www.truetraveller.com/js/footer/footer-all-min-dist.js"></script>
+	<!-- Loaded from live only for purpose of testing : End -->
+
+	<script src="js/tdni.js"></script>
+	<!-- Loaded from live only for purpose of testing : End -->
+
+</body>
+
+</html>

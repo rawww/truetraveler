@@ -19,13 +19,15 @@
     font-family: 'poppins' !important;
 }
 
-.truedni p {
-    font-family: 'lola' !important;
+.truedni p,
+.truedni li {
+    font-family: 'lola';
     color: #37464F;
     font-size: 19px;
     line-height: 1.4;
-    -webkit-font-smoothing: antialiased;      /* thinner, lighter rendering */
-    opacity:0.85;
+    -webkit-font-smoothing: antialiased;
+    /* thinner, lighter rendering */
+    opacity: 0.85;
 }
 
 .truedni h1,
@@ -38,6 +40,10 @@ h5 {
     font-weight: 600;
     line-height: 1;
     color: #37464F;
+}
+
+.truedni .button {
+    padding: 1.2em 1.8em 1.1em 1.8em;
 }
 
 .truedni .button {
@@ -100,6 +106,11 @@ h5 {
     text-transform: none !important;
 }
 
+.large-price {
+    font-weight: 800;
+    font-size: 30px;
+}
+
 .block-pad-tb {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -134,6 +145,10 @@ h5 {
 
 .mb20 {
     margin-bottom: 20px;
+}
+
+.mb30 {
+    margin-bottom: 30px;
 }
 
 .mb40 {
@@ -172,7 +187,7 @@ h5 {
 
 .links-navy-underline a {
     color: #37464F;
-    border-bottom:1px solid #37464F;
+    border-bottom: 1px solid #37464F;
 }
 
 /*new buttons*/
@@ -197,13 +212,13 @@ h5 {
 }
 
 .button-tdni-white {
-    background:#fff;
+    background: #fff;
     border-radius: 30px;
     color: #37464F;
 }
 
 .button-tdni-white:hover {
-    background:#37464F;
+    background: #37464F;
     border-radius: 30px;
     color: #fff;
 }
@@ -312,11 +327,11 @@ h5 {
 }
 
 .button-currency {
-    padding: 7px 5px 3px 5px;
+    padding: 7px 5px 3px 5px !important;
     border-radius: 15px;
     margin: 0;
     background: #eeeeee;
-    border-color:#eee;
+    border-color: #eee;
     color: #37474f;
 }
 
@@ -328,19 +343,20 @@ h5 {
 }
 
 .truedni .dropdown-pane {
-  opacity: 0;
-  visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .truedni .dropdown-pane.is-open {
-  opacity: 1;
-  visibility: visible;
+    opacity: 1;
+    visibility: visible;
 }
 
 .dropdown-pane-currency {
-    top:42px !important;
+    top: 42px !important;
     border-top: 1px solid #eee;
-    margin-top: -1px; /* works only if border is the issue */
+    margin-top: -1px;
+    /* works only if border is the issue */
     padding: 10px !important;
     background: #eeeeee;
     color: #37474f;
@@ -390,17 +406,17 @@ h5 {
     min-height: 600px;
     color: #37464F;
     padding-top: 120px;
-    margin-bottom:60px;
+    margin-bottom: 60px;
 }
 
 .cover-tdni img {
-    width:100%;
+    width: 100%;
 }
 
 /*contentblocks*/
 
 .intro-tdni h2 {
-    line-height:1.2;
+    line-height: 1.2;
 }
 
 .wc-list li {
@@ -416,6 +432,12 @@ h5 {
 
 .inner-text {
     padding: 20px 30px;
+}
+
+@media screen and (min-width: 64em) {
+    .inner-text {
+        padding: 40px 50px;
+    }
 }
 
 .two-col-illustrations img {
@@ -449,14 +471,14 @@ h5 {
 }
 
 .four-col-icons .columns {
-    padding-bottom:20px;
+    padding-bottom: 20px;
 }
 
 .four-col-icons .inner {
     padding: 30px 20px;
-    margin-bottom:20px;
-    height:100%;
-    display:flex;
+    margin-bottom: 20px;
+    height: 100%;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -469,33 +491,34 @@ h5 {
 /*accordions*/
 
 .tdni-accordion .accordion-title {
-    border-top:2px #eee;
+    border-top: 2px #eee;
     background: transparent;
     font-size: 1.2rem;
     color: #37464F;
-    padding:15px 0;
+    padding: 15px 0;
     font-family: 'lola';
     font-weight: 400;
 }
 
 .tdni-accordion .accordion-item {
-    border-top:2px solid #eee;
+    border-top: 2px solid #eee;
 }
 
 
 .tdni-accordion li.accordion-item.is-active .accordion-title {
-    border-top:2px #37464F;
+    border-top: 2px #37464F;
     background: transparent;
     font-size: 1.2rem;
     color: #37464F;
-    -webkit-font-smoothing: antialiased;      /* thinner, lighter rendering */
-    opacity:0.85;
+    -webkit-font-smoothing: antialiased;
+    /* thinner, lighter rendering */
+    opacity: 0.85;
 }
 
 .tdni-accordion .accordion-content {
-    background:transparent;
-    padding:0;
-    color:#37464F;
+    background: transparent;
+    padding: 0;
+    color: #37464F;
 }
 
 .tdni-accordion .accordion-title:before {
@@ -568,7 +591,7 @@ h5 {
 }
 
 .lc {
-    margin-left:5px;
+    margin-left: 5px;
     max-height: 51px;
 }
 
@@ -588,7 +611,8 @@ h5 {
         width: 100%;
     }
 
-    .col-quote .btn-green, .col-quote .lc {
+    .col-quote .btn-green,
+    .col-quote .lc {
         box-shadow: 0px -1px 35px 0px rgba(0, 0, 0, 0.39);
         -webkit-box-shadow: 0px -1px 35px 0px rgba(0, 0, 0, 0.39);
         -moz-box-shadow: 0px -1px 35px 0px rgba(0, 0, 0, 0.39);
@@ -601,7 +625,7 @@ h5 {
     }
 
     .col-quote .lc {
-        border-radius:50%;
+        border-radius: 50%;
     }
 }
 
@@ -609,13 +633,14 @@ h5 {
 
 @media screen and (max-width: 39.9375em) {
     .truedni h1 {
-        font-size:35px;
+        font-size: 35px;
     }
+
     .truedni h2 {
-        font-size:26px;
+        font-size: 26px;
     }
 
     .truedni h3 {
-        font-size:26px;
+        font-size: 26px;
     }
 }
