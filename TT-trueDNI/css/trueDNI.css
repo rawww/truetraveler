@@ -40,6 +40,10 @@ h5 {
     color: #37464F;
 }
 
+.truedni .button {
+    padding: 1.2em 1.8em 1.1em 1.8em;
+}
+
 /*helpers*/
 
 .font-poppins {
