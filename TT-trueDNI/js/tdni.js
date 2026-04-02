@@ -27,3 +27,13 @@ $(document).ready(function () {
   });
 
 });
+
+$(document).ready(function($) {
+    // Hide all .accordion-excluded elements initially
+    $('.accordion-excluded').hide();
+
+    // Toggle the next .accordion-excluded when .open-excluded is clicked
+    $('.open-excluded').click(function() {
+        $(this).next('.accordion-excluded').slideToggle(); // slideToggle for smooth animation
+    });
+});
