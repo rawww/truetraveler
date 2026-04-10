@@ -19,8 +19,8 @@
   font-family: "poppins" !important;
 }
 
-.truedni p,
-.truedni li {
+.truedni .block-mob-pad p,
+.truedni .block-mob-pad li {
   font-family: "lola";
   color: #37464f;
   font-size: 19px;
