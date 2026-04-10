@@ -1,554 +1,474 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <!-- Loaded from live only for purpose of testing : Start -->
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-    />
-    <title>TrueDNI</title>
 
-    <!-- Stylesheets loaded from live -->
-    <link
-      rel="preload"
-      href="https://www.truetraveller.com/webfonts/fa-regular-400.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="https://www.truetraveller.com/font/truetraveller.woff?38429907"
-      as="font"
-      type="font/woff"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="https://www.truetraveller.com/webfonts/fa-brands-400.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="https://www.truetraveller.com/webfonts/fa-solid-900.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link
-      rel="stylesheet"
-      href="https://www.truetraveller.com/css/all.css?v=33"
-    />
-    <link
-      rel="stylesheet"
-      href="https://www.truetraveller.com/css/home-page-redesign.css?v=3"
-    />
+<head>
+  <!-- Loaded from live only for purpose of testing : Start -->
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <title>TrueDNI</title>
 
-    <!-- Typekit -->
-    <script src="https://use.typekit.net/isb8sii.js"></script>
-    <script>
-      try {
-        Typekit.load({
-          async: true,
-        });
-      } catch (e) {}
-    </script>
+  <!-- Stylesheets loaded from live -->
+  <link rel="preload" href="https://www.truetraveller.com/webfonts/fa-regular-400.woff2" as="font" type="font/woff2"
+    crossorigin />
+  <link rel="preload" href="https://www.truetraveller.com/font/truetraveller.woff?38429907" as="font" type="font/woff"
+    crossorigin />
+  <link rel="preload" href="https://www.truetraveller.com/webfonts/fa-brands-400.woff2" as="font" type="font/woff2"
+    crossorigin />
+  <link rel="preload" href="https://www.truetraveller.com/webfonts/fa-solid-900.woff2" as="font" type="font/woff2"
+    crossorigin />
+  <link rel="stylesheet" href="https://www.truetraveller.com/css/all.css?v=33" />
+  <link rel="stylesheet" href="https://www.truetraveller.com/css/home-page-redesign.css?v=3" />
 
-    <style>
-      .wf-loading p,
-      .wf-loading h1,
-      .wf-loading h2,
-      .wf-loading p,
-      .wf-loading h4,
-      wf-loading label {
-        visibility: hidden;
-      }
+  <!-- Typekit -->
+  <script src="https://use.typekit.net/isb8sii.js"></script>
+  <script>
+    try {
+      Typekit.load({
+        async: true,
+      });
+    } catch (e) { }
+  </script>
 
-      .wf-active p,
-      .wf-active h1,
-      .wf-active h2,
-      .wf-active p,
-      .wf-active h4,
-      wf-active label {
-        visibility: visible;
-      }
+  <style>
+    .wf-loading p,
+    .wf-loading h1,
+    .wf-loading h2,
+    .wf-loading p,
+    .wf-loading h4,
+    wf-loading label {
+      visibility: hidden;
+    }
 
-      .wf-inactive p,
-      .wf-inactive h1,
-      .wf-inactive h2,
-      .wf-inactive p,
-      .wf-inactive h4,
-      wf-inactive label {
-        visibility: visible;
-      }
-    </style>
+    .wf-active p,
+    .wf-active h1,
+    .wf-active h2,
+    .wf-active p,
+    .wf-active h4,
+    wf-active label {
+      visibility: visible;
+    }
 
-    <script src="https://www.truetraveller.com/js/header/header-all-min-dist.js"></script>
-    <!-- Loaded from live only for purpose of testing : End -->
+    .wf-inactive p,
+    .wf-inactive h1,
+    .wf-inactive h2,
+    .wf-inactive p,
+    .wf-inactive h4,
+    wf-inactive label {
+      visibility: visible;
+    }
+  </style>
 
-    <!-- New True-DNI stylesheets to be added to live template header file -->
-    <link rel="stylesheet" href="css/trueDNI.css" />
+  <script src="https://www.truetraveller.com/js/header/header-all-min-dist.js"></script>
+  <!-- Loaded from live only for purpose of testing : End -->
 
-    <!-- New True-DNI webfonts, Poppins and Lora-->
-    <link rel="stylesheet" href="https://use.typekit.net/ihi5pfa.css" />
-  </head>
+  <!-- New True-DNI stylesheets to be added to live template header file -->
+  <link rel="stylesheet" href="css/trueDNI.css" />
 
-  <body class="truedni">
-    <div id="top"></div>
+  <!-- New True-DNI webfonts, Poppins and Lora-->
+  <link rel="stylesheet" href="https://use.typekit.net/ihi5pfa.css" />
+</head>
 
-    <!-- TDNI nav : Start -->
+<body class="truedni">
+  <div id="top"></div>
 
-    <header class="header header-tdni" class="fade-all" role="banner">
-      <div class="row vert-center">
-        <div class="small-6 large-3 align-center columns">
-          <a href="#homeurl"
-            ><img
-              class="logo-tdni"
-              src="img/2026-tdni/logo-tdni.svg"
-              alt="TrueDNI"
-          /></a>
-        </div>
+  <!-- TDNI nav : Start -->
 
-        <div class="large-6 show-for-large text-center columns">
-          <ul class="menu">
-            <li><a href="#">Nomad</a></li>
-            <li><a href="#">Nomad Pro</a></li>
-            <li><a href="#">About us</a></li>
-          </ul>
-        </div>
-
-        <div class="small-6 large-3 columns col-ui text-right pr0">
-          <!-- Dropdown trigger -->
-          <button
-            class="button button-currency"
-            type="button"
-            data-toggle="currencyDropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            <!-- initial currency here-->
-            £ GBP
-          </button>
-
-          <!-- Dropdown menu -->
-          <div
-            class="dropdown-pane dropdown-pane-currency"
-            id="currencyDropdown"
-            data-offset="0 -1"
-            data-dropdown
-          >
-            <ul class="menu vertical">
-              <li>
-                <a class="tdni-currency-choice-gbp" href="#" data-currency="GBP"
-                  >£ GBP</a
-                >
-              </li>
-              <li>
-                <a class="tdni-currency-choice-eur" href="#" data-currency="EUR"
-                  >€ EUR</a
-                >
-              </li>
-              <li>
-                <a class="tdni-currency-choice-usd" href="#" data-currency="USD"
-                  >$ USD</a
-                >
-              </li>
-            </ul>
-          </div>
-          <img src="icons-tdni/ico-profile.svg" alt="Profile" />
-          <img
-            class="show-for-small hide-for-large hamburger-tdni"
-            src="icons-tdni/ico-hamburger.svg"
-            alt="Menu"
-          />
-          <img
-            class="show-for-small hide-for-large x-tdni"
-            src="icons-tdni/ico-x.svg"
-            alt="Close"
-          />
-        </div>
-        <div class="mobile-nav hide-for-large">
-          <ul class="no-list">
-            <li class="big-menu-item"><a href="#">Nomad</a></li>
-            <li class="big-menu-item mb20"><a href="#">Nomad Pro</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">FAQs</a></li>
-            <li><a href="#">Contact us</a></li>
-          </ul>
-          <div class="mob-nav-buttons">
-            <a class="button button-tdni-white-outline">Make a claim</a>
-            <a class="button button-tdni-orange mb0">My TrueDNI</a>
-          </div>
-        </div>
+  <header class="header header-tdni" class="fade-all" role="banner">
+    <div class="row vert-center">
+      <div class="small-6 large-3 align-center columns">
+        <a href="#homeurl"><img class="logo-tdni" src="img/2026-tdni/logo-tdni.svg" alt="TrueDNI" /></a>
       </div>
-    </header>
 
-    <!-- TDNI nav : End -->
-
-    <!-- TDNI cover: Start-->
-    <div class="bg-light-pink cover-radius cover-tdni-container">
-      <div class="row cover-tdni vert-center">
-        <div class="columns small-12 medium-6">
-          <div class="col-pad">
-            <h1>Need to make a claim?</h1>
-            <p>
-              If something’s gone wrong while you’re covered by TrueDNI, we’re
-              here to help.
-            </p>
-            <p>Claims are handled by AXA, with support from True Traveller.</p>
-          </div>
-        </div>
-        <div class="columns small-12 medium-6 text-center">
-          <div class="col-pad">
-            <img alt="" src="img/2026-tdni/ill-1.svg" />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- TDNI cover: End-->
-
-    <!-- TDNI intro: Start-->
-    <div class="row intro-tdni block-mob-pad block-pad-b block-pad-lr-large">
-      <div class="columns small-12">
-        <p><b>Medical emergency?</b></p>
-        <p>If you need urgent medical help, seek treatment immediately.</p>
-        <p>
-          If possible, contact AXA’s Emergency Assistance team as soon as you
-          can.Emergency contact details can be found in your policy documents.
-        </p>
-
-        <p><b>How to make a claim</b></p>
-
-        <p><b>1. Check your policy</b></p>
-        <p>
-          Review your policy wording to confirm what’s covered. View policy
-          documents
-        </p>
-
-        <p><b>2. Get your details ready</b></p>
-        <p>You’ll need:</p>
-        <p>Policy number</p>
-        <p>Details of what happened</p>
-        <p>Receipts or supporting documents</p>
-        <p><b>3. Submit your claim</b></p>
-        <p>Claims are submitted directly through AXA’s online claims portal.</p>
-
-        <p>
-          <b><u>Make a claim online</u></b>
-        </p>
-
-        <p><b>4. Track your claim</b></p>
-        <p>
-          AXA will review your claim and contact you if more information is
-          needed.
-        </p>
-
-        <p><b>What you can claim for</b></p>
-        <p>Depending on your cover:</p>
-        <p>Medical expenses</p>
-        <p>Hospital treatment</p>
-        <p>Emergency evacuation or repatriation</p>
-        <p>Travel disruption</p>
-        <p>Gadget or personal item claims</p>
-
-        <p><b>Gadget claims</b></p>
-
-        <p><b>Claiming for gadgets?</b></p>
-        <p>If you added gadget cover, include:</p>
-        <p>Proof of ownership</p>
-        <p>Proof of value</p>
-        <p>Any relevant incident or police reports</p>
-        <p>This helps avoid delays.</p>
-      </div>
-    </div>
-    <!-- TDNI intro: End-->
-
-    <!-- 1col illustrations: Start-->
-    <div
-      class="row two-col-illustrations block-mob-pad block-pad-b block-pad-lr-large links-navy-underline"
-    >
-      <div class="columns small-12 text-center">
-        <div class="inner bg-light-pink br40">
-          <div class="inner-text mt20">
-            <h3>Need help?</h3>
-            <p class="lead">
-              If you’re unsure how to make a claim or need guidance:
-            </p>
-            <p>
-              <b>Claims support:</b>
-              <a href="mailto:claims@truetraveller.com"
-                >claims@truetraveller.com</a
-              >
-            </p>
-            <p>
-              <b>General enquiries:</b>
-              <a href="mailto:support@truedni.com">support@truedni.com</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- 1col illustrations: End-->
-
-    <!-- FAQ: Start-->
-    <div
-      class="row faq-accordion block-mob-pad block-pad-tb block-pad-lr-large"
-    >
-      <div class="medium-12 columns">
-        <h2 class="mb20 text-center">Who handles my claim?</h2>
-        <ul
-          class="accordion tdni-accordion"
-          data-accordion
-          data-multi-expand="false"
-          data-allow-all-closed="true"
-        >
-          <!-- Q1 -->
-          <li class="accordion-item" data-accordion-item>
-            <a href="#" class="accordion-title">Can I cancel anytime?</a>
-            <div class="accordion-content" data-tab-content>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam
-                sapien, facilisis sit amet ipsum nec, lobortis ultricies nibh.
-                Nam ut enim ligula. In hac habitasse platea dictumst. Nulla
-                volutpat quis nisi quis scelerisque. Integer sed auctor felis,
-                quis volutpat erat. Vestibulum ante ipsum primis in faucibus
-                orci luctus et ultrices posuere cubilia curae; Nunc bibendum
-                fringilla mi, vel pulvinar erat convallis ac. Sed sit amet neque
-                ac sem blandit commodo. Integer sit amet odio viverra, faucibus
-                neque in, pellentesque orci. Maecenas sit amet venenatis purus.
-                Maecenas vel justo tincidunt, euismod nulla nec, feugiat mi.
-                Quisque ornare bibendum metus eu fringilla.
-              </p>
-            </div>
-          </li>
-
-          <!-- Q2 -->
-          <li class="accordion-item" data-accordion-item>
-            <a href="#" class="accordion-title">How do I make a claim?</a>
-            <div class="accordion-content" data-tab-content>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam
-                sapien, facilisis sit amet ipsum nec, lobortis ultricies nibh.
-                Nam ut enim ligula. In hac habitasse platea dictumst. Nulla
-                volutpat quis nisi quis scelerisque. Integer sed auctor felis,
-                quis volutpat erat. Vestibulum ante ipsum primis in faucibus
-                orci luctus et ultrices posuere cubilia curae; Nunc bibendum
-                fringilla mi, vel pulvinar erat convallis ac. Sed sit amet neque
-                ac sem blandit commodo. Integer sit amet odio viverra, faucibus
-                neque in, pellentesque orci. Maecenas sit amet venenatis purus.
-                Maecenas vel justo tincidunt, euismod nulla nec, feugiat mi.
-                Quisque ornare bibendum metus eu fringilla.
-              </p>
-            </div>
-          </li>
-
-          <!-- Q3 -->
-          <li class="accordion-item" data-accordion-item>
-            <a href="#" class="accordion-title">When should I make a claim?</a>
-            <div class="accordion-content" data-tab-content>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam
-                sapien, facilisis sit amet ipsum nec, lobortis ultricies nibh.
-                Nam ut enim ligula. In hac habitasse platea dictumst. Nulla
-                volutpat quis nisi quis scelerisque. Integer sed auctor felis,
-                quis volutpat erat. Vestibulum ante ipsum primis in faucibus
-                orci luctus et ultrices posuere cubilia curae; Nunc bibendum
-                fringilla mi, vel pulvinar erat convallis ac. Sed sit amet neque
-                ac sem blandit commodo. Integer sit amet odio viverra, faucibus
-                neque in, pellentesque orci. Maecenas sit amet venenatis purus.
-                Maecenas vel justo tincidunt, euismod nulla nec, feugiat mi.
-                Quisque ornare bibendum metus eu fringilla.
-              </p>
-            </div>
-          </li>
-
-          <!-- Q4 -->
-          <li class="accordion-item" data-accordion-item>
-            <a href="#" class="accordion-title"
-              >What do I need to submit a claim?</a
-            >
-            <div class="accordion-content" data-tab-content>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam
-                sapien, facilisis sit amet ipsum nec, lobortis ultricies nibh.
-                Nam ut enim ligula. In hac habitasse platea dictumst. Nulla
-                volutpat quis nisi quis scelerisque. Integer sed auctor felis,
-                quis volutpat erat. Vestibulum ante ipsum primis in faucibus
-                orci luctus et ultrices posuere cubilia curae; Nunc bibendum
-                fringilla mi, vel pulvinar erat convallis ac. Sed sit amet neque
-                ac sem blandit commodo. Integer sit amet odio viverra, faucibus
-                neque in, pellentesque orci. Maecenas sit amet venenatis purus.
-                Maecenas vel justo tincidunt, euismod nulla nec, feugiat mi.
-                Quisque ornare bibendum metus eu fringilla.
-              </p>
-            </div>
-          </li>
-
-          <!-- Q5 -->
-          <li class="accordion-item" data-accordion-item>
-            <a href="#" class="accordion-title"
-              >Are pre-existing medical conditions covered?</a
-            >
-            <div class="accordion-content" data-tab-content>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam
-                sapien, facilisis sit amet ipsum nec, lobortis ultricies nibh.
-                Nam ut enim ligula. In hac habitasse platea dictumst. Nulla
-                volutpat quis nisi quis scelerisque. Integer sed auctor felis,
-                quis volutpat erat. Vestibulum ante ipsum primis in faucibus
-                orci luctus et ultrices posuere cubilia curae; Nunc bibendum
-                fringilla mi, vel pulvinar erat convallis ac. Sed sit amet neque
-                ac sem blandit commodo. Integer sit amet odio viverra, faucibus
-                neque in, pellentesque orci. Maecenas sit amet venenatis purus.
-                Maecenas vel justo tincidunt, euismod nulla nec, feugiat mi.
-                Quisque ornare bibendum metus eu fringilla.
-              </p>
-            </div>
-          </li>
-
-          <!-- Q6 -->
-          <li class="accordion-item" data-accordion-item>
-            <a href="#" class="accordion-title">Can I track my claim?</a>
-            <div class="accordion-content" data-tab-content>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam
-                sapien, facilisis sit amet ipsum nec, lobortis ultricies nibh.
-                Nam ut enim ligula. In hac habitasse platea dictumst. Nulla
-                volutpat quis nisi quis scelerisque. Integer sed auctor felis,
-                quis volutpat erat. Vestibulum ante ipsum primis in faucibus
-                orci luctus et ultrices posuere cubilia curae; Nunc bibendum
-                fringilla mi, vel pulvinar erat convallis ac. Sed sit amet neque
-                ac sem blandit commodo. Integer sit amet odio viverra, faucibus
-                neque in, pellentesque orci. Maecenas sit amet venenatis purus.
-                Maecenas vel justo tincidunt, euismod nulla nec, feugiat mi.
-                Quisque ornare bibendum metus eu fringilla.
-              </p>
-            </div>
-          </li>
-
-          <!-- Q7 -->
-          <li class="accordion-item" data-accordion-item>
-            <a href="#" class="accordion-title">Can I claim for gadgets?</a>
-            <div class="accordion-content" data-tab-content>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam
-                sapien, facilisis sit amet ipsum nec, lobortis ultricies nibh.
-                Nam ut enim ligula. In hac habitasse platea dictumst. Nulla
-                volutpat quis nisi quis scelerisque. Integer sed auctor felis,
-                quis volutpat erat. Vestibulum ante ipsum primis in faucibus
-                orci luctus et ultrices posuere cubilia curae; Nunc bibendum
-                fringilla mi, vel pulvinar erat convallis ac. Sed sit amet neque
-                ac sem blandit commodo. Integer sit amet odio viverra, faucibus
-                neque in, pellentesque orci. Maecenas sit amet venenatis purus.
-                Maecenas vel justo tincidunt, euismod nulla nec, feugiat mi.
-                Quisque ornare bibendum metus eu fringilla.
-              </p>
-            </div>
-          </li>
-
-          <!-- Q8 -->
-          <li class="accordion-item" data-accordion-item>
-            <a href="#" class="accordion-title">How long does a claim take?</a>
-            <div class="accordion-content" data-tab-content>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam
-                sapien, facilisis sit amet ipsum nec, lobortis ultricies nibh.
-                Nam ut enim ligula. In hac habitasse platea dictumst. Nulla
-                volutpat quis nisi quis scelerisque. Integer sed auctor felis,
-                quis volutpat erat. Vestibulum ante ipsum primis in faucibus
-                orci luctus et ultrices posuere cubilia curae; Nunc bibendum
-                fringilla mi, vel pulvinar erat convallis ac. Sed sit amet neque
-                ac sem blandit commodo. Integer sit amet odio viverra, faucibus
-                neque in, pellentesque orci. Maecenas sit amet venenatis purus.
-                Maecenas vel justo tincidunt, euismod nulla nec, feugiat mi.
-                Quisque ornare bibendum metus eu fringilla.
-              </p>
-            </div>
-          </li>
-
-          <!-- Q9 -->
-          <li class="accordion-item" data-accordion-item>
-            <a href="#" class="accordion-title"
-              >Who do I contact if I need help?</a
-            >
-            <div class="accordion-content" data-tab-content>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam
-                sapien, facilisis sit amet ipsum nec, lobortis ultricies nibh.
-                Nam ut enim ligula. In hac habitasse platea dictumst. Nulla
-                volutpat quis nisi quis scelerisque. Integer sed auctor felis,
-                quis volutpat erat. Vestibulum ante ipsum primis in faucibus
-                orci luctus et ultrices posuere cubilia curae; Nunc bibendum
-                fringilla mi, vel pulvinar erat convallis ac. Sed sit amet neque
-                ac sem blandit commodo. Integer sit amet odio viverra, faucibus
-                neque in, pellentesque orci. Maecenas sit amet venenatis purus.
-                Maecenas vel justo tincidunt, euismod nulla nec, feugiat mi.
-                Quisque ornare bibendum metus eu fringilla.
-              </p>
-            </div>
-          </li>
+      <div class="large-6 show-for-large text-center columns">
+        <ul class="menu">
+          <li><a href="#">Nomad</a></li>
+          <li><a href="#">Nomad Pro</a></li>
+          <li><a href="#">About us</a></li>
         </ul>
       </div>
+
+      <div class="small-6 large-3 columns col-ui text-right pr0">
+        <!-- Dropdown trigger -->
+        <button class="button button-currency" type="button" data-toggle="currencyDropdown" aria-haspopup="true"
+          aria-expanded="false">
+          <!-- initial currency here-->
+          £ GBP
+        </button>
+
+        <!-- Dropdown menu -->
+        <div class="dropdown-pane dropdown-pane-currency" id="currencyDropdown" data-offset="0 -1" data-dropdown>
+          <ul class="menu vertical">
+            <li>
+              <a class="tdni-currency-choice-gbp" href="#" data-currency="GBP">£ GBP</a>
+            </li>
+            <li>
+              <a class="tdni-currency-choice-eur" href="#" data-currency="EUR">€ EUR</a>
+            </li>
+            <li>
+              <a class="tdni-currency-choice-usd" href="#" data-currency="USD">$ USD</a>
+            </li>
+          </ul>
+        </div>
+        <img src="icons-tdni/ico-profile.svg" alt="Profile" />
+        <img class="show-for-small hide-for-large hamburger-tdni" src="icons-tdni/ico-hamburger.svg" alt="Menu" />
+        <img class="show-for-small hide-for-large x-tdni" src="icons-tdni/ico-x.svg" alt="Close" />
+      </div>
+      <div class="mobile-nav hide-for-large">
+        <ul class="no-list">
+          <li class="big-menu-item"><a href="#">Nomad</a></li>
+          <li class="big-menu-item mb20"><a href="#">Nomad Pro</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+        <div class="mob-nav-buttons">
+          <a class="button button-tdni-white-outline">Make a claim</a>
+          <a class="button button-tdni-orange mb0">My TrueDNI</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- TDNI nav : End -->
+
+  <!-- TDNI cover: Start-->
+  <div class="bg-light-pink cover-radius cover-tdni-container">
+    <div class="row cover-tdni vert-center">
+      <div class="columns small-12 medium-5">
+        <div class="col-pad">
+          <h1>Need to make a claim?</h1>
+          <p>
+            If something’s gone wrong while you’re covered by TrueDNI, we’re
+            here to help.
+          </p>
+          <p>Claims are handled by AXA, with support from True Traveller.</p>
+        </div>
+      </div>
+      <div class="columns small-12 medium-7 text-center">
+        <div class="col-pad">
+          <img alt="Need to make a claim?" src="img/2026-tdni/gif/TT-DNI-1-Pale.gif" style="max-width:400px" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TDNI cover: End-->
+
+  <!-- TDNI intro: Start-->
+  <div class="row intro-tdni block-mob-pad block-pad-b block-pad-lr-large">
+    <div class="columns small-12">
+      <p><b>Medical emergency?</b></p>
+      <p>If you need urgent medical help, seek treatment immediately.</p>
+      <p>
+        If possible, contact AXA’s Emergency Assistance team as soon as you
+        can.Emergency contact details can be found in your policy documents.
+      </p>
+
+      <p><b>How to make a claim</b></p>
+
+      <p><b>1. Check your policy</b></p>
+      <p>
+        Review your policy wording to confirm what’s covered. View policy
+        documents
+      </p>
+
+      <p><b>2. Get your details ready</b></p>
+      <p>You’ll need:</p>
+      <p>Policy number</p>
+      <p>Details of what happened</p>
+      <p>Receipts or supporting documents</p>
+      <p><b>3. Submit your claim</b></p>
+      <p>Claims are submitted directly through AXA’s online claims portal.</p>
+
+      <p>
+        <b><u>Make a claim online</u></b>
+      </p>
+
+      <p><b>4. Track your claim</b></p>
+      <p>
+        AXA will review your claim and contact you if more information is
+        needed.
+      </p>
+
+      <p><b>What you can claim for</b></p>
+      <p>Depending on your cover:</p>
+      <p>Medical expenses</p>
+      <p>Hospital treatment</p>
+      <p>Emergency evacuation or repatriation</p>
+      <p>Travel disruption</p>
+      <p>Gadget or personal item claims</p>
+
+      <p><b>Gadget claims</b></p>
+
+      <p><b>Claiming for gadgets?</b></p>
+      <p>If you added gadget cover, include:</p>
+      <p>Proof of ownership</p>
+      <p>Proof of value</p>
+      <p>Any relevant incident or police reports</p>
+      <p>This helps avoid delays.</p>
+    </div>
+  </div>
+  <!-- TDNI intro: End-->
+
+  <!-- 1col illustrations: Start-->
+  <div class="row two-col-illustrations block-mob-pad block-pad-b block-pad-lr-large links-navy-underline">
+    <div class="columns small-12 text-center">
+      <div class="inner bg-light-pink br40">
+        <div class="inner-text mt20">
+          <h3>Need help?</h3>
+          <p class="lead">
+            If you’re unsure how to make a claim or need guidance:
+          </p>
+          <p>
+            <b>Claims support:</b>
+            <a href="mailto:claims@truetraveller.com">claims@truetraveller.com</a>
+          </p>
+          <p>
+            <b>General enquiries:</b>
+            <a href="mailto:support@truedni.com">support@truedni.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 1col illustrations: End-->
+
+  <!-- FAQ: Start-->
+  <div class="row faq-accordion block-mob-pad block-pad-tb block-pad-lr-large">
+    <div class="medium-12 columns">
+      <h2 class="mb20 text-center">Who handles my claim?</h2>
+      <ul class="accordion tdni-accordion" data-accordion data-multi-expand="false" data-allow-all-closed="true">
+        <!-- Q1 -->
+        <li class="accordion-item" data-accordion-item>
+          <a href="#" class="accordion-title">Can I cancel anytime?</a>
+          <div class="accordion-content" data-tab-content>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam
+              sapien, facilisis sit amet ipsum nec, lobortis ultricies nibh.
+              Nam ut enim ligula. In hac habitasse platea dictumst. Nulla
+              volutpat quis nisi quis scelerisque. Integer sed auctor felis,
+              quis volutpat erat. Vestibulum ante ipsum primis in faucibus
+              orci luctus et ultrices posuere cubilia curae; Nunc bibendum
+              fringilla mi, vel pulvinar erat convallis ac. Sed sit amet neque
+              ac sem blandit commodo. Integer sit amet odio viverra, faucibus
+              neque in, pellentesque orci. Maecenas sit amet venenatis purus.
+              Maecenas vel justo tincidunt, euismod nulla nec, feugiat mi.
+              Quisque ornare bibendum metus eu fringilla.
+            </p>
+          </div>
+        </li>
+
+        <!-- Q2 -->
+        <li class="accordion-item" data-accordion-item>
+          <a href="#" class="accordion-title">How do I make a claim?</a>
+          <div class="accordion-content" data-tab-content>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam
+              sapien, facilisis sit amet ipsum nec, lobortis ultricies nibh.
+              Nam ut enim ligula. In hac habitasse platea dictumst. Nulla
+              volutpat quis nisi quis scelerisque. Integer sed auctor felis,
+              quis volutpat erat. Vestibulum ante ipsum primis in faucibus
+              orci luctus et ultrices posuere cubilia curae; Nunc bibendum
+              fringilla mi, vel pulvinar erat convallis ac. Sed sit amet neque
+              ac sem blandit commodo. Integer sit amet odio viverra, faucibus
+              neque in, pellentesque orci. Maecenas sit amet venenatis purus.
+              Maecenas vel justo tincidunt, euismod nulla nec, feugiat mi.
+              Quisque ornare bibendum metus eu fringilla.
+            </p>
+          </div>
+        </li>
+
+        <!-- Q3 -->
+        <li class="accordion-item" data-accordion-item>
+          <a href="#" class="accordion-title">When should I make a claim?</a>
+          <div class="accordion-content" data-tab-content>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam
+              sapien, facilisis sit amet ipsum nec, lobortis ultricies nibh.
+              Nam ut enim ligula. In hac habitasse platea dictumst. Nulla
+              volutpat quis nisi quis scelerisque. Integer sed auctor felis,
+              quis volutpat erat. Vestibulum ante ipsum primis in faucibus
+              orci luctus et ultrices posuere cubilia curae; Nunc bibendum
+              fringilla mi, vel pulvinar erat convallis ac. Sed sit amet neque
+              ac sem blandit commodo. Integer sit amet odio viverra, faucibus
+              neque in, pellentesque orci. Maecenas sit amet venenatis purus.
+              Maecenas vel justo tincidunt, euismod nulla nec, feugiat mi.
+              Quisque ornare bibendum metus eu fringilla.
+            </p>
+          </div>
+        </li>
+
+        <!-- Q4 -->
+        <li class="accordion-item" data-accordion-item>
+          <a href="#" class="accordion-title">What do I need to submit a claim?</a>
+          <div class="accordion-content" data-tab-content>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam
+              sapien, facilisis sit amet ipsum nec, lobortis ultricies nibh.
+              Nam ut enim ligula. In hac habitasse platea dictumst. Nulla
+              volutpat quis nisi quis scelerisque. Integer sed auctor felis,
+              quis volutpat erat. Vestibulum ante ipsum primis in faucibus
+              orci luctus et ultrices posuere cubilia curae; Nunc bibendum
+              fringilla mi, vel pulvinar erat convallis ac. Sed sit amet neque
+              ac sem blandit commodo. Integer sit amet odio viverra, faucibus
+              neque in, pellentesque orci. Maecenas sit amet venenatis purus.
+              Maecenas vel justo tincidunt, euismod nulla nec, feugiat mi.
+              Quisque ornare bibendum metus eu fringilla.
+            </p>
+          </div>
+        </li>
+
+        <!-- Q5 -->
+        <li class="accordion-item" data-accordion-item>
+          <a href="#" class="accordion-title">Are pre-existing medical conditions covered?</a>
+          <div class="accordion-content" data-tab-content>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam
+              sapien, facilisis sit amet ipsum nec, lobortis ultricies nibh.
+              Nam ut enim ligula. In hac habitasse platea dictumst. Nulla
+              volutpat quis nisi quis scelerisque. Integer sed auctor felis,
+              quis volutpat erat. Vestibulum ante ipsum primis in faucibus
+              orci luctus et ultrices posuere cubilia curae; Nunc bibendum
+              fringilla mi, vel pulvinar erat convallis ac. Sed sit amet neque
+              ac sem blandit commodo. Integer sit amet odio viverra, faucibus
+              neque in, pellentesque orci. Maecenas sit amet venenatis purus.
+              Maecenas vel justo tincidunt, euismod nulla nec, feugiat mi.
+              Quisque ornare bibendum metus eu fringilla.
+            </p>
+          </div>
+        </li>
+
+        <!-- Q6 -->
+        <li class="accordion-item" data-accordion-item>
+          <a href="#" class="accordion-title">Can I track my claim?</a>
+          <div class="accordion-content" data-tab-content>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam
+              sapien, facilisis sit amet ipsum nec, lobortis ultricies nibh.
+              Nam ut enim ligula. In hac habitasse platea dictumst. Nulla
+              volutpat quis nisi quis scelerisque. Integer sed auctor felis,
+              quis volutpat erat. Vestibulum ante ipsum primis in faucibus
+              orci luctus et ultrices posuere cubilia curae; Nunc bibendum
+              fringilla mi, vel pulvinar erat convallis ac. Sed sit amet neque
+              ac sem blandit commodo. Integer sit amet odio viverra, faucibus
+              neque in, pellentesque orci. Maecenas sit amet venenatis purus.
+              Maecenas vel justo tincidunt, euismod nulla nec, feugiat mi.
+              Quisque ornare bibendum metus eu fringilla.
+            </p>
+          </div>
+        </li>
+
+        <!-- Q7 -->
+        <li class="accordion-item" data-accordion-item>
+          <a href="#" class="accordion-title">Can I claim for gadgets?</a>
+          <div class="accordion-content" data-tab-content>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam
+              sapien, facilisis sit amet ipsum nec, lobortis ultricies nibh.
+              Nam ut enim ligula. In hac habitasse platea dictumst. Nulla
+              volutpat quis nisi quis scelerisque. Integer sed auctor felis,
+              quis volutpat erat. Vestibulum ante ipsum primis in faucibus
+              orci luctus et ultrices posuere cubilia curae; Nunc bibendum
+              fringilla mi, vel pulvinar erat convallis ac. Sed sit amet neque
+              ac sem blandit commodo. Integer sit amet odio viverra, faucibus
+              neque in, pellentesque orci. Maecenas sit amet venenatis purus.
+              Maecenas vel justo tincidunt, euismod nulla nec, feugiat mi.
+              Quisque ornare bibendum metus eu fringilla.
+            </p>
+          </div>
+        </li>
+
+        <!-- Q8 -->
+        <li class="accordion-item" data-accordion-item>
+          <a href="#" class="accordion-title">How long does a claim take?</a>
+          <div class="accordion-content" data-tab-content>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam
+              sapien, facilisis sit amet ipsum nec, lobortis ultricies nibh.
+              Nam ut enim ligula. In hac habitasse platea dictumst. Nulla
+              volutpat quis nisi quis scelerisque. Integer sed auctor felis,
+              quis volutpat erat. Vestibulum ante ipsum primis in faucibus
+              orci luctus et ultrices posuere cubilia curae; Nunc bibendum
+              fringilla mi, vel pulvinar erat convallis ac. Sed sit amet neque
+              ac sem blandit commodo. Integer sit amet odio viverra, faucibus
+              neque in, pellentesque orci. Maecenas sit amet venenatis purus.
+              Maecenas vel justo tincidunt, euismod nulla nec, feugiat mi.
+              Quisque ornare bibendum metus eu fringilla.
+            </p>
+          </div>
+        </li>
+
+        <!-- Q9 -->
+        <li class="accordion-item" data-accordion-item>
+          <a href="#" class="accordion-title">Who do I contact if I need help?</a>
+          <div class="accordion-content" data-tab-content>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam
+              sapien, facilisis sit amet ipsum nec, lobortis ultricies nibh.
+              Nam ut enim ligula. In hac habitasse platea dictumst. Nulla
+              volutpat quis nisi quis scelerisque. Integer sed auctor felis,
+              quis volutpat erat. Vestibulum ante ipsum primis in faucibus
+              orci luctus et ultrices posuere cubilia curae; Nunc bibendum
+              fringilla mi, vel pulvinar erat convallis ac. Sed sit amet neque
+              ac sem blandit commodo. Integer sit amet odio viverra, faucibus
+              neque in, pellentesque orci. Maecenas sit amet venenatis purus.
+              Maecenas vel justo tincidunt, euismod nulla nec, feugiat mi.
+              Quisque ornare bibendum metus eu fringilla.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- TDNI footer: Start-->
+  <footer class="footer-tdni">
+    <div class="row">
+      <div class="small-12 columns">
+        <a href="#homeurl"><img class="logo-tdni logo-tdni--footer" src="img/2026-tdni/logo-tdni.svg"
+            alt="TrueDNI" /></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-4 medium-2 columns">
+        <ul class="no-list">
+          <li><a href="#">Nomad</a></li>
+          <li><a href="#">Nomad Pro</a></li>
+        </ul>
+      </div>
+      <div class="small-4 medium-2 columns">
+        <ul class="no-list">
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Our insurers</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="small-4 medium-2 columns">
+        <ul class="no-list">
+          <li><a href="#">My TrueDNI</a></li>
+          <li><a href="#">Make a claim</a></li>
+          <li><a href="#">Affiliates</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="small-12 medium-2 columns"></div>
+      <div class="small-12 medium-2 columns"></div>
+      <div class="small-12 medium-2 columns"></div>
+      <div class="small-12 medium-2 columns"></div>
     </div>
 
-    <!-- TDNI footer: Start-->
-    <footer class="footer-tdni">
-      <div class="row">
-        <div class="small-12 columns">
-          <a href="#homeurl"
-            ><img
-              class="logo-tdni logo-tdni--footer"
-              src="img/2026-tdni/logo-tdni.svg"
-              alt="TrueDNI"
-          /></a>
-        </div>
+    <div class="row row-legals">
+      <div class="small-12 medium-6 columns col-legals">
+        <small>©2026 TrueDNI Ltd | <a href="#">Privacy</a> |
+          <a href="#">Cookies</a></small>
       </div>
-      <div class="row">
-        <div class="small-4 medium-2 columns">
-          <ul class="no-list">
-            <li><a href="#">Nomad</a></li>
-            <li><a href="#">Nomad Pro</a></li>
-          </ul>
-        </div>
-        <div class="small-4 medium-2 columns">
-          <ul class="no-list">
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Our insurers</a></li>
-            <li><a href="#">Reviews</a></li>
-            <li><a href="#">FAQs</a></li>
-          </ul>
-        </div>
-        <div class="small-4 medium-2 columns">
-          <ul class="no-list">
-            <li><a href="#">My TrueDNI</a></li>
-            <li><a href="#">Make a claim</a></li>
-            <li><a href="#">Affiliates</a></li>
-            <li><a href="#">Contact us</a></li>
-          </ul>
-        </div>
-        <div class="small-12 medium-2 columns"></div>
-        <div class="small-12 medium-2 columns"></div>
-        <div class="small-12 medium-2 columns"></div>
-        <div class="small-12 medium-2 columns"></div>
-      </div>
-
-      <div class="row row-legals">
-        <div class="small-12 medium-6 columns col-legals">
-          <small
-            >©2026 TrueDNI Ltd | <a href="#">Privacy</a> |
-            <a href="#">Cookies</a></small
-          >
-        </div>
-        <div class="small-12 medium-6 columns text-right col-quote">
-          <a href="#quote" class="btn-green btn-green--lc">Get a quote</a>
-          <img class="lc" src="icons-tdni/lc.png" />
-          <!-- Start of LiveChat (www.livechatinc.com) code -->
-          <!-- <script type="text/javascript">
+      <div class="small-12 medium-6 columns text-right col-quote">
+        <a href="#quote" class="btn-green btn-green--lc">Get a quote</a>
+        <img class="lc" src="icons-tdni/lc.png" />
+        <!-- Start of LiveChat (www.livechatinc.com) code -->
+        <!-- <script type="text/javascript">
 								window.__lc = window.__lc || {};
 								window.__lc.license = 14356251;
 								(function () {
@@ -564,20 +484,21 @@
 								<a href="https://www.livechatinc.com/chat-with/14356251/" rel="nofollow">Chat with us</a>, 
 								powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
 							</noscript> -->
-          <!-- End of LiveChat code -->
-        </div>
+        <!-- End of LiveChat code -->
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!-- TDNI footer:  End-->
+  <!-- TDNI footer:  End-->
 
-    <!-- Footer consistent to TrueTraveller - Deepak to use existing code -->
+  <!-- Footer consistent to TrueTraveller - Deepak to use existing code -->
 
-    <!-- Loaded from live only for purpose of testing : Start -->
-    <script src="https://www.truetraveller.com/js/footer/footer-all-min-dist.js"></script>
-    <!-- Loaded from live only for purpose of testing : End -->
+  <!-- Loaded from live only for purpose of testing : Start -->
+  <script src="https://www.truetraveller.com/js/footer/footer-all-min-dist.js"></script>
+  <!-- Loaded from live only for purpose of testing : End -->
 
-    <script src="js/tdni.js"></script>
-    <!-- Loaded from live only for purpose of testing : End -->
-  </body>
+  <script src="js/tdni.js"></script>
+  <!-- Loaded from live only for purpose of testing : End -->
+</body>
+
 </html>
