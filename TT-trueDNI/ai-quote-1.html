@@ -1,0 +1,299 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <!-- Loaded from live only for purpose of testing : Start -->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <title>TrueDNI</title>
+
+    <!-- Stylesheets loaded from live -->
+    <link
+      rel="preload"
+      href="https://www.truetraveller.com/webfonts/fa-regular-400.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="https://www.truetraveller.com/font/truetraveller.woff?38429907"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="https://www.truetraveller.com/webfonts/fa-brands-400.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="https://www.truetraveller.com/webfonts/fa-solid-900.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="stylesheet"
+      href="https://www.truetraveller.com/css/all.css?v=33"
+    />
+    <link
+      rel="stylesheet"
+      href="https://www.truetraveller.com/css/home-page-redesign.css?v=3"
+    />
+
+    <!-- Typekit -->
+    <script src="https://use.typekit.net/isb8sii.js"></script>
+    <script>
+      try {
+        Typekit.load({
+          async: true,
+        });
+      } catch (e) {}
+    </script>
+
+    <style>
+      .wf-loading p,
+      .wf-loading h1,
+      .wf-loading h2,
+      .wf-loading h3,
+      .wf-loading h4,
+      wf-loading label {
+        visibility: hidden;
+      }
+
+      .wf-active p,
+      .wf-active h1,
+      .wf-active h2,
+      .wf-active h3,
+      .wf-active h4,
+      wf-active label {
+        visibility: visible;
+      }
+
+      .wf-inactive p,
+      .wf-inactive h1,
+      .wf-inactive h2,
+      .wf-inactive h3,
+      .wf-inactive h4,
+      wf-inactive label {
+        visibility: visible;
+      }
+    </style>
+
+    <script src="https://www.truetraveller.com/js/header/header-all-min-dist.js"></script>
+    <!-- Loaded from live only for purpose of testing : End -->
+
+    <!-- New True-DNI stylesheets to be added to live template header file -->
+    <link rel="stylesheet" href="css/trueDNI.css" />
+
+    <!-- New True-DNI webfonts, Poppins and Lora-->
+    <link rel="stylesheet" href="https://use.typekit.net/ihi5pfa.css" />
+  </head>
+
+  <body class="truedni ai-quote">
+    <div id="top"></div>
+
+    <!-- TDNI nav : Start -->
+
+    <header class="header header-tdni" class="fade-all" role="banner">
+      <div class="row vert-center">
+        <div class="small-6 large-3 align-center columns">
+          <a href="#homeurl"
+            ><img
+              class="logo-tdni"
+              src="img/2026-tdni/logo-tdni.svg"
+              alt="TrueDNI"
+          /></a>
+        </div>
+
+        <div class="large-6 show-for-large text-center columns">
+          <ul class="menu">
+            <li><a href="#">Nomad</a></li>
+            <li><a href="#">Nomad Pro</a></li>
+            <li><a href="#">About us</a></li>
+          </ul>
+        </div>
+
+        <div class="small-6 large-3 columns col-ui text-right pr0">
+          <!-- Dropdown trigger -->
+          <!-- <button class="button button-currency" type="button" data-toggle="currencyDropdown" aria-haspopup="true"
+					aria-expanded="false"> -->
+          <!-- initial currency here-->
+          <!-- £ GBP
+				</button> -->
+
+          <!-- Dropdown menu -->
+          <!-- <div class="dropdown-pane dropdown-pane-currency" id="currencyDropdown" data-offset="0 -1"
+					data-dropdown>
+					<ul class="menu vertical">
+						<li><a class="tdni-currency-choice-gbp" href="#" data-currency="GBP">£ GBP</a></li>
+						<li><a class="tdni-currency-choice-eur" href="#" data-currency="EUR">€ EUR</a></li>
+						<li><a class="tdni-currency-choice-usd" href="#" data-currency="USD">$ USD</a></li>
+					</ul>
+				</div> -->
+          <img src="icons-tdni/ico-profile.svg" alt="Profile" />
+          <img
+            class="show-for-small hide-for-large hamburger-tdni"
+            src="icons-tdni/ico-hamburger.svg"
+            alt="Menu"
+          />
+          <img
+            class="show-for-small hide-for-large x-tdni"
+            src="icons-tdni/ico-x.svg"
+            alt="Close"
+          />
+        </div>
+        <div class="mobile-nav hide-for-large">
+          <ul class="no-list">
+            <li class="big-menu-item"><a href="#">Nomad</a></li>
+            <li class="big-menu-item mb20"><a href="#">Nomad Pro</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+          <div class="mob-nav-buttons">
+            <a class="button button-tdni-white-outline">Make a claim</a>
+            <a class="button button-tdni-orange mb0">My TrueDNI</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- TDNI nav : End -->
+
+    <!-- Quote wrapper: start-->
+    <div class="quote-wrap">
+      <!-- TDNI progress bar: start-->
+      <div class="row">
+        <div class="columns small-12 text-center">
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" style="width: 20%"></div>
+          </div>
+        </div>
+      </div>
+      <!-- TDNI progress bar: end-->
+
+      <div class="row">
+        <div class="columns small-12">
+          <div class="pill mt20 mb60">Built for nomads</div>
+        </div>
+      </div>
+
+      <div class="row char-select mb60">
+        <div class="columns small-12">
+          <h1 class="mb20 nc">Choose your<br />travel co-pilot</h1>
+        </div>
+        <div class="columns small-6">
+          <div class="char-1 text-center">
+            <img
+              class="width-100 hover-grow"
+              alt=""
+              src="icons-tdni/ai/char1.svg"
+            />
+          </div>
+        </div>
+        <div class="columns small-6">
+          <div class="char-2 text-center">
+            <img
+              class="width-100 hover-grow"
+              alt=""
+              src="icons-tdni/ai/char2.svg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Quote wrapper: end-->
+
+    <!-- TDNI footer: Start-->
+    <footer class="footer-tdni">
+      <div class="row">
+        <div class="small-12 columns">
+          <a href="#homeurl"
+            ><img
+              class="logo-tdni logo-tdni--footer"
+              src="img/2026-tdni/logo-tdni.svg"
+              alt="TrueDNI"
+          /></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-4 medium-2 columns">
+          <ul class="no-list">
+            <li><a href="#">Nomad</a></li>
+            <li><a href="#">Nomad Pro</a></li>
+          </ul>
+        </div>
+        <div class="small-4 medium-2 columns">
+          <ul class="no-list">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Our insurers</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="small-4 medium-2 columns">
+          <ul class="no-list">
+            <li><a href="#">My TrueDNI</a></li>
+            <li><a href="#">Make a claim</a></li>
+            <li><a href="#">Affiliates</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="small-12 medium-2 columns"></div>
+        <div class="small-12 medium-2 columns"></div>
+        <div class="small-12 medium-2 columns"></div>
+        <div class="small-12 medium-2 columns"></div>
+      </div>
+
+      <div class="row row-legals">
+        <div class="small-12 medium-6 columns col-legals">
+          <small
+            >©2026 TrueDNI Ltd | <a href="#">Privacy</a> |
+            <a href="#">Cookies</a></small
+          >
+        </div>
+        <div class="small-12 medium-6 columns text-right col-quote">
+          <a href="#quote" class="btn-green btn-green--lc">Get a quote</a>
+          <img class="lc" src="icons-tdni/lc.png" />
+          <!-- Start of LiveChat (www.livechatinc.com) code -->
+          <!-- <script type="text/javascript">
+								window.__lc = window.__lc || {};
+								window.__lc.license = 14356251;
+								(function () {
+									var lc = document.createElement('script'); lc.type = 'text/plain'; lc.async = true; lc.setAttribute('data-cookieconsent', "preferences");
+									lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+									var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+								})();
+
+								var LC_API = LC_API || {};
+
+							</script>
+							<noscript>
+								<a href="https://www.livechatinc.com/chat-with/14356251/" rel="nofollow">Chat with us</a>, 
+								powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
+							</noscript> -->
+          <!-- End of LiveChat code -->
+        </div>
+      </div>
+    </footer>
+
+    <!-- TDNI footer:  End-->
+
+    <!-- Footer consistent to TrueTraveller - Deepak to use existing code -->
+
+    <!-- Loaded from live only for purpose of testing : Start -->
+    <script src="https://www.truetraveller.com/js/footer/footer-all-min-dist.js"></script>
+    <!-- Loaded from live only for purpose of testing : End -->
+
+    <script src="js/tdni.js"></script>
+    <!-- Loaded from live only for purpose of testing : End -->
+  </body>
+</html>

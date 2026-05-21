@@ -1,22 +1,31 @@
 /* Small only */
-@media screen and (max-width: 39.9375em) {}
+@media screen and (max-width: 39.9375em) {
+}
 
 /* Medium and up */
-@media screen and (min-width: 40em) {}
+@media screen and (min-width: 40em) {
+}
 
 /* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+}
 
 /* Large and up */
-@media screen and (min-width: 64em) {}
+@media screen and (min-width: 64em) {
+}
 
 /* Large only */
-@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+}
 
 /*body class*/
 
 .truedni {
   font-family: "poppins" !important;
+}
+
+.truedni header {
+  background: transparent;
 }
 
 .truedni .block-mob-pad p,
@@ -166,6 +175,10 @@ h5 {
   margin-bottom: 40px;
 }
 
+.mb60 {
+  margin-bottom: 60px;
+}
+
 .mt10 {
   margin-top: 10px;
 }
@@ -178,9 +191,30 @@ h5 {
   margin-top: 40px;
 }
 
+.mt60 {
+  margin-top: 60px;
+}
+
+.width-100 {
+  width: 100%;
+}
+
 .large-p {
   font-size: 1.3rem !important;
   line-height: 1.1;
+}
+
+.hover-grow {
+  transition: transform 0.3s ease;
+}
+
+.hover-grow:hover {
+  transform: scale(1.05);
+}
+
+.underline-link {
+  color: #37464f;
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 64em) {
@@ -400,7 +434,7 @@ h5 {
   font-size: 14.4px !important;
 }
 
-.header-tdni .menu>li>a {
+.header-tdni .menu > li > a {
   font-family: "poppins" !important;
   text-transform: uppercase;
   font-weight: 500;
@@ -620,6 +654,69 @@ h5 {
 .lc {
   margin-left: 5px;
   max-height: 51px;
+}
+
+/*AI quote templates*/
+
+.nc {
+  text-transform: none !important;
+}
+
+.bg-nora {
+  background: #cadbff;
+}
+
+.bg-leo {
+  background: #caefff;
+}
+
+.meet-char {
+  width: 60%;
+  max-width: 320px;
+  display: block;
+}
+
+.quote-wrap {
+  padding: 0 30px;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.pill {
+  background: rgba(255, 255, 255, 0.5);
+  color: #37464f;
+  border: 1px solid #37464f;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 15px 1px 15px;
+  font-weight: 500;
+  font-family: poppins;
+}
+
+.progress-bar-wrap {
+  padding: 5px;
+  border-radius: 8px;
+  background: #37464f17;
+  min-height: 10px;
+}
+
+.progress-bar {
+  width: 0;
+  min-height: 5px;
+  border-radius: 5px;
+  background: #ff5722;
+  height: 100%;
+}
+
+.char-select img {
+  max-width: 250px;
+}
+
+.char-select {
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (max-width: 39.9375em) {
