@@ -53,10 +53,7 @@ h5 {
 
 .truedni .button {
   padding: 1.2em 1.8em 1.1em 1.8em;
-}
-
-.truedni .button {
-  padding: 1.2em 1.8em 1.1em 1.8em;
+  font-weight: 600;
 }
 
 /*helpers*/
@@ -79,6 +76,10 @@ h5 {
 
 .bg-nmd {
   background: #ff9574;
+}
+
+.bg-nmd-light {
+  background: #ffe6de;
 }
 
 .bg-nmd-pro {
@@ -253,6 +254,12 @@ h5 {
 .button-tdni-orange {
   background: #ff5722;
   border-radius: 30px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.button-tdni-orange:hover {
+  background: #e64a19;
   color: #fff;
 }
 
@@ -802,3 +809,1395 @@ h5 {
     font-size: 26px;
   }
 }
+
+
+/* ================================================================
+   AI QUOTE BOOKING COMPONENTS — ai-quote-nora-booking.html
+   Added: June 2026
+   ================================================================ */
+
+
+/* ----------------------------------------------------------
+   Page layout: background, intro band, component cards
+   ---------------------------------------------------------- */
+
+/* Light neutral page background — colour only lives in the intro band */
+/* padding-top reset removes gap added by live site's sticky header styles */
+.quote-page {
+  background: #fff;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* Coloured top band: pulls up behind the nav using negative margin — same pattern as .cover-tdni-container */
+.quote-intro-band {
+  margin-top: -120px;
+  padding-top: 120px;
+  padding-bottom: 48px;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+/* Wrapper for the components section below the intro band */
+.quote-components-wrap {
+  padding-top: 20px;
+  padding-bottom: 24px;
+}
+
+/* White shadow card used to wrap each component group */
+.quote-card {
+  background: #fff;
+  border-radius: 20px;
+  border: 1px solid #afb5b9;
+  padding: 22px;
+  margin-bottom: 14px;
+}
+
+
+/* ----------------------------------------------------------
+   Component 1: Quote intro header
+   ---------------------------------------------------------- */
+
+.quote-intro h1 {
+  line-height: 1.1;
+}
+
+.quote-intro-char img {
+  max-width: 110px;
+  width: 100%;
+}
+
+
+/* ----------------------------------------------------------
+   Component 2: AI chat bubble & response options
+   ---------------------------------------------------------- */
+
+.ai-chat-wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.ai-chat-avatar {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.ai-chat-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ai-chat-bubble {
+  background: #fff;
+  border-radius: 20px;
+  border-top-left-radius: 4px;
+  padding: 16px 18px;
+  flex: 1;
+}
+
+.ai-chat-bubble p {
+  margin: 0;
+  font-family: "lola";
+  color: #37464f;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.ai-response-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ai-response-btn {
+  background: #fff;
+  border: 2px solid #37464f;
+  border-radius: 30px;
+  color: #37464f;
+  padding: 12px 20px;
+  font-family: "poppins";
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.ai-response-btn:hover {
+  background: #37464f;
+  color: #fff;
+}
+
+
+/* ----------------------------------------------------------
+   Component 3: Date picker (calendar)
+   ---------------------------------------------------------- */
+
+.tdni-calendar {
+  background: #f5f6f7;
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.tdni-calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.tdni-calendar-header span {
+  font-family: "poppins";
+  font-weight: 600;
+  color: #37464f;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.tdni-calendar-nav {
+  background: none;
+  border: none;
+  color: #37464f;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 0 8px;
+  line-height: 1;
+}
+
+.tdni-calendar table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tdni-calendar th {
+  font-family: "poppins";
+  font-size: 11px;
+  font-weight: 500;
+  color: #37464f;
+  opacity: 0.5;
+  text-align: center;
+  padding: 4px 2px 8px;
+  text-transform: uppercase;
+}
+
+.tdni-calendar td {
+  text-align: center;
+  padding: 2px;
+}
+
+.cal-day {
+  font-family: "poppins";
+  font-size: 14px;
+  color: #37464f;
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.cal-day:hover {
+  background: #ffe6de;
+}
+
+.cal-day.selected {
+  background: #ff5722;
+  color: #fff;
+}
+
+.cal-day.muted {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.tdni-skip-link {
+  font-family: "poppins";
+  font-size: 16px;
+  color: #37464f;
+  text-decoration: underline;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+
+/* ----------------------------------------------------------
+   Component 4: Country / home input
+   ---------------------------------------------------------- */
+
+.tdni-input-group input[type="text"],
+.tdni-input-group input[type="email"],
+.tdni-input-group input[type="tel"],
+.tdni-input-group input[type="number"] {
+  border-radius: 12px;
+  border: 2px solid #eee;
+  padding: 13px 16px;
+  font-family: "lola";
+  font-size: 17px;
+  width: 100%;
+  color: #37464f;
+  background: #f5f6f7;
+  box-shadow: none;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.tdni-input-group input:focus {
+  border-color: #37464f;
+  outline: none;
+  box-shadow: none;
+}
+
+.tdni-helper-text {
+  font-family: "lola";
+  font-size: 14px;
+  color: #37464f;
+  opacity: 0.7;
+  margin-top: 4px;
+  margin-bottom: 16px;
+}
+
+
+/* ----------------------------------------------------------
+   Component 5: AI confirmation message
+   ---------------------------------------------------------- */
+
+.ai-confirmation {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #f5f6f7;
+  border-radius: 16px;
+  padding: 18px;
+}
+
+.ai-confirmation-char {
+  width: 56px;
+  flex-shrink: 0;
+}
+
+.ai-confirmation-char img {
+  width: 100%;
+}
+
+.ai-confirmation-text p {
+  margin: 0;
+  font-family: "lola";
+  color: #37464f;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.ai-confirmation-text strong {
+  font-family: "poppins";
+  font-weight: 600;
+}
+
+
+/* ----------------------------------------------------------
+   Component 6: Plan comparison cards
+   ---------------------------------------------------------- */
+
+.plan-card {
+  overflow: hidden;
+}
+
+.plan-card-top {
+  margin: 0;
+}
+
+.plan-card-ill {
+  padding: 0;
+}
+
+.plan-card-ill img {
+  width: 100%;
+  display: block;
+}
+
+.plan-card-label {
+  font-family: "poppins";
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #37464f;
+  margin-bottom: 4px;
+  line-height: 1.1;
+}
+
+.plan-card-subtitle {
+  font-family: "lola";
+  font-size: 15px;
+  color: #37464f;
+  margin-bottom: 0;
+}
+
+.plan-card-body {
+  padding: 0 20px 20px 20px;
+}
+
+.plan-card-bullets {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+.plan-card-bullets li {
+  font-family: "lola";
+  font-size: 16px;
+  color: #37464f;
+  padding: 2px 0;
+}
+
+.plan-card-activities-btn {
+  display: block;
+  width: 100%;
+  background: #fff;
+  border-radius: 30px;
+  text-align: center;
+  padding: 10px 16px;
+  font-family: "poppins";
+  font-weight: 600;
+  font-size: 15px;
+  color: #37464f;
+  text-decoration: underline;
+  margin-bottom: 14px;
+}
+
+.plan-card-price {
+  font-family: "poppins";
+  font-weight: 500;
+  font-size: 18px;
+  color: #37464f;
+  margin-bottom: 14px;
+}
+
+.plan-card-price strong {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.plan-card-alt-link {
+  font-family: "lola";
+  font-size: 15px;
+  color: #37464f;
+  text-decoration: underline;
+  display: block;
+  text-align: left;
+  margin-top: 14px;
+}
+
+
+/* ----------------------------------------------------------
+   Component 7: Gadget cover
+   ---------------------------------------------------------- */
+
+.gadget-card {
+  background: #f5f6f7;
+  border-radius: 16px;
+  padding: 16px 18px;
+  margin-bottom: 16px;
+}
+
+.gadget-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-family: "lola";
+  color: #37464f;
+  font-size: 17px;
+}
+
+.gadget-remove-link {
+  color: #37464f;
+  font-size: 20px;
+  opacity: 0.4;
+  line-height: 1;
+}
+
+.gadget-remove-link:hover {
+  opacity: 1;
+  color: #37464f;
+}
+
+.gadget-add-link {
+  font-family: "poppins";
+  font-size: 14px;
+  font-weight: 500;
+  color: #37464f;
+  text-decoration: underline;
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.gadget-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14px;
+  margin-top: 10px;
+  border-top: 2px solid #eee;
+  font-family: "poppins";
+  font-weight: 700;
+  font-size: 17px;
+  color: #37464f;
+}
+
+
+/* ----------------------------------------------------------
+   Component 8: Health declaration
+   ---------------------------------------------------------- */
+
+.health-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.health-option {
+  background: #f5f6f7;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  padding: 14px 18px;
+  font-family: "lola";
+  font-size: 17px;
+  color: #37464f;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  transition: border-color 0.15s ease;
+}
+
+.health-option:hover {
+  border-color: rgba(55, 70, 79, 0.3);
+}
+
+.health-option.selected {
+  border-color: #37464f;
+}
+
+.health-checkbox-wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 20px;
+  background: #f5f6f7;
+  border-radius: 16px;
+  padding: 16px 18px;
+}
+
+.health-checkbox-wrap input[type="checkbox"] {
+  margin-top: 2px;
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.health-checkbox-wrap label {
+  font-family: "lola";
+  font-size: 15px;
+  color: #37464f;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+
+/* ----------------------------------------------------------
+   Component 9: Cover summary
+   ---------------------------------------------------------- */
+
+.cover-summary {
+  background: #f5f6f7;
+  border-radius: 16px;
+  padding: 8px 18px;
+  margin-bottom: 16px;
+}
+
+.cover-summary-row {
+  display: flex;
+  flex-direction: column;
+  padding: 14px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cover-summary-row:last-child {
+  border-bottom: none;
+}
+
+.cover-summary-label {
+  font-family: "poppins";
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #37464f;
+  opacity: 0.55;
+  margin-bottom: 5px;
+}
+
+.cover-summary-value {
+  font-family: "lola";
+  font-size: 16px;
+  color: #37464f;
+  line-height: 1.4;
+}
+
+.cover-summary-value ul {
+  margin: 4px 0 0 18px;
+  padding: 0;
+}
+
+.cover-summary-value ul li {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+
+/* ----------------------------------------------------------
+   Component 10: Adjust cover links
+   ---------------------------------------------------------- */
+
+.cover-adjust-links {
+  text-align: center;
+}
+
+.cover-adjust-links a {
+  font-family: "lola";
+  font-size: 16px;
+  color: #37464f;
+  display: block;
+  text-decoration: underline;
+  margin-bottom: 12px;
+}
+
+
+/* ----------------------------------------------------------
+   Component 11: Personal details form
+   ---------------------------------------------------------- */
+
+.details-form label {
+  font-family: "poppins";
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #37464f;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.details-form input[type="text"],
+.details-form input[type="email"],
+.details-form input[type="tel"],
+.details-form input[type="number"],
+.details-form select {
+  border-radius: 12px;
+  border: 2px solid #eee;
+  padding: 13px 16px;
+  font-family: "lola";
+  font-size: 17px;
+  width: 100%;
+  color: #37464f;
+  background: #f5f6f7;
+  box-shadow: none;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.details-form input:focus,
+.details-form select:focus {
+  border-color: #37464f;
+  outline: none;
+  box-shadow: none;
+}
+
+.details-form .field-link {
+  font-family: "lola";
+  font-size: 14px;
+  color: #37464f;
+  text-decoration: underline;
+  display: inline-block;
+  margin-bottom: 18px;
+  margin-right: 12px;
+}
+
+.btn-pay {
+  background: #ff5722;
+  border-radius: 30px;
+  color: #fff;
+  font-family: "poppins";
+  font-weight: 600;
+  font-size: 18px;
+  padding: 16px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+  transition: background 0.2s ease;
+}
+
+.btn-pay:hover {
+  background: #e64a19;
+}
+
+/* ================================================================
+   END AI QUOTE BOOKING COMPONENTS
+   ================================================================ */
+
+
+/* ================================================================
+   AI QUOTE V2 — ai-quote-v2.html
+   Added: June 2026
+   Build approach: one component per session, approved before moving on
+   ================================================================ */
+
+
+/* ----------------------------------------------------------
+   V2: Intro band — illustrations + card overlap
+   ---------------------------------------------------------- */
+
+/* Extra bottom padding makes room for the illustrations
+   and the overlapping first card */
+.quote-intro-band {
+  padding-bottom: 0;
+}
+
+/* Row of illustrations sitting at the bottom of the intro band */
+.quote-intro-illustrations {
+  display: flex;
+  align-items: flex-end;
+  padding: 20px 30px 0 10px;
+  gap: 0;
+  overflow: hidden;
+}
+
+.quote-intro-nora {
+  width: 48%;
+  max-width: 140px;
+  display: block;
+}
+
+.quote-intro-globe {
+  width: 52%;
+  max-width: 150px;
+  display: block;
+}
+
+/* First card overlaps the bottom of the intro band */
+.quote-card--overlap {
+  margin-top: -40px;
+  position: relative;
+  z-index: 2;
+}
+
+
+/* ----------------------------------------------------------
+   V2: Consistent h2 heading style across all quote cards
+   Matches .details-heading — Lola, regular weight, not uppercase
+   ---------------------------------------------------------- */
+
+.quote-page .quote-card h2 {
+  font-family: "lola" !important;
+  font-weight: 400 !important;
+  font-size: 22px;
+  line-height: 1.35;
+  text-transform: none !important;
+  color: #37464f;
+}
+
+
+/* ----------------------------------------------------------
+   V2: Country input
+   ---------------------------------------------------------- */
+
+.tdni-input {
+  width: 100%;
+  display: block;
+  border: 1.5px solid #e5e7ea;
+  border-radius: 10px;
+  padding: 13px 16px;
+  font-family: "lola";
+  font-size: 17px;
+  color: #37464f;
+  background: #fff;
+  box-shadow: none;
+}
+
+.tdni-input:focus {
+  border-color: #37464f;
+  outline: none;
+  box-shadow: none;
+}
+
+.mb16 { margin-bottom: 16px; }
+
+
+/* ----------------------------------------------------------
+   V2: Nora response bubble
+   Left-aligned tinted chat bubble, shown after user selects an option
+   ---------------------------------------------------------- */
+
+.nora-bubble {
+  background: rgba(202, 219, 255, 0.45);
+  border: 1px solid #afb5b9;
+  border-radius: 16px;
+  border-top-right-radius: 4px;
+  padding: 14px 18px;
+  max-width: 72%;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 14px;
+}
+
+.nora-bubble p {
+  font-family: "lola";
+  font-size: 22px;
+  line-height: 1.35;
+  color: #37464f;
+  margin: 0;
+}
+
+
+/* ----------------------------------------------------------
+   V2: AI chat message text
+   ---------------------------------------------------------- */
+
+.ai-message {
+  font-family: "lola";
+  font-size: 22px;
+  line-height: 1.35;
+  color: #37464f;
+  margin-bottom: 20px;
+}
+
+
+/* ----------------------------------------------------------
+   V2: Date picker — jQuery UI datepicker overrides
+   Inline calendar matching TrueDNI design
+   ---------------------------------------------------------- */
+
+.tdni-datepicker-wrap {
+  margin-bottom: 16px;
+}
+
+/* Reset jQuery UI widget base */
+.tdni-datepicker-wrap .ui-datepicker {
+  width: 100%;
+  border: 1.5px solid #e5e7ea;
+  border-radius: 14px;
+  padding: 14px 16px;
+  background: #fff;
+  font-family: "poppins";
+  box-shadow: none;
+}
+
+/* Header row: arrows + month/year selects */
+.tdni-datepicker-wrap .ui-datepicker-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 0 36px 12px 36px;
+  margin-bottom: 4px;
+}
+
+.tdni-datepicker-wrap .ui-datepicker-title {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  order: 2;
+}
+
+/* Month and year dropdowns */
+.tdni-datepicker-wrap .ui-datepicker-month,
+.tdni-datepicker-wrap .ui-datepicker-year {
+  font-family: "poppins";
+  font-size: 14px;
+  font-weight: 500;
+  color: #37464f;
+  border: 1.5px solid #e5e7ea;
+  border-radius: 8px;
+  padding: 5px 8px 5px 8px;
+  background: #fff;
+  cursor: pointer;
+  appearance: auto;
+  -webkit-appearance: auto;
+  min-width: 0;
+}
+
+.tdni-datepicker-wrap .ui-datepicker-month {
+  min-width: 90px;
+}
+
+.tdni-datepicker-wrap .ui-datepicker-year {
+  min-width: 72px;
+}
+
+/* Prev / Next arrows — positioned absolute within the relative header */
+.tdni-datepicker-wrap .ui-datepicker-prev,
+.tdni-datepicker-wrap .ui-datepicker-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-60%);
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  background: #fff;
+  border: 1.5px solid #e5e7ea;
+  overflow: visible;
+  text-indent: 0;
+}
+
+.tdni-datepicker-wrap .ui-datepicker-prev,
+.tdni-datepicker-wrap .ui-datepicker-prev.ui-corner-all,
+.tdni-datepicker-wrap .ui-datepicker-next,
+.tdni-datepicker-wrap .ui-datepicker-next.ui-corner-all {
+  background: #fff !important;
+}
+
+.tdni-datepicker-wrap .ui-datepicker-prev { left: 0; }
+.tdni-datepicker-wrap .ui-datepicker-next { right: 0; }
+
+.tdni-datepicker-wrap .ui-datepicker-prev:hover,
+.tdni-datepicker-wrap .ui-datepicker-next:hover {
+  background: #f0f2f4;
+  border: 1.5px solid #d0d4d8;
+}
+
+/* Hide the inner icon span (it uses text-indent: -9999px in jQuery UI) */
+.tdni-datepicker-wrap .ui-datepicker-prev .ui-icon,
+.tdni-datepicker-wrap .ui-datepicker-next .ui-icon {
+  display: none;
+}
+
+/* Show arrows as pseudo-elements on the button itself */
+.tdni-datepicker-wrap .ui-datepicker-prev::after {
+  content: "‹";
+  font-size: 23px;
+  font-weight: 300;
+  color: #37464f;
+  line-height: 1;
+  font-family: "poppins";
+}
+
+.tdni-datepicker-wrap .ui-datepicker-next::after {
+  content: "›";
+  font-size: 23px;
+  font-weight: 300;
+  color: #37464f;
+  line-height: 1;
+  font-family: "poppins";
+}
+
+/* Calendar table — strip all jQuery UI row/cell default backgrounds */
+.tdni-datepicker-wrap .ui-datepicker-calendar {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tdni-datepicker-wrap .ui-datepicker-calendar tr,
+.tdni-datepicker-wrap .ui-datepicker-calendar td,
+.tdni-datepicker-wrap .ui-datepicker-calendar th {
+  background: none !important;
+  border: none !important;
+}
+
+/* Day-of-week headers */
+.tdni-datepicker-wrap .ui-datepicker-calendar thead th {
+  font-family: "poppins";
+  font-size: 11px;
+  font-weight: 500;
+  color: #37464f;
+  opacity: 0.45;
+  text-align: center;
+  padding: 4px 2px 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Date cells */
+.tdni-datepicker-wrap .ui-datepicker-calendar td {
+  text-align: center;
+  padding: 2px;
+  border: none;
+  background: none;
+}
+
+.tdni-datepicker-wrap .ui-datepicker-calendar td a,
+.tdni-datepicker-wrap .ui-datepicker-calendar td span {
+  font-family: "poppins";
+  font-size: 14px;
+  font-weight: 400;
+  color: #37464f;
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+  background: none;
+  text-align: center;
+  padding: 0;
+  transition: background 0.15s ease;
+}
+
+.tdni-datepicker-wrap .ui-datepicker-calendar td a:hover {
+  background: #ffe6de;
+  color: #37464f;
+}
+
+/* Selected date — orange circle */
+.tdni-datepicker-wrap .ui-datepicker-calendar .ui-datepicker-current-day a {
+  background: #ff5722;
+  color: #fff;
+}
+
+/* Other-month dates — greyed out */
+.tdni-datepicker-wrap .ui-datepicker-calendar .ui-datepicker-other-month span,
+.tdni-datepicker-wrap .ui-datepicker-calendar .ui-datepicker-other-month a {
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+/* Remove jQuery UI's default hover state overrides */
+.tdni-datepicker-wrap .ui-state-default,
+.tdni-datepicker-wrap .ui-widget-content .ui-state-default {
+  background: none;
+  border: none;
+  color: #37464f;
+  font-weight: 400;
+}
+
+.tdni-datepicker-wrap .ui-state-highlight,
+.tdni-datepicker-wrap .ui-widget-content .ui-state-highlight {
+  background: none;
+  border: none;
+  color: #37464f;
+}
+
+.tdni-datepicker-wrap .ui-state-active,
+.tdni-datepicker-wrap .ui-widget-content .ui-state-active {
+  background: #ff5722;
+  border: none;
+  color: #fff;
+  border-radius: 50%;
+}
+
+
+/* ----------------------------------------------------------
+   V2: Plan cards (Nomad / Nomad Pro)
+   Standalone coloured cards — no white wrapper
+   ---------------------------------------------------------- */
+
+.plan-card-v2 {
+  overflow: hidden;
+  margin-bottom: 8px;
+  border: 1px solid #afb5b9;
+}
+
+.plan-card-v2-top {
+  margin: 0;
+  padding: 0;
+}
+
+.plan-card-v2-top .plan-card-v2-text {
+  padding-top: 20px;
+}
+
+.plan-card-v2-ill {
+  padding: 0;
+}
+
+.plan-card-v2-ill img {
+  width: 100%;
+  display: block;
+}
+
+.plan-card-v2-ill img.plan-ill--sm {
+  width: 75%;
+}
+
+.plan-card-v2-label {
+  font-family: "poppins";
+  font-weight: 800;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #37464f;
+  margin-bottom: 4px;
+  line-height: 1;
+}
+
+.plan-card-v2-subtitle {
+  font-family: "lola";
+  font-size: 16px;
+  color: #37464f;
+  margin-bottom: 10px;
+}
+
+.plan-card-v2-body {
+  padding: 0 20px 20px 20px;
+}
+
+.plan-card-v2-bullets {
+  list-style: disc;
+  padding-left: 0;
+  margin-bottom: 16px;
+}
+
+.plan-card-v2-bullets li {
+  font-family: "lola";
+  font-size: 16px;
+  color: #37464f;
+  padding: 2px 0;
+}
+
+.plan-card-v2-activities {
+  display: block;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #afb5b9;
+  border-radius: 30px;
+  text-align: center;
+  padding: 10px 16px;
+  font-family: "poppins";
+  font-weight: 500;
+  font-size: 15px;
+  color: #37464f;
+  text-decoration: underline;
+  margin-bottom: 14px;
+}
+
+.plan-card-v2-price {
+  font-family: "poppins";
+  font-weight: 400;
+  font-size: 18px;
+  color: #37464f;
+  margin-bottom: 14px;
+}
+
+.plan-card-v2-price strong {
+  font-size: 38px;
+  font-weight: 800;
+}
+
+.plan-card-v2-alt-link {
+  font-family: "poppins";
+  font-size: 16px;
+  color: #37464f;
+  text-decoration: underline;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+
+/* ----------------------------------------------------------
+   V2: Gadget cover
+   ---------------------------------------------------------- */
+
+.gadget-heading {
+  font-family: "lola";
+  font-size: 20px;
+  font-weight: 400;
+  color: #37464f;
+  margin-bottom: 12px;
+}
+
+.gadget-items {
+  margin-bottom: 4px;
+}
+
+.gadget-item-name {
+  font-family: "poppins";
+  font-weight: 600;
+  font-size: 16px;
+  color: #37464f;
+  margin-bottom: 4px;
+}
+
+.tdni-divider {
+  border: none;
+  border-top: 1px solid #e5e7ea;
+  margin: 12px 0;
+}
+
+.gadget-add-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  border: 1.5px solid #e5e7ea;
+  border-radius: 30px;
+  padding: 10px 16px;
+  font-family: "poppins";
+  font-size: 16px;
+  color: #37464f;
+  background: #fff;
+}
+
+.gadget-add-btn:hover {
+  border-color: #37464f;
+  color: #37464f;
+}
+
+.gadget-total-row {
+  font-family: "lola";
+  font-size: 17px;
+  color: #37464f;
+  text-align: right;
+  margin-bottom: 16px;
+}
+
+.gadget-total-row strong {
+  font-family: "poppins";
+  font-weight: 800;
+  font-size: 22px;
+}
+
+
+/* ----------------------------------------------------------
+   V2: Health question pills
+   Auto-width, left-aligned, stacked vertically
+   ---------------------------------------------------------- */
+
+.question-pills {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.question-pill {
+  display: inline-block;
+  background: #fff;
+  border: 1.5px solid #d0d4d8;
+  border-radius: 30px;
+  padding: 9px 20px;
+  font-family: "poppins";
+  font-weight: 400;
+  font-size: 15px;
+  color: #37464f;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.question-pill:hover {
+  border-color: #37464f;
+}
+
+.question-pill.selected {
+  border-color: #37464f;
+  background: #f0f2f4;
+}
+
+
+/* ----------------------------------------------------------
+   V2: Confirm block — pre-existing conditions + build cover
+   ---------------------------------------------------------- */
+
+.confirm-block {
+  padding: 22px;
+  margin-bottom: 14px;
+  border: 1px solid #afb5b9;
+}
+
+.confirm-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.confirm-checkbox {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  cursor: pointer;
+  accent-color: #ff5722;
+}
+
+.confirm-label span {
+  font-family: "lola";
+  font-size: 17px;
+  line-height: 1.45;
+  color: #37464f;
+}
+
+
+/* ----------------------------------------------------------
+   V2: Cover summary
+   ---------------------------------------------------------- */
+
+.summary-inner-card {
+  border: 1.5px solid #e5e7ea;
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 20px;
+}
+
+.summary-plan-name {
+  font-family: "poppins";
+  font-weight: 800;
+  font-size: 26px;
+  color: #37464f;
+  margin-bottom: 14px;
+}
+
+.summary-section {
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #e5e7ea;
+}
+
+.summary-section--last {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.summary-label {
+  font-family: "poppins";
+  font-weight: 700;
+  font-size: 14px;
+  color: #37464f;
+  margin-bottom: 4px;
+}
+
+.summary-value {
+  font-family: "lola";
+  font-size: 14px;
+  line-height: 1.6;
+  color: #37464f;
+  margin-bottom: 0;
+}
+
+.summary-value strong {
+  font-family: "poppins";
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.summary-adjust-links {
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+
+.summary-adjust-links a {
+  display: block;
+  font-family: "poppins";
+  font-size: 16px;
+  color: #37464f;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+
+/* ----------------------------------------------------------
+   V2: Personal details form
+   ---------------------------------------------------------- */
+
+.details-heading {
+  font-family: "lola";
+  font-size: 22px;
+  line-height: 1.35;
+  color: #37464f;
+  margin-bottom: 24px;
+}
+
+.details-form-v2 .details-field {
+  margin-bottom: 16px;
+}
+
+.details-form-v2 label {
+  display: block;
+  font-family: "poppins";
+  font-weight: 400;
+  font-size: 15px;
+  color: #37464f;
+  margin-bottom: 6px;
+}
+
+.details-form-v2 input[type="text"],
+.details-form-v2 input[type="email"],
+.details-form-v2 input[type="tel"],
+.details-form-v2 input[type="number"] {
+  display: block;
+  width: 100%;
+  border: 1.5px solid #d0d4d8;
+  border-radius: 10px;
+  padding: 11px 14px;
+  font-family: "lola";
+  font-size: 16px;
+  color: #37464f;
+  background: #fff;
+  box-shadow: none;
+}
+
+.details-form-v2 input:focus {
+  border-color: #37464f;
+  outline: none;
+  box-shadow: none;
+}
+
+.details-field-link {
+  display: inline-block;
+  font-family: "poppins";
+  font-size: 16px;
+  color: #37464f;
+  text-decoration: underline;
+  margin-top: 6px;
+}
+
+.btn-pay-v2 {
+  display: block;
+  width: 100%;
+  background: #ff5722;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  font-family: "poppins";
+  font-weight: 700;
+  font-size: 20px;
+  padding: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn-pay-v2:hover {
+  background: #e64a19;
+}
+
+
+/* ================================================================
+   END AI QUOTE V2
+   ================================================================ */

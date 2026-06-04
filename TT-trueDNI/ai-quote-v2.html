@@ -1,0 +1,477 @@
+<!doctype html>
+<html class="no-js" lang="en" style="padding-top: 0 !important; margin-top: 0 !important;">
+  <head>
+    <!-- Loaded from live only for purpose of testing : Start -->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <title>TrueDNI – Get a Quote</title>
+
+    <!-- Stylesheets loaded from live -->
+    <link rel="preload" href="https://www.truetraveller.com/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="https://www.truetraveller.com/font/truetraveller.woff?38429907" as="font" type="font/woff" crossorigin />
+    <link rel="preload" href="https://www.truetraveller.com/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="https://www.truetraveller.com/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="https://www.truetraveller.com/css/all.css?v=33" />
+    <link rel="stylesheet" href="https://www.truetraveller.com/css/home-page-redesign.css?v=3" />
+
+    <!-- Typekit -->
+    <script src="https://use.typekit.net/isb8sii.js"></script>
+    <script>
+      try { Typekit.load({ async: true }); } catch (e) {}
+    </script>
+
+    <style>
+      .wf-loading p, .wf-loading h1, .wf-loading h2, .wf-loading h3, .wf-loading h4, wf-loading label { visibility: hidden; }
+      .wf-active p, .wf-active h1, .wf-active h2, .wf-active h3, .wf-active h4, wf-active label { visibility: visible; }
+      .wf-inactive p, .wf-inactive h1, .wf-inactive h2, .wf-inactive h3, .wf-inactive h4, wf-inactive label { visibility: visible; }
+    </style>
+
+    <script src="https://www.truetraveller.com/js/header/header-all-min-dist.js"></script>
+    <!-- Loaded from live only for purpose of testing : End -->
+
+    <!-- jQuery UI (for inline datepicker) -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css" />
+
+    <!-- TrueDNI stylesheet -->
+    <link rel="stylesheet" href="css/trueDNI.css" />
+
+    <!-- TrueDNI webfonts: Poppins and Lora -->
+    <link rel="stylesheet" href="https://use.typekit.net/ihi5pfa.css" />
+  </head>
+
+  <!-- quote-page sets the light neutral body background -->
+  <body class="truedni ai-quote quote-page">
+    <div id="top"></div>
+
+
+    <!-- ============================================================
+         INTRO BAND
+         Coloured bg-nora section: nav + progress bar + intro header + illustrations
+         ============================================================ -->
+
+    <!-- TDNI nav : Start -->
+    <header class="header header-tdni fade-all" role="banner">
+      <div class="row vert-center">
+        <div class="small-6 large-3 columns">
+          <a href="#"><img class="logo-tdni" src="img/2026-tdni/logo-tdni.svg" alt="TrueDNI" /></a>
+        </div>
+        <div class="large-6 show-for-large text-center columns">
+          <ul class="menu">
+            <li><a href="#">Nomad</a></li>
+            <li><a href="#">Nomad Pro</a></li>
+            <li><a href="#">About us</a></li>
+          </ul>
+        </div>
+        <div class="small-6 large-3 columns col-ui text-right pr0">
+          <img src="icons-tdni/ico-profile.svg" alt="Profile" />
+          <img class="show-for-small hide-for-large hamburger-tdni" src="icons-tdni/ico-hamburger.svg" alt="Menu" />
+          <img class="show-for-small hide-for-large x-tdni" src="icons-tdni/ico-x.svg" alt="Close" />
+        </div>
+        <div class="mobile-nav hide-for-large">
+          <ul class="no-list">
+            <li class="big-menu-item"><a href="#">Nomad</a></li>
+            <li class="big-menu-item mb20"><a href="#">Nomad Pro</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+          <div class="mob-nav-buttons">
+            <a class="button button-tdni-white-outline">Make a claim</a>
+            <a class="button button-tdni-orange mb0">My TrueDNI</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- TDNI nav : End -->
+
+
+    <!-- Intro band : Start -->
+    <div class="quote-intro-band bg-nora">
+
+      <div class="quote-wrap">
+
+        <!-- Progress bar : Start -->
+        <div class="row">
+          <div class="columns small-12">
+            <div class="progress-bar-wrap mt20">
+              <div class="progress-bar" style="width: 30%"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Progress bar : End -->
+
+        <!-- Intro text : Start -->
+        <div class="quote-intro mt20">
+          <div class="pill mb10">Built for nomads</div>
+          <h1 class="nc">Let's build cover<br />that fits your trip.</h1>
+        </div>
+        <!-- Intro text : End -->
+
+      </div>
+
+      <!-- Intro illustrations : Start -->
+      <!-- Note: ill-1.svg used for globe — swap if a dedicated globe illustration exists -->
+      <div class="quote-intro-illustrations">
+        <img class="quote-intro-nora" src="icons-tdni/ai/meet-nora.svg" alt="" />
+        <img class="quote-intro-globe" src="img/2026-tdni/globe.svg" alt="" />
+      </div>
+      <!-- Intro illustrations : End -->
+
+    </div>
+    <!-- Intro band : End -->
+
+
+    <!-- ============================================================
+         QUOTE COMPONENTS
+         White page background. Each component is in a quote-card.
+         First card overlaps the bottom of the intro band.
+         ============================================================ -->
+
+    <div class="quote-wrap quote-components-wrap">
+
+      <!-- ============================================================
+           COMPONENT: AI chat — question + response options
+           ============================================================ -->
+
+      <!-- AI chat : Start -->
+      <div class="quote-card quote-card--overlap">
+        <p class="details-heading">Hi, I'm Nora. Your cover includes worldwide travel. Do you need the USA or Canada?</p>
+        <div class="ai-response-options">
+          <button class="ai-response-btn">Yes, include USA/Canada</button>
+          <button class="button button-tdni-orange width-100 mb0">No, I do not need them</button>
+        </div>
+      </div>
+      <!-- AI chat : End -->
+
+
+      <!-- ============================================================
+           COMPONENT: Nora response bubble
+           Confirmation message shown after user selects an option
+           ============================================================ -->
+
+      <!-- Nora response bubble : Start -->
+      <div class="nora-bubble">
+        <p>Got it. Worldwide cover, excluding USA and Canada.</p>
+      </div>
+      <!-- Nora response bubble : End -->
+
+
+      <!-- ============================================================
+           COMPONENT: Date picker — return date calendar
+           Uses jQuery UI datepicker in inline mode
+           ============================================================ -->
+
+      <!-- Date picker : Start -->
+      <div class="quote-card">
+        <h2 class="nc mb20">Do you know when you're coming back?</h2>
+        <div class="tdni-datepicker-wrap">
+          <div id="tdni-datepicker"></div>
+        </div>
+        <a href="#" class="tdni-skip-link">No, I will figure it out as I go</a>
+      </div>
+      <!-- Date picker : End -->
+
+
+      <!-- ============================================================
+           COMPONENT: Where do you call home — country input
+           ============================================================ -->
+
+      <!-- Country input : Start -->
+      <div class="quote-card">
+        <h2 class="nc mb16">Where do you call home?</h2>
+        <input type="text" class="tdni-input mb10" placeholder="Type a country, e.g. UK" />
+        <div class="text-right">
+          <button class="button button-tdni-orange mb10">Next</button>
+        </div>
+        <p class="tdni-helper-text mb0">This is just so I can make sure we can cover you from where you are.</p>
+      </div>
+      <!-- Country input : End -->
+
+
+      <!-- ============================================================
+           COMPONENT: Nora response bubble — activity confirmation
+           ============================================================ -->
+
+      <!-- Nora confirmation card : Start -->
+      <div class="quote-card">
+        <p class="ai-message mb0">Good news. Surfing is covered on the Nomad plan. No upgrade needed.</p>
+      </div>
+      <!-- Nora confirmation card : End -->
+
+
+      <!-- ============================================================
+           COMPONENT: Nomad plan card
+           Coloured card — no white wrapper. Alt link sits outside card.
+           ============================================================ -->
+
+      <!-- Nomad plan card : Start -->
+      <div class="plan-card-v2 bg-nmd-light br20">
+        <div class="row vert-center plan-card-v2-top">
+          <div class="small-5 columns plan-card-v2-ill">
+            <img src="img/2026-tdni/ill-2.svg" alt="" />
+          </div>
+          <div class="small-7 columns plan-card-v2-text">
+            <p class="plan-card-v2-label">Nomad</p>
+            <p class="plan-card-v2-subtitle">For everyday nomad life</p>
+            <ul class="plan-card-v2-bullets">
+              <li>Everyday activities included</li>
+              <li>Monthly rolling cover</li>
+              <li>AXA-backed insurance</li>
+            </ul>
+          </div>
+        </div>
+        <div class="plan-card-v2-body">
+          <a href="#" class="plan-card-v2-activities">92 activities covered</a>
+          <p class="plan-card-v2-price text-right">From <strong>£68</strong></p>
+          <a href="#" class="button button-tdni-orange width-100 mb0">Choose</a>
+          <a href="#" class="plan-card-v2-alt-link">See the Nomad Pro plan</a>
+        </div>
+      </div>
+      <!-- Nomad plan card : End -->
+
+
+      <!-- ============================================================
+           COMPONENT: Nomad Pro plan card
+           Coloured card — no white wrapper. Alt link sits inside card.
+           ============================================================ -->
+
+      <!-- Nomad Pro plan card : Start -->
+      <div class="plan-card-v2 bg-nmd-pro br20">
+        <div class="row vert-center plan-card-v2-top">
+          <div class="small-5 columns plan-card-v2-ill">
+            <img src="img/2026-tdni/nomad-pro-surfer.svg" alt="" class="plan-ill--sm" />
+          </div>
+          <div class="small-7 columns plan-card-v2-text">
+            <p class="plan-card-v2-label">Nomad Pro</p>
+            <p class="plan-card-v2-subtitle">For everyday nomad life</p>
+            <ul class="plan-card-v2-bullets">
+              <li>Higher-risk activities included</li>
+              <li>Increased cover limits</li>
+            </ul>
+          </div>
+        </div>
+        <div class="plan-card-v2-body">
+          <a href="#" class="plan-card-v2-activities">Pro activities covered</a>
+          <p class="plan-card-v2-price text-right">From <strong>£94</strong></p>
+          <a href="#" class="button button-tdni-orange width-100 mb0">Choose</a>
+          <a href="#" class="plan-card-v2-alt-link">See the Nomad plan instead</a>
+        </div>
+      </div>
+      <!-- Nomad Pro plan card : End -->
+
+
+      <!-- ============================================================
+           COMPONENT: Gadget cover
+           ============================================================ -->
+
+      <!-- Gadget cover : Start -->
+      <div class="quote-card">
+        <p class="gadget-heading">Got it.</p>
+        <div class="gadget-items">
+          <p class="gadget-item-name">Laptop (£XX covered)</p>
+          <p class="gadget-item-name">Camera (£XX covered)</p>
+        </div>
+        <hr class="tdni-divider" />
+        <a href="#" class="gadget-add-btn">+ add another items</a>
+        <hr class="tdni-divider" />
+        <p class="gadget-total-row">Gadget cover total <strong>£XX</strong></p>
+        <a href="#" class="button button-tdni-orange width-100 mb10">Add gadget cover</a>
+        <a href="#" class="tdni-skip-link">Skip gadget cover</a>
+      </div>
+      <!-- Gadget cover : End -->
+
+
+      <!-- ============================================================
+           COMPONENT: Health question — pill selection
+           ============================================================ -->
+
+      <!-- Health question : Start -->
+      <div class="quote-card">
+        <h2 class="nc mb20">Last one. Anything health-wise I should know about?</h2>
+        <div class="question-pills">
+          <button class="question-pill">All good</button>
+          <button class="question-pill">Something minor</button>
+          <button class="question-pill">Something to mention</button>
+        </div>
+      </div>
+      <!-- Health question : End -->
+
+
+      <!-- ============================================================
+           COMPONENT: Pre-existing conditions confirm + build cover
+           ============================================================ -->
+
+      <!-- Confirm block : Start -->
+      <div class="confirm-block bg-nmd-light br20">
+        <label class="confirm-label" for="pre-existing">
+          <input type="checkbox" id="pre-existing" class="confirm-checkbox" />
+          <span>I confirm I have no pre-existing conditions and understand they would not be covered.</span>
+        </label>
+        <div class="text-right">
+          <button class="button button-tdni-orange mb0">Build my cover</button>
+        </div>
+      </div>
+      <!-- Confirm block : End -->
+
+
+      <!-- ============================================================
+           COMPONENT: Cover summary
+           Inner bordered card with trip details, CTA below.
+           Adjust links sit outside the card.
+           ============================================================ -->
+
+      <!-- Cover summary : Start -->
+      <div class="quote-card">
+
+        <div class="summary-inner-card">
+
+          <p class="summary-plan-name">Nomad</p>
+
+          <div class="summary-section">
+            <p class="summary-label">Your trip summary:</p>
+            <p class="summary-value">Thailand starting 9th May 2026</p>
+          </div>
+
+          <div class="summary-section">
+            <p class="summary-label">Your plan:</p>
+            <p class="summary-value">Nomad Pro Price: <strong>£106 per month</strong></p>
+          </div>
+
+          <div class="summary-section">
+            <p class="summary-label">What is not covered:</p>
+            <p class="summary-value">
+              Medical and emergency treatment up to [amount]<br />
+              Emergency evacuation and repatriation up to [amount]<br />
+              Personal liability up to [amount]<br />
+              Travel catastrophe up to [amount]<br />
+              Hospital cash allowance up to [amount] per day<br />
+              Accidental disability up to [amount]<br />
+              Surfing and [x] other activities (Nomad Pro)<br />
+              Laptop covered up to £1,200 Camera covered up to £800
+            </p>
+          </div>
+
+          <div class="summary-section">
+            <p class="summary-label">What's not covered:</p>
+            <p class="summary-value">
+              Pre-existing medical conditions<br />
+              Treatment you have not contacted us about first<br />
+              Claims over [amount] without prior authorisation<br />
+              Gear not declared on your policy<br />
+              Travel to countries not on your cover<br />
+              Travel against government advice<br />
+              Manual or physical work<br />
+              Pregnancy-related costs
+            </p>
+          </div>
+
+          <div class="summary-section summary-section--last">
+            <p class="summary-label">Scenario check:</p>
+            <p class="summary-value">If you injured yourself surfing in Thailand and needed hospital treatment, here is what would happen.</p>
+            <p class="summary-value mt10">Covered up to [amount]. Contact assistance within 48 hours. Excess of [amount].</p>
+          </div>
+
+        </div>
+
+        <h2 class="nc mt20 mb16">Does that look right?</h2>
+        <a href="#" class="button button-tdni-orange width-100 mb0">Yes, get covered</a>
+
+        <div class="summary-adjust-links">
+          <a href="#">Adjust my cover</a>
+          <a href="#">Save and come back later</a>
+        </div>
+
+      </div>
+      <!-- Cover summary : End -->
+
+      <!-- ============================================================
+           COMPONENT: Personal details form
+           ============================================================ -->
+
+      <!-- Personal details form : Start -->
+      <div class="quote-card mb40">
+        <p class="details-heading">Nearly there. I just need a few details to set up your cover.</p>
+
+        <form class="details-form-v2" novalidate>
+
+          <div class="details-field">
+            <label for="v2-citizenship">Citizenship</label>
+            <input type="text" id="v2-citizenship" />
+          </div>
+
+          <div class="details-field">
+            <label for="v2-location">Where are you now?</label>
+            <input type="text" id="v2-location" />
+          </div>
+
+          <div class="details-field">
+            <label for="v2-age">Age</label>
+            <input type="number" id="v2-age" />
+          </div>
+
+          <div class="details-field">
+            <label for="v2-email">Email address</label>
+            <input type="email" id="v2-email" />
+          </div>
+
+          <div class="details-field">
+            <label for="v2-address">Home address</label>
+            <input type="text" id="v2-address" placeholder="Look up address" />
+            <a href="#" class="details-field-link">Look up manually</a>
+          </div>
+
+          <div class="details-field">
+            <label for="v2-emergency">Emergency contact</label>
+            <input type="text" id="v2-emergency" />
+          </div>
+
+          <div class="details-field">
+            <label for="v2-telephone">Telephone number</label>
+            <input type="tel" id="v2-telephone" />
+          </div>
+
+          <button type="submit" class="btn-pay-v2">Pay</button>
+
+        </form>
+      </div>
+      <!-- Personal details form : End -->
+
+    </div>
+    <!-- Quote components : End -->
+
+    <!-- Loaded from live only for purpose of testing : Start -->
+    <script src="https://www.truetraveller.com/js/footer/footer-all-min-dist.js"></script>
+    <!-- Loaded from live only for purpose of testing : End -->
+
+    <script src="js/tdni.js"></script>
+
+    <!-- Override padding-top added dynamically by live site header JS -->
+    <script>
+      document.documentElement.style.setProperty('padding-top', '0px', 'important');
+      document.body.style.setProperty('padding-top', '0px', 'important');
+    </script>
+
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"></script>
+
+    <!-- Datepicker init -->
+    <script>
+      $(function () {
+        $('#tdni-datepicker').datepicker({
+          inline: true,
+          changeMonth: true,
+          changeYear: true,
+          showOtherMonths: true,
+          selectOtherMonths: false,
+          defaultDate: new Date(2026, 6, 9), // July 9 2026
+          yearRange: '2026:2030'
+        });
+      });
+    </script>
+
+  </body>
+</html>
