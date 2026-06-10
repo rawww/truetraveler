@@ -464,7 +464,7 @@ h5 {
 }
 
 .cover-tdni {
-  min-height: 600px;
+  min-height: 400px;
   color: #37464f;
   padding-top: 120px;
   margin-bottom: 60px;
@@ -477,7 +477,7 @@ h5 {
 /*contentblocks*/
 @media screen and (max-width: 39.9375em) {
   .intro-tdni {
-    min-height: 200px;
+    min-height: 160px;
   }
 }
 
